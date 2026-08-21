@@ -1,0 +1,232 @@
+Product,Module,Surface,Element,Feature Flag Key,Default: MW Internal,Default: Media Owner,Default: Media Agency,Default: Advertiser,Default: Reseller,Default: Business Partner,Dependency,Owner,Description
+Planner,Dashboard,Dashboard Page,Dashboard Access,planner.dashboard.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Access to dashboard page
+Planner,Dashboard,Widgets,Campaign Overview Widget,planner.dashboard.widgets.campaign_overview,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Campaign status summary widget
+Planner,Dashboard,Widgets,Sales Performance Widget,planner.dashboard.widgets.sales_performance,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,,Platform,Revenue and sales metrics widget
+Planner,Dashboard,Widgets,Inventory Utilization Widget,planner.dashboard.widgets.inventory_utilization,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,,Platform,Inventory usage by type/format widget
+Planner,Dashboard,Widgets,Creative Status Widget,planner.dashboard.widgets.creative_status,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,,Platform,Creative approval status widget
+Planner,Dashboard,Widgets,Budget Tracker Widget,planner.dashboard.widgets.budget_tracker,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Budget vs spend tracking widget
+Planner,Dashboard,Widgets,Recent Proposals Widget,planner.dashboard.widgets.recent_proposals,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Latest proposal cards
+Planner,Dashboard,Widgets,Current Campaigns Widget,planner.dashboard.widgets.current_campaigns,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Active campaign list
+Planner,Dashboard,Widgets,Recent Activity Widget,planner.dashboard.widgets.recent_activity,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Activity feed
+Planner,Campaigns,Campaign Listing,Page Access,planner.campaigns.listing.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Access to campaign list page
+Planner,Campaigns,Campaign Listing,View Mode Toggle,planner.campaigns.listing.view_toggle,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Switch between card and table view
+Planner,Campaigns,Campaign Listing,Table View,planner.campaigns.listing.table_view,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Display campaigns in table format
+Planner,Campaigns,Campaign Listing,Card View,planner.campaigns.listing.card_view,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Display campaigns in card format
+Planner,Campaigns,Filters,Filter Panel,planner.campaigns.filters.panel,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Campaign filter sidebar/panel
+Planner,Campaigns,Filters,Filter by Status,planner.campaigns.filters.status,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Filter by campaign status
+Planner,Campaigns,Filters,Status - Draft,planner.campaigns.filters.status.draft,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,planner.campaigns.filters.status,Platform,Show Draft status option
+Planner,Campaigns,Filters,Status - Planned,planner.campaigns.filters.status.planned,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,planner.campaigns.filters.status,Platform,Show Planned status option
+Planner,Campaigns,Filters,Status - Reviewing,planner.campaigns.filters.status.reviewing,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,planner.campaigns.filters.status,Platform,Show Reviewing status option
+Planner,Campaigns,Filters,Status - Approved,planner.campaigns.filters.status.approved,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,planner.campaigns.filters.status,Platform,Show Approved status option
+Planner,Campaigns,Filters,Status - Active,planner.campaigns.filters.status.active,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,planner.campaigns.filters.status,Platform,Show Active status option
+Planner,Campaigns,Filters,Status - Paused,planner.campaigns.filters.status.paused,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,planner.campaigns.filters.status,Platform,Show Paused status option
+Planner,Campaigns,Filters,Status - Completed,planner.campaigns.filters.status.completed,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,planner.campaigns.filters.status,Platform,Show Completed status option
+Planner,Campaigns,Filters,Status - Cancelled,planner.campaigns.filters.status.cancelled,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,planner.campaigns.filters.status,Platform,Show Cancelled status option
+Planner,Campaigns,Filters,Filter by Date Range,planner.campaigns.filters.date_range,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Filter by start/end dates
+Planner,Campaigns,Filters,Filter by Budget Range,planner.campaigns.filters.budget_range,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Filter by budget min/max
+Planner,Campaigns,Filters,Filter by Advertiser,planner.campaigns.filters.advertiser,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Filter by advertiser/brand
+Planner,Campaigns,Filters,Filter by Country,planner.campaigns.filters.country,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Filter by country
+Planner,Campaigns,Filters,Filter by Agency,planner.campaigns.filters.agency,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,,Platform,Filter by agency
+Planner,Campaigns,Filters,Filter by Media Owner,planner.campaigns.filters.media_owner,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,,Platform,Filter by media owner
+Planner,Campaigns,Filters,Filter by Execution Path,planner.campaigns.filters.execution_path,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Filter by Quick Launch/Full Workflow
+Planner,Campaigns,Filters,Filter by Tags,planner.campaigns.filters.tags,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Filter by custom tags
+Planner,Campaigns,Columns,Budget Column,planner.campaigns.columns.budget,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Show budget in campaign list
+Planner,Campaigns,Columns,Impressions Column,planner.campaigns.columns.impressions,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Show impressions in campaign list
+Planner,Campaigns,Columns,Status Column,planner.campaigns.columns.status,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Show status in campaign list
+Planner,Campaigns,Columns,Advertiser Column,planner.campaigns.columns.advertiser,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Show advertiser in campaign list
+Planner,Campaigns,Columns,Agency Column,planner.campaigns.columns.agency,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,,Platform,Show agency in campaign list
+Planner,Campaigns,Columns,Date Range Column,planner.campaigns.columns.date_range,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Show dates in campaign list
+Planner,Campaigns,Columns,Progress Column,planner.campaigns.columns.progress,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Show completion % in campaign list
+Planner,Campaigns,Actions,Create Campaign Button,planner.campaigns.actions.create,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Create new campaign button
+Planner,Campaigns,Actions,Duplicate Campaign,planner.campaigns.actions.duplicate,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Duplicate existing campaign
+Planner,Campaigns,Actions,Export Campaigns,planner.campaigns.actions.export,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Export campaign list to CSV/Excel
+Planner,Campaigns,Actions,Archive Campaign,planner.campaigns.actions.archive,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Archive old campaigns
+Planner,Campaigns,Actions,Delete Campaign,planner.campaigns.actions.delete,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Permanently delete campaign
+Planner,Campaigns,Actions,Bulk Actions,planner.campaigns.actions.bulk,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Multi-select and bulk operations
+Planner,Campaign Creation,Wizard,Wizard Access,planner.campaign_creation.wizard.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Access to campaign creation wizard
+Planner,Campaign Creation,Step 1,Campaign Details Step,planner.campaign_creation.step1.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Step 1: Campaign Details
+Planner,Campaign Creation,Step 1,Campaign Name Field,planner.campaign_creation.step1.name,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Campaign name input
+Planner,Campaign Creation,Step 1,External ID Field,planner.campaign_creation.step1.external_id,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Optional external reference ID
+Planner,Campaign Creation,Step 1,Advertiser Selection,planner.campaign_creation.step1.advertiser,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Select advertiser/brand
+Planner,Campaign Creation,Step 1,Quick Agency Creation,planner.campaign_creation.step1.quick_agency,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Create agency on the fly
+Planner,Campaign Creation,Step 1,Objective Selection,planner.campaign_creation.step1.objective,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Campaign objective dropdown
+Planner,Campaign Creation,Step 1,Date Range Picker,planner.campaign_creation.step1.dates,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Start and end date selection
+Planner,Campaign Creation,Step 2,Budget & Location Step,planner.campaign_creation.step2.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Step 2: Budget & Location
+Planner,Campaign Creation,Step 2,Budget Input,planner.campaign_creation.step2.budget,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Budget amount input
+Planner,Campaign Creation,Step 2,Currency Selection,planner.campaign_creation.step2.currency,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Currency code dropdown
+Planner,Campaign Creation,Step 2,Country Selection,planner.campaign_creation.step2.country,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Target country selection
+Planner,Campaign Creation,Step 2,Region Selection,planner.campaign_creation.step2.region,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Target region/state selection
+Planner,Campaign Creation,Step 2,City Selection,planner.campaign_creation.step2.city,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Target city selection
+Planner,Campaign Creation,Step 2,Map View,planner.campaign_creation.step2.map,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Interactive map for location selection
+Planner,Campaign Creation,Step 2,Draw Geofence,planner.campaign_creation.step2.geofence,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Draw custom geofence on map
+Planner,Campaign Creation,Step 3,Targeting Step,planner.campaign_creation.step3.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Step 3: Targeting
+Planner,Campaign Creation,Step 3,Venue Type Selection,planner.campaign_creation.step3.venue_type,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Filter by venue types (mall retail etc)
+Planner,Campaign Creation,Step 3,Inventory Type Selection,planner.campaign_creation.step3.inventory_type,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Filter by inventory types (digital classic etc)
+Planner,Campaign Creation,Step 3,Demographic Targeting,planner.campaign_creation.step3.demographics,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Age gender income targeting
+Planner,Campaign Creation,Step 3,POI Targeting,planner.campaign_creation.step3.poi,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Points of interest targeting
+Planner,Campaign Creation,Step 3,Audience Insights,planner.campaign_creation.step3.audience_insights,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,AI audience visualization
+Planner,Campaign Creation,Step 4,Media Selection Step,planner.campaign_creation.step4.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Step 4: Media Selection
+Planner,Campaign Creation,Step 4,Inventory List View,planner.campaign_creation.step4.list_view,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,List of available inventory
+Planner,Campaign Creation,Step 4,Inventory Map View,planner.campaign_creation.step4.map_view,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Map view of inventory
+Planner,Campaign Creation,Step 4,Inventory Side Panel,planner.campaign_creation.step4.side_panel,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Inventory detail panel
+Planner,Campaign Creation,Step 4,Performance Tab,planner.campaign_creation.step4.performance_tab,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Demographics and metrics in side panel
+Planner,Campaign Creation,Step 4,Add to Campaign,planner.campaign_creation.step4.add_inventory,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Add inventory to campaign button
+Planner,Campaign Creation,Step 4,Remove from Campaign,planner.campaign_creation.step4.remove_inventory,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Remove inventory from campaign
+Planner,Campaign Creation,Step 5,Optimization Step,planner.campaign_creation.step5.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Step 5: Optimization
+Planner,Campaign Creation,Step 5,Schedule Grid,planner.campaign_creation.step5.schedule_grid,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,24x7 time slot selection grid
+Planner,Campaign Creation,Step 5,Preset Patterns,planner.campaign_creation.step5.presets,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Commuter Nightlife etc presets
+Planner,Campaign Creation,Step 5,SOV/SOT Settings,planner.campaign_creation.step5.sov_sot,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Share of voice/time settings
+Planner,Campaign Creation,Step 5,Budget Optimization,planner.campaign_creation.step5.budget_opt,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Auto-optimize budget allocation
+Planner,Campaign Creation,Step 5,Real-time Metrics,planner.campaign_creation.step5.metrics,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Impressions reach plays calculations
+Planner,Campaign Creation,Finalization,Execution Path Selection,planner.campaign_creation.finalize.execution_path,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Quick Launch vs Full Workflow selection
+Planner,Campaign Creation,Finalization,Save as Draft,planner.campaign_creation.finalize.save_draft,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Save campaign as draft
+Planner,Campaign Creation,Finalization,Submit for Review,planner.campaign_creation.finalize.submit,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Submit campaign for approval
+Planner,Campaign Detail,Page,Detail Page Access,planner.campaign_detail.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Access to campaign detail page
+Planner,Campaign Detail,Header,Campaign Header,planner.campaign_detail.header,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Campaign name status dates
+Planner,Campaign Detail,Tabs,Overview Tab,planner.campaign_detail.tabs.overview,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Campaign overview tab
+Planner,Campaign Detail,Tabs,Media Tab,planner.campaign_detail.tabs.media,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Selected inventory tab
+Planner,Campaign Detail,Tabs,Creatives Tab,planner.campaign_detail.tabs.creatives,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Creative assignments tab
+Planner,Campaign Detail,Tabs,Schedule Tab,planner.campaign_detail.tabs.schedule,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Time scheduling tab
+Planner,Campaign Detail,Tabs,Approvals Tab,planner.campaign_detail.tabs.approvals,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Approval workflow tab
+Planner,Campaign Detail,Tabs,History Tab,planner.campaign_detail.tabs.history,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Change history tab
+Planner,Campaign Detail,Actions,Edit Campaign,planner.campaign_detail.actions.edit,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Edit campaign button
+Planner,Campaign Detail,Actions,Approve Campaign,planner.campaign_detail.actions.approve,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,,Platform,Approve campaign button
+Planner,Campaign Detail,Actions,Reject Campaign,planner.campaign_detail.actions.reject,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,,Platform,Reject campaign button
+Planner,Campaign Detail,Actions,Cancel Campaign,planner.campaign_detail.actions.cancel,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,,Platform,Cancel campaign button
+Planner,Campaign Detail,Actions,Pause Campaign,planner.campaign_detail.actions.pause,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Pause active campaign
+Planner,Campaign Detail,Actions,Resume Campaign,planner.campaign_detail.actions.resume,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Resume paused campaign
+Planner,Campaign Detail,Actions,Change Order,planner.campaign_detail.actions.change_order,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Request changes to approved campaign
+Planner,Proposals,Listing,Proposals Page Access,planner.proposals.listing.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Access to proposals list
+Planner,Proposals,Listing,Proposal Filters,planner.proposals.listing.filters,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Filter proposals
+Planner,Proposals,Actions,Create Proposal,planner.proposals.actions.create,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Create new proposal
+Planner,Proposals,Actions,Duplicate Proposal,planner.proposals.actions.duplicate,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Duplicate proposal
+Planner,Proposals,Actions,Export Proposal,planner.proposals.actions.export,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Export to PDF/PPT
+Planner,Proposals,Actions,Send Proposal,planner.proposals.actions.send,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Email proposal to client
+Planner,Proposals,Actions,Convert to Campaign,planner.proposals.actions.convert,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Convert proposal to campaign
+Planner,Proposals,Themes,Theme Selection,planner.proposals.themes.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Proposal theme/template selection
+Planner,Proposals,Themes,Custom Themes,planner.proposals.themes.custom,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Custom proposal themes
+Planner,Inventory,Listing,Inventory Page Access,planner.inventory.listing.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Access to inventory browser
+Planner,Inventory,Listing,Inventory Map View,planner.inventory.listing.map,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Map view of all inventory
+Planner,Inventory,Listing,Inventory List View,planner.inventory.listing.list,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,List/table view of inventory
+Planner,Inventory,Filters,Filter by Type,planner.inventory.filters.type,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Digital Classic Transit etc
+Planner,Inventory,Filters,Filter by Format,planner.inventory.filters.format,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Billboard LED Screen etc
+Planner,Inventory,Filters,Filter by Location,planner.inventory.filters.location,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Country region city
+Planner,Inventory,Filters,Filter by Availability,planner.inventory.filters.availability,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Available dates
+Planner,Inventory,Filters,Filter by Price Range,planner.inventory.filters.price,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Rate card price range
+Planner,Inventory,Detail,Inventory Side Panel,planner.inventory.detail.side_panel,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Inventory detail drawer
+Planner,Inventory,Detail,Photos Gallery,planner.inventory.detail.photos,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Inventory photos
+Planner,Inventory,Detail,Specifications,planner.inventory.detail.specs,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Technical specifications
+Planner,Inventory,Detail,Performance Metrics,planner.inventory.detail.performance,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Demographics impressions etc
+Planner,Inventory,Detail,Availability Calendar,planner.inventory.detail.calendar,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Booking availability calendar
+Planner,Inventory,Detail,Rate Card,planner.inventory.detail.rate_card,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,,Platform,Pricing information
+Planner,Inventory,Actions,Add Inventory (MO only),planner.inventory.actions.add,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Add new inventory
+Planner,Inventory,Actions,Edit Inventory (MO only),planner.inventory.actions.edit,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Edit inventory details
+Planner,Inventory,Actions,Delete Inventory (MO only),planner.inventory.actions.delete,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Delete inventory
+Planner,Inventory,Actions,Set Rate Card (MO only),planner.inventory.actions.set_rates,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Set/edit rate cards
+Planner,Inventory Management,Page,Management Page Access,planner.inventory_mgmt.access,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Inventory management page
+Planner,Inventory Management,Actions,Bulk Upload,planner.inventory_mgmt.bulk_upload,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,CSV/Excel bulk upload
+Planner,Inventory Management,Actions,Bulk Edit,planner.inventory_mgmt.bulk_edit,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Multi-select and edit
+Planner,Creatives,Listing,Creatives Page Access,planner.creatives.listing.access,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,,Platform,Creative library access
+Planner,Creatives,Listing,Creative Filters,planner.creatives.listing.filters,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,,Platform,Filter creatives
+Planner,Creatives,Actions,Upload Creative,planner.creatives.actions.upload,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,,Platform,Upload new creative
+Planner,Creatives,Actions,Edit Creative,planner.creatives.actions.edit,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,,Platform,Edit creative details
+Planner,Creatives,Actions,Delete Creative,planner.creatives.actions.delete,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,,Platform,Delete creative
+Planner,Creatives,Actions,Approve Creative (MO),planner.creatives.actions.approve,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Approve creative for inventory
+Planner,Creatives,Actions,Reject Creative (MO),planner.creatives.actions.reject,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Reject creative with feedback
+Planner,Creative Assignment,Page,Assignment Page Access,planner.creative_assignment.access,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,,Platform,Creative assignment page
+Planner,Creative Assignment,Actions,Assign to Inventory,planner.creative_assignment.assign,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,,Platform,Assign creative to inventory slots
+Planner,Creative Assignment,Actions,Schedule Creative,planner.creative_assignment.schedule,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,,Platform,Set creative schedule
+Planner,Price Management,Page,Price Management Access,planner.price_mgmt.access,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Price negotiation page
+Planner,Price Management,Features,Multi-level Pricing,planner.price_mgmt.multi_level,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Campaign/inventory/schedule pricing
+Planner,Price Management,Features,Bulk Actions,planner.price_mgmt.bulk_actions,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Bulk accept/discount/bonus
+Planner,Price Management,Features,Negotiation History,planner.price_mgmt.history,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Offer/counter timeline
+Planner,Price Management,Actions,Accept Price,planner.price_mgmt.accept,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Accept proposed price
+Planner,Price Management,Actions,Counter Price,planner.price_mgmt.counter,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Submit counter offer
+Planner,Price Management,Actions,Apply Discount,planner.price_mgmt.discount,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Apply percentage discount
+Planner,Price Management,Actions,Apply Bonus,planner.price_mgmt.bonus,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Add bonus impressions/days
+Planner,Reservations,Page,Reservations Page Access,planner.reservations.access,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Inventory reservations page
+Planner,Reservations,Features,Hold Requests,planner.reservations.hold,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,,Platform,Request hold on inventory
+Planner,Reservations,Features,Confirmed Reservations,planner.reservations.confirmed,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,View confirmed reservations
+Planner,Reservations,Features,Expiry Countdown,planner.reservations.countdown,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Time until reservation expires
+Planner,Reservations,Actions,Extend Reservation,planner.reservations.extend,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,,Platform,Request extension
+Planner,Reservations,Actions,Accept Hold (MO),planner.reservations.accept,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Accept hold request
+Planner,Reservations,Actions,Decline Hold (MO),planner.reservations.decline,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Decline hold request
+Planner,Statements,Listing,Statements Page Access,planner.statements.listing.access,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Financial statements page
+Planner,Statements,Actions,Create Statement,planner.statements.actions.create,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Generate new statement
+Planner,Statements,Actions,Edit Statement,planner.statements.actions.edit,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Edit statement details
+Planner,Statements,Actions,Add Custom Fees,planner.statements.actions.custom_fees,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Add custom line items
+Planner,Statements,Actions,Split Statement,planner.statements.actions.split,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Split into multiple statements
+Planner,Statements,Actions,Export Statement,planner.statements.actions.export,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Export to PDF
+Planner,Approvals,Page,Approval Page Access,planner.approvals.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Campaign approval workflow page
+Planner,Approvals,Features,Multi-tier View,planner.approvals.multi_tier,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,View all approval tiers
+Planner,Approvals,Actions,Approve,planner.approvals.approve,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,,Platform,Approve at current tier
+Planner,Approvals,Actions,Reject,planner.approvals.reject,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,,Platform,Reject with feedback
+Planner,Approvals,Actions,Escalate,planner.approvals.escalate,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Escalate stalled approval
+Planner,Campaign Workbench,Page,Workbench Access,planner.workbench.access,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Unified pricing/reservation/approval page
+Planner,Tags,Page,Tags Management Access,planner.tags.access,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Tag management page
+Planner,Tags,Actions,Create Tag,planner.tags.create,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Create new tag
+Planner,Tags,Actions,Edit Tag,planner.tags.edit,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Edit tag name/color
+Planner,Tags,Actions,Delete Tag,planner.tags.delete,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Delete tag
+Planner,Tags,Actions,Assign Tags,planner.tags.assign,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Assign tags to entities
+Planner,POI Management,Page,POI Page Access,planner.poi.access,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Points of Interest management
+Planner,POI Management,Actions,Add POI,planner.poi.add,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Add new POI
+Planner,POI Management,Actions,Edit POI,planner.poi.edit,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Edit POI details
+Planner,POI Management,Actions,Import POI,planner.poi.import,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Bulk import POIs
+Planner,Signals,Page,Signals Page Access,planner.signals.access,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Mobile signals data page
+Planner,Signals,Actions,Create Signal,planner.signals.create,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,Platform,Create signal query
+Planner,Profile,Page,Profile Page Access,planner.profile.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,User profile page
+Planner,Profile,Features,Edit Profile,planner.profile.edit,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Edit personal details
+Planner,Profile,Features,Change Password,planner.profile.password,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Change password
+Planner,Profile,Features,Notification Settings,planner.profile.notifications,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Email/push notification prefs
+Planner,Reports,Page,Reports Access,planner.reports.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Campaign performance reports
+Planner,Reports,Features,Campaign Reports,planner.reports.campaign,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Individual campaign reports
+Planner,Reports,Features,Performance Analytics,planner.reports.analytics,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Cross-campaign analytics
+Planner,Reports,Features,Export Reports,planner.reports.export,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Export to CSV/PDF
+Planner,Settings,Page,Settings Access,planner.settings.access,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Organization settings
+Planner,Settings,Features,User Management,planner.settings.users,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Manage org users
+Planner,Settings,Features,Role Management,planner.settings.roles,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Custom role definitions
+Planner,Settings,Features,Integration Settings,planner.settings.integrations,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Third-party integrations
+Planner,Settings,Features,Branding Settings,planner.settings.branding,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,White-label customization
+Planner,Settings,Features,Workflow Config,planner.settings.workflow,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Approval workflow config
+Planner,Map View,Page,Map Page Access,planner.map.access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Full-screen map view
+Planner,Map View,Features,Draw Tools,planner.map.draw,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Draw polygons circles
+Planner,Map View,Features,Layer Toggle,planner.map.layers,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Toggle map layers
+Planner,Availability,Page,Availability Page Access,planner.availability.access,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Timeline availability view
+Planner,Availability,Features,Timeline View,planner.availability.timeline,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Gantt-style timeline
+Planner,Availability,Features,Calendar View,planner.availability.calendar,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Calendar grid view
+Account Management,Companies,Listing,Company Directory,acct.companies.listing,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,List all companies
+Account Management,Companies,Actions,Create Company,acct.companies.create,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Create new company/org
+Account Management,Companies,Actions,Edit Company,acct.companies.edit,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Edit company details
+Account Management,Companies,Actions,Activate Company,acct.companies.activate,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Activate pending company
+Account Management,Companies,Actions,Deactivate Company,acct.companies.deactivate,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Deactivate company
+Account Management,Relationships,Page,Relationship Manager,acct.relationships.access,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Manage company relationships
+Account Management,Relationships,Actions,Create Relationship,acct.relationships.create,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Create new relationship/contract
+Account Management,Relationships,Actions,Edit Relationship,acct.relationships.edit,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Edit relationship terms
+Account Management,Relationships,Actions,View Own Contracts,acct.relationships.view_own,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,View contracts user is party to
+Account Management,Contracts,Features,Auto-fill Templates,acct.contracts.autofill,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Contract type auto-fill
+Account Management,Contracts,Features,Override Settings,acct.contracts.override,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Override auto-filled values
+Account Management,Contracts,Features,Attach Documents,acct.contracts.attachments,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Upload contract PDFs
+Account Management,Users,Listing,User Directory,acct.users.listing,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,List users in organization
+Account Management,Users,Actions,Invite User,acct.users.invite,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Send user invite
+Account Management,Users,Actions,Edit User,acct.users.edit,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Edit user details
+Account Management,Users,Actions,Deactivate User,acct.users.deactivate,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Deactivate user
+Account Management,Users,Actions,Reset Password,acct.users.reset_password,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Force password reset
+Account Management,Roles,Page,Role Manager,acct.roles.access,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Manage custom roles
+Account Management,Roles,Actions,Create Role,acct.roles.create,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Create custom role
+Account Management,Roles,Actions,Edit Role,acct.roles.edit,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Edit role permissions
+Account Management,Roles,Actions,Delete Role,acct.roles.delete,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,,Platform,Delete custom role
+Account Management,Feature Flags,Page,Feature Flag Manager,acct.feature_flags.access,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Manage feature flags
+Account Management,Feature Flags,Actions,Toggle Features,acct.feature_flags.toggle,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Enable/disable features
+Account Management,White Label,Page,Branding Manager,acct.whitelabel.access,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,White-label configuration
+Account Management,White Label,Features,Logo Upload,acct.whitelabel.logo,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Upload custom logo
+Account Management,White Label,Features,Theme Editor,acct.whitelabel.theme,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Color and font settings
+Account Management,White Label,Features,Email Templates,acct.whitelabel.email,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Custom email templates
+Account Management,White Label,Features,Domain Config,acct.whitelabel.domain,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Custom domain setup
+Account Management,Audit,Page,Audit Console,acct.audit.access,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,View audit logs
+Account Management,Audit,Features,Search Logs,acct.audit.search,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Search audit entries
+Account Management,Audit,Features,Export Logs,acct.audit.export,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Export audit logs
+Account Management,Audit,Features,View Own Logs,acct.audit.view_own,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,View own organization logs
+Account Management,Break-glass,Page,Support Access,acct.breakglass.access,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Request elevated access
+Account Management,Break-glass,Actions,Request Access,acct.breakglass.request,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,Platform,Request break-glass session
+Account Management,Break-glass,Actions,Approve Access,acct.breakglass.approve,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,Platform,Approve support access request
+Account Management,Permissions,Page,Permission Simulator,acct.permissions.simulator,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,Platform,Simulate user permissions

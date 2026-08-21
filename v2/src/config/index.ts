@@ -1,0 +1,25 @@
+export const CONFIG = {
+  BACKEND_URL: import.meta.env.VITE_BACKEND_URL,
+  BACKEND_URL_PROXY: import.meta.env.VITE_BACKEND_URL,
+  BACKEND_URL_IAM_PROXY: import.meta.env.VITE_BACKEND_URL,
+  LOCAL: import.meta.env.VITE_LOCAL_URL,
+  GM_KEY: import.meta.env.VITE_GM_KEY,
+  MAPBOX_ACCESS_TOKEN: import.meta.env.VITE_MAPBOX_ACCESS_TOKEN,
+  PRODUCTNAME: import.meta.env.VITE_PRODUCT_NAME,
+  TOLGEE_URL: import.meta.env.VITE_APP_TOLGEE_API_URL,
+  TOLGEE_KEY: import.meta.env.VITE_APP_TOLGEE_API_KEY,
+  TOLGEE_PROJECT_ID: import.meta.env.VITE_APP_TOLGEE_PROJECT_ID,
+  S3_BUCKET_URL: import.meta.env.VITE_S3_BUCKET_URL,
+  MEASURE_URL: import.meta.env.VITE_MEASURE_URL,
+  INVENTORY_URL: import.meta.env.VITE_INVENTORY_URL,
+  INFLUENCE_URL: import.meta.env.VITE_INFLUENCE_URL,
+  ACCOUNT_URL: import.meta.env.VITE_ACCOUNT_URL,
+  ACCOUNT_PROXY_URL: import.meta.env.VITE_ACCOUNT_PROXY_URL,
+  ACCOUNT_API_URL: import.meta.env.VITE_ACCOUNT_API_URL,
+  FREQUENCY_URL: import.meta.env.VITE_FREQUENCY_URL,
+  INVENTORY_API_URL: import.meta.env.VITE_INVENTORY_API_URL,
+  RECOMMENDATION_URL: import.meta.env.VITE_RECOMMENDATION_URL,
+  PUBLIC_URL: import.meta.env.VITE_BACKEND_URL,
+  // Add more URLs here as needed
+};
+export type UrlKey = keyof typeof CONFIG;

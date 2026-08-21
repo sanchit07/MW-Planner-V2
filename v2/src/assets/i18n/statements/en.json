@@ -1,0 +1,28 @@
+{
+  "title": "Statements",
+  "description": "View and manage financial statements.",
+  "builder": {
+    "title": "Build a statement",
+    "campaignIds": "Campaign IDs",
+    "campaignIdsPlaceholder": "Paste comma-separated campaign IDs",
+    "eligible": "Eligible",
+    "excluded": "Excluded",
+    "preview": "Preview",
+    "calculating": "Calculating...",
+    "create": "Create statement",
+    "creating": "Creating...",
+    "previewTitle": "Preview"
+  },
+  "cascade": {
+    "mediaCost": "Media Cost",
+    "standardFees": "Platform Fee",
+    "customFees": "Custom Fees",
+    "statementFee": "Statement Fee",
+    "total": "Total Amount"
+  },
+  "list": {
+    "title": "Statements",
+    "empty": "No statements yet. Build one above.",
+    "campaigns": "campaigns"
+  }
+}

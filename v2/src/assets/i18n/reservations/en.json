@@ -1,0 +1,38 @@
+{
+  "title": "Reservations",
+  "description": "Short-lived holds on inventory while a deal is being finalized.",
+  "tabs": {
+    "myHolds": "My Holds",
+    "holdRequests": "Hold Requests"
+  },
+  "myHolds": {
+    "campaignId": "Campaign ID",
+    "campaignIdPlaceholder": "Paste a campaign ID to view its reservations",
+    "empty": "No reservations for this campaign yet.",
+    "extend": "Extend 7 days",
+    "release": "Release"
+  },
+  "holdRequests": {
+    "empty": "No hold requests right now.",
+    "approve": "Approve",
+    "approveWithConditions": "Send condition (stays pending)",
+    "decline": "Decline",
+    "conditionPlaceholder": "Describe the condition (e.g. alternate rate, different dates)",
+    "conditionHint": "This does not approve the hold — it stays Awaiting Owner until you or the buyer approves it outright.",
+    "declineReasonPlaceholder": "Reason for declining"
+  },
+  "comments": {
+    "title": "Notes"
+  },
+  "status": {
+    "PENDING": "Pending",
+    "HOLD_REQUESTED": "Awaiting owner",
+    "RESERVED": "Reserved",
+    "EXPIRED": "Expired",
+    "RELEASED": "Released",
+    "DECLINED": "Declined",
+    "BOOKED": "Booked"
+  },
+  "expiresIn": "Expires {days}d {hours}h",
+  "expired": "Expired"
+}

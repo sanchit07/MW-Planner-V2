@@ -1,0 +1,165 @@
+spring:
+  data:
+    redis:
+      # host: clustercfg.mw-planner-stg.aoghs6.apse1.cache.amazonaws.com
+      host: mw-planner-redis-master.influence.svc.cluster.local
+      port: 6379
+      ssl:
+        enabled: true
+    mongodb:
+      uri: mongodb+srv://test-api:0jPMl4bsK2sVVk0W@staging-titan-cluster.ysuki.mongodb.net/mw-planner?authSource=admin&retryWrites=true&w=majority
+      auto-index-creation: true
+  rabbitmq:
+    addresses: amqps://b-347e39c6-8295-441c-be8d-56e85e0f2c5b.mq.ap-southeast-1.amazonaws.com:5671
+    username: admin
+    password: AO0PVN6w0Ob9
+    virtual-host: inventory
+    connection-timeout: 15000
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 1
+        retry:
+          enabled: true
+          max-attempts: 3
+          initial-interval: 1000
+          max-interval: 10000
+          multiplier: 2
+
+management:
+  metrics:
+    tags:
+      namespace: mw-stg
+
+# RabbitMQ Configuration
+rabbitmq:
+  inventory:
+    exchange:
+      name: inventory-detail.change.event
+    queue:
+      name: inventory-detail.change.event.planner
+
+aws:
+  s3:
+    planner:
+      region: ap-southeast-1
+      bucket-name: mw-planner
+      parent-directory: staging/attachments
+    brand:
+      region: ap-southeast-1
+      bucket-name: mw-planner
+      parent-directory: staging/attachments/brand_logos
+
+# MW Planner Configuration
+mw-planner:
+  # =========================
+  # MASTER DATA SERVICE CONFIGURATION
+  # =========================
+  master-data:
+    base-url: https://mw-api-gtwy-pprd.movingwalls.com/master/api/v2/rest
+    endpoints:
+      country: /country
+      state: /state
+      district: /district
+    defaults:
+      page-size: 5000
+      page-number: 0
+
+  # =========================
+  # INFLUENCE SERVICE CONFIGURATION
+  # =========================
+  influence:
+    base-url: https://mw-data-frequency-pre-prod.movingwalls.com
+    endpoints:
+      reach-and-frequency: /v2/reach-and-frequency
+
+  # =========================
+  # ACCOUNT SERVICE CONFIGURATION
+  # =========================
+  account:
+    base-url: https://mw-api-gtwy-pprd.movingwalls.com
+    endpoints:
+      login: /auth/login
+      account: /uaa/api/account
+
+  # =========================
+  # COMPANY SERVICE CONFIGURATION
+  # =========================
+  company:
+    base-url: https://mw-api-gtwy-pprd.movingwalls.com/uaa/api
+    endpoints:
+      children: /company/{companyId}/children
+      subscription: /v2/rest/company/{companyId}/subscription
+      creation: /company
+
+  # =========================
+  # MANAGEMENT CONFIGURATION
+  # =========================
+  management:
+    credentials:
+      username: admin
+      password: ac412243-acc5-4d05-93df-bf768577e69d
+
+  # =========================
+  # CACHE CONFIGURATION
+  # =========================
+  cache:
+    ttl-seconds: 3600
+
+  posterops:
+    base-url: https://oms-core-stg.movingwalls.com
+    hmac-secret: c7795a1b767cbe6981e93073c3404ddd07325c6162a3fa5d4ef8b4f3c7374379
+    endpoints:
+      intake: /api/oms/orders/intake
+
+  # =========================
+  # Security OAUTH AUTHORIZATION CONFIGURATION
+  # =========================
+  iam:
+    service-url: https://auth-api-stg.movingwalls.com
+    product-id: cc24af2e-9e69-44ea-9440-838790cd8c0a
+    client-id: 9ddac6d4-7556-4d06-b0db-f6777527c5ca
+    client-secret: qtsMqSACBMl7NQJgcMKmi6wcMZ-Mo2GKogFKSajyhcw=
+    redirect-uri: https://planner.stg.api.movingwalls.com/api/v1/auth/oauth/callback
+    response-type: code
+    scope: read,write
+    code-challenge-method: S256
+    endpoints:
+      userinfo: /userinfo
+      userById: /api/v1/users/{userId}
+      companyById: /api/v1/companies/{companyId}
+      companyLookup: /api/v1/companies/lookup
+      userMeCompanies: /api/v1/users/me/companies
+      companyChildren: /api/v1/companies/{companyId}/children
+      authorize: /api/v1/oauth/authorize
+      token: /api/v1/oauth/token
+      logout: /api/v1/auth/logout
+
+  # =========================
+  # SUPPORTED LANGUAGES
+  # =========================
+  supported-languages:
+    - en
+    - ja
+
+  # =========================
+  # PROXY CONFIGURATION (downstream application base URLs)
+  # =========================
+  proxy:
+    applications:
+      inventory-api: https://inventory-api-stg.movingwalls.com
+      iam-api: https://auth-api-stg.movingwalls.com
+    inventory-api-key: plt_pla_5cb18dcb5ce1c6a8050d99edaaef667f8547d7c2501348461f1588c428370c68
+
+  # =========================
+  # RECOMMENDATION ENGINE CONFIGURATION
+  # =========================
+  recommendation-engine:
+    base-url: https://api-gtwy-j17-k8s-stg.movingwalls.com/recommendation-engine
+
+  # =========================
+  # SCHEDULER CONFIGURATION
+  # =========================
+  scheduler:
+    campaign-status-update:
+      cron: "0 0 0 * * ?" # Daily at midnight (00:00:00)

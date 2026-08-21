@@ -1,0 +1,169 @@
+modules = ["nodejs-20", "web", "python-3.11", "postgresql-16"]
+run = "cd v2-gateway && npm install && npm run dev"
+hidden = [".config", ".git", "generated-icon.png", "node_modules", "dist"]
+
+[nix]
+channel = "stable-24_05"
+packages = ["jq"]
+
+[deployment]
+deploymentTarget = "vm"
+build = ["bash", "scripts/deploy-build.sh"]
+run = ["bash", "scripts/deploy-run.sh"]
+
+[[ports]]
+localPort = 4369
+
+[[ports]]
+localPort = 4700
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
+localPort = 5672
+
+[[ports]]
+localPort = 5904
+
+[[ports]]
+localPort = 6379
+
+[[ports]]
+localPort = 8100
+
+[[ports]]
+localPort = 8200
+
+[[ports]]
+localPort = 9000
+
+[[ports]]
+localPort = 9001
+
+[[ports]]
+localPort = 10000
+
+[[ports]]
+localPort = 10001
+externalPort = 3001
+
+[[ports]]
+localPort = 10002
+
+[[ports]]
+localPort = 25672
+
+[[ports]]
+localPort = 27017
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "V2 Gateway"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "test"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "V2 frontend"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "V2 services"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "V2 backend"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "V2 recommendation"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "V2 IAM"
+
+[[workflows.workflow]]
+name = "V2 Gateway"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd v2-gateway && npm install && npm run dev"
+waitForPort = 5000
+
+[[workflows.workflow]]
+name = "test"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd v2 && yarn test"
+
+[workflows.workflow.metadata]
+isValidation = true
+
+[[workflows.workflow]]
+name = "V2 frontend"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd v2 && npm run dev"
+waitForPort = 4700
+
+[[workflows.workflow]]
+name = "V2 services"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "bash scripts/v2-services.sh"
+waitForPort = 27017
+
+[[workflows.workflow]]
+name = "V2 backend"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd v2-backend && SPRING_PROFILES_ACTIVE=replit ./gradlew bootRun"
+waitForPort = 10000
+
+[[workflows.workflow]]
+name = "V2 recommendation"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd v2-recommendation && SPRING_PROFILES_ACTIVE=replit ./gradlew bootRun"
+waitForPort = 10002
+
+[[workflows.workflow]]
+name = "V2 IAM"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd v2-iam-companion && npm install && npm run dev"
+waitForPort = 10001
+
+[agent]
+integrations = ["javascript_sendgrid:1.0.0", "confluence:1.0.0"]
+
+[userenv]
+
+[userenv.shared]
+CONFLUENCE_EMAIL = "sanchit@movingwalls.com"
+MIRO_CLIENT_ID = "3458764657787860258"

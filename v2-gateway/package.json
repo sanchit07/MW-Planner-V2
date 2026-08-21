@@ -1,0 +1,24 @@
+{
+  "name": "v2-gateway",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Single-port public ingress for V2 (replaces the legacy V1 Express server's proxy role). Serves the V2 frontend at the bare root and reverse-proxies /v2api, /v2rec, /v2iam to the backend/recommendation/IAM services, rewriting loopback Location headers so OAuth redirects resolve correctly for a real visitor's browser.",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "check": "tsc --noEmit",
+    "test": "node --import tsx --test src/**/*.test.ts"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "http-proxy-middleware": "^3.0.7"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.21",
+    "@types/node": "20.16.11",
+    "tsx": "^4.19.1",
+    "typescript": "5.6.3"
+  }
+}

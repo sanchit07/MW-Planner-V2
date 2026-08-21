@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-container-border: #e2e8f0;
+  --color-mw-primary-50: #e8f0f7;
+  --color-mw-primary-100: #b9cfe6;
+  --color-mw-primary-200: #97b8da;
+  --color-mw-primary-300: #6898c9;
+  --color-mw-primary-400: #4a84bf;
+  --color-mw-primary-500: #2176cc;
+  --color-mw-primary-600: #1a5c9f;
+  --color-mw-primary-700: #15487c;
+  --color-mw-primary-800: #103860;
+  --color-mw-primary-900: #0c2a4a;
+  --color-mw-secondary-50: #eff8fd;
+  --color-mw-secondary-100: #cee9f8;
+  --color-mw-secondary-200: #b6def4;
+  --color-mw-secondary-300: #94cfef;
+  --color-mw-secondary-400: #80c6ec;
+  --color-mw-secondary-500: #60b8e7;
+  --color-mw-secondary-600: #57a7d2;
+  --color-mw-secondary-700: #4483a4;
+  --color-mw-secondary-800: #35657f;
+  --color-mw-secondary-900: #284d61;
+  --color-mw-neutral-50: #f3f3f3;
+  --color-mw-neutral-100: #d3d3d3;
+  --color-mw-neutral-200: #bebebe;
+  --color-mw-neutral-300: #a0a0a0;
+  --color-mw-neutral-400: #8d8d8d;
+  --color-mw-neutral-500: #717171;
+  --color-mw-neutral-600: #676767;
+  --color-mw-neutral-700: #505050;
+  --color-mw-neutral-800: #3e3e3e;
+  --color-mw-neutral-900: #352f2f;
+  --color-mw-success-50: #eaf2eb;
+  --color-mw-success-100: #bed7bf;
+  --color-mw-success-200: #9ec3a1;
+  --color-mw-success-300: #72a876;
+  --color-mw-success-400: #57975b;
+  --color-mw-success-500: #2d7d32;
+  --color-mw-success-600: #29722e;
+  --color-mw-success-700: #205924;
+  --color-mw-success-800: #19451c;
+  --color-mw-success-900: #133515;
+  --color-mw-error-50: #f9eaea;
+  --color-mw-error-100: #edbcbc;
+  --color-mw-error-200: #e49c9c;
+  --color-mw-error-300: #d86f6f;
+  --color-mw-error-400: #d15353;
+  --color-mw-error-500: #c52828;
+  --color-mw-error-600: #b32424;
+  --color-mw-error-700: #8c1c1c;
+  --color-mw-error-800: #6c1616;
+  --color-mw-error-900: #531111;
+  --color-mw-warning-50: #fef7ec;
+  --color-mw-warning-100: #fde4bb;
+  --color-mw-warning-200: #fcd79b;
+  --color-mw-warning-300: #fbc56d;
+  --color-mw-warning-400: #fab951;
+  --color-mw-warning-500: #f9a825;
+  --color-mw-warning-600: #e39922;
+  --color-mw-warning-700: #b1771a;
+  --color-mw-warning-800: #895c14;
+  --color-mw-warning-900: #694710;
+  --color-mw-cyan-50: #e7f8f6;
+  --color-mw-lime-50: #f3f7e8;
+  --color-mw-peach-50: #fef1eb;
+  --color-mw-teal-600: #0c6e64;
+  --color-mw-blush-grey-50: #c8d7dc;
+  --color-mw-blush-grey-500: #486a74;
+  --color-mw-light-green-600: #7cb243;
+  --color-mw-light-green-50: #f3f7e8;
+  --color-mw-light-green-500: #8bc24b;
+  --color-mw-teal-warning-600: #109385;
+  --color-mw-teal-warning-100: #e7f8f6;
+  --color-mw-orange-warning-50: #fef1eb;
+  --color-mw-orange-warning-100: #fde3d7;
+  --color-mw-orange-warning-200: #fbc7af;
+  --color-mw-orange-warning-300: #f9a387;
+  --color-mw-orange-warning-400: #f7845f;
+  --color-mw-orange-warning-500: #f57738;
+  --color-mw-orange-warning-600: #e0662d;
+  --color-mw-orange-warning-700: #b05023;
+  --color-mw-orange-warning-800: #883d1b;
+  --color-mw-orange-warning-900: #682e14;
+  --color-mw-pacific-blue-50: #d2e8ec;
+  --color-mw-pacific-blue-500: #197081;
+  --color-mw-brown-50: #f4ede5;
+  --color-mw-brown-500: #964b00;
+  --color-mw-orange-600: #c45f2d;
+  --color-mw-brown-50: #f4ede5;
+  --color-mw-brown-600: #783c00;
+  --color-mw-smaragdine-50: #edf5f1;
+  --color-mw-smaragdine-500: #4a9976;
+  --color-mw-smaragdine-600: #3b7a5e;
+  --color-mw-info-50: #e6f3fa;
+  --color-mw-info-100: #b0daf1;
+  --color-mw-info-200: #8ac8ea;
+  --color-mw-info-300: #55afe0;
+  --color-mw-info-400: #34a0da;
+  --color-mw-info-500: #0188d1;
+  --color-mw-info-600: #017cbe;
+  --color-mw-info-700: #016194;
+  --color-mw-info-800: #014b73;
+  --color-mw-info-900: #003958;
+  --color-mw-rose-warning-400: #ec66ff;
+  --color-mw-orange-warning-500: #f79260;
+  --color-grey-50: #f3f3f3;
+  --color-mw-grey-800: #3e3e3e;
+  --color-mw-purple-50: #ece1eb;
+  --color-mw-purple-100: #d8c3d6;
+  --color-mw-purple-200: #c5a4c2;
+  --color-mw-purple-300: #b186ad;
+  --color-mw-purple-400: #9e6899;
+  --color-mw-purple-500: #7e537a;
+  --color-mw-purple-600: #5f3e5c;
+  --color-mw-purple-700: #3f2a3d;
+  --color-mw-purple-800: #2f1f2e;
+  --color-mw-purple-900: #20151f;
+  --color-mw-purple-warning-50: #f3ebfe;
+  --color-mw-purple-warning-100: #e9d7fd;
+  --color-mw-purple-warning-200: #d4b0fb;
+  --color-mw-purple-warning-300: #b97af8;
+  --color-mw-purple-warning-400: #9e54f6;
+  --color-mw-purple-warning-500: #8a38f5;
+  --color-mw-purple-warning-600: #6e2dc4;
+  --color-mw-purple-warning-700: #6323b0;
+  --color-mw-purple-warning-800: #4d1a89;
+  --color-mw-purple-warning-900: #3a1466;
+  --color-mw-deep-purple-50: #ece1eb;
+  --color-mw-deep-purple-100: #d8c3d6;
+  --color-mw-deep-purple-200: #c5a4c2;
+  --color-mw-deep-purple-300: #b186ad;
+  --color-mw-deep-purple-400: #9e6899;
+  --color-mw-deep-purple-500: #7e537a;
+  --color-mw-deep-purple-600: #5f3e5c;
+  --color-mw-deep-purple-700: #3f2a3d;
+  --color-mw-deep-purple-800: #2f1f2e;
+  --color-mw-deep-purple-900: #20151f;
+  --color-mw-pacific-blue-600: #135461;
+  --color-mw-bluish-grey-500: #486a74;
+  --color-mw-amaranth-500: #e52b50;
+  --color-mw-dark-grey-50: #f2f2f2;
+  --color-mw-dark-grey-100: #d7d7d7;
+  --color-primary: #000000;
+  --color-secondary: #7f7f7f;
+  --color-black: #333333;
+  --color-og-black: #000000;
+  --color-mw-black: #333333;
+  --Background-Inverse: #2c2c2c;
+  --leading-xs: 1rem;
+  --leading-s: 1.125rem;
+  --leading-m: 1.25rem;
+  --leading-l: 1.5rem;
+  --leading-xl: 2rem;
+  --leading-2xl: 2.5rem;
+  --leading-3xl: 3rem;
+  --leading-4xl: 3.5rem;
+  --spacing: 0.25rem;
+  --radius-2xs: 0.25rem;
+  --radius-xs: 0.5rem;
+  --radius-s: 0.75rem;
+  --radius-m: 1rem;
+  --radius-l: 1.25rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 2.5rem;
+  --radius-4xl: 3rem;
+  --radius-5xl: 3.5rem;
+  --text-xs: 0.75rem;
+  --text-s: 0.875rem;
+  --text-m: 1rem;
+  --text-l: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+}
+@layer theme {
+  .dark {
+    --color-mw-primary-50: #e8f0f7;
+    --color-mw-primary-100: #b9cfe6;
+    --color-mw-primary-200: #97b8da;
+    --color-mw-primary-300: #6898c9;
+    --color-mw-primary-400: #4a84bf;
+    --color-mw-primary-500: #1d65af;
+    --color-mw-primary-600: #1a5c9f;
+    --color-mw-primary-700: #15487c;
+    --color-mw-primary-800: #103860;
+    --color-mw-primary-900: #0c2a47;
+    --color-mw-secondary-50: #edf7fc;
+    --color-mw-secondary-100: #c8e7f7;
+    --color-mw-secondary-200: #addbf3;
+    --color-mw-secondary-300: #87caed;
+    --color-mw-secondary-400: #70c0e9;
+    --color-mw-secondary-500: #4cb0e4;
+    --color-mw-secondary-600: #45a0cf;
+    --color-mw-secondary-700: #367da2;
+    --color-mw-secondary-800: #2a617d;
+    --color-mw-secondary-900: #204a60;
+    --color-mw-success-50: #e8f0e8;
+    --color-mw-success-100: #b9cfb9;
+    --color-mw-success-200: #97b897;
+    --color-mw-success-300: #689868;
+    --color-mw-success-400: #4a844a;
+    --color-mw-success-500: #1d651d;
+    --color-mw-success-600: #1a5c1a;
+    --color-mw-success-700: #154815;
+    --color-mw-success-800: #103810;
+    --color-mw-success-900: #0c2a0c;
+    --color-mw-error-50: #f7e8e8;
+    --color-mw-error-100: #e6b9b9;
+    --color-mw-error-200: #da9797;
+    --color-mw-error-300: #c96868;
+    --color-mw-error-400: #bf4a4a;
+    --color-mw-error-500: #af1d1d;
+    --color-mw-error-600: #9f1a1a;
+    --color-mw-error-700: #7c1515;
+    --color-mw-error-800: #601010;
+    --color-mw-error-900: #470c0c;
+    --color-mw-warning-50: #fef7ec;
+    --color-mw-warning-100: #fde4bb;
+    --color-mw-warning-200: #fcd79b;
+    --color-mw-warning-300: #fbc56d;
+    --color-mw-warning-400: #fab951;
+    --color-mw-warning-500: #f9a825;
+    --color-mw-warning-600: #e39922;
+    --color-mw-warning-700: #b1771a;
+    --color-mw-warning-800: #895c14;
+    --color-mw-warning-900: #694710;
+    --color-mw-cyan-50: #e7f8f6;
+    --color-mw-lime-50: #f3f7e8;
+    --color-mw-peach-50: #fef1eb;
+    --color-mw-teal-600: #0c6e64;
+    --color-mw-light-green-600: #7cb243;
+    --color-mw-orange-600: #c45f2d;
+    --color-mw-brown-50: #f4ede5;
+    --color-mw-brown-600: #783c00;
+    --color-mw-smaragdine-50: #edf5f1;
+    --color-mw-smaragdine-600: #3b7a5e;
+    --color-mw-info-50: #e6f3fa;
+    --color-mw-info-100: #b0daf1;
+    --color-mw-info-200: #8ac8ea;
+    --color-mw-info-300: #55afe0;
+    --color-mw-info-400: #34a0da;
+    --color-mw-info-500: #0188d1;
+    --color-mw-info-600: #017cbe;
+    --color-mw-info-700: #016194;
+    --color-mw-info-800: #014b73;
+    --color-mw-info-900: #003958;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-semibold leading-4xl;
+  }
+  h2 {
+    @apply text-3xl font-semibold leading-3xl;
+  }
+  h3 {
+    @apply text-2xl font-semibold leading-2xl;
+  }
+  h4 {
+    @apply text-xl font-semibold leading-xl;
+  }
+  h5 {
+    @apply text-l font-semibold leading-l;
+  }
+
+  * {
+    @apply border-[hsl(var(--border))];
+    @apply font-normal;
+  }
+
+  .marker-wrapper.mapboxgl-marker.mapboxgl-marker-anchor-center:not(
+      .geometry-marker
+    ) {
+    .map-pin-wrapper {
+      path {
+        @apply fill-mw-primary-500;
+      }
+      circle {
+        @apply fill-white stroke-0;
+      }
+      &.selected {
+        path {
+          @apply fill-mw-secondary-500;
+        }
+        circle {
+          @apply fill-white stroke-0;
+        }
+      }
+    }
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbar utilities */
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 0.5rem;
+    background: var(--color-mw-neutral-50);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-mw-neutral-300);
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-mw-neutral-50);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--color-mw-neutral-400);
+  }
+
+  /* Thin scrollbar variant */
+  .scrollbar-thin::-webkit-scrollbar,
+  .ag-root-wrapper ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track,
+  .ag-root-wrapper ::-webkit-scrollbar-track {
+    border-radius: 0.375rem;
+    background: var(--color-mw-neutral-50);
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb,
+  .ag-root-wrapper ::-webkit-scrollbar-thumb {
+    background: var(--color-mw-neutral-300);
+    border-radius: 0.375rem;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover,
+  .ag-root-wrapper ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-mw-neutral-400);
+  }
+
+  /* Primary colored scrollbar variant */
+  .scrollbar-primary::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-primary::-webkit-scrollbar-track {
+    border-radius: 0.5rem;
+    background: var(--color-mw-primary-50);
+  }
+
+  .scrollbar-primary::-webkit-scrollbar-thumb {
+    background: var(--color-mw-primary-500);
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-mw-primary-50);
+  }
+
+  .scrollbar-primary::-webkit-scrollbar-thumb:hover {
+    background: var(--color-mw-primary-500);
+  }
+
+  /* Hide scrollbar while maintaining scroll functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Custom inset shadow utilities */
+  .shadow-inset-bottom {
+    box-shadow:
+      inset 0 -4px 6px -1px rgb(from var(--color-mw-neutral-500) r g b / 0.1),
+      inset 0 -2px 4px -2px rgb(from var(--color-mw-neutral-500) r g b / 0.06);
+  }
+
+  .shadow-inset-top {
+    box-shadow:
+      inset 0 4px 6px -1px rgb(from var(--color-mw-neutral-500) r g b / 0.1),
+      inset 0 2px 4px -2px rgb(from var(--color-mw-neutral-500) r g b / 0.06);
+  }
+
+  .shadow-inset-all {
+    box-shadow: inset 0 2px 4px 0
+      rgb(from var(--color-mw-neutral-500) r g b / 0.1);
+  }
+}
+
+@utility display-large {
+  /* NOSONAR */
+  @apply text-4xl font-bold leading-4xl;
+}
+
+@utility display-medium {
+  /* NOSONAR */
+  @apply text-3xl font-bold leading-3xl;
+}
+
+@utility display-small {
+  /* NOSONAR */
+  @apply text-2xl font-bold leading-2xl;
+}
+
+@keyframes key-turn {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  15% {
+    transform: rotate(-30deg) scale(1.15);
+  }
+  35% {
+    transform: rotate(25deg) scale(1.1);
+  }
+  55% {
+    transform: rotate(-18deg) scale(1.05);
+  }
+  75% {
+    transform: rotate(12deg) scale(1.02);
+  }
+  90% {
+    transform: rotate(-5deg) scale(1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@utility animate-key-turn {
+  /* NOSONAR */
+  animation: key-turn 0.65s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.25s both;
+}
+
+/* Make the Mapbox popup close button clearly visible (default "×" is tiny/faint).
+   mapbox-gl.css is imported lazily at runtime, so it's injected AFTER this file;
+   the extra class raises specificity so these rules win regardless of order. */
+.mapboxgl-popup-content .mapboxgl-popup-close-button {
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  right: 5px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(15, 23, 42, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 9999px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.mapboxgl-popup-content .mapboxgl-popup-close-button:hover {
+  background: rgba(15, 23, 42, 0.95);
+  transform: scale(1.08);
+}

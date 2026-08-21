@@ -1,0 +1,20 @@
+# Replit workspace profile — local MongoDB/Redis instead of the staging
+# Atlas cluster (outbound port 27017 is blocked from this workspace).
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/mw-recommendation-engine
+      auto-index-creation: true
+
+# Use the standalone v2-iam-companion service (port 10001) for JWT validation —
+# same as mw-planner's replit profile; staging IAM can't validate the mock tokens.
+mw-recommendation-engine:
+  iam:
+    service-url: http://127.0.0.1:10001
+
+# Canonical IMS-synced availability store (planner Mongo). When set, the
+# engine overlays these records onto booking_data so recommendations respect
+# real availability for the plan's dates. Empty/absent = disabled.
+planner-availability:
+  mongo-uri: mongodb://localhost:27017
+  database: mw-planner

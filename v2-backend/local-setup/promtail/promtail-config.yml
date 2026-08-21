@@ -1,0 +1,91 @@
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: /tmp/positions.yaml
+
+clients:
+  - url: http://loki:3100/loki/api/v1/push
+
+scrape_configs:
+  - job_name: docker
+    docker_sd_configs:
+      - host: unix:///var/run/docker.sock
+        refresh_interval: 5s
+        filters:
+          - name: status
+            values: ["running"]
+
+    relabel_configs:
+      # Use our custom logging.service label (highest priority)
+      - source_labels: [__meta_docker_container_label_logging_service]
+        target_label: service
+      
+      # Fallback to Docker Compose service name
+      - source_labels: [__meta_docker_container_label_com_docker_compose_service]
+        target_label: service
+      
+      # Use container name from Docker metadata
+      - source_labels: [__meta_docker_container_name]
+        regex: '/(.*)'
+        target_label: container_name
+        replacement: '${1}'
+      
+      # Use container ID
+      - source_labels: [__meta_docker_container_id]
+        target_label: container_id
+
+    pipeline_stages:
+      # Parse Docker JSON log format
+      - json:
+          expressions:
+            output: log
+            stream: stream
+            attrs:
+            time: time
+
+      # Service and container_name are already set from relabel_configs
+      # Only set fallback if service wasn't extracted from labels
+      - template:
+          source: service
+          template: '{{ if .service }}{{ .service }}{{ else if eq .container_name "mw-planner" }}mw-planner{{ else if eq .container_name "nginx-proxy" }}nginx{{ else if eq .container_name "mongodb" }}mongodb{{ else if eq .container_name "s3" }}minio{{ else if eq .container_name "redis-server" }}redis{{ else if eq .container_name "rabbitmq" }}rabbitmq{{ else if eq .container_name "mongoexpress" }}mongoexpress{{ else if eq .container_name "prometheus" }}prometheus{{ else if eq .container_name "grafana" }}grafana{{ else if eq .container_name "loki" }}loki{{ else if eq .container_name "promtail" }}promtail{{ else if .container_name }}{{ .container_name }}{{ else }}docker{{ end }}'
+
+      # Try to parse JSON log format (for Spring Boot with logstash-logback-encoder)
+      - json:
+          expressions:
+            json_level: level
+            json_message: message
+          source: output
+
+      # Extract log level from text format using regex
+      - regex:
+          expression: '(?i)\b(TRACE|DEBUG|INFO|WARN|ERROR|FATAL)\b'
+          source: output
+
+      # Set log_level - prefer JSON level, fallback to regex extracted level
+      - template:
+          source: log_level
+          template: '{{ if .json_level }}{{ .json_level | upper }}{{ else if .text_level }}{{ .text_level | upper }}{{ else }}UNKNOWN{{ end }}'
+
+      # Parse timestamp
+      - timestamp:
+          format: RFC3339Nano
+          source: time
+
+      # Drop entries older than 7 days to avoid Loki rejection errors
+      - drop:
+          older_than: 168h
+          drop_counter_reason: "entry_too_old"
+
+      # Add labels for filtering
+      - labels:
+          stream:
+          container_name:
+          service:
+          log_level:
+
+      # Output the actual log message - use output field which contains the log
+      - output:
+          source: output
+

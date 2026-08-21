@@ -1,0 +1,188 @@
+plugins {
+	id 'java'
+	id "jacoco"
+	id 'org.springframework.boot' version '3.5.5'
+	id 'io.spring.dependency-management' version '1.1.7'
+	id 'com.diffplug.spotless' version "${spotlessVersion}"
+	id "org.sonarqube" version "${sonarVersion}"
+	id("com.github.jmongard.git-semver-plugin") version "${semverVersion}"
+}
+
+group = 'com.mw.planner'
+version = semver.version
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(24)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+sourceSets {
+	main {
+		java {
+			srcDirs 'src/main/java'
+		}
+	}
+	test {
+		java {
+			srcDir 'src/test/java'
+		}
+	}
+	integrationtest {
+		java {
+			compileClasspath += main.output + test.output
+			runtimeClasspath += main.output + test.output
+			srcDir 'src/integrationtest/java'
+		}
+	}
+}
+
+configurations {
+	integrationtestImplementation.extendsFrom testImplementation
+	integrationtestCompile.extendsFrom testCompile
+	integrationtestRuntime.extendsFrom testRuntime
+
+	cucumberRuntime {
+		extendsFrom integrationtestImplementation
+	}
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
+	implementation 'org.springframework.security:spring-security-oauth2-jose'
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
+
+	// Swagger document
+	implementation "org.springdoc:springdoc-openapi-starter-webmvc-ui:${springDocVersion}"
+
+	// 3rd party
+    implementation 'io.micrometer:micrometer-registry-prometheus'
+	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.19.2'
+	implementation 'org.openapitools:jackson-databind-nullable:0.2.6'
+	implementation 'net.logstash.logback:logstash-logback-encoder:7.4'
+
+    //Brand Management
+    implementation files("lib/mw-brand-lib-0.1.0-SNAPSHOT.jar")
+
+    // AWS
+    implementation(platform("software.amazon.awssdk:bom:2.38.7"))
+    implementation("software.amazon.awssdk:s3")
+
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+	testImplementation 'org.springframework.boot:spring-boot-testcontainers'
+	testImplementation 'org.testcontainers:junit-jupiter'
+    testImplementation 'com.redis:testcontainers-redis:2.2.2'
+    testImplementation 'org.testcontainers:mongodb'
+    testImplementation 'org.testcontainers:rabbitmq'
+    testImplementation 'org.testcontainers:minio'
+    testImplementation 'org.testcontainers:testcontainers'
+	testImplementation 'org.mock-server:mockserver-netty:5.15.0'
+	testImplementation("org.mockito:mockito-core:5.18.0")
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.testcontainers:testcontainers-bom:${testcontainersVersion}"
+		mavenBom "software.amazon.awssdk:bom:${awsSdkVersion}"
+	}
+}
+
+test {
+	jvmArgs "-javaagent:${classpath.find { it.name.contains('mockito-core') }.absolutePath}"
+	environment "AWS_REGION", "ap-south-1"
+	useJUnitPlatform()
+	testLogging {
+		showStandardStreams = true
+	}
+	finalizedBy jacocoTestReport
+}
+
+tasks.register('integrationtest', Test) {
+	testClassesDirs = sourceSets.integrationtest.output.classesDirs
+	classpath = sourceSets.integrationtest.runtimeClasspath
+	outputs.upToDateWhen { false }
+}
+
+integrationtest {
+	jvmArgs "-javaagent:${classpath.find { it.name.contains('mockito-core') }.absolutePath}"
+	environment "AWS_REGION", "ap-south-1"
+	useJUnitPlatform()
+	testLogging {
+		showStandardStreams = true
+	}
+}
+
+springBoot {
+	buildInfo()
+}
+
+processResources {
+	expand(project.properties)
+	filteringCharset = 'UTF-8'
+}
+
+check.dependsOn integrationtest
+integrationtest.mustRunAfter test
+
+compileJava.dependsOn 'spotlessApply'
+
+spotless {
+	java {
+		targetExclude('build/**')
+		googleJavaFormat()
+	}
+}
+
+sonarqube {
+	properties {
+		property "sonar.gradle.skipCompile", "true"
+		property "sonar.sourceEncoding", "UTF-8"
+		property "sonar.projectKey", "mw-planner"
+		property "sonar.exclusions", "**/config/**,**/constants/**,**/dto/**,**/domain/**,**/enums/**,**/exception/**,**/MwPlannerApplication.java"
+	}
+}
+
+jacoco {
+	toolVersion = "0.8.13"
+}
+
+
+jacocoTestReport {
+	dependsOn test
+	reports {
+		xml.required = true
+	}
+}
+
+semver {
+	defaultPreRelease = "SNAPSHOT" // e.g., 1.0.0-SNAPSHOT
+	majorPattern = "\\A\\w+(?: \\([^()]+\\))?!: |^BREAKING[ -]CHANGE:"
+	minorPattern = "\\Afeat(?:\\([^()]+\\))?:"
+	patchPattern = "\\Afix(?:\\([^()]+\\))?:"
+	createReleaseCommit = true
+	createReleaseTag = true
+}
+

@@ -1,0 +1,28 @@
+{
+  "title": "明細書",
+  "description": "財務明細書を表示・管理します。",
+  "builder": {
+    "title": "明細書を作成",
+    "campaignIds": "キャンペーンID",
+    "campaignIdsPlaceholder": "カンマ区切りでキャンペーンIDを貼り付け",
+    "eligible": "請求可能",
+    "excluded": "対象外",
+    "preview": "プレビュー",
+    "calculating": "計算中...",
+    "create": "明細書を作成",
+    "creating": "作成中...",
+    "previewTitle": "プレビュー"
+  },
+  "cascade": {
+    "mediaCost": "メディアコスト",
+    "standardFees": "プラットフォーム手数料",
+    "customFees": "カスタム手数料",
+    "statementFee": "明細書手数料",
+    "total": "合計金額"
+  },
+  "list": {
+    "title": "明細書一覧",
+    "empty": "まだ明細書がありません。上記から作成してください。",
+    "campaigns": "件のキャンペーン"
+  }
+}

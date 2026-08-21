@@ -1,0 +1,76 @@
+@reference "./tailwind.css";
+
+.Toastify__toast-container {
+  @apply z-99999;
+}
+
+.Toastify__toast {
+  @apply pl-4 pr-4 pt-2 pb-2 m-0 mb-2;
+}
+/* .Toastify__toast-icon svg {
+  @apply fill-none w-4 h-4;
+} */
+
+/* Success Toast */
+.Toastify__toast--success {
+  @apply bg-mw-success-50 border-l-mw-success-500 text-mw-success-500;
+}
+
+.Toastify__toast--success .Toastify__toast-icon {
+  @apply text-mw-success-500 stroke-mw-success-500;
+}
+
+.Toastify__toast--success .Toastify__close-button {
+  @apply text-mw-success-500;
+}
+
+/* Error Toast */
+.Toastify__toast--error {
+  @apply bg-mw-error-50 border-l-mw-error-500 text-mw-error-500;
+}
+
+.Toastify__toast--error .Toastify__toast-icon {
+  @apply text-mw-error-500;
+}
+
+.Toastify__toast--error .Toastify__close-button {
+  @apply text-mw-error-500;
+}
+
+/* Warning Toast */
+.Toastify__toast--warning {
+  @apply bg-mw-warning-50 border-l-mw-warning-500 text-mw-warning-500;
+}
+
+.Toastify__toast--warning .Toastify__toast-icon {
+  @apply text-mw-warning-500;
+}
+
+.Toastify__toast--warning .Toastify__close-button {
+  @apply text-mw-warning-600;
+}
+
+/* Info Toast */
+.Toastify__toast--info {
+  @apply bg-mw-info-50 border-l-mw-info-500 text-mw-info-500;
+}
+
+.Toastify__toast--info .Toastify__toast-icon {
+  @apply text-mw-info-500;
+}
+
+.Toastify__toast--info .Toastify__close-button {
+  @apply text-mw-info-500;
+}
+
+/* Toast Body */
+.Toastify__toast-body {
+  @apply flex-1 text-sm font-normal leading-s;
+}
+
+/* Close Button */
+.Toastify__close-button {
+  @apply absolute top-5 right-2 w-6 h-6 flex items-center justify-center rounded-2xs;
+  @apply text-mw-neutral-500 opacity-100;
+  @apply transition-colors duration-200;
+}

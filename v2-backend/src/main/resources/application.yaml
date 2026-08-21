@@ -1,0 +1,229 @@
+server:
+  port: 10000
+  http2:
+    enabled: false
+
+spring:
+  application:
+    name: ${rootProject.name}
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
+    cache-duration: 1s
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+  threads:
+    virtual:
+      enabled: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+    mongodb:
+      uri: mongodb+srv://test-api:0jPMl4bsK2sVVk0W@staging-titan-cluster.ysuki.mongodb.net/mw-planner?authSource=admin&retryWrites=true&w=majority
+      auto-index-creation: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin123
+    virtual-host: /
+    connection-timeout: 15000
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 1
+        retry:
+          enabled: true
+          max-attempts: 3
+          initial-interval: 1000
+          max-interval: 10000
+          multiplier: 2
+
+management:
+  server:
+    port: 8100
+  info:
+    env:
+      enabled: true
+  metrics:
+    tags:
+      application: ${rootProject.name}
+      namespace: NA
+  endpoint:
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - env
+          - metrics
+          - prometheus
+          - threaddump
+          - heapdump
+
+# RabbitMQ Configuration
+rabbitmq:
+  inventory:
+    exchange:
+      name: inventory-detail.change.event
+    queue:
+      name: inventory-detail.change.event.planner
+  brand:
+    exchange:
+      name: brand.exchange
+    queue:
+      name: brand.queue
+
+brand-lib:
+  file:
+    allowed-extensions: .jpg,.jpeg,.png
+
+aws:
+  s3:
+    planner:
+      endpoint: http://localhost:9000
+      access-key: admin
+      secret-key: admin123
+      region: us-east-1
+      bucket-name: mw-planner-local
+      parent-directory: /attachments
+    brand:
+      endpoint: http://localhost:9000
+      access-key: admin
+      secret-key: admin123
+      region: us-east-1
+      bucket-name: brand-logo-bucket
+      parent-directory: /local/logos
+
+mw-planner:
+  # =========================
+  # MASTER DATA SERVICE CONFIGURATION
+  # =========================
+  master-data:
+    base-url: https://mw-api-gtwy-pprd.movingwalls.com/master/api/v2/rest
+    endpoints:
+      country: /country
+      state: /state
+      district: /district
+    defaults:
+      page-size: 5000
+      page-number: 0
+
+  # =========================
+  # MEASURE SERVICE CONFIGURATION
+  # =========================
+  measure:
+    base-url: https://mw-data-frequency-pre-prod.movingwalls.com
+    endpoints:
+      reach-and-frequency: /v2/reach-and-frequency
+
+  # =========================
+  # ACCOUNT SERVICE CONFIGURATION
+  # =========================
+  account:
+    base-url: https://mw-api-gtwy-pprd.movingwalls.com
+    endpoints:
+      login: /auth/login
+      account: /uaa/api/account
+
+  # =========================
+  # COMPANY SERVICE CONFIGURATION
+  # =========================
+  company:
+    base-url: https://mw-api-gtwy-pprd.movingwalls.com/uaa/api
+    endpoints:
+      children: /company/{companyId}/children
+      subscription: /v2/rest/company/{companyId}/subscription
+      creation: /company
+
+  # =========================
+  # MANAGEMENT CONFIGURATION
+  # =========================
+  management:
+    credentials:
+      username: admin
+      password: ac412243-acc5-4d05-93df-bf768577e69d
+
+  # =========================
+  # CACHE CONFIGURATION
+  # =========================
+  cache:
+    ttl-seconds: 3600
+
+  # =========================
+  # ADS SERVICE CONFIGURATION
+  # =========================
+  ads:
+    base-url: https://deals-api-stg.movingwalls.com/campaigns/api/v3/rest
+    endpoints:
+      submit-campaign: /deals/import
+
+  posterops:
+    base-url: https://oms-core-stg.movingwalls.com
+    hmac-secret: c7795a1b767cbe6981e93073c3404ddd07325c6162a3fa5d4ef8b4f3c7374379
+    endpoints:
+      intake: /api/oms/orders/intake
+
+  # =========================
+  # Security OAUTH AUTHORIZATION CONFIGURATION
+  # =========================
+  iam:
+    service-url: https://auth-api-stg.movingwalls.com
+    product-id: cc24af2e-9e69-44ea-9440-838790cd8c0a
+    client-id: 9ddac6d4-7556-4d06-b0db-f6777527c5ca
+    client-secret: qtsMqSACBMl7NQJgcMKmi6wcMZ-Mo2GKogFKSajyhcw=
+    redirect-uri: https://planner.stg.api.movingwalls.com/api/v1/auth/oauth/callback
+    response-type: code
+    scope: read,write
+    code-challenge-method: S256
+    endpoints:
+      userinfo: /userinfo
+      userById: /api/v1/users/{userId}
+      companyById: /api/v1/companies/{companyId}
+      companyLookup: /api/v1/companies/lookup
+      userMeCompanies: /api/v1/users/me/companies
+      companyChildren: /api/v1/companies/{companyId}/children
+      authorize: /api/v1/oauth/authorize
+      token: /api/v1/oauth/token
+      logout: /api/v1/auth/logout
+
+
+  # =========================
+  # SUPPORTED LANGUAGES
+  # =========================
+  supported-languages:
+    - en
+    - ja
+
+  # =========================
+  # PROXY CONFIGURATION (downstream application base URLs)
+  # =========================
+  proxy:
+    applications:
+      inventory-api: https://inventory-api-stg.movingwalls.com
+      iam-api: https://auth-api-stg.movingwalls.com
+    inventory-api-key: plt_pla_5cb18dcb5ce1c6a8050d99edaaef667f8547d7c2501348461f1588c428370c68
+
+  # =========================
+  # RECOMMENDATION ENGINE CONFIGURATION
+  # =========================
+  recommendation-engine:
+    base-url: http://localhost:10002
+
+  # =========================
+  # SCHEDULER CONFIGURATION
+  # =========================
+  scheduler:
+    campaign-status-update:
+      cron: "0 0 0 * * ?" # Daily at midnight (00:00:00)
+    ims-availability-sync:
+      cron: "0 0 */6 * * *" # Every 6 hours — full IMS availability ingest
+    reservation-expiry:
+      cron: "0 0 * * * *" # Hourly — sweeps Reserved holds past their 7-day window
+

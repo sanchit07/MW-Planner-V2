@@ -1,0 +1,364 @@
+{
+ "info": {
+  "select_multiple_inventories": {
+   "title": "Select Multiple Inventories",
+   "subtitle": "Use the checkboxes to select multiple inventories and accept proposed prices in bulk. Click on any inventory to review details."
+  },
+  "customize_view": {
+   "title": "Customize Your View",
+   "subtitle": "Click the Columns button to show/hide columns. Use bulk actions to apply discounts or bonuses to multiple inventories at once."
+  },
+  "campaign_approval_workflow": {
+   "title": "Plan Approval Workflow",
+   "subtitle": "When you accept pricing or propose changes, the plan enters approval workflow. Once approved, the agency can proceed with the plan."
+  },
+  "understand_price_updates": {
+   "title": "Understand Price Updates",
+   "subtitle": "Proposed prices show the user and company who made the last update below the price. Updates from other companies are highlighted in amber."
+  },
+  "previous_tip": "Previous tip",
+  "next_tip": "Next tip",
+  "go_to_tip": "Go to tip {index}"
+ },
+ "table": {
+  "columns": {
+   "inventory_name": "Inventory Name",
+   "time_slot": "Time Slot",
+   "sov": "SOV",
+   "ad_plays": "Ad Plays",
+   "initial_price": "Initial Price",
+   "proposed_price": "Proposed Price",
+   "media_owner": "Media Owner",
+   "impression": "Impression",
+   "bonus_type": "Bonus Type",
+   "discount": "Discount",
+   "monthly_rate_card": "Monthly Rate Card",
+   "weekly_rate_card": "Weekly Rate Card",
+   "daily_rate": "Daily Rate",
+   "cpm_rate": "CPM Rate",
+   "cps_rate": "CPS Rate",
+   "reach": "Reach",
+   "date_range": "Date Range",
+   "sov_ad_plays": "SOV / Ad Plays"
+  },
+  "empty_message": "No inventories found",
+  "loading": "Loading inventories...",
+  "applying_adjustment": "Applying adjustment...",
+  "single": "Single",
+  "multiple": "Multiple",
+  "plays": "plays",
+  "unsaved_change": "Unsaved change"
+ },
+ "actions": {
+  "clear_all": "Clear All",
+  "apply_discount": "Apply Discount",
+  "apply_bonus": "Apply Bonus",
+  "accept_all": "Accept All",
+  "accepting": "Accepting...",
+  "search_placeholder": "Search inventories...",
+  "filter": "Filters",
+  "summary": "Summary",
+  "view": "view",
+  "map": "Map",
+  "calendar": "Calendar",
+  "columns": "Columns",
+  "pending_price_edits_blocked": "Save or discard your unsaved price changes first",
+  "price_history": "Price History"
+ },
+ "selection": {
+  "inventory_selected": "Inventory Selected",
+  "inventories_selected": "Inventories Selected",
+  "apply_actions": "Apply actions to the selected inventories"
+ },
+ "drawers": {
+  "apply_discount": {
+   "title": "Apply Discount",
+   "description": "Apply discount to {count} {item}.",
+   "item_singular": "selected item",
+   "item_plural": "selected items",
+   "discount_percentage": "Discount Percentage",
+   "discount_placeholder": "Enter discount percentage",
+   "help_text": "Enter a value between 0 and 100",
+   "error_required": "Enter discount percentage to proceed further.",
+   "error_invalid": "Discount must be a number between 0 and 100",
+   "apply": "Apply Discount"
+  },
+  "apply_bonus": {
+   "title": "Apply Bonus Type",
+   "description": "Apply bonus type to {count} {item}.",
+   "item_singular": "selected item",
+   "item_plural": "selected items",
+   "bonus_type": "Bonus Type",
+   "select_option": "Select option",
+   "error_required": "Enter Bonus type to proceed further.",
+   "apply": "Apply Bonus",
+   "options": {
+    "value_added": "Value Added",
+    "volume_bonus": "Volume Bonus",
+    "seasonal_bonus": "Seasonal Bonus",
+    "make_good": "Make Good",
+    "none": "None"
+   }
+  },
+  "filters": {
+   "title": "Filters",
+   "city": "City",
+   "inventory_type": "Inventory Type",
+   "media_owner": "Media Owner",
+   "min_pricing": "Min Pricing",
+   "max_pricing": "Max Pricing",
+   "select_cities": "Select cities",
+   "select_inventory_types": "Select inventory types",
+   "select_media_owners": "Select media owners",
+   "apply_filters": "Apply Filters"
+  },
+  "pricing_summary": {
+   "title": "Pricing Summary",
+   "description": "Review current vs. proposed changes at plan level.",
+   "current_price": "Current Price",
+   "proposed_price": "Proposed Price",
+   "change_in_price": "Change in price:",
+   "breakdown": "Breakdown",
+   "media_cost": "Media Cost:",
+   "standard_fees": "Standard Fees:",
+   "custom_fees": "Custom Fees",
+   "add_fee": "Add Fee",
+   "no_custom_fees": "No custom fees added",
+   "fee_number": "Fee #",
+   "fee_name": "Fee Name",
+   "fee_name_placeholder": "Enter Fee Name",
+   "type": "Type",
+   "value": "Value",
+   "value_placeholder": "Enter Value",
+   "based_on": "Based On",
+   "fee_description": "Description (Optional)",
+   "fee_description_placeholder": "Write here...",
+   "include_in_media_plan": "Include in Media Plan",
+   "campaign_approval_required": "Plan approval required after changes are saved",
+   "save_changes": "Save Changes",
+   "validation_fee_name_required": "Fee name is required",
+   "validation_value_required": "Value is required",
+   "validation_fill_required": "Please fill in fee name and value for all custom fees.",
+   "fee_types": {
+    "percentage": "Percentage",
+    "fixed": "Fixed"
+   },
+   "based_on_options": {
+    "base_cost": "Base Cost",
+    "media_cost": "Media Cost",
+    "net_total": "Net Total"
+   },
+   "pending_price_changes": "price change(s) pending",
+   "campaign_approval_note": "Plan approval will be required — the prices will still be updated in the proposal (media plan)",
+   "discard_changes_title": "Discard unsaved price changes?",
+   "discard_changes_body": "unsaved price change(s) will be reverted to their last saved values.",
+   "discard_changes_confirm": "Discard changes"
+  },
+  "add_proposal_price": {
+   "title": "Add new Proposal Price",
+   "description": "Enter a new proposed price.",
+   "current_proposed_price": "Current Proposed Price",
+   "new_price": "New Price",
+   "new_price_placeholder": "Enter Price..",
+   "error_required": "Enter a new price to proceed further.",
+   "error_invalid": "Price must be a positive number",
+   "error_max_price": "Cannot exceed original price",
+   "proposed_price_history": "Proposed price history",
+   "no_history": "No price history available",
+   "legends": "Legends:",
+   "update_price": "Update Price",
+   "page_items": "Page Items:",
+   "history_columns": {
+    "sr_no": "S.No",
+    "date": "Date",
+    "user": "User",
+    "action": "Action",
+    "old_value": "Old value",
+    "new_value": "New value"
+   },
+   "actions": {
+    "rate_card": "Rate Card",
+    "proposed": "Proposed",
+    "counter": "Counter",
+    "accepted": "Accepted"
+   },
+   "internal_system": "Internal System"
+  },
+  "add_custom_fee": {
+   "title": "Add Custom Fee",
+   "description": "Configure your custom fee details.",
+   "add_fee": "Add Fee",
+   "custom_fees": "Custom Fees",
+   "no_custom_fees": "No custom fees added",
+   "fee_number": "Fee",
+   "fee_name": "Fee Name",
+   "edit_title": "Edit Custom Fee",
+   "update_fee": "Update Fee",
+   "fee_name_placeholder": "Enter Fee Name",
+   "type": "Type",
+   "value": "Value",
+   "value_placeholder": "Enter Value",
+   "based_on": "Based On",
+   "fee_description": "Description",
+   "fee_description_placeholder": "Enter description (optional)",
+   "include_in_media_plan": "Include in Media Plan",
+   "campaign_approval_required": "I confirm that plan approval is required for these changes",
+   "fee_types": {
+    "percentage": "Percentage",
+    "fixed": "Fixed"
+   },
+   "based_on_options": {
+    "base_cost": "Base Cost",
+    "media_cost": "Media Cost",
+    "net_total": "Net Total"
+   }
+  },
+  "price_history": {
+   "title": "Price History"
+  }
+ },
+ "common": {
+  "id": "ID:",
+  "internal_system": "Internal System",
+  "single": "Single",
+  "multiple": "Multiple"
+ },
+ "success": {
+  "all_prices_accepted": "All prices accepted successfully",
+  "discount_applied": "Discount applied successfully",
+  "bonus_applied": "Bonus applied successfully",
+  "price_updated": "Price updated successfully",
+  "custom_fee_deleted": "Custom fee deleted successfully",
+  "custom_fees_saved": "Custom fees saved successfully",
+  "price_changes_saved": "Price changes saved successfully",
+  "changes_saved": "Changes saved successfully"
+ },
+ "errors": {
+  "failed_to_load_summary": "Failed to load price summary",
+  "failed_to_accept_all_prices": "Failed to accept all prices",
+  "no_schedules_selected": "No schedules selected",
+  "failed_to_apply_discount": "Failed to apply discount",
+  "failed_to_apply_bonus": "Failed to apply bonus",
+  "failed_to_update_price": "Failed to update price",
+  "failed_to_delete_custom_fee": "Failed to delete custom fee",
+  "campaign_id_required": "Plan ID is required",
+  "fee_name_required": "Fee name is a required field",
+  "value_required": "Value is a required field",
+  "invalid_value": "Value must be a valid positive number",
+  "failed_to_save_custom_fees": "Failed to save custom fees",
+  "failed_to_fetch_availability": "Failed to fetch inventory availability",
+  "failed_to_fetch_availability_retry": "Failed to fetch inventory availability. Please try again.",
+  "no_changes_to_save": "No changes to save",
+  "no_editable_fees": "No editable fees to save",
+  "failed_to_save_changes": "Failed to save changes"
+ },
+ "calendar": {
+  "legend": {
+   "available": "Available",
+   "reserved": "Reserved",
+   "booked": "Booked",
+   "fully_booked": "Sold Out",
+   "blocked": "Blocked"
+  },
+  "available": {
+   "label": "Available",
+   "textColor": "text-mw-neutral-600",
+   "bgColor": "bg-white",
+   "borderColor": "border-mw-neutral-200"
+  },
+  "booked": {
+   "label": "Booked",
+   "textColor": "text-mw-error-600",
+   "bgColor": "bg-white",
+   "borderColor": "border-mw-neutral-200"
+  },
+  "reserved": {
+   "label": "Reserved",
+   "textColor": "text-mw-error-500",
+   "bgColor": "bg-blue-50",
+   "borderColor": "border-blue-200"
+  },
+  "fully_booked": {
+   "label": "Fully Booked",
+   "textColor": "text-mw-error-600",
+   "bgColor": "bg-mw-error-50",
+   "borderColor": "border-mw-error-200"
+  },
+  "tooltip": {
+   "campaign": "Plan",
+   "brand": "Brand",
+   "agency": "Agency",
+   "start_date": "Start Date",
+   "end_date": "End Date",
+   "sov": "SOV",
+   "total_spots": "Total Spots",
+   "available_spots": "Available Spots",
+   "booked_spots": "Booked Spots",
+   "reserved_spots": "Reserved Spots",
+   "to": "to",
+   "na": "N/A"
+  },
+  "blocked": {
+   "label": "Blocked",
+   "textColor": "text-mw-neutral-500",
+   "bgColor": "bg-mw-neutral-100",
+   "borderColor": "border-mw-neutral-200"
+  }
+ },
+ "availability": {
+  "loadError": "Failed to load availability. Please try again.",
+  "selectedInventories": "Selected Inventories",
+  "viewMonthly": "Monthly",
+  "viewWeekly": "Weekly",
+  "viewDaily": "Daily",
+  "ariaRegion": "Selected inventories availability",
+  "ariaCalendarView": "Calendar view",
+  "ariaPreviousPeriod": "Previous period",
+  "ariaNextPeriod": "Next period",
+  "ariaCollapseSpots": "Collapse spots for {{label}}",
+  "ariaExpandSpots": "Expand spots for {{label}}",
+  "days": {
+   "sun": "Sun",
+   "mon": "Mon",
+   "tue": "Tue",
+   "wed": "Wed",
+   "thu": "Thu",
+   "fri": "Fri",
+   "sat": "Sat"
+  },
+  "availabilityTimeline": "Availability Timeline",
+  "spotsAvailable": "Spots Available",
+  "loading": "Loading...",
+  "tryAgain": "Try Again",
+  "lastSynced": "Last synced from IMS: {{time}}",
+  "notSyncedYet": "Not synced from IMS yet",
+  "syncNow": "Sync now",
+  "syncing": "Syncing…",
+  "syncFailed": "IMS availability sync failed: {{error}}",
+  "syncFailedGeneric": "IMS availability sync failed. Data shown may be stale.",
+  "syncWarningFailed": "Last sync failed",
+  "syncWarningStale": "Availability data may be outdated"
+ },
+ "costBreakdown": {
+  "deleteFee": "Delete Fee",
+  "yesDelete": "Yes, Delete",
+  "dontDelete": "Don't Delete",
+  "deleteFeeConfirm": "Are you sure you want to delete the fee -",
+  "thisFee": "this fee",
+  "ariaEditFee": "Edit fee",
+  "ariaDeleteFee": "Delete fee",
+  "noCustomFeesAdded": "No custom fees added",
+  "totalCostSummary": "Total Cost Summary",
+  "mediaCost": "Media Cost",
+  "platformFee": "Platform Fee",
+  "customFees": "Custom Fees",
+  "totalCost": "Total Cost",
+  "campaignForecast": "Plan Forecast",
+  "netCost": "Net Cost",
+  "addFee": "Add Fee",
+  "feeNotFound": "Fee not found",
+  "baseCost": "Base Cost",
+  "percentOf": "% of",
+  "fixed": "fixed"
+ }
+}

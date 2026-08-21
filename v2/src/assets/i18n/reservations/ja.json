@@ -1,0 +1,38 @@
+{
+  "title": "予約",
+  "description": "取引が確定するまでの間、インベントリを一時的に確保します。",
+  "tabs": {
+    "myHolds": "自分の保留",
+    "holdRequests": "保留リクエスト"
+  },
+  "myHolds": {
+    "campaignId": "キャンペーンID",
+    "campaignIdPlaceholder": "予約を表示するキャンペーンIDを貼り付け",
+    "empty": "このキャンペーンにはまだ予約がありません。",
+    "extend": "7日間延長",
+    "release": "解放"
+  },
+  "holdRequests": {
+    "empty": "現在、保留リクエストはありません。",
+    "approve": "承認",
+    "approveWithConditions": "条件を送信（保留のまま）",
+    "decline": "却下",
+    "conditionPlaceholder": "条件を記載してください（例：別の料金、別の日程）",
+    "conditionHint": "これは保留を承認するものではありません。あなたまたはバイヤーが正式に承認するまで「オーナーの対応待ち」のままです。",
+    "declineReasonPlaceholder": "却下の理由"
+  },
+  "comments": {
+    "title": "メモ"
+  },
+  "status": {
+    "PENDING": "保留中",
+    "HOLD_REQUESTED": "オーナーの対応待ち",
+    "RESERVED": "予約済み",
+    "EXPIRED": "期限切れ",
+    "RELEASED": "解放済み",
+    "DECLINED": "却下済み",
+    "BOOKED": "確定"
+  },
+  "expiresIn": "残り {days}日{hours}時間",
+  "expired": "期限切れ"
+}

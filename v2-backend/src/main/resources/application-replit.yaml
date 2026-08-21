@@ -1,0 +1,21 @@
+# Replit workspace profile — local MongoDB/Redis/MinIO instead of the
+# staging Atlas cluster (outbound port 27017 is blocked from this workspace).
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/mw-planner
+      auto-index-creation: true
+
+# Local mock IAM (standalone v2-iam-companion service on :10001) — the workspace's public
+# domain cannot be registered with staging IAM. service-url/iam-api are path-relative to
+# v2-gateway's own port (5000), not a raw loopback address: v2-gateway proxies /v2iam/* to
+# the real :10001 service and rewrites any Location header it emits back to a bare path, so
+# a real visitor's browser (which cannot reach this VM's internal ports directly) still
+# resolves the OAuth redirect against the one public origin it's actually on.
+mw-planner:
+  iam:
+    service-url: http://127.0.0.1:5000/v2iam
+    redirect-uri: http://127.0.0.1:5000/auth/oauth/callback
+  proxy:
+    applications:
+      iam-api: http://127.0.0.1:5000/v2iam

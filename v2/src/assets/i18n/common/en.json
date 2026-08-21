@@ -1,0 +1,448 @@
+{
+  "header": {
+    "account": "Account",
+    "signout": "Sign Out",
+    "profile": "Profile",
+    "company": "Company",
+    "companyTooltip": "Select your company from the dropdown",
+    "role": "Role",
+    "settings": "Settings",
+    "logout": "Logout",
+    "planner": "Planner",
+    "admin": "Admin",
+    "guest": "Guest",
+    "impersonating": "Impersonating: {company}",
+    "childCompany": "Child",
+    "loadingCompanies": "Loading more companies...",
+    "logoutSuccess": "Logged out successfully"
+  },
+  "inactivity": {
+    "title": "Are you still there?",
+    "message": "You've been inactive for a while. Do you want to stay signed in?",
+    "message_impersonating": "You've been inactive for a while. Do you want to keep impersonating {company}?",
+    "countdown": "Signing out in {time}",
+    "stay_signed_in": "Stay Signed In",
+    "keep_impersonating": "Keep Impersonating",
+    "sign_out": "Sign Out"
+  },
+  "auth": {
+    "redirectingToLogin": "Redirecting to login...",
+    "movingWalls": "Moving Walls",
+    "authenticationSuccessful": "Authentication successful!",
+    "authenticating": "Authenticating...",
+    "authenticationFailed": "Authentication failed. Redirecting..."
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "campaigns": "Plans",
+    "approvals": "Plan Approval",
+    "creatives": "Creatives",
+    "reservations": "Reservations",
+    "statements": "Statements",
+    "measure": "Measure",
+    "measures": "Measures",
+    "inventory": "Inventory",
+    "configuration": "Configuration",
+    "configurations": "Configurations",
+    "profile": "Profile",
+    "inventories": "Inventories",
+    "proposalTheme": "Proposal Theme",
+    "proposalThemes": "Proposal Themes",
+    "settings": "Settings",
+    "signals": "Signals",
+    "pois": "POIs",
+    "tags": "Tags"
+  },
+  "profile": {
+    "title": "Profile",
+    "settingsTitle": "Profile Settings",
+    "description": "Manage your account information and preferences",
+    "tabs": {
+      "profile": "Profile",
+      "account": "Account",
+      "notifications": "Notifications",
+      "privacy": "Privacy",
+      "accountSettings": "Account Settings",
+      "accountSettingsDesc": "Manage your account security and login preferences",
+      "accountSecurity": "Account Security",
+      "accountSecurityDesc": "Manage your account security and login preferences",
+      "accountStatus": "Account Status",
+      "active": "Active",
+      "inactive": "Inactive",
+      "accountCreatedOn": "Account created on",
+      "password": "Password",
+      "passwordLastChanged": "Last changed",
+      "changePassword": "Change Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "updatePassword": "Update Password",
+      "passwordUpdated": "Password updated successfully"
+    },
+    "personalInfo": {
+      "title": "Personal Information",
+      "subtitle": "Update your personal details and contact information",
+      "changePhoto": "Change Photo",
+      "photoHint": "JPG, PNG or GIF. Max size 2MB.",
+      "fullName": "Full Name",
+      "emailAddress": "Email Address",
+      "phoneNumber": "Phone Number",
+      "role": "Role",
+      "company": "Company",
+      "department": "Department",
+      "location": "Location",
+      "bio": "Bio",
+      "saveChanges": "Save Changes"
+    },
+    "changePassword": {
+      "description": "Choose a new password for your account.",
+      "newPasswordPlaceholder": "Enter new password",
+      "confirmPasswordPlaceholder": "Re-enter new password",
+      "requirements": "Password Requirements",
+      "req": {
+        "length": "At least 8 characters",
+        "uppercase": "Contains an uppercase letter",
+        "lowercase": "Contains a lowercase letter",
+        "number": "Contains a number",
+        "match": "Passwords match"
+      },
+      "strength": {
+        "weak": "Weak",
+        "fair": "Fair",
+        "good": "Good",
+        "strong": "Strong"
+      }
+    }
+  },
+  "search": "Search",
+  "selectAll": "Select All",
+  "noOptionFound": "No options found",
+  "nSelected": "{count} selected",
+  "noneSelected": "None selected",
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "pageItems": "Page Items:",
+    "itemRange": "{start} to {end} of {total}",
+    "pageInfo": "Page {current} of {total}"
+  },
+  "map": {
+    "searchPlaceholder": "Search locations, addresses, POIs...",
+    "searchDefaultPlaceholder": "Search locations...",
+    "noSearchResults": "No search results found",
+    "checkSpellingOrTryAgain": "Check the spelling and try again",
+    "poiPlaceholder": "Select POI Types",
+    "targetRadius": "Target Radius",
+    "included": "Included",
+    "excluded": "Excluded",
+    "noPOIOption": "No POI's found - Try adding POI as instance",
+    "selectionOptionPlaceholder": "Select or add up to 5 POI’s",
+    "renderPOIButton": "Render POIs",
+    "ExtractingCategoriesFailed": "Failed to extract categories from Google API",
+    "placeType": "Place",
+    "localNameType": {
+      "locality": "City",
+      "sublocality": "Sub-locality",
+      "sublocality_level_1": "Sub-locality",
+      "sublocality_level_2": "Sub-locality",
+      "neighborhood": "Area",
+      "administrative_area_level_1": "State",
+      "administrative_area_level_2": "District",
+      "administrative_area_level_3": "District",
+      "country": "Country"
+    },
+    "duplicateLocation": "This location is already added!",
+    "duplicateShape": "On this location shape already added!",
+    "duplicateCircle": "On this location circle already added!",
+    "controls": {
+      "select": "Select",
+      "drawPolygon": "Draw Polygon",
+      "drawCircle": "Draw Circle",
+      "drawLine": "Draw Line",
+      "deleteSelected": "Delete Selected",
+      "toggleMountainView": "Toggle Mountain View (Terrain)",
+      "toggle3DBuildings": "Toggle 3D Buildings"
+    },
+    "styles": {
+      "streets": "Streets",
+      "satellite": "Satellite",
+      "outdoors": "Outdoors",
+      "light": "Light",
+      "dark": "Dark"
+    }
+  },
+  "iabCategories": {
+    "IAB1": "Arts & Entertainment",
+    "IAB2": "Automotive",
+    "IAB3": "Business",
+    "IAB4": "Careers",
+    "IAB5": "Education",
+    "IAB6": "Family & Parenting",
+    "IAB7": "Health & Fitness",
+    "IAB8": "Food & Drink",
+    "IAB9": "Hobbies & Interests",
+    "IAB10": "Home & Garden",
+    "IAB11": "Law Government & Politics",
+    "IAB12": "News",
+    "IAB13": "Personal Finance",
+    "IAB14": "Society",
+    "IAB15": "Science",
+    "IAB16": "Pets",
+    "IAB17": "Sports",
+    "IAB18": "Style & Fashion",
+    "IAB19": "Technology & Computing",
+    "IAB20": "Travel",
+    "IAB21": "Real Estate",
+    "IAB23": "Religion & Spirituality",
+    "IAB24": "Uncategorized",
+    "IAB25": "Non-Standard Content",
+    "IAB26": "Illegal Content"
+  },
+  "buttons": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "apply": "Apply",
+    "clear": "Clear",
+    "close": "Close",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "remove": "Remove",
+    "upload": "Upload",
+    "download": "Download"
+  },
+  "fileUpload": {
+    "supported_format": "Supported format: {formats} (max. {maxSize})"
+  },
+  "messages": {
+    "loading": "Loading...",
+    "no_data": "No data available",
+    "error": "An error occurred",
+    "success": "Operation completed successfully",
+    "confirm_delete": "Are you sure you want to delete this item?",
+    "unsaved_changes": "You have unsaved changes",
+    "title": "File Upload Failed",
+    "invalid_image_type": "We only accept PNG, JPG or JPEG files. Please upload a different file.",
+    "file_too_large": "is too large, compress or upload a smaller version",
+    "connection_lost": "Your connection was lost while uploading. Check your internet and try again."
+  },
+  "complete": "Complete",
+  "quickTips": {
+    "title": "Quick Tips",
+    "brandRecommendations": "Selecting a brand helps with better recommendations",
+    "budgetNextStep": "Budget and goals are set in the next step",
+    "changeDetailsLater": "You can always change these details later"
+  },
+  "labels": {
+    "note": "Note :",
+    "na": "N/A",
+    "errorLoading": "Error loading",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "aria": {
+    "clearSelection": "Clear selection",
+    "clearSearch": "Clear search",
+    "removeFile": "Remove file",
+    "calendarView": "Calendar view",
+    "previousPeriod": "Previous period",
+    "nextPeriod": "Next period",
+    "calendar": "Calendar",
+    "previousItem": "Previous item",
+    "nextItem": "Next item",
+    "remove": "Remove",
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "goToSlide": "Go to slide {n}",
+    "pauseAutoplay": "Pause autoplay",
+    "startAutoplay": "Start autoplay"
+  },
+  "optional": "Optional",
+  "footer": {
+    "copyright": "© {year} Moving Walls. All Rights Reserved"
+  },
+  "calendar": {
+    "dayNamesShort": {
+      "0": "Sun",
+      "1": "Mon",
+      "2": "Tue",
+      "3": "Wed",
+      "4": "Thu",
+      "5": "Fri",
+      "6": "Sat"
+    },
+    "viewModes": {
+      "monthly": "Monthly",
+      "weekly": "Weekly",
+      "daily": "Daily"
+    },
+    "monthNames": {
+      "0": "January",
+      "1": "February",
+      "2": "March",
+      "3": "April",
+      "4": "May",
+      "5": "June",
+      "6": "July",
+      "7": "August",
+      "8": "September",
+      "9": "October",
+      "10": "November",
+      "11": "December"
+    },
+    "weekDaysShort": {
+      "0": "Mon",
+      "1": "Tue",
+      "2": "Wed",
+      "3": "Thu",
+      "4": "Fri",
+      "5": "Sat",
+      "6": "Sun"
+    },
+    "dateHours": "Date/Hours",
+    "presets": {
+      "nextNDays": "Next {n} Days"
+    },
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "selectStartDate": "Select start date",
+    "selectEndDate": "Select end date",
+    "ariaLabel": "Calendar",
+    "previousPeriod": "Previous period",
+    "nextPeriod": "Next period",
+    "viewToggleAriaLabel": "Calendar view",
+    "monthNamesShort": {
+      "0": "Jan",
+      "1": "Feb",
+      "2": "Mar",
+      "3": "Apr",
+      "4": "May",
+      "5": "Jun",
+      "6": "Jul",
+      "7": "Aug",
+      "8": "Sep",
+      "9": "Oct",
+      "10": "Nov",
+      "11": "Dec"
+    },
+    "weekDaysLong": {
+      "0": "Sunday",
+      "1": "Monday",
+      "2": "Tuesday",
+      "3": "Wednesday",
+      "4": "Thursday",
+      "5": "Friday",
+      "6": "Saturday"
+    },
+    "weekTitle": "Week {n}",
+    "fullDateTitle": "{weekday}, {month} {day}, {year}",
+    "formattedShortDate": "{month} {day}, {year}",
+    "am": "AM",
+    "pm": "PM",
+    "formattedDateTime": "{date}, {time}",
+    "chartDayLabel": "{day} {month}",
+    "chartRangeWithYear": "{range} {year}",
+    "chartQuarterRanges": {
+      "1": "Jan - Mar",
+      "2": "Apr - Jun",
+      "3": "Jul - Sep",
+      "4": "Oct - Dec"
+    },
+    "chartHalfYearRanges": {
+      "1": "Jan - Jun",
+      "2": "Jul - Dec"
+    }
+  },
+  "productSwitcher": {
+    "influence": {
+      "name": "Influence",
+      "description": "Manage your active deals with ease"
+    },
+    "measure": {
+      "name": "Measure",
+      "description": "Measure and analyze plan performance"
+    },
+    "inventory": {
+      "name": "Inventory",
+      "description": "Manage your Inventories"
+    },
+    "account": {
+      "name": "Account",
+      "description": "Track and manage your account with ease"
+    }
+  },
+  "multiSelect": {
+    "placeholder": "Select options...",
+    "searchPlaceholder": "Search..."
+  },
+  "agGrid": {
+    "pageSizeSelectorLabel": "Page Size:",
+    "page": "Page",
+    "to": "to",
+    "of": "of",
+    "noRowsToShow": "No rows to show",
+    "loadingOoo": "Loading..."
+  },
+  "inventorySize": {
+    "xl": {
+      "label": "Extra Large",
+      "description": "Typically > 300 sqft (e.g., 14 x 48 ft bulletin, large wallscapes, jumbotrons)"
+    },
+    "l": {
+      "label": "Large",
+      "description": "Approximately 100 - 300 sqft (e.g., 10 x 22 ft posters, large digital billboards)"
+    },
+    "m": {
+      "label": "Medium",
+      "description": "Approximately 30 - 100 sqft (e.g., bus shelter panels, standard digital panels)"
+    },
+    "s": {
+      "label": "Small",
+      "description": "Approximately 5 - 30 sqft (e.g., bench ads, in-vehicle screens, small mall screens)"
+    },
+    "xs": {
+      "label": "Extra Small",
+      "description": "Less than 5 sqft (e.g., shelf-edge displays, small elevator screens)"
+    }
+  },
+  "inventoryType": {
+    "transit": "Transit",
+    "street_furniture": "Street Furniture",
+    "place_based": "Place Based",
+    "digital_network": "Digital Network",
+    "retail": "Retail",
+    "ooh": "OOH",
+    "airport": "Airport",
+    "bus": "Bus",
+    "rail_metro": "Rail & Metro",
+    "taxi_rideshare": "Taxi & Rideshare",
+    "commercial_fleet": "Commercial Fleet",
+    "cinema": "Cinema"
+  },
+  "inventoryClassification": {
+    "classic": "Classic",
+    "digital": "Digital",
+    "transit": "Transit",
+    "street_furniture": "Street Furniture",
+    "place_based": "Place Based",
+    "digital_network": "Digital Network",
+    "retail": "Retail"
+  },
+  "inventoryEnvironment": {
+    "outdoor": "Outdoor",
+    "indoor": "Indoor",
+    "semi_outdoor": "Semi-Outdoor",
+    "in_transit": "In-Transit"
+  },
+  "inventoryMode": {
+    "spot": "Spot",
+    "loop": "Loop"
+  },
+  "programmaticDealType": {
+    "guaranteed": "Guaranteed",
+    "preferred_deal": "Preferred Deal",
+    "private_auction": "Private Auction",
+    "open_auction": "Open Auction",
+    "evergreen_pmp": "Evergreen PMP"
+  }
+}

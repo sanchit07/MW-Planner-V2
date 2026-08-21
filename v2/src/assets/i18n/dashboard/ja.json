@@ -1,0 +1,215 @@
+{
+  "title": "プランナー ダッシュボード",
+  "welcome": "必要な情報を簡単に把握できる完全な概要",
+  "activationNote": "プランはPlannerでは有効化されません。承認後、プランはInfluenceに送信され、キャンペーンが開始されます。",
+  "loading": "読み込み中...",
+  "filters": {
+    "last7Days": "過去7日間",
+    "last30Days": "過去30日間",
+    "lastMonth": "先月",
+    "quarterly": "四半期",
+    "yearly": "年次",
+    "dateRange": "日付範囲",
+    "selectDateRange": "日付範囲を選択"
+  },
+  "actions": {
+    "download": "ダウンロード",
+    "customize": "カスタマイズ",
+    "customizeLayout": "レイアウトをカスタマイズ",
+    "dashboardContent": "ダッシュボードコンテンツ",
+    "loadingDashboard": "ダッシュボードを読み込み中...",
+    "noWidgetsVisible": "すべてのウィジェットが非表示です。レイアウトをカスタマイズして表示するウィジェットを選択してください。",
+    "openCustomize": "カスタマイズ"
+  },
+  "budgetTracker": {
+    "title": "予算トラッカー",
+    "budgetPerformanceSummary": "予算パフォーマンスサマリー",
+    "total": "合計",
+    "spent": "使用済み",
+    "remaining": "残余",
+    "totalBudget": "総予算",
+    "vsLastPeriod": "前期比 {amount}",
+    "usedInActiveCampaigns": "アクティブなプランで使用中",
+    "budgetSpent": "使用済み予算",
+    "remainingBudget": "残余予算",
+    "availableForAllocation": "配分可能",
+    "newLabel": "新規",
+    "currencyNote": "金額はお客様のホーム通貨（{currency}）で表示されています。他の通貨のプランは現在の為替レートで換算されるため、合計はプランページと若干異なる場合があります。"
+  },
+  "campaignOverview": {
+    "title": "プラン概要",
+    "viewCampaign": "プランを見る",
+    "loadingChartData": "チャートデータを読み込み中...",
+    "campaignsByStatus": "ステータス別プラン"
+  },
+  "campaignStatus": {
+    "planned": "計画中",
+    "reviewing": "レビュー中",
+    "negotiating": "交渉中",
+    "approve": "承認済み",
+    "active": "アクティブ",
+    "completed": "完了"
+  },
+  "campaignPerformance": {
+    "title": "プランパフォーマンス",
+    "statusLabel": "プランステータス：",
+    "allStatuses": "すべてのステータス",
+    "selectStatus": "ステータスを選択",
+    "noCampaigns": "表示するプランがありません",
+    "columns": {
+      "campaign": "プラン",
+      "flightDates": "フライト日付",
+      "impression": "インプレッション",
+      "reach": "リーチ",
+      "budget": "予算",
+      "totalCost": "総費用",
+      "status": "ステータス",
+      "action": "アクション"
+    },
+    "loadingData": "プランデータを読み込み中..."
+  },
+  "revenuePerformance": {
+    "title": "収益パフォーマンス",
+    "revenueGenerated": "生成された収益",
+    "averagePerUnit": "ユニット当たりの平均",
+    "conversionRate": "コンバージョン率",
+    "revenueCostAnalysis": "収益対コスト分析",
+    "salesPerformanceSummary": "販売パフォーマンスサマリー",
+    "tabs": {
+      "overview": "概要",
+      "regional": "地域別",
+      "clients": "クライアント",
+      "team": "チーム"
+    },
+    "revenue": "収益",
+    "cost": "コスト",
+    "salesPipeline": "セールスパイプライン",
+    "salesPipelineFunnel": "販売パイプラインファネル",
+    "loadingChartData": "チャートデータを読み込み中...",
+    "vsLastPeriod": "vs {amount} 前期比",
+    "viewCampaign": "プランを見る"
+  },
+  "inventoryUtilization": {
+    "title": "インベントリ＆使用率サマリー",
+    "allInventories": "すべてのインベントリ",
+    "dropdownLabel": "インベントリ",
+    "activeCampaigns": "アクティブなプラン",
+    "totalInventories": "総インベントリ数",
+    "utilizationRate": "使用率",
+    "inReviewing": "レビュー中",
+    "activeInventories": "アクティブなインベントリ",
+    "unitsBooked": "予約済みユニット",
+    "utilizationBreakdown": "使用率の内訳",
+    "booked": "予約済み",
+    "reserved": "確保済み",
+    "down": "停止中",
+    "available": "利用可能",
+    "viewAvailability": "空き状況を見る"
+  },
+  "creativeStatus": {
+    "title": "クリエイティブステータス",
+    "tracker": "トラッカー",
+    "processing": "処理中",
+    "accepted": "承認済み",
+    "inadequate": "不適切",
+    "totalCreatives": "総クリエイティブ数",
+    "images": "画像",
+    "videos": "動画",
+    "displayFormats": "表示フォーマット"
+  },
+  "audienceReach": {
+    "title": "オーディエンスリーチパフォーマンス",
+    "reach": "リーチ",
+    "impressions": "インプレッション",
+    "estimatesNote": "これらの数値はPlanned状態のプランから算出されたものであり、推定値です。実測データではありません。",
+    "statusLabel": "プランステータス：",
+    "allStatuses": "すべてのステータス"
+  },
+  "widgets": {
+    "campaign-overview": "プラン概要",
+    "campaign-performance": "プランパフォーマンス",
+    "budget-overview": "予算概要",
+    "budget-performance-summary": "予算パフォーマンスサマリー",
+    "audience-reach-performance": "オーディエンスリーチパフォーマンス",
+    "inventory-overview": "インベントリ概要",
+    "utilization-breakdown": "使用率の内訳",
+    "sales-overview": "販売概要",
+    "sales-performance-summary": "販売パフォーマンスサマリー",
+    "sales-pipeline-funnel": "販売パイプラインファネル",
+    "revenue-distribution": "収益分布",
+    "creative-status": "クリエイティブステータス",
+    "regional-inventory-snapshot": "地域別インベントリスナップショット",
+    "Revenue Performance Summary": "収益パフォーマンスサマリー",
+    "Budget Tracker": "予算トラッカー",
+    "Inventory & Utilization Summary": "インベントリ＆使用率サマリー"
+  },
+  "customizeLayout": {
+    "title": "レイアウトをカスタマイズ",
+    "applyLayout": "レイアウトを適用",
+    "applying": "適用中...",
+    "applyError": "レイアウトの更新に失敗しました。もう一度お試しください。",
+    "description": "表示するウィジェットを選択",
+    "loadingWidgets": "ウィジェットを読み込み中...",
+    "resetToDefault": "デフォルトにリセット",
+    "noWidgets": "利用可能なウィジェットがありません",
+    "noCategories": "利用可能なウィジェットカテゴリがありません"
+  },
+  "campaignTypeDropdown": {
+    "label": "プランタイプ",
+    "all-campaign": "全プラン"
+  },
+  "tabs": {
+    "noDataAvailable": "データがありません",
+    "team": {
+      "title": "営業チームパフォーマンス",
+      "columns": {
+        "rank": "ランク",
+        "name": "名前",
+        "region": "地域",
+        "share": "シェア",
+        "plans": "プラン数",
+        "revenue": "収益",
+        "conversion": "コンバージョン"
+      }
+    },
+    "clients": {
+      "totalRevenue": "総収益",
+      "columns": {
+        "advertiser": "広告主",
+        "agency": "代理店",
+        "revenue": "収益",
+        "plans": "プラン数",
+        "share": "シェア",
+        "adPlays": "広告再生数",
+        "sov": "SOV",
+        "impressions": "インプレッション",
+        "topCampaigns": "トッププラン"
+      }
+    },
+    "regional": {
+      "countries": "国",
+      "cities": "都市",
+      "columns": {
+        "city": "都市",
+        "country": "国",
+        "inventories": "インベントリ",
+        "utilization": "利用率",
+        "conversion": "コンバージョン",
+        "plans": "プラン数",
+        "cost": "コスト",
+        "revenue": "収益"
+      }
+    }
+  },
+  "categories": {
+    "revenuePerformance": "収益パフォーマンスサマリー",
+    "budgetTracker": "予算トラッカー"
+  },
+  "regionalInventory": {
+    "title": "地域別在庫スナップショット",
+    "loading": "読み込み中...",
+    "highLabel": "高 ≥80%",
+    "mediumLabel": "中 60-79%",
+    "lowLabel": "低 <60%"
+  }
+}

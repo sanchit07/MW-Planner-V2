@@ -1,0 +1,124 @@
+logging:
+  level:
+    org.springframework.cache: DEBUG
+    org.springframework.data.redis.core: DEBUG
+
+server:
+  port: 10002
+
+spring:
+  application:
+    name: ${rootProject.name}
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
+    cache-duration: 1s
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1124MB
+  threads:
+    virtual:
+      enabled: true
+  task:
+    execution:
+      thread-name-prefix: reco-eng-vt-
+    scheduling:
+      thread-name-prefix: reco-eng-sched-
+  data:
+    redis:
+      host: clustercfg.mw-planner-stg.aoghs6.apse1.cache.amazonaws.com
+      port: 6379
+      ssl:
+        enabled: true
+    mongodb:
+      uri: mongodb://47.129.204.148:27017/mw-recommendation-engine
+      auto-index-creation: true
+  rabbitmq:
+    addresses: amqps://b-347e39c6-8295-441c-be8d-56e85e0f2c5b.mq.ap-southeast-1.amazonaws.com:5671
+    username: admin
+    password: AO0PVN6w0Ob9
+    virtual-host: inventory
+    connection-timeout: 15000
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 1
+        retry:
+          enabled: true
+          max-attempts: 3
+          initial-interval: 1000
+          max-interval: 10000
+          multiplier: 2
+
+management:
+  server:
+    port: 8200
+  info:
+    env:
+      enabled: true
+  metrics:
+    tags:
+      application: ${rootProject.name}
+      namespace: NA
+  endpoint:
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - env
+          - metrics
+          - prometheus
+          - threaddump
+          - heapdump
+
+aws:
+  s3:
+    brand:
+      endpoint: http://47.129.204.148:9000
+      access-key: admin
+      secret-key: admin123
+      region: us-east-1
+      bucket-name: brand-logo-bucket
+      parent-directory: /local/logos
+
+brand-lib:
+  file:
+    allowed-extensions: .jpg,.jpeg,.png
+
+# Security / IAM (OAuth2 Resource Server) - override per env as needed
+mw-recommendation-engine:
+  management:
+    credentials:
+      username: admin
+      password: ac412243-acc5-4d05-93df-bf768577e69d
+  iam:
+    service-url: https://auth-api-stg.movingwalls.com
+    product-id: cc24af2e-9e69-44ea-9440-838790cd8c0a
+
+# RabbitMQ Configuration
+rabbitmq:
+  inventory:
+    exchange:
+      name: inventory-detail.change.event
+    queue:
+      name: inventory-detail.change.event.recommendation
+  audience:
+    exchange:
+      name: audience.exchange
+    queue:
+      name: recommendation.engine.audience.queue
+  brand:
+    exchange:
+      name: brand.exchange
+    queue:
+      name: recommendation.engine.brand.queue
+  booking:
+    exchange:
+      name: booking.exchange
+    queue:
+      name: recommendation.engine.booking.queue

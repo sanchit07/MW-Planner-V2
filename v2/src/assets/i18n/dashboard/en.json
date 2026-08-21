@@ -1,0 +1,215 @@
+{
+  "title": "Planner Dashboard",
+  "welcome": "Complete overview of the essentials with ease",
+  "activationNote": "Plans are not activated in Planner. After approval, a plan is sent to Influence, where the campaign goes live.",
+  "loading": "Loading...",
+  "filters": {
+    "last7Days": "Last 7 days",
+    "last30Days": "Last 30 days",
+    "lastMonth": "Last month",
+    "quarterly": "Quarterly",
+    "yearly": "Yearly",
+    "dateRange": "Date range",
+    "selectDateRange": "Select date range"
+  },
+  "actions": {
+    "download": "Download",
+    "customize": "Customize",
+    "customizeLayout": "Customize layout",
+    "dashboardContent": "Dashboard content",
+    "loadingDashboard": "Loading dashboard...",
+    "noWidgetsVisible": "All widgets are hidden. You can customize the layout to show your preferred widgets.",
+    "openCustomize": "Customize"
+  },
+  "budgetTracker": {
+    "title": "Budget Tracker",
+    "budgetPerformanceSummary": "Budget Performance Summary",
+    "total": "Total",
+    "spent": "Spent",
+    "remaining": "Remaining",
+    "totalBudget": "Total Budget",
+    "vsLastPeriod": "vs {amount} last period",
+    "usedInActiveCampaigns": "Used in active plans",
+    "budgetSpent": "Budget Spent",
+    "remainingBudget": "Remaining Budget",
+    "availableForAllocation": "Available for allocation",
+    "newLabel": "New",
+    "currencyNote": "Amounts are shown in your home currency ({currency}). Plans in other currencies are converted at current exchange rates, so totals can differ slightly from the plan pages."
+  },
+  "campaignOverview": {
+    "title": "Plan Overview",
+    "viewCampaign": "View Plan",
+    "loadingChartData": "Loading chart data...",
+    "campaignsByStatus": "Plans by Status"
+  },
+  "campaignStatus": {
+    "planned": "Planning",
+    "reviewing": "Reviewing",
+    "negotiating": "Negotiating",
+    "approve": "Approved",
+    "active": "Active",
+    "completed": "Completed"
+  },
+  "campaignPerformance": {
+    "title": "Plans Performance",
+    "statusLabel": "Plan Status:",
+    "allStatuses": "All Statuses",
+    "selectStatus": "Select Status",
+    "noCampaigns": "No plans to display",
+    "columns": {
+      "campaign": "Plan",
+      "flightDates": "Flight Dates",
+      "impression": "Impressions",
+      "reach": "Reach",
+      "budget": "Budget",
+      "totalCost": "Total Cost",
+      "status": "Status",
+      "action": "Action"
+    },
+    "loadingData": "Loading plan data..."
+  },
+  "revenuePerformance": {
+    "title": "Revenue Performance",
+    "revenueGenerated": "Revenue Generated",
+    "averagePerUnit": "Average Per Unit",
+    "conversionRate": "Conversion Rate",
+    "revenueCostAnalysis": "Revenue vs Cost Analysis",
+    "salesPerformanceSummary": "Sales Performance Summary",
+    "tabs": {
+      "overview": "Overview",
+      "regional": "Regional",
+      "clients": "Clients",
+      "team": "Team"
+    },
+    "revenue": "Revenue",
+    "cost": "Cost",
+    "salesPipeline": "Sales Pipeline",
+    "salesPipelineFunnel": "Sales Pipeline funnel",
+    "loadingChartData": "Loading chart data...",
+    "vsLastPeriod": "vs {amount} last period",
+    "viewCampaign": "View Plan"
+  },
+  "inventoryUtilization": {
+    "title": "Inventory & Utilization Summary",
+    "allInventories": "All Inventories",
+    "dropdownLabel": "Inventory",
+    "activeCampaigns": "Active Plans",
+    "totalInventories": "Total Inventories",
+    "utilizationRate": "Utilization Rate",
+    "inReviewing": "in reviewing",
+    "activeInventories": "Active inventories",
+    "unitsBooked": "Units booked",
+    "utilizationBreakdown": "Utilization Breakdown",
+    "booked": "Booked",
+    "reserved": "Reserved",
+    "down": "Down",
+    "available": "Available",
+    "viewAvailability": "View Availability"
+  },
+  "creativeStatus": {
+    "title": "Creative Status",
+    "tracker": "Tracker",
+    "processing": "Processing",
+    "accepted": "Accepted",
+    "inadequate": "Inadequate",
+    "totalCreatives": "Total Creatives",
+    "images": "Images",
+    "videos": "Videos",
+    "displayFormats": "Display Formats"
+  },
+  "audienceReach": {
+    "title": "Audience Reach Performance",
+    "reach": "Reach",
+    "impressions": "Impressions",
+    "estimatesNote": "These numbers come from plans marked as Planned — they are estimates, not live measured data.",
+    "statusLabel": "Plan Status:",
+    "allStatuses": "All Statuses"
+  },
+  "widgets": {
+    "campaign-overview": "Plan Overview",
+    "campaign-performance": "Plan Performance",
+    "budget-overview": "Budget Overview",
+    "budget-performance-summary": "Budget Performance Summary",
+    "audience-reach-performance": "Audience Reach Performance",
+    "inventory-overview": "Inventory Overview",
+    "utilization-breakdown": "Utilization Breakdown",
+    "sales-overview": "Sales Overview",
+    "sales-performance-summary": "Sales Performance Summary",
+    "sales-pipeline-funnel": "Sales Pipeline Funnel",
+    "revenue-distribution": "Revenue Distribution",
+    "creative-status": "Creative Status",
+    "regional-inventory-snapshot": "Regional Inventory Snapshot",
+    "Revenue Performance Summary": "Revenue Performance Summary",
+    "Budget Tracker": "Budget Tracker",
+    "Inventory & Utilization Summary": "Inventory & Utilization Summary"
+  },
+  "customizeLayout": {
+    "title": "Customize layout",
+    "applyLayout": "Apply layout",
+    "applying": "Applying...",
+    "applyError": "Failed to update layout. Please try again.",
+    "description": "Select which widgets to display",
+    "loadingWidgets": "Loading widgets...",
+    "resetToDefault": "Reset to default",
+    "noWidgets": "No widgets available",
+    "noCategories": "No widget categories available"
+  },
+  "campaignTypeDropdown": {
+    "label": "Plan Type",
+    "all-campaign": "All Plans"
+  },
+  "tabs": {
+    "noDataAvailable": "No data available",
+    "team": {
+      "title": "Sales Team Performance",
+      "columns": {
+        "rank": "Rank",
+        "name": "Name",
+        "region": "Region",
+        "share": "Share",
+        "plans": "Plans",
+        "revenue": "Revenue",
+        "conversion": "Conversion"
+      }
+    },
+    "clients": {
+      "totalRevenue": "Total Revenue",
+      "columns": {
+        "advertiser": "Advertiser",
+        "agency": "Agency",
+        "revenue": "Revenue",
+        "plans": "Plans",
+        "share": "Share",
+        "adPlays": "Ad Plays",
+        "sov": "SOV",
+        "impressions": "Impressions",
+        "topCampaigns": "Top Plans"
+      }
+    },
+    "regional": {
+      "countries": "Countries",
+      "cities": "Cities",
+      "columns": {
+        "city": "City",
+        "country": "Country",
+        "inventories": "Inventories",
+        "utilization": "Utilization",
+        "conversion": "Conversion",
+        "plans": "Plans",
+        "cost": "Cost",
+        "revenue": "Revenue"
+      }
+    }
+  },
+  "categories": {
+    "revenuePerformance": "Revenue Performance Summary",
+    "budgetTracker": "Budget Tracker"
+  },
+  "regionalInventory": {
+    "title": "Regional Inventory Snapshot",
+    "loading": "Loading...",
+    "highLabel": "High ≥80%",
+    "mediumLabel": "Medium 60-79%",
+    "lowLabel": "Low <60%"
+  }
+}

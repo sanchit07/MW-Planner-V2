@@ -1,0 +1,49 @@
+{
+  "brand_creation": {
+    "title": "新しいブランドを作成",
+    "title_link": "既存ブランドをリンク",
+    "form": {
+      "brand_name": "ブランド名",
+      "brand_name_placeholder": "ブランド名を入力",
+      "brand_name_required": "ブランド名は必須です",
+      "category": "IABカテゴリ",
+      "category_placeholder": "カテゴリを選択",
+      "category_required": "カテゴリは必須です",
+      "category_tier1": "IABカテゴリ（ティア1）",
+      "category_search_placeholder": "カテゴリを検索",
+      "subcategory_tier2": "IABサブカテゴリ（ティア2）",
+      "subcategory_placeholder": "サブカテゴリを選択（任意）",
+      "subcategory_search_placeholder": "サブカテゴリを検索",
+      "website": "ウェブサイト",
+      "website_placeholder": "https://www.example.com",
+      "description": "説明",
+      "description_placeholder": "ブランドの説明を入力",
+      "external_id": "外部ID",
+      "external_id_placeholder": "外部IDを入力",
+      "logo": "ブランドロゴ",
+      "logo_placeholder": "ここをタップするか、ロゴをドラッグ＆ドロップしてください",
+      "createdSuccessBrand": "ブランドが正常に作成されました。",
+      "similar_brands_header": "類似ブランドが見つかりました。新規作成の代わりに、ブランドを選択して会社にリンクできます。",
+      "exact_brand_match_header": "このブランドはすでに存在します。新規作成の代わりに、会社にリンクしてください。",
+      "own_brand_exists": "このブランドはすでに作成済みです。",
+      "link_brand_success": "ブランドが正常にリンクされました。",
+      "searching": "検索中...",
+      "no_similar_brands": "類似ブランドが見つかりませんでした",
+      "selected_brand": "選択中：",
+      "clear_selection": "選択を解除",
+      "active": "有効",
+      "inactive": "無効",
+      "industry": "業種",
+      "companies_linked": "リンク済み企業数",
+      "no_description": "説明なし",
+      "link_notice": "このブランドをリンクすると、会社に関連付けられます。チームは重複したブランドを作成することなく、プランで使用できるようになります。"
+    },
+    "actions": {
+      "cancel": "キャンセル",
+      "create": "ブランドを作成",
+      "creating": "作成中...",
+      "link": "ブランドをリンク",
+      "linking": "リンク中..."
+    }
+  }
+}

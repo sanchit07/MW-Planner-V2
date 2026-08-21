@@ -1,0 +1,371 @@
+/**
+ * AG Grid table styles matching Figma design.
+ * Uses Tailwind theme tokens: spacing (p-2 = 8px), colors (container-border, primary-100, grey-50), typography (text-xs, leading-4).
+ */
+
+/* ---- Wrapper: no outer border ---- */
+.ag-theme-quartz.ag-grid-table-wrapper {
+  overflow: visible !important;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.ag-theme-quartz .ag-root-wrapper {
+  overflow: auto !important;
+  border: none !important;
+}
+
+/* ---- Header row: only bottom border; first/last cell rounded top corners ---- */
+.ag-theme-quartz .ag-header {
+  min-height: 44px !important;
+  border: none !important;
+  background-color: var(--color-grey-50) !important;
+  border-bottom: 1px solid var(--color-mw-primary-100) !important;
+  overflow: hidden;
+}
+
+.ag-theme-quartz .ag-header-cell:first-child {
+  border-radius: 0.5rem 0 0 0; /* top-left rounded */
+}
+
+.ag-theme-quartz .ag-header-cell:last-child {
+  border-radius: 0 0.5rem 0 0; /* top-right rounded */
+}
+
+.dark .ag-theme-quartz .ag-header {
+  background-color: var(--color-mw-neutral-800) !important;
+  border-bottom-color: var(--color-mw-primary-200) !important;
+}
+
+/* ---- Header cells: no side borders, only header row has bottom border ---- */
+.ag-theme-quartz .ag-header-cell {
+  padding: 8px !important;
+  font-size: var(--text-xs, 0.75rem) !important;
+  font-weight: 500 !important;
+  line-height: var(--leading-xs, 1rem) !important;
+  color: var(--color-og-black, #000) !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+}
+
+.ag-theme-quartz .ag-header-cell:hover {
+  background-color: var(--color-mw-neutral-100) !important;
+}
+
+.dark .ag-theme-quartz .ag-header-cell:hover {
+  background-color: var(--color-mw-neutral-700) !important;
+}
+
+/* ---- Data rows (Figma: py-0.5 border-b border-Color-Container-Container-border) ---- */
+.ag-theme-quartz .ag-row {
+  min-height: 56px !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid var(--color-container-border) !important;
+  overflow: visible !important;
+}
+
+.ag-theme-quartz .ag-row .ag-cell-wrapper {
+  overflow: visible !important;
+}
+
+.dark .ag-theme-quartz .ag-row {
+  /* background-color: var(--color-mw-neutral-900) !important; */
+  border-bottom-color: var(--color-mw-neutral-700) !important;
+}
+
+.ag-theme-quartz .ag-row {
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease !important;
+}
+
+.ag-theme-quartz .ag-row:hover {
+  background-color: var(--color-mw-primary-50) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.dark .ag-theme-quartz .ag-row:hover {
+  background-color: rgba(28, 101, 175, 0.15) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+.ag-theme-quartz .ag-row.ag-row-selected > .ag-cell {
+  background-color: var(--color-mw-primary-50) !important;
+}
+
+.dark .ag-theme-quartz .ag-row.ag-row-selected {
+  background-color: var(--color-mw-primary-50) !important;
+}
+
+/* ---- Body cells (Figma: p-2 text-black text-xs font-normal leading-4) ---- */
+.ag-theme-quartz .ag-cell {
+  padding: 8px !important; /* p-2 */
+  font-size: var(--text-xs, 0.75rem) !important;
+  font-weight: 400 !important; /* font-normal for body */
+  line-height: var(--leading-xs, 1rem) !important;
+  color: var(--color-og-black, #000) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+}
+
+.dark .ag-theme-quartz .ag-cell {
+  color: #fff !important;
+}
+
+/* Secondary text in cells (Figma: text-Text-Secondary text-[10px] font-normal leading-4) */
+.ag-theme-quartz .ag-cell .text-secondary,
+.ag-theme-quartz .ag-cell [class*="text-mw-neutral-500"],
+.ag-theme-quartz .ag-cell [class*="text-secondary"] {
+  font-size: 10px !important;
+  color: var(--color-secondary, var(--color-mw-neutral-500)) !important;
+  font-weight: 400 !important;
+}
+
+.ag-checkbox-input-wrapper {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* ---- Checkbox (Figma: w-4 h-4 rounded shadow outline) ---- */
+.ag-theme-quartz .ag-selection-checkbox,
+.ag-theme-quartz .ag-header-select-all,
+.ag-theme-quartz .ag-input-field-input {
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  border-radius: var(--radius-2xs, 0.25rem) !important;
+  box-shadow: 0 2px 4px 0 rgba(27, 28, 29, 0.04) !important;
+  outline: 1px solid var(--color-mw-neutral-500) !important;
+  flex-shrink: 0 !important;
+}
+
+.ag-theme-quartz {
+  --ag-checkbox-background-color: var(--color-mw-neutral-500);
+  --ag-checkbox-checked-color: var(--color-mw-primary-500);
+  --ag-checkbox-indeterminate-color: var(--color-mw-primary-500);
+  --ag-border-radius: 4px;
+}
+
+.ag-checkbox-input-wrapper.ag-checked,
+.ag-checkbox-input-wrapper.ag-indeterminate {
+  opacity: 1 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-mw-primary-500) !important;
+}
+
+.ag-checkbox-input-wrapper.ag-checked::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  margin-top: 2.5px !important;
+  margin-left: 2px !important;
+}
+
+/* ---- Grid body container ---- */
+.ag-theme-quartz .ag-body-viewport {
+  background-color: #fff;
+}
+
+.dark .ag-theme-quartz .ag-body-viewport {
+  /* background-color: var(--color-mw-neutral-900); */
+}
+
+/* ---- No rows overlay ---- */
+.ag-theme-quartz .ag-overlay-no-rows-center {
+  font-family: "Poppins", sans-serif !important;
+  font-size: var(--text-s, 0.875rem) !important;
+  color: var(--color-mw-neutral-500) !important;
+}
+
+/* ---- Pagination panel (Figma: container fill, border-t, rounded bottom, gap-10 layout) ---- */
+.ag-theme-quartz .ag-paging-panel {
+  align-self: stretch;
+  padding: 10px 16px;
+  border-radius: 0 0 var(--radius-m, 0.5rem) var(--radius-m, 0.5rem);
+  border: none;
+  border-top: 1px solid var(--color-container-border);
+  min-height: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.ag-theme-quartz .ag-paging-panel > * {
+  margin: 0;
+}
+
+.ag-theme-quartz .ag-paging-page-size,
+.ag-theme-quartz .ag-paging-page-summary-panel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ag-theme-quartz .ag-paging-page-size .ag-label,
+.ag-theme-quartz .ag-paging-page-summary-panel {
+  font-size: var(--text-s, 0.875rem);
+  font-weight: 400;
+  line-height: var(--leading-xs, 1rem);
+  font-family: "Poppins", sans-serif;
+  color: var(--color-secondary, var(--color-mw-neutral-500));
+}
+
+.ag-theme-quartz .ag-paging-page-size .ag-wrapper,
+.ag-theme-quartz .ag-paging-page-size .ag-select .ag-picker-field-wrapper {
+  min-height: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: var(--radius-s, 0.25rem);
+  outline: 1px solid var(--color-mw-neutral-100);
+  outline-offset: -1px;
+  padding-left: 12px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.ag-theme-quartz .ag-paging-page-size .ag-picker-field-display {
+  font-size: var(--text-s, 0.875rem);
+  color: var(--color-mw-neutral-500, #000);
+  font-family: "Poppins", sans-serif;
+  margin-right: 10px;
+}
+
+.ag-picker-field-icon {
+  color: var(--color-mw-neutral-500, #000);
+}
+
+.ag-theme-quartz .ag-paging-button {
+  padding: 8px;
+  min-width: 32px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: var(--radius-2xs, 0.25rem);
+  outline: 1px solid var(--color-mw-neutral-100);
+  outline-offset: -1px;
+  margin: 0 4px;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-og-black, #000);
+}
+
+.ag-theme-quartz .ag-paging-button:hover:not(.ag-disabled) {
+  background-color: var(--color-mw-neutral-50);
+}
+
+.ag-theme-quartz .ag-paging-button.ag-disabled {
+  color: var(--color-mw-neutral-400);
+  cursor: default;
+}
+
+.ag-theme-quartz .ag-paging-description {
+  padding: 8px;
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 500;
+  line-height: var(--leading-xs, 1rem);
+  color: var(--color-og-black, #000);
+  font-family: "Poppins", sans-serif;
+  margin: 0 4px;
+}
+
+.ag-theme-quartz .ag-paging-row-summary-panel,
+.ag-theme-quartz .ag-paging-page-summary-panel {
+  gap: 4px;
+}
+
+.ag-theme-quartz .ag-paging-number,
+.ag-theme-quartz .ag-paging-row-summary-panel-number {
+  font-weight: 500;
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--color-og-black, #000);
+}
+
+.dark .ag-theme-quartz .ag-paging-panel {
+  background-color: var(--color-mw-neutral-800);
+  border-top-color: var(--color-mw-neutral-700);
+}
+
+.dark .ag-theme-quartz .ag-paging-page-size .ag-wrapper,
+.dark
+  .ag-theme-quartz
+  .ag-paging-page-size
+  .ag-select
+  .ag-picker-field-wrapper {
+  background-color: var(--color-mw-neutral-900);
+  outline-color: var(--color-mw-neutral-600);
+}
+
+.dark .ag-theme-quartz .ag-paging-page-size .ag-picker-field-display {
+  color: #fff;
+}
+
+.dark .ag-theme-quartz .ag-paging-button {
+  background-color: var(--color-mw-neutral-800);
+  outline-color: var(--color-mw-neutral-600);
+  color: #fff;
+}
+
+.dark .ag-theme-quartz .ag-paging-button:hover:not(.ag-disabled) {
+  background-color: var(--color-mw-neutral-700);
+}
+
+.dark .ag-theme-quartz .ag-paging-description,
+.dark .ag-theme-quartz .ag-paging-number,
+.dark .ag-theme-quartz .ag-paging-row-summary-panel-number {
+  color: #fff;
+}
+
+.dark .ag-theme-quartz .ag-paging-page-size .ag-label,
+.dark .ag-theme-quartz .ag-paging-page-summary-panel {
+  color: var(--color-mw-neutral-300);
+}
+
+/* ---- Pinned bottom row (footer): ensure visible and styled ---- */
+.ag-theme-quartz .ag-floating-bottom {
+  min-height: 60px;
+  border-top: 1px solid var(--color-container-border);
+  background-color: var(--color-grey-50) !important;
+  overflow: visible !important;
+}
+
+.ag-theme-quartz .ag-floating-bottom .ag-row {
+  font-weight: 600;
+  background-color: var(--color-grey-50) !important;
+}
+
+.ag-theme-quartz .ag-floating-bottom .ag-cell {
+  font-weight: 600 !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.dark .ag-theme-quartz .ag-floating-bottom {
+  background-color: var(--color-mw-neutral-800) !important;
+  border-top-color: var(--color-mw-neutral-700);
+}
+
+.dark .ag-theme-quartz .ag-floating-bottom .ag-row {
+  background-color: var(--color-mw-neutral-800) !important;
+}

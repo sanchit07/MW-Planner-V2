@@ -1,0 +1,2860 @@
+{
+  "title": "Plans",
+  "description": "Manage your plans ease and full efficiency",
+  "new_campaign": "New Plan",
+  "empty_state": {
+    "headline": "Your next big moment starts here",
+    "description": "Start building impactful outdoor advertising that reaches your audience where they live, work, and play."
+  },
+  "create_new_campaign": "Create New Plan",
+  "edit_new_campaign": "Edit Plan",
+  "campaignCreatedSuccess": "Plan created successfully!",
+  "campaignUpdateFailed": "Failed to update plan",
+  "campaignCreateFailed": "Failed to create plan",
+  "buttons": {
+    "saveAsDraft": "Save as Draft",
+    "finaliseCampaign": "Finalise Plan",
+    "savingDraft": "Saving..."
+  },
+  "create_campaign": {
+    "title": "Plan Details",
+    "subtitle": "Follow the steps below to set up your advertising plan",
+    "steps": {
+      "campaign_details": "Plan Details",
+      "campaign_setup_description": "Set up your plan information",
+      "budgeting": "Budgeting",
+      "targeting": "Targeting",
+      "inventories": "Inventories",
+      "optimisation": "Optimisation",
+      "optional": "Optional",
+      "demographics": "Demographics",
+      "geofencing": "Geofencing",
+      "signals": "Signals"
+    },
+    "form": {
+      "campaign_name": "Plan Name",
+      "campaign_dates": "Plan Dates",
+      "brand": "Brand",
+      "brand_optional": "Brand (Optional)",
+      "client_type": "Client Type",
+      "agency": "Agency",
+      "agency_child_company_note": "Plans for a child company are made by impersonating that company first — switch companies from the header to plan on its behalf.",
+      "select_agency": "Select Agency",
+      "search_here": "Search here...",
+      "enter_campaign_name": "Enter plan name",
+      "generating": "Generating...",
+      "select_dates": "Select dates",
+      "enter_brand_name": "Enter brand name",
+      "select_client_type": "Select client type",
+      "dsp": "DSP",
+      "select_dsp": "Select DSP",
+      "seat_id": "Seat ID",
+      "seat_id_placeholder": "Auto-populated",
+      "seat_id_helper": "Auto-populated from DSP configuration",
+      "optional_label": "(Optional)",
+      "days_duration": "days",
+      "media_channels": "Media Channels",
+      "select_media_channel": "Select media channel",
+      "media_channel_hint": "{count} channels selected — the wizard will branch sequentially through each.",
+      "media_channel_hint_single": "Single-channel plan — the wizard runs one pass.",
+      "dsp_active": "Activate",
+      "dsp_none": "None",
+      "dsp_recommendation_hint": "For digital, only inventories exposed to the selected DSP will be recommended. Classic inventories are not affected by the DSP choice.",
+      "dsp_add_seat_id_hint": "Expecting a different DSP here?",
+      "dsp_add_seat_id_link": "Add its seat ID in the admin console"
+    },
+    "client_types": {
+      "agency": "Agency",
+      "direct": "Direct Advertiser"
+    },
+    "media_channels": {
+      "DIGITAL_OOH": {
+        "label": "Digital OOH",
+        "description": "Digital billboards, LED screens, spectaculars, and networked digital displays."
+      },
+      "CLASSIC_OOH": {
+        "label": "Classic OOH",
+        "description": "Traditional billboards, posters, wallscapes, and static outdoor displays."
+      },
+      "CINEMA": {
+        "label": "Cinema",
+        "description": "On-screen cinema advertising bought by operator, hall and showtime window — with genre and rating constraints."
+      },
+      "TRANSIT": {
+        "label": "Transit",
+        "description": "Bus shelters, metro stations, airports, and commuter-facing transit media."
+      },
+      "RETAIL": {
+        "label": "Retail",
+        "description": "In-store screens, mall displays, and point-of-purchase media environments."
+      }
+    },
+    "agencies": {
+      "aron_tech": "Aron Tech Agency",
+      "newgen_ooh": "Newgen OOH",
+      "nextgen_dooh": "Nextgen DOOH",
+      "patron_digital": "Patron Digital firm"
+    },
+    "sidebar": {
+      "form_insights": "Form Insights",
+      "brand_insights": "Brand Insights",
+      "quick_tips": "Quick Tips",
+      "form_insights_tips": {
+        "campaign_name_unique": "Plan name should be descriptive and unique",
+        "realistic_dates": "Set realistic plan dates for better inventory availability",
+        "brand_targeting": "Selecting a brand helps with targeting recommendations"
+      },
+      "insights": {
+        "category": "Category: Technology & Computing",
+        "iab_id": "IAB ID: IAB19",
+        "targeting_help": "Brand selection helps with better targeting recommendations"
+      },
+      "tips": {
+        "brand_recommendations": "Selecting a brand helps with better recommendations",
+        "brand_targeting_recommendations": "Selecting a brand helps with better targeting recommendations",
+        "budget_next": "Budget and goals are set in the next step",
+        "can_change_later": "You can always change these details later"
+      }
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "next_step": "Next Step",
+      "next_demographics": "Next: Demographics",
+      "next_geofencing": "Next: Geofencing",
+      "next_inventory_type": "Next: Inventory Type"
+    }
+  },
+  "budget_goal": {
+    "title": "Budgeting",
+    "subtitle": "Follow the steps below to set up your advertising plan",
+    "market_selection": {
+      "title": "Market Selection",
+      "description": "Choose your target market",
+      "target_country": "Target Country",
+      "select_country": "Select Country",
+      "loading_countries": "Loading countries..."
+    },
+    "budget_goal_setup": {
+      "title": "Budget & Goal Setup (Optional)",
+      "description": "Set your plan budget & objective",
+      "currency": "Currency",
+      "currency_placeholder": "Currency will be set automatically",
+      "budget_amount": "Budget Amount",
+      "budget_placeholder": "Enter budget amount",
+      "goal_type": "Goal Type",
+      "select_goal_type": "Select Goal Type",
+      "target_percentage_optional": "Target Percentage (Optional)",
+      "target_value_optional": "Target Value (Optional)",
+      "enter_percentage": "Enter percentage (0-100)",
+      "enter_target_value": "Enter target value",
+      "target_name": "Target Name",
+      "enter_target_name": "Enter custom target name",
+      "percentage_hint": "Enter percentage value (0-100%)",
+      "goal_type_cpm_hint": "CPM price will be followed for cost calculation.",
+      "goal_type_cps_hint": "CPS price will be followed for cost calculation.",
+      "unit_label": "Unit:",
+      "sov_range": "(0-100%)",
+      "target_required": "Target value is required when goal type is selected",
+      "whole_number_required": "Value must be a whole number (no decimals)",
+      "target_too_large": "Target value must be at most {max}",
+      "target_too_small": "Target value must be at least {min}",
+      "target_out_of_range": "Target value must be between {min} and {max}",
+      "target_decimal_places": "Target value must have at most 2 decimal places",
+      "reach_planning_note": "Planning can be done using reach as the objective; however reach is indicative and not guaranteed. Impressions will be considered the primary KPI for delivery."
+    },
+    "goal_types": {
+      "impressions": "Impressions",
+      "impressions_desc": "Total number of ad view/exposure to your target audience",
+      "impressions_target_label": "Number of Impressions",
+      "impressions_placeholder": "Enter target impressions",
+      "impressions_unit": "Impressions",
+      "reach": "Reach",
+      "reach_desc": "Unique user viewed your plan",
+      "reach_target_label": "Unique Users",
+      "reach_placeholder": "Enter target reach",
+      "reach_unit": "Users",
+      "sov": "Share of Voice",
+      "sov_desc": "Your brand presence in % of total market activity",
+      "sov_target_label": "% Share of Voice",
+      "sov_placeholder": "Enter percentage (0-100)",
+      "sov_unit": "%",
+      "attribution": "Attribution",
+      "attribution_desc": "Track specific action",
+      "other": "Other",
+      "other_desc": "Custom metric",
+      "adplays": "Ad Plays",
+      "adplays_desc": "Number of times your ad is played",
+      "adplays_target_label": "Ad Plays",
+      "adplays_placeholder": "Enter target ad plays",
+      "adplays_unit": "Ad Plays"
+    },
+    "countries": {
+      "MY": "Malaysia",
+      "SG": "Singapore",
+      "TH": "Thailand",
+      "ID": "Indonesia",
+      "PH": "Philippines",
+      "VN": "Vietnam"
+    },
+    "market_insights": {
+      "title": "Market Insight",
+      "market": "Market",
+      "population": "Population",
+      "inventories": "Inventories",
+      "impressions": "Impressions"
+    },
+    "quick_tips": {
+      "title": "Budget & Goal Tips",
+      "tip1": "Set a clear plan goal to get better recommendations",
+      "tip2": "Goals help optimize inventory selection and targeting",
+      "tip3": "You can change your goal later in the optimization step"
+    },
+    "distribution": {
+      "title": "Budget Distribution by Type",
+      "subtitle_collapsed": "Budget auto-distributed by inventory count proportions. Click to view or adjust.",
+      "subtitle_expanded": "Budget auto-distributed by inventory count proportions. You can adjust if needed.",
+      "distribute_evenly": "Distribute evenly",
+      "reset": "Reset",
+      "total": "Total:",
+      "looks_good": "Adds up to 100% — looks good.",
+      "exceeds_100": "Over-allocated by {amount}%. This is a planning hint only — you can still proceed.",
+      "below_100": "Under-allocated by {amount}%. This is a planning hint only — you can still proceed.",
+      "edit_btn": "Edit",
+      "cancel": "Cancel",
+      "apply": "Apply",
+      "adjust_manually": "I want to adjust the distribution manually",
+      "lock_distribution": "Lock distribution"
+    },
+    "goal_insights": {
+      "default": {
+        "title": "Plan Goal Selection",
+        "insight1": "Set a clear plan goal to get better recommendations",
+        "insight2": "Goals help optimize inventory selection and targeting",
+        "insight3": "You can change your goal later in the optimization step"
+      },
+      "impressions": {
+        "title": "Impressions Plan Strategy",
+        "insight1": "Focus on high-traffic locations and prime time slots",
+        "insight2": "Digital billboards typically deliver 2-3x more impressions",
+        "insight3": "Consider frequency capping to avoid audience fatigue"
+      },
+      "reach": {
+        "title": "Reach Plan Strategy",
+        "insight1": "Diversify locations to maximize unique audience exposure",
+        "insight2": "Transit advertising excels at reaching broad demographics",
+        "insight3": "Mix of format types increases overall reach potential"
+      },
+      "sov": {
+        "title": "Share of Voice Strategy",
+        "insight1": "Premium locations in competitive categories are essential",
+        "insight2": "Sustained presence over time builds stronger brand recall",
+        "insight3": "Monitor competitor activity in your target markets"
+      },
+      "adplays": {
+        "title": "Ad Plays Plan Strategy",
+        "insight1": "Digital OOH inventory lets you guarantee a set number of ad plays",
+        "insight2": "More plays in high-dwell locations increase viewability per play",
+        "insight3": "Balance play frequency across sites to control audience fatigue"
+      },
+      "attribution": {
+        "title": "Attribution Plan Strategy",
+        "insight1": "Place billboards near retail locations and shopping centers",
+        "insight2": "Use brand lift studies to measure plan impact on sales",
+        "insight3": "Target high-traffic areas during peak shopping hours"
+      },
+      "other": {
+        "title": "Custom Plan Strategy",
+        "insight1": "Define specific success metrics for your unique goal",
+        "insight2": "Consider how OOH will integrate with other marketing channels",
+        "insight3": "Regular performance monitoring will optimize results"
+      }
+    }
+  },
+  "targeting": {
+    "title": "Targeting",
+    "comingSoon": "Coming Soon",
+    "tabTitles": {
+      "demographics": "Demographics",
+      "geoFencing": "Geo-fencing",
+      "inventoryTypes": "Inventory Type",
+      "signals": "Signals"
+    },
+    "movingwallsSmartSuggestionTitle": "Movingwalls Smart Suggestion",
+    "movingwallsSmartSuggestionDescription": "Based on your plan details, we recommend the following targeting options",
+    "demography_selection": {
+      "title": "Demographics",
+      "description": "Enter your demographic information to define your target audience.",
+      "loading": "Loading demographics data..."
+    },
+    "age": {
+      "title": "Age Group",
+      "placeholder": "Select an age group"
+    },
+    "gender": {
+      "title": "Gender",
+      "placeholder": "Select Gender"
+    },
+    "incomeGroup": {
+      "title": "Income Group",
+      "placeholder": "Select Income Group"
+    },
+    "interestActivity": {
+      "title": "Interest & Activities",
+      "placeholder": "Select Interest & Activity"
+    },
+    "venueType": {
+      "title": "Venue Type",
+      "placeholder": "Select Venue Type"
+    },
+    "audienceBehavior": {
+      "title": "Audience Behaviour",
+      "placeholder": "Select Audience Behaviour"
+    },
+    "inventoryTypes": {
+      "sectionTitle": "Venue Type",
+      "digitalOoh": {
+        "title": "Digital OOH",
+        "placeholder": "Select Digital OOH sub-types"
+      },
+      "classicOoh": {
+        "title": "Classic OOH",
+        "placeholder": "Select Classic OOH sub-types"
+      }
+    },
+    "inventoryClusters": {
+      "title": "Inventory Types",
+      "description": "Choose which inventory types to include per channel. Transit covers inventory on moving objects only — screens and wraps on buses, taxis, trains, trams and ferries while they move. Fixed inventory at bus stations, rail platforms or airports is not transit; target those environments via Venue Types below.",
+      "digitalOoh": {
+        "title": "Digital OOH"
+      },
+      "classicOoh": {
+        "title": "Classic OOH"
+      },
+      "options": {
+        "DIGITAL": "Digital Screens",
+        "DIGITAL_NETWORK": "Digital Network",
+        "DIGITAL_TRANSIT": "Digital Transit",
+        "CLASSIC": "Classic Billboards",
+        "CLASSIC_NETWORK": "Classic Network",
+        "CLASSIC_TRANSIT": "Classic Transit"
+      }
+    },
+    "programmaticBuying": {
+      "title": "Programmatic Buying",
+      "description": "Programmatic inventories are digital screens bought automatically through connected exchanges (DSPs), with real-time delivery and reporting.",
+      "toggleLabel": "Target only programmatic inventories",
+      "toggleDescription": "When on, the plan prefers programmatic-capable inventories first. If your budget cannot be fully consumed by programmatic inventory, the unspent portion is automatically shifted to the other inventory types you keep selected below.",
+      "lockedNote": "Programmatic targeting is on because a DSP is selected in Step 1. Set the DSP back to None to turn it off.",
+      "noDigitalChannelNote": "Programmatic-only targeting isn't available because this plan doesn't include the Digital OOH channel. Non-digital inventory such as Classic OOH (printed billboards, wraps, posters) can't be bought programmatically — add the Digital OOH channel in Step 1 to enable this option."
+    },
+    "geofencing": {
+      "selected_locations": "Selected Locations",
+      "add_locations_hint": "Click on the map or search to add locations",
+      "search_placeholder": "Search added locations here...",
+      "no_locations": "No locations added yet",
+      "location_count": "Location",
+      "location_count_plural": "Locations",
+      "added": "added",
+      "enable_all": "Enable all",
+      "delete_location": "Delete location",
+      "poi": {
+        "hint": "*You can add up to 5 POIs",
+        "buttonName": "Add POI",
+        "reachLimit": "*Reached POI limit"
+      },
+      "import_locations": "Import Locations",
+      "import_button": "Import",
+      "need_template": "Need a template?",
+      "download_template_desc": "Download our sample CSV template to get started",
+      "download_template": "Download Template",
+      "removeLocation": "Remove Location",
+      "yesRemove": "Yes, Remove",
+      "cancelRemove": "Don't Remove",
+      "askRemove": "Are you sure you want to remove the location",
+      "import": {
+        "errors": {
+          "title": "File Upload Failed",
+          "invalid_file_type": "We only accept csv or xls files. Please upload a different file.",
+          "file_too_large": "{fileName} is too large, compress or upload a smaller version",
+          "connection_lost": "Your connection was lost while uploading. Check your internet and try again.",
+          "parse_error": "Error parsing file. Please check the format and try again.",
+          "invalid_latitude": "Invalid latitude value",
+          "latitude_range": "Latitude must be between -90 and +90",
+          "invalid_longitude": "Invalid longitude value",
+          "longitude_range": "Longitude must be between -180 and +180"
+        },
+        "progress": {
+          "loading": "Loading file...",
+          "parsing": "Parsing data...",
+          "validating": "Validating locations..."
+        },
+        "no_locations_selected": "No locations selected for import",
+        "partial_import": "{imported} out of {total} items imported. Lat/Lng not matched for: {{failed}}",
+        "success": "Valid Location(s) imported successfully!"
+      },
+      "loading_map": "Loading Map...",
+      "map_error": "Failed to load map. Please try again.",
+      "localRegion": "Region",
+      "placeType": "Type",
+      "included": "Included",
+      "excluded": "Excluded",
+      "placePhoto": "Place photo",
+      "searchLoading": "Searching..."
+    },
+    "fallback": {
+      "gender": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+      },
+      "income": {
+        "low": "Low income",
+        "lower_middle": "Lower-middle income",
+        "middle": "Middle income",
+        "upper_middle": "Upper-middle income",
+        "high": "High income"
+      },
+      "interests": {
+        "sports_fitness": "Sports & Fitness"
+      },
+      "behavior": {
+        "commuters": "Commuters",
+        "shoppers": "Shoppers"
+      }
+    }
+  },
+  "transit": {
+    "key": "Transit",
+    "airports": {
+      "key": "Airports",
+      "arrivals_hall": "Arrival Hall",
+      "baggage_claim": "Baggage Claim",
+      "departures_hall": "Departures Hall",
+      "food_court": "Food Court",
+      "gates": "Gates",
+      "lounges": "Lounges",
+      "shopping_area": "Shopping Area"
+    },
+    "buses": {
+      "key": "Buses",
+      "bus": "Bus (Inside)",
+      "terminal": "Terminal",
+      "bus_outside": "Bus (Outside)"
+    },
+    "taxi_rideshare_tv": "Taxi & Rideshare TV",
+    "taxi_rideshare_top": "Taxi & Rideshare Top",
+    "subway": {
+      "key": "Subway",
+      "train": "Subway Train",
+      "platform": "Platform"
+    },
+    "train_stations": {
+      "key": "Train Stations",
+      "train": "Train",
+      "platform": "Platform"
+    },
+    "ferry": "Ferry"
+  },
+  "commuters": "Commuters",
+  "tourists": "Tourists",
+  "businessTravelers": "Business Travelers",
+  "students": "Students",
+  "families": "Families",
+  "healthSeekers": "Health Seekers",
+  "fitnessEnthusiasts": "Fitness Enthusiasts",
+  "shoppers": "Shoppers",
+  "sportsFitness": "Sports & Fitness",
+  "technology": "Technology",
+  "foodDining": "Food & Dining",
+  "travel": "Travel",
+  "music": "Music",
+  "homeGarden": "Home & Garden",
+  "healthWellness": "Health & Wellness",
+  "automotive": "Automotive",
+  "retail": {
+    "key": "Retail",
+    "gas_stations": {
+      "key": "Fueling Stations",
+      "pump": "Fuel Dispenser",
+      "shop": "Shop"
+    },
+    "convenience_store": "Convenience Stores",
+    "grocery": {
+      "key": "Grocery",
+      "shop_entrance": "Shop Entrance",
+      "check_out": "Check Out",
+      "aisles": "Aisles"
+    },
+    "liquor_stores": "Liquor Stores",
+    "malls": {
+      "key": "Mall",
+      "concourse": "Concourse",
+      "food_court": "Food Court",
+      "spectacular": "Spectacular"
+    },
+    "dispensaries": "Cannabis Dispensaries",
+    "pharmacies": "Pharmacies",
+    "parking_garages": "Parking Garages"
+  },
+  "outdoor": {
+    "key": "Outdoor",
+    "billboards": {
+      "key": "Billboards",
+      "roadside": "Roadside",
+      "highway": "Highway",
+      "spectacular": "Spectacular"
+    },
+    "urban_panels": "Urban Panels",
+    "bus_shelters": "Bus Shelters"
+  },
+  "health_beauty": {
+    "key": "Health & Beauty",
+    "gyms": {
+      "key": "Gyms",
+      "lobby": "Lobby",
+      "equipment": "Fitness Equipment"
+    },
+    "salons": {
+      "key": "Salons",
+      "unisex": "Unisex Salon",
+      "mens": "Men's Salon",
+      "womens": "Women's Salon"
+    },
+    "spas": "Spas"
+  },
+  "point_care": {
+    "key": "Point of Care",
+    "doctor_offices": "Doctor's Offices",
+    "veterinary_offices": "Veterinary Offices"
+  },
+  "education": {
+    "key": "Education",
+    "schools": "Schools",
+    "colleges": {
+      "key": "Colleges and Universities",
+      "residences": "Residences",
+      "common": "Common Areas",
+      "athletics": "Athletic Facilities"
+    }
+  },
+  "office_buildings": {
+    "key": "Office Buildings",
+    "office_buildings": {
+      "key": "Office Buildings",
+      "elevator": "Elevator",
+      "lobby": "Lobby"
+    }
+  },
+  "entertainment": {
+    "key": "Leisure",
+    "recreational": {
+      "key": "Recreational Locations",
+      "theme_parks": "Theme Parks",
+      "museums_galleries": "Museums and Galleries",
+      "concert_venues": "Concert Venues"
+    },
+    "movie_theaters": {
+      "key": "Movie Theaters",
+      "lobby": "Lobby",
+      "food_court": "Food Court"
+    },
+    "sports": {
+      "key": "Sports Entertainment",
+      "arena": "Sport Arena",
+      "club_house": "Club House"
+    },
+    "bars": "Bars",
+    "casual_dining": "Casual Dining",
+    "qsr": "QSR",
+    "hotels": {
+      "key": "Hotels",
+      "lobby": "Lobby",
+      "elevator": "Elevator",
+      "room": "Room"
+    },
+    "golf_cart": "Golf Carts",
+    "night_club": "Night Clubs",
+    "high_end_dining": "High-End Dining"
+  },
+  "government": {
+    "key": "Government",
+    "dmv": "DMVs",
+    "military_bases": "Military Bases",
+    "postal": "Post Offices"
+  },
+  "financial": {
+    "key": "Financial",
+    "banks": "Banks"
+  },
+  "residential": {
+    "key": "Residential",
+    "apartment": {
+      "key": "Apartment Buildings and Condominiums",
+      "lobby": "Lobby",
+      "elevator": "Elevator"
+    }
+  },
+  "inventories": {
+    "title": "Inventories",
+    "description": "Choose the inventories suitable",
+    "search_placeholder": "Search here",
+    "inventories_count": " Inventories",
+    "group_by": "Group by:",
+    "group_by_options": {
+      "all": "All Inventories",
+      "city": "Cities",
+      "owner": "Media Owner",
+      "type": "Type"
+    },
+    "menu": {
+      "map_view": "Inventories in Map view",
+      "availability": "Inventories Availability",
+      "upload_csv": "Upload CSV"
+    },
+    "item": {
+      "view_details": "View details"
+    },
+    "metrics": {
+      "impressions": "Impressions",
+      "reach": "Reach",
+      "frequency": "Frequency",
+      "cpm_rate": "CPM Rate",
+      "cps_rate": "CPS Rate",
+      "est_cost": "Est. Cost",
+      "ad_plays": "Ad Plays",
+      "screens": "Screens",
+      "poi": "POI",
+      "owner": "Owner",
+      "ecpm": "eCPM",
+      "na": "N/A",
+      "est": "Est.",
+      "daily_plays": "daily plays"
+    },
+    "forecast": {
+      "title": "Plan Forecast",
+      "est_impressions": "Est. Impressions",
+      "est_reach": "Est. Reach",
+      "avg_frequency": "Avg. Frequency",
+      "est_ad_plays": "Est. Ad Plays",
+      "sov_percentage": "SOV %",
+      "avg_cpm": "Avg. CPM",
+      "avg_ecpm": "Avg. eCPM",
+      "total_cost": "Total Cost",
+      "sot_percentage": "SOT %",
+      "sot": "SOT"
+    },
+    "view": {
+      "title": "View Inventories",
+      "tabs": {
+        "map": "Map",
+        "availability": "Availability"
+      }
+    },
+    "manual": {
+      "title": "Inventories - Manual selection",
+      "selectAll": "Select All",
+      "selectFailed": "Failed to update selection. Please try again.",
+      "save": "Save",
+      "resizeHandle": "Resize list and map panels",
+      "pasteIds": {
+        "title": "Paste Reference IDs",
+        "description": "Paste a list of inventory reference IDs (separated by commas, spaces, or new lines) to bulk-select them.",
+        "placeholder": "e.g. REF-1001, REF-1002, REF-1003",
+        "submit": "Select matching inventories",
+        "cancel": "Cancel",
+        "modeAdd": "Add to current selection",
+        "modeReplace": "Replace current selection",
+        "success": "Inventory selection updated."
+      },
+      "close": "Close",
+      "loadFailed": "Failed to load selected inventory. Please try again.",
+      "saveFailed": "Failed to save selection. Please try again.",
+      "footer": {
+        "inventories": "Inventories",
+        "estimatedImpressions": "Estimated Impressions",
+        "estimatedTotalBudget": "Estimated Total Budget",
+        "of": "of",
+        "budgetByChannel": "Budget by channel",
+        "overPlan": "Over - plan",
+        "onPlan": "On plan",
+        "cancel": "Cancel",
+        "saveSelection": "Save Selection",
+        "overBudgetTitle": "Budget limit exceeding",
+        "overBudgetMessage": "You are exceeding your estimated budget {planned} by {overBy}."
+      },
+      "channelPopup": {
+        "title": "Budget vs. selection by channel",
+        "subtitle": "Compare the budget you distributed by channel in Step 2 with the cost of your current selection. This is a guide only — you can save even if a channel is over.",
+        "channel": "Channel",
+        "planned": "Planned",
+        "selected": "Selected",
+        "difference": "Difference",
+        "inventories": "Inventories",
+        "total": "Total",
+        "overNote": "Some channels are over their planned budget or include unplanned channels. You can still save — just confirm this is intentional."
+      }
+    },
+    "fitness": {
+      "title": "Fitness score card",
+      "budgetRelevance": "Budget relevance",
+      "campaignGoalMatch": "Plan goal match",
+      "geographyRelevance": "Geography relevance",
+      "audienceRelevance": "Audience relevance",
+      "brandRelevance": "Brand/Category relevance",
+      "inventoryQuality": "Inventory quality",
+      "timeAlignment": "Time alignment",
+      "measureConfidence": "Measure confidence",
+      "availabilityWindow": "Availability window"
+    },
+    "planSummary": {
+      "view": "View",
+      "heading": "Plan Summary",
+      "breakdown": "Forecast & breakdown for the %COUNT% inventories in this plan",
+      "empty": "No inventories in this plan",
+      "emptyHint": "No inventories match your current targeting. Loosen the filters or change the flight dates to see options, or use Edit Manually to add inventories.",
+      "noReachData": "No reach data available for this selection",
+      "goalOverAchieved": "Your plan is set to deliver about {achieved} {goalLabel} — well above your goal of {target}. Keep it as is, or optimize to reduce budget and target the goal only?",
+      "budgetShortfall": "Your budget covers about {percent}% of your {target} {goalLabel} goal. Add budget, lower the goal, or continue with the shortfall.",
+      "keepPlan": "Keep plan",
+      "optimizeToGoal": "Optimize to goal",
+      "adjustBudget": "Adjust budget",
+      "lowerGoal": "Lower goal",
+      "continueAnyway": "Continue",
+      "tiles": {
+        "inventories": "Inventories",
+        "impressions": "Impressions",
+        "reach": "Reach",
+        "frequency": "Frequency",
+        "ad_plays": "Ad Plays",
+        "co2_per_play": "CO₂ / Play",
+        "avg_cpm": "Avg CPM",
+        "ecpm": "eCPM",
+        "sov": "SOV",
+        "sot": "SOT",
+        "cost": "Cost",
+        "remaining": "Remaining",
+        "beta": "Beta"
+      },
+      "reachBuild": {
+        "title": "Reach Build",
+        "subtitle": "Across %COUNT% inventories",
+        "yAxisLabel": "Reach %"
+      }
+    },
+    "aiRecommendation": {
+      "title": "AI Smart Recommendation",
+      "description": "The plan updates automatically as you change targeting, budget or dates.",
+      "editManually": "Edit Manually",
+      "restoreAi": "Restore AI recommendation",
+      "restoreConfirm": "Restore",
+      "restoreCancel": "Cancel",
+      "restoreConfirmMessage": "This regenerates the AI recommendation and discards your manual changes. Continue?",
+      "tiles": {
+        "sov": "SOV",
+        "sot": "SOT",
+        "budget": "Budget",
+        "goal": "Goal"
+      }
+    },
+    "recommendationChoice": {
+      "title": "How would you like to build this plan?",
+      "description": "Let AI recommend the best inventory for your targeting and budget, or skip recommendations and pick inventory yourself. You can switch to recommendations later at any time.",
+      "useAiTitle": "Use AI recommendations",
+      "useAiDescription": "Generate a smart inventory recommendation based on your targeting, budget and dates.",
+      "manualTitle": "Pick inventory manually",
+      "manualDescription": "Skip recommendations and choose inventory yourself from the full catalog."
+    },
+    "manualMode": {
+      "title": "Manual inventory selection",
+      "description": "Recommendations are turned off for this plan. Select inventory yourself, or switch to AI recommendations at any time.",
+      "selectInventory": "Select Inventory",
+      "useRecommendations": "Use AI recommendations"
+    },
+    "csv_upload": {
+      "title": "Inventory Upload",
+      "download_template": "Download Template",
+      "upload_label": "Upload CSV File",
+      "upload_placeholder": "Tap here or Drag & Drop your CSV file here",
+      "import_errors": "Import Errors",
+      "importing": "Importing...",
+      "import_button": "Import Inventories"
+    },
+    "filters": {
+      "title": "Advanced Filter",
+      "clear_filters": "Clear Filters",
+      "apply_filters": "Apply Filters",
+      "location_section": "Location based filters",
+      "operations_section": "Operations",
+      "state": "State",
+      "state_placeholder": "Select state",
+      "city": "District/City",
+      "city_placeholder": "Select city",
+      "latitude": "Latitude",
+      "latitude_placeholder": "e.g., 40.7128",
+      "longitude": "Longitude",
+      "longitude_placeholder": "e.g., -74.0060",
+      "media_owner": "Media Owner",
+      "media_owner_placeholder": "Select media owners",
+      "venue_type": "Venue Types",
+      "venue_type_placeholder": "Select venue types",
+      "inventory_classification": "Inventory Classification",
+      "inventory_classification_placeholder": "Select classification",
+      "environment": "Environment",
+      "environment_placeholder": "Select environments",
+      "mode_of_operation": "Mode of Operation",
+      "mode_of_operation_placeholder": "Select mode of operation",
+      "size": "Size",
+      "size_placeholder": "Select sizes",
+      "programmatic_deal": "Programmatic Deal",
+      "programmatic_deal_all": "All",
+      "programmatic_deal_yes": "Yes",
+      "programmatic_deal_no": "No",
+      "programmatic_deal_type": "Programmatic Deal Type",
+      "programmatic_deal_type_placeholder": "Select deal types",
+      "cinema_section": "Cinema",
+      "cinema_genres": "Film genres",
+      "cinema_genres_placeholder": "Select genres",
+      "cinema_ratings": "Content ratings",
+      "cinema_ratings_placeholder": "Select ratings",
+      "classification_not_available": "Not available for {goalType} goal type",
+      "classification_required": "Required for {goalType} goal type",
+      "classification_locked_by_channel": "Selected in the plan's media channels",
+      "classification_not_in_channel": "Not selected in the plan's media channels"
+    },
+    "list": {
+      "loadError": "Facing issues loading inventory data",
+      "retry": "Retry",
+      "empty": "No inventory items found",
+      "emptyHint": "Try adjusting your filters or search query"
+    },
+    "smartSuggestion": {
+      "retry": "Retry",
+      "errorMessage": "Our AI Smart Suggestion encountered an unexpected error while processing your request. The neural network couldn't complete the task.",
+      "progress": {
+        "budgetFit": "AI Smart Suggestion is working on the budget fit",
+        "goalFit": "AI Smart Suggestion is working on the goal fit",
+        "geoFitness": "AI Smart Suggestion is working on the geo fitness",
+        "audienceFit": "AI Smart Suggestion is working on the audience fit",
+        "brandCategoryFit": "AI Smart Suggestion is working on the brand and category fit",
+        "inventoryAvailability": "AI Smart Suggestion is working on the inventory availability",
+        "timeFit": "AI Smart Suggestion is working on the time fit",
+        "selectingInventory": "Now it's trying to select inventory based on best fit"
+      }
+    }
+  },
+  "card": {
+    "days_left": "days left",
+    "brand": "Brand",
+    "inventories_used": "Inventories Used",
+    "units": "Units",
+    "budget_utilization": "Budget Utilization",
+    "impressions": "Impressions",
+    "reach": "Reach",
+    "sov": "SOV",
+    "sot": "SOT",
+    "view_details": "View Details",
+    "edit": "Edit Plan",
+    "duplicate": "Duplicate Plan",
+    "delete": "Delete",
+    "share_of_voice": "Share of Voice",
+    "share_of_target": "Share of Target",
+    "view_media_plan": "View Media Plan",
+    "execution_plan": "Execution Plan",
+    "assign_creative": "Assign Creative",
+    "reserve_inventories": "Reserve Inventories",
+    "campaign_approval": "Plan Approval",
+    "price_management": "Price Management",
+    "archive": "Archive",
+    "share": "Share",
+    "download": "Download"
+  },
+  "filter": {
+    "title": "Filters",
+    "status": "Status",
+    "planned_by": "Planned by",
+    "period": "Period",
+    "campaign_goal": "Plan Goal",
+    "clear_filters": "Clear Filters",
+    "apply_filters": "Apply Filters",
+    "select_status": "Select status...",
+    "select_planners": "Select planners...",
+    "select_date_range": "Select date range...",
+    "select_goals": "Select plan goals...",
+    "select_options": "Select options",
+    "reset": "Reset",
+    "tooltip_status": "Filter plans by their current status (Draft, Planned, Active, Completed, etc.)",
+    "tooltip_planned_by": "Filter plans by the user who created or planned them",
+    "tooltip_period": "Filter plans by their flight date range — only plans running within the selected dates will appear",
+    "tooltip_campaign_goal": "Filter plans by their optimization goal type (Impressions, Reach, Share of Voice, Ad Plays)",
+    "all": "All",
+    "active_filters": "Active filters:",
+    "clear_all": "Clear all",
+    "status_draft": "Draft",
+    "status_planned": "Planned",
+    "status_active": "Active",
+    "status_completed": "Completed",
+    "allStatus": "All Status",
+    "allUsers": "All Users",
+    "allGoals": "All Goals",
+    "selectEndDateError": "Please select an end date"
+  },
+  "table": {
+    "search_placeholder": "Search here...",
+    "filter": "Filter",
+    "list_view": "List view",
+    "grid_view": "Grid view",
+    "no_data": "No data available",
+    "customize_columns": "Customize columns"
+  },
+  "column_customization": {
+    "title": "Customize Table Elements",
+    "enable_all": "Enable all fields",
+    "cancel": "Cancel Changes",
+    "apply": "Apply Changes",
+    "at_least_one_visible_required": "At least one column must remain visible."
+  },
+  "agency_form": {
+    "title": "Create New Agency",
+    "general_info": "General Information",
+    "contact_info": "Contact Information",
+    "location_info": "Location Details",
+    "name": "Agency Name",
+    "name_placeholder": "Enter agency name",
+    "website": "Website",
+    "website_placeholder": "https://example.com",
+    "phone": "Phone Number",
+    "phone_placeholder": "+60 12 345 6789",
+    "company_email": "Company Email",
+    "company_email_placeholder": "company@example.com",
+    "domain": "Domain",
+    "domain_placeholder": "example.com",
+    "notification_email": "Notification Email",
+    "notification_email_placeholder": "notifications@example.com",
+    "registration_number": "Registration Number",
+    "registration_number_placeholder": "Enter registration number",
+    "gst_number": "GST Number (Optional)",
+    "gst_number_placeholder": "Enter GST number",
+    "street": "Street Address",
+    "street_placeholder": "Enter street address",
+    "postal_code": "Postal Code",
+    "postal_code_placeholder": "Enter postal code",
+    "country": "Country",
+    "country_placeholder": "Select country",
+    "state": "State",
+    "state_placeholder": "Select state",
+    "district": "District",
+    "district_placeholder": "Select district",
+    "cancel": "Cancel",
+    "create": "Create Agency",
+    "creating": "Creating...",
+    "name_required": "Agency name is required",
+    "email_invalid": "Please enter a valid email",
+    "country_required": "Country is required",
+    "create_error": "Failed to create agency. Please try again.",
+    "loading_countries": "Loading countries...",
+    "countries_error": "Failed to load countries",
+    "no_countries": "No countries available",
+    "title_link": "Link Existing Agency",
+    "media_owner": "Media Owner",
+    "active": "Active",
+    "inactive": "Inactive",
+    "link": "Link Agency",
+    "linking": "Linking...",
+    "searching": "Searching...",
+    "own_agency_exists": "You already have an agency with this name.",
+    "similar_agencies_header": "Similar agencies found — select one to link it to your company instead of creating a new one.",
+    "exact_agency_match_header": "This agency already exists - link it to your company instead of creating a new one.",
+    "no_similar_agencies": "No similar agencies found",
+    "link_notice": "Linking this agency will associate it with your company. Your team will be able to use it in plans without creating a duplicate agency entry.",
+    "link_agency_success": "Agency linked successfully."
+  },
+  "brand_dropdown": {
+    "search_brands": "Search brands...",
+    "no_brands": "No brands found. Create a new brand to get started.",
+    "create_brand": "Create new",
+    "brand_selection_help": "Brand selection helps with better targeting recommendations",
+    "category_label": "Category"
+  },
+  "agency_dropdown": {
+    "no_agencies": "No agencies found. Create a new agency to get started.",
+    "create_agency": "Create new"
+  },
+  "optimization": {
+    "title": "Optimisation",
+    "subtitle": "Optimize your plan settings",
+    "budgetAllocation": {
+      "tabtitle": "Budget Allocation",
+      "title": "Budget Distribution",
+      "subtitle": "Adjust how your budget is distributed across inventory types",
+      "description": "Inventory types include both individual assets and networks",
+      "digital": "Digital",
+      "classic": "Classic",
+      "cinema": "Cinema",
+      "retail": "Retail",
+      "transit": "Transit",
+      "validationFailed": "Please validate again!",
+      "totalValidationMessage": "Total budget allocation must be above 0 or less than or equal 100%",
+      "companyTooltip": "Select your company from the dropdown"
+    },
+    "schedulingTargeting": {
+      "title": "Schedule Presets",
+      "tabtitle": "Schedule",
+      "contentDescription": "Apply common scheduling patterns to your plan",
+      "commuterButtonLabel": "Commuter Pattern",
+      "weekendButtonLabel": "Weekend Focus",
+      "businessButtonLabel": "Business hours",
+      "nightButtonLabel": "Night Life",
+      "customButtonLabel": "Custom",
+      "validationFailed": "Please validate again!",
+      "scheduleDates": "Schedule Dates",
+      "scheduleDays": "Schedule Days",
+      "scheduleDuration": "Duration",
+      "scheduleSpotsLoop": "Spots/Loop",
+      "scheduleSpotsHour": "Spots/Hour",
+      "schedulePlayHours": "Play Hours/Day",
+      "secondsLabel": "Seconds",
+      "errorFetchingSchedules": "Error fetching inventory schedules",
+      "defaultScheduleDeleteError": "At least 1 schedule in needed to proceed further. You can’t delete this",
+      "removeScheduleTitle": "Delete Schedule",
+      "removeScheduleYesButtonLabel": "Yes, Delete",
+      "removeScheduleNoButtonLabel": "Don't Delete",
+      "removeScheduleConfirmationMessage": "Are you sure you want to delete the schedule -",
+      "removeInventoryTitle": "Remove Inventory",
+      "removeInventoryYesButtonLabel": "Yes, Remove",
+      "removeInventoryNoButtonLabel": "Cancel",
+      "removeInventoryConfirmationMessage": "Are you sure you want to remove this inventory from the plan? Its schedules will be removed too -",
+      "removeInventorySuccess": "Inventory removed from the plan",
+      "removeInventoryError": "Failed to remove inventory. Please try again.",
+      "cannotRemoveLastInventory": "At least 1 inventory is needed. You can't remove this.",
+      "noScheduleText": "Select an inventory to view the schedule details.",
+      "weekdayDistribution": {
+        "totalValidationMessage": "Total weekday distribution must be above 0 or less than or equal 100%",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+      },
+      "daypartDistribution": {
+        "title": "Time of Day Distribution",
+        "totalValidationMessage": "Total daypart distribution must be above 0 or less than or equal 100%",
+        "morning": "Morning (6am-10am)",
+        "midday": "Midday (10am-2pm)",
+        "afternoon": "Afternoon (2pm-6pm)",
+        "evening": "Evening (6pm-10pm)",
+        "night": "Night (10pm-6am)"
+      },
+      "autoOptimizeSuccess": "Inventory schedules optimized successfully",
+      "errorAutoOptimize": "Error optimizing inventory schedules"
+    },
+    "configureScheduling": {
+      "title": "Inventory-Specific Scheduling",
+      "description": "Set custom schedules and operating hours for individual inventory items",
+      "tooltipSection": {
+        "title": "Advanced Sheduling Control",
+        "description": "Configure unique operating hours, display frequencies, and date ranges for each inventory location. Perfect for accommodating different venue policies and audience patterns."
+      },
+      "configureSchedulingButtonLabel": "Configure Inventory Schedules",
+      "optimizeManuallyButtonLabel": "Optimise Manually",
+      "aiOptimizeButtonLabel": "AI Optimisation",
+      "selectedInventoryInfo": "List of all selected inventories",
+      "loadingInventories": "Loading inventories...",
+      "noInventories": "No inventories found",
+      "loadingMore": "Loading more inventories..."
+    },
+    "optimizeManuallyDrawer": {
+      "title": "Optimise Manually",
+      "description": "Manually adjust scheduling parameters for each inventory item",
+      "clearPreviousSchedule": "Clear the previous schedule/s of selected billboards",
+      "cancel": "Cancel",
+      "saving": "Saving...",
+      "saveChanges": "Save Changes",
+      "selectedInventories": "Selected Inventories",
+      "searchInventoryPlaceholder": "Search inventories here...",
+      "optimizeSchedule": "Optimize Schedule",
+      "scheduleDate": "Schedule Date",
+      "dayScheduleTitle": "Select days of schedule",
+      "selectAllDays": "Select all days",
+      "scheduleGrids": "Schedule Grids",
+      "selectAll": "Select All",
+      "deselectAll": "Deselect All",
+      "scheduleErrorPart1": "The operation hours of this billboard inventory is from ",
+      "scheduleErrorPart2": " Please reconsider your selection or confirm with the media owner once",
+      "scheduleWarning": "This billboard inventory has overlapping schedules with other inventories",
+      "classicHourlyNotApplicable": "Hourly scheduling and patterns (e.g. Commuter Pattern) only apply to digital inventories. Classic inventories in this selection will only use the date range above.",
+      "saveChangesTitle": "Save changes - Acknowledgement",
+      "saveChangesBodeyText": "Changes only applied on selected ",
+      "saveChangesPrimaryButtonLabel": "Ok",
+      "noHoursSelected": "Please select any hour for any day to save schedule for inventories!",
+      "errorWhileSaving": "Error while Saving!",
+      "scheduleErrorTo": " to ",
+      "minHoursViolation": "Some inventories have a scheduled day with fewer hours than their required minimum. Please adjust your selection before saving.",
+      "minHoursViolationTooltip": "This inventory requires at least {minHours} hour(s) selected on every scheduled day."
+    }
+  },
+  "viewCampaign": {
+    "ID": "ID",
+    "budget": "Budget",
+    "campaignStartDate": "Plan Start Date",
+    "campaignEndDate": "Plan End Date",
+    "campaignKeyStakeholders": "Plan Key Stakeholders",
+    "planner": "Planner",
+    "brandCategory": "Brand Category",
+    "MEDIA_OWNER": "Media Owner",
+    "COUNTRY": "Country",
+    "INVENTORY_TYPE": "Inventory Type",
+    "VENUE_TYPE": "Venue Type",
+    "STATE": "State",
+    "CITY": "City",
+    "SIZE": "Size",
+    "tabs": {
+      "campaignDetails": "Plan Details",
+      "campaignHistory": "Plan History"
+    },
+    "submitCampaign": "Submit Plan",
+    "errorLoadingData": "Error loading plan data.",
+    "defaultCampaignName": "Plan 1",
+    "submitModal": {
+      "title": "Confirm Submission",
+      "message": "Are you sure you want to submit the plan for approval?",
+      "note": "After submission, no further edit will be allowed unless the plan is rejected.",
+      "yes": "Yes, Submit",
+      "no": "No, Don't"
+    },
+    "submitSuccess": "Plan submitted for review successfully.",
+    "submitError": "Failed to submit plan for review. Please try again.",
+    "tabTitles": {
+      "goal": "Goal",
+      "inventory": "Inventory",
+      "performance": "Performance",
+      "costBreakdown": "Cost Breakdown",
+      "comments": "Comments"
+    },
+    "targetingTab": {
+      "audienceTitle": "Audience Demographics",
+      "geographyTitle": "Geographic Targeting",
+      "byCityTitle": "By Cities",
+      "byVenueTypeTitle": "By Venue Types",
+      "ageGroups": "Age Groups",
+      "incomeLevel": "Income Level",
+      "interests": "Interests",
+      "lifestyle": "Lifestyle",
+      "adPlays": "Ad Plays",
+      "ofTotal": " of Total Cost",
+      "mapView": "Map View"
+    },
+    "inventoryTab": {
+      "title": "Inventory Overview",
+      "totalInventory": "Total Inventory",
+      "format": "Format",
+      "types": "Types",
+      "cities": "Cities",
+      "adPlays": "Ad Plays",
+      "selectedInventory": "Selected Inventory",
+      "inventoryInfo": "Performance estimates are based on historical inventory data and your schedule configuration. Actual results may vary.",
+      "selectedInventoryInfo": "Complete list of all selected inventory"
+    },
+    "scheduleTab": {
+      "title": "Plan Scheduling",
+      "subTitle": "View and manage the planned schedules for each inventory asset as configured during planning.",
+      "scheduleConfiguration": "Schedule Configuration",
+      "expectedPerformance": "Expected Performance",
+      "hours": "Hours",
+      "expectedImpressions": "Expected Impressions"
+    },
+    "campaignGoalView": {
+      "selectedCampaignGoal": "Selected Plan Goal",
+      "noGoalSelected": "No Goal selected",
+      "noMetricsToShow": "No metrics to show",
+      "targetVsPlanned": "Target vs Planned Performance",
+      "overTarget": "Over Target",
+      "underTarget": "Under Target",
+      "plannedProgressToTarget": "Planned Progress to Target",
+      "progressInfoText": "This shows your progress towards the target",
+      "yourTarget": "Your Target",
+      "plannedDelivery": "Planned Delivery",
+      "target": "Target",
+      "projected": "Projected",
+      "expectedGoalAchievement": "Expected Goal Achievement",
+      "noGoalAchievement": "No any goal Achievement",
+      "expectedToOverdeliver": "Expected to overdeliver",
+      "expectedToReachTarget": "Expected to reach target goal 100%",
+      "expectedToReach": "Expected to reach",
+      "ofTarget": "of target",
+      "howYourPlanAchieves": "How Your Plan Achieves This Goal",
+      "strategies": {
+        "highTraffic": {
+          "title": "High-Traffic Location Strategy",
+          "description": "Selected inventory in Times Square, Michigan Ave, and Sunset Blvd ensures maximum visibility during peak hours"
+        },
+        "formatMix": {
+          "title": "Format Mix Optimization",
+          "description": "Combination of digital and static formats provides 24/7 exposure with enhanced engagement during daylight hours"
+        },
+        "overDelivery": {
+          "title": "Over-Delivery Buffer",
+          "description": "Your plan includes 18% more impressions than targeted, providing protection against seasonal fluctuations"
+        }
+      },
+      "impression": "Impression",
+      "noGoal": "No Goal",
+      "expectedOverdeliver": "Expected to overdeliver ({n})",
+      "expectedReachTarget": "Expected to reach target goal 100%",
+      "expectedReachPartial": "Expected to reach {n}% of target {goalType}"
+    },
+    "costSplit": "Cost Split",
+    "totalLabel": "Total",
+    "splitByLabel": "Split by",
+    "ofTotalCost": "of total cost",
+    "execution": {
+      "pushed": "Pushed to execution",
+      "handedOff": "{acknowledged}/{total} lines acknowledged",
+      "inProgress": "{count} in progress",
+      "failed": "{count} failed",
+      "view": "View Execution Plan"
+    }
+  },
+  "media_plan": {
+    "title": "Media Plan",
+    "view_type": {
+      "presentation": "Presentation",
+      "analytics": "Analytics"
+    },
+    "actions": {
+      "download_ppt": "Download PPT",
+      "download_excel": "Download Excel",
+      "share": "Share",
+      "confirm_proposal": "Confirm Proposal",
+      "processing": "Processing...",
+      "preparing": "Preparing..."
+    },
+    "theme_selector": {
+      "select_theme": "Select Theme"
+    },
+    "title_slide": {
+      "total_budget": "Total Budget",
+      "total_cost": "Total Cost",
+      "impressions": "Impressions",
+      "campaign_period": "Campaign Period",
+      "prepared_by": "Prepared by",
+      "plan_dates": "Plan Dates",
+      "planned_by": "Planned by",
+      "days": "{count} days",
+      "moving_walls": "Moving Walls",
+      "moving_walls_internal": "MW Planner Internal"
+    },
+    "performance_metrics": {
+      "title": "Estimated Performance Metrics",
+      "subtitle": "Top-line numbers at a glance",
+      "geography": "Geography",
+      "geography_unit": "city",
+      "geography_sub": "{countries} country · {pois} POIs",
+      "inventories": "Inventories",
+      "inventories_unit": "placements",
+      "inventories_sub": "Across all selected channels",
+      "channels": "Channels",
+      "channels_unit": "channel",
+      "channels_sub": "Distinct media channels on the plan",
+      "total_impressions": "Total Impressions",
+      "total_impressions_unit": "impressions",
+      "total_impressions_sub": "Forecast across the full plan",
+      "estimated_reach": "Estimated Reach",
+      "estimated_reach_unit": "unique people",
+      "estimated_reach_sub": "Net unique audience exposed",
+      "avg_frequency_unit": "per person",
+      "avg_frequency_sub": "Average exposures per unique viewer",
+      "avg_cpm_unit": "per 1k impr.",
+      "avg_cpm_sub": "Gross media-owner rate",
+      "avg_cps": "Avg. CPS",
+      "avg_cps_unit": "per spot",
+      "avg_cps_sub": "Cost-per-spot rate",
+      "ecpm": "eCPM",
+      "ecpm_unit": "per 1k impr.",
+      "ecpm_sub": "Effective: total cost ÷ total impressions",
+      "sov_unit": "SOV",
+      "sov_sub": "Plan-level share of competitive market",
+      "sot_unit": "SOT",
+      "sot_sub": "Plan-wide blended air-time share",
+      "total_cost": "Total Cost",
+      "total_cost_unit": "media + fees",
+      "total_cost_sub": "Investment as shown on this plan",
+      "ad_plays": "Ad Plays",
+      "ad_plays_unit": "plays",
+      "ad_plays_sub": "Total ad displays across the plan",
+      "note_pricing": "This plan is priced on CPS (cost per spot) because the campaign goal is share-of-voice, ad plays or unset. Avg CPS is the cost-per-spot price provided by media owners. eCPM is calculated from total impressions and total cost (cost ÷ impressions × 1,000).",
+      "note_derivation": "Numbers derived from {count} planned inventory over {days} days; CPM is blended across all panels; reach uses the channel-mix benchmark.",
+      "est_impressions": "Est. Impressions",
+      "campaign_duration": "Plan Duration",
+      "est_reach": "Est. Reach",
+      "unique_viewers": "Unique Viewers",
+      "avg_frequency": "Avg. Frequency",
+      "avg_per_person": "Avg Per Person",
+      "avg_ecpm": "Avg. eCPM",
+      "effective_rate": "Effective Rate",
+      "avg_cpm": "Avg. CPM",
+      "media_owner_rate": "Media Owner Rate",
+      "est_ad_plays": "Est. Ad Plays",
+      "total_displays": "Total Displays",
+      "sov": "SOV",
+      "share_of_voice": "Share of Voice",
+      "sot": "SOT",
+      "daily_hours_used": "Daily Hours Used"
+    },
+    "inventory_mix": {
+      "title": "Inventory Mix",
+      "subtitle": "{inventories} inventories across {channels} media channel",
+      "col_media_channel": "Media Channel",
+      "col_inventories": "Inventories",
+      "col_impressions": "Impressions",
+      "col_cost": "Cost",
+      "col_cpm": "AVG CPM",
+      "col_cps": "AVG CPS",
+      "col_share": "Share",
+      "total": "Total",
+      "summary_media_channels": "Media Channels",
+      "summary_total_inventories": "Total Inventories",
+      "summary_total_cost": "Total Cost",
+      "note": "{channel} leads the buy at {share}% of cost across {inventories} inventory.",
+      "empty": "No channel data available",
+      "channel_digital_ooh": "Digital",
+      "channel_classic_ooh": "Classic"
+    },
+    "audience_trends": {
+      "title": "Audience Trends",
+      "subtitle": "Audience reach builds steadily over the plan",
+      "cumulative_reach": "Cumulative Reach",
+      "reach_headline": "Reaches {reach} unique people by end of flight",
+      "reach_loading": "Loading reach curve…",
+      "reach_unavailable": "Reach curve unavailable",
+      "activity_by_day": "Audience Activity by Day",
+      "concentration_index": "Targeting Concentration Index",
+      "concentration_subtitle": "Planning heuristic — relative reach lift per cohort, not measured population research.",
+      "age_gender": "Age & Gender",
+      "income_group": "Income Group",
+      "behavior": "Behavior",
+      "interest": "Interest",
+      "note": "Bars show each weekday's share of active booked hours across the plan's schedules; the line is the cumulative reach build. Concentration reflects the targeting dimensions set on this plan."
+    },
+    "geographic_plan": {
+      "title": "Geographic Plan",
+      "subtitle": "{inventories} inventories across {cities} city",
+      "page_range": "Cities {start}–{end} of {total} · sorted by impressions",
+      "col_city": "City",
+      "col_country": "Country",
+      "col_inventories": "Inv.",
+      "col_impressions": "Impressions",
+      "col_reach": "Est. Reach",
+      "col_cost": "Cost",
+      "col_cpm": "AVG CPM",
+      "col_cps": "AVG CPS",
+      "summary_cities": "Cities",
+      "summary_inventories": "Inventories",
+      "summary_total_cost": "Total Cost",
+      "summary_avg_cpm": "Avg CPM",
+      "summary_avg_cps": "Avg CPS",
+      "note": "{cities} city across {countries} country; top market {topMarket} contributes {share}% of impressions.",
+      "empty": "No city data available",
+      "not_available": "—"
+    },
+    "audience_map": {
+      "title": "Audience Map — Inventory",
+      "subtitle": "{sites} sites across {markets} markets · densest {market}",
+      "sites_pinned": "Sites Pinned",
+      "total_inventory": "Total Inventory",
+      "densest_market": "Densest Market",
+      "note": "Each pin marks an inventory site; the shaded circle shows its coverage radius (250 m outdoor, 50 m indoor).",
+      "not_available": "—"
+    },
+    "targeting_card": {
+      "title": "Targeting",
+      "subtitle": "Who this plan is optimised to reach",
+      "demographics": "Demographics",
+      "demographics_sub": "Age · Gender · Income",
+      "age": "Age",
+      "gender": "Gender",
+      "income": "Income",
+      "venue_types": "Venue Types",
+      "venue_types_sub": "From the planned inventory mix",
+      "behaviour": "Behaviour",
+      "behaviour_sub": "Audience moments to surface in",
+      "interests": "Interests",
+      "interests_sub": "Categories the audience cares about",
+      "not_selected": "Not selected"
+    },
+    "goals_kpis": {
+      "title": "Goals & KPIs",
+      "subtitle": "The plan is forecast at {pct}% of target · impressions peak in {peak}",
+      "target": "Target",
+      "goal_type": "Goal type: {type}",
+      "planned_forecast": "Planned Forecast",
+      "on_track": "On track to deliver",
+      "forecast_vs_target": "Forecast vs Target",
+      "expected_delivery": "Expected Delivery · {granularity} bins",
+      "granularity": "Granularity",
+      "granularity_weekly": "Weekly",
+      "granularity_monthly": "Monthly",
+      "peak_bin": "Peak Bin",
+      "peak_impressions": "Peak Impressions",
+      "tip_impressions": "Impressions",
+      "tip_reach": "Reach",
+      "note": "Forecast {forecast} {forecastNoun} against a target of {target} {targetNoun} ({pct}% achieved). Bars show planned impressions per {granularity} bin; the highlighted bar marks {peak}.",
+      "reach": {
+        "label": "reach",
+        "target_noun": "unique reach",
+        "forecast_noun": "forecast reach"
+      },
+      "impressions": {
+        "label": "impressions",
+        "target_noun": "impressions",
+        "forecast_noun": "forecast impressions"
+      },
+      "adplays": {
+        "label": "ad plays",
+        "target_noun": "ad plays",
+        "forecast_noun": "forecast ad plays"
+      },
+      "sov": {
+        "label": "share of voice",
+        "target_noun": "SOV",
+        "forecast_noun": "forecast SOV"
+      }
+    },
+    "inventory_snapshots": {
+      "title": "Inventory Snapshots",
+      "subtitle": "Panels {start}–{end} of {total} · sorted by impressions",
+      "impressions": "Impressions",
+      "reach": "Reach",
+      "plays_day": "Plays/Day",
+      "sov": "SOV",
+      "cost": "Cost",
+      "cpm": "CPM",
+      "cps": "CPS",
+      "empty": "No inventory selected",
+      "note": "Inventories sorted by daily impressions; {total} panels paginated 6 per slide (this page shows {shown})."
+    },
+    "why_plan": {
+      "title": "Why This Plan Works",
+      "subtitle": "Three reasons this plan delivers on the brief — plus the milestone roadmap",
+      "reason": "Reason {number}",
+      "reason_geography": "Concentrates {inventories} inventories in {market}, generating {impressions} impressions where the brand's audience density is highest.",
+      "reason_scale": "Delivers {impressions} total impressions across {inventories} inventories at a blended CPM of {cpm}.",
+      "reason_audience": "{segments} match the brand's stated targeting profile.",
+      "reason_audience_venue": "Prioritises {venues} venue environments aligned to the target audience.",
+      "reason_audience_generic": "Placements are benchmarked against category norms for reach and frequency efficiency.",
+      "fallback_market": "the top market",
+      "inventory_in_plan": "Inventory in the Plan",
+      "expected_goal_achievement": "Expected Goal Achievement",
+      "phase_ramp": "Ramp",
+      "phase_mid_flight": "Mid-flight",
+      "phase_closeout": "Closeout",
+      "unit_day": "Day",
+      "unit_week": "Week",
+      "unit_month": "Month",
+      "unit_quarter": "Quarter",
+      "desc_ramp": "Posters paste, creative goes live and learning loops kick in.",
+      "desc_mid_flight": "All inventories firing — bulk of impressions delivered here.",
+      "desc_closeout": "Final push plus over-delivery buffer to absorb seasonality.",
+      "track_note_day": "Short plan — milestones are tracked daily.",
+      "track_note_week": "Short plan — milestones are tracked weekly.",
+      "track_note_month": "Long plan — milestones are tracked monthly.",
+      "track_note_quarter": "Long plan — milestones are tracked quarterly.",
+      "note": "Milestones split the flight into Ramp, Mid-flight and Closeout thirds; achievement % follows an S-curve pacing of the plan's forecast against the goal target. Reasons are derived from geography, plan economics and targeting."
+    },
+    "targeting_strategy": {
+      "title": "Targeting Strategy",
+      "subtitle": "Forecasted performance data for the plan duration",
+      "age_groups": "Age Groups",
+      "income_level": "Income Level",
+      "interests": "Interests",
+      "lifestyle": "Lifestyle"
+    },
+    "geographic_targeting": {
+      "title": "Geographic Targeting",
+      "subtitle_cities": "Forecasted performance data for the plan targeting locations by Cities",
+      "subtitle_venue_types": "Forecasted performance data for the plan targeting locations by Venue type",
+      "cities": "Cities",
+      "venue_type": "Venue Type",
+      "ad_plays": "Ad Plays",
+      "budget_allocation_percent": "Budget Allocation (in %)",
+      "of_total_cost": "% of Total Cost",
+      "page": "Page",
+      "of": "of",
+      "impressions": "Impressions",
+      "noData": "No data available"
+    },
+    "schedule": {
+      "title": "Plan Schedules",
+      "subtitle": "Detailed scheduling and timing strategy",
+      "flight_schedule": "Flight Schedule",
+      "daypart_performance": "Daypart Performance",
+      "ramp_up_phase": "Ramp-up Phase",
+      "budget_allocation": "Budget allocation",
+      "high_traffic": "High Traffic",
+      "medium_traffic": "Medium Traffic",
+      "low_traffic": "Low Traffic",
+      "chart_unavailable": "Chart image unavailable",
+      "chart_not_provided": "Chart image not provided"
+    },
+    "cost_breakdown": {
+      "title": "Cost Breakdown",
+      "subtitle": "Detailed cost allocation and analysis by inventory type",
+      "cost_split": "Cost Split",
+      "fee_structure": "Fee Structure",
+      "media_cost": "Media Cost",
+      "platform_fee": "Platform Fee",
+      "total_investment": "Total Cost",
+      "of_total_cost": "of total cost",
+      "loading": "Loading...",
+      "error": "Error loading cost split data",
+      "no_data": "No cost split data available"
+    },
+    "selected_inventory": {
+      "title": "Selected Inventories",
+      "subtitle": "Overview of all selected advertising assets",
+      "summary_statistics": "Summary Statistics",
+      "format_distribution": "Format Distribution",
+      "total_inventories": "Total Inventories",
+      "format_types": "Format Types",
+      "cities": "Cities",
+      "est_impressions": "Est. Impressions",
+      "inventory_name": "Inventory Name",
+      "type": "Type",
+      "city": "City",
+      "schedule_dates": "Schedule Dates",
+      "schedule_hours": "Schedule Hours",
+      "impression": "Impression",
+      "cost": "Cost",
+      "total_media_cost": "Total media cost",
+      "schedule_title": "Selected Inventories & Schedules",
+      "schedule_subtitle": "Overview of all selected Inventories"
+    },
+    "map_view": {
+      "title": "Inventory Map View",
+      "subtitle": "Geographic distribution of selected advertising assets",
+      "click_here": "Click here",
+      "map_load_error": "Map image could not be loaded",
+      "click_to_view": "Click to view interactive map",
+      "loading": "Loading..."
+    },
+    "common_labels": {
+      "na": "N/A",
+      "moving_walls": "Moving Walls"
+    },
+    "analytics": {
+      "title": "Analytics View",
+      "subtitle": "Detailed analytics and insights",
+      "coming_soon": "Analytics view coming soon"
+    },
+    "errors": {
+      "loading": "Loading...",
+      "error_loading": "Error loading media plan data",
+      "data_not_available": "Media plan data not available",
+      "download_failed": "Failed to generate PPT. Please try again.",
+      "download_success": "PPT downloaded successfully!",
+      "excel_not_implemented": "Excel download is not yet implemented",
+      "excelSuccess": "Excel file downloaded successfully!",
+      "excelFailed": "Failed to generate Excel. Please try again.",
+      "campaignIdMissing": "Plan ID is missing",
+      "publicTokenFailed": "Failed to generate public token",
+      "fetchInventoriesFailed": "Failed to fetch inventories",
+      "mapViewFailed": "Failed to open map view. Please try again.",
+      "mapCaptureFailed": "Failed to capture map image",
+      "pptMapTokenFailed": "Failed to generate public token for PPT map link",
+      "scheduleChartCaptureFailed": "Failed to capture schedule chart image",
+      "inventoryChartCaptureFailed": "Failed to capture selected inventory chart image"
+    },
+    "cinema": {
+      "title": "Cinema",
+      "subtitle": "Operator · hall · showtime — genre/rating constrained",
+      "operator": "Operator",
+      "cinema": "Cinema",
+      "hall": "Hall",
+      "showtime": "Showtime",
+      "genre": "Genre",
+      "rating": "Rating",
+      "more": "+{count} more",
+      "empty": "No cinema inventory",
+      "note": "Films are indicative only — the buy is operator/hall/showtime.",
+      "inventory": "Inventory",
+      "genre_rating": "Genre / Rating"
+    }
+  },
+  "approval": {
+    "title": "Plan Approval",
+    "loading": "Loading...",
+    "error": "Error loading approval details",
+    "approve": "Approve",
+    "reject": "Reject",
+    "sections": {
+      "campaign_details": "Plan Details",
+      "approval_progress": "Approval Progress"
+    },
+    "campaign_name": "Plan Name",
+    "campaign_id": "Plan ID",
+    "status_label": "Status",
+    "status_tooltip": "Plan status",
+    "budget": "Budget",
+    "campaign_duration": "Plan Duration",
+    "days": "days",
+    "created_by": "Created by",
+    "no_progress": "No approval progress available",
+    "status": {
+      "completed": "Completed",
+      "in_progress": "In Progress",
+      "pending": "Pending",
+      "rejected": "Rejected"
+    },
+    "authority": {
+      "agency": "Agency",
+      "internal": "Internal",
+      "media_owner": "Media Owner",
+      "agency_acceptance": "Agency Acceptance",
+      "internal_review": "Internal Review",
+      "media_owner_approval": "Media Owner Approval"
+    },
+    "approved_by": "Approved by",
+    "rejected_by": "Rejected by",
+    "approved_on": "Approved on",
+    "rejected_on": "Rejected on",
+    "pending": {
+      "agency": "Awaiting Agency Response",
+      "internal": "Awaiting Internal team Response",
+      "media_owner": "Pending Media Owner Approval",
+      "default": "Awaiting approval"
+    },
+    "rejection_reason_required": "Rejection reason is required",
+    "reason_visibility_note": "This reason will be visible to all stakeholders and logged in the plan history.",
+    "approval_completed": "Plan Approval Completed",
+    "already_rejected": "You have already rejected the plan",
+    "already_approved": "You have already approved the plan",
+    "modal": {
+      "note": "Note :",
+      "approve": {
+        "title": "Confirm Approval",
+        "message": "Are you sure you want to approve the plan?",
+        "note": "After approval, no further cost changes will be allowed. The plan will be locked and sent to the media owner for final approval.",
+        "yes": "Yes, Approve",
+        "no": "No, Don't"
+      },
+      "reject": {
+        "title": "Confirm Rejection",
+        "message": "Are you sure you want to reject the plan?",
+        "note": "After rejection, the plan will be returned for revision. Please provide a reason for rejection.",
+        "reason_label": "Rejection Reason",
+        "reason_placeholder": "Please provide a reason for rejection...",
+        "yes": "Yes, Reject",
+        "no": "No, Don't"
+      }
+    }
+  },
+  "scheduleDrawer": {
+    "title": "New Schedule",
+    "noInventorySelected": "No inventory selected. Please select an inventory first.",
+    "clearPreviousSchedule": "Clear the previous schedule/s of selected billboards",
+    "saving": "Saving...",
+    "saveChanges": "Save Changes",
+    "selectScheduleDatesFirst": "Please select schedule dates first",
+    "datesOutsideCampaignRange": "Schedule dates must be within the plan date range",
+    "spotsLoopCapped": "Spots/Loop cannot exceed {max} (Client per Loop). Value will be capped.",
+    "spotsHourCapped": "Spots/Hour cannot exceed {max} (Client per Loop × Initial Spots per Hour). Value will be capped.",
+    "selectAtLeastOneHour": "Please select at least one hour in the schedule grid",
+    "scheduleNameDefault": "Schedule {order}",
+    "scheduleSavedSuccessfully": "Schedule saved successfully",
+    "hoursOutsideOperationTime": "Some selected hours are outside the inventory's operation time.",
+    "overlappingSchedulesClassic": "Warning: This schedule overlaps with existing schedules. Please review the dates.",
+    "overlappingSchedulesDigital": "Warning: This schedule overlaps with existing schedules. Please review the dates and hours.",
+    "customPattern": "Custom",
+    "schedulePatterns": {
+      "default": "Default",
+      "commuter": "Commuter Pattern",
+      "business": "Business Hours",
+      "nightlife": "Nightlife",
+      "weekend": "Weekend Focus",
+      "24/7": "24/7",
+      "custom": "Custom"
+    },
+    "selectedInventories": "Selected Inventories",
+    "searchPlaceholder": "Search added locations here...",
+    "scheduleDate": "Schedule Date",
+    "selectDateRange": "Select date range",
+    "duration": "Duration",
+    "spotsLoop": "Spots/Loop",
+    "spotsHour": "Spots/Hour",
+    "scheduleGrids": "Schedule Grids",
+    "selectAllDays": "Select all days",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
+    "errors": {
+      "fillRequiredFields": "Please fill in all required fields",
+      "selectScheduleDates": "Please select schedule dates",
+      "selectAtLeastOneHour": "Please select at least one hour in the schedule grid",
+      "failedToSave": "Failed to save schedule",
+      "failedToSaveRetry": "Failed to save schedule. Please try again."
+    },
+    "newTitle": "New {title}",
+    "selectDaysLabel": "Select days of schedule",
+    "invalidInventoryType": "Please select a valid inventory type",
+    "minHoursViolation": "Each scheduled day must have at least {minHours} hour(s) selected for this inventory. Please adjust your selection before saving."
+  },
+  "scheduleOptimization": {
+    "allInventories": "All Inventories",
+    "scheduleName": "Schedule {order}",
+    "scheduleDefault": "(Default)",
+    "days": {
+      "MONDAY": "Mon",
+      "TUESDAY": "Tue",
+      "WEDNESDAY": "Wed",
+      "THURSDAY": "Thu",
+      "FRIDAY": "Fri",
+      "SATURDAY": "Sat",
+      "SUNDAY": "Sun"
+    },
+    "errors": {
+      "failedToLoadInventory": "Failed to load inventory",
+      "cannotDeleteSchedule": "Cannot delete schedule: ID not found",
+      "failedToDeleteSchedule": "Failed to delete schedule",
+      "failedToDeleteScheduleRetry": "Failed to delete schedule. Please try again."
+    },
+    "scheduleDeletedSuccessfully": "Schedule deleted successfully",
+    "of": "of"
+  },
+  "optimizeManually": {
+    "errors": {
+      "selectInventory": "Please select any inventory to save schedule!",
+      "selectScheduleDates": "Please select schedule dates"
+    }
+  },
+  "inventoryDetails": {
+    "tabs": {
+      "details": "Details",
+      "locationMap": "Location & Map",
+      "operations": "Operations",
+      "availability": "Availability"
+    },
+    "noImageAvailable": "No image available",
+    "inventoryInformations": "Inventory Information",
+    "copyName": "Copy name",
+    "nameCopied": "Name copied to clipboard",
+    "cinema": {
+      "lineupTitle": "Indicative film line-up",
+      "lineupAsOf": "Indicative line-up, as of {date}",
+      "runtime": "{minutes} min",
+      "notABuyUnit": "Films are shown for reference only and are not a buy unit. Cinema inventory is bought by operator, hall and showtime window."
+    },
+    "labels": {
+      "mediaOwner": "Media Owner",
+      "type": "Type",
+      "format": "Format",
+      "size": "Size",
+      "screens": "Screens",
+      "operationMode": "Operation Mode",
+      "execution": "Execution",
+      "loopBased": "Loop Based",
+      "inventoryId": "Inventory ID"
+    },
+    "typeLabel": {
+      "digital": "Digital",
+      "digitalTransit": "Digital Transit",
+      "classic": "Classic",
+      "classicTransit": "Classic Transit"
+    },
+    "bookingMode": {
+      "spot": "Spot",
+      "loop": "Loop"
+    },
+    "locationDetails": "Location Details",
+    "locationLabels": {
+      "address": "Address",
+      "coordinates": "Coordinates",
+      "visibility": "Visibility",
+      "areaType": "Area Type",
+      "venueType": "Venue Type"
+    },
+    "nearbyPOI": "Nearby Points of Interest",
+    "poiLabels": {
+      "restaurants": "Restaurants",
+      "shopping": "Shopping",
+      "transit": "Transit",
+      "hotels": "Hotels"
+    },
+    "operatingSchedule": "Operating Schedule",
+    "scheduleLabels": {
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "operatingDays": "Operating Days",
+      "maintenanceWindow": "Maintenance Window"
+    },
+    "loopConfiguration": "Loop Configuration",
+    "loopLabels": {
+      "loopSize": "Loop Size",
+      "slotDuration": "Slot Duration",
+      "clientsPerLoop": "Clients per Loop",
+      "cycleTime": "Cycle Time"
+    },
+    "daysPerWeek": "{count} days / Week",
+    "notAvailable": "N/A",
+    "performanceMetricsPlaceholder": "Performance metrics will be displayed here",
+    "busynessDataPlaceholder": "Busyness data will be displayed here"
+  },
+  "mobilityHeatmap": {
+    "title": "Audience heatmap",
+    "tooltip": "Shows where your target audience moves, based on audience mobility (footfall) data. Darker red areas indicate higher footfall.",
+    "timeOfDay": "Time of day",
+    "buckets": {
+      "all": "All day",
+      "morning": "Morning",
+      "afternoon": "Afternoon",
+      "evening": "Evening",
+      "night": "Night"
+    },
+    "low": "Low",
+    "high": "High",
+    "loading": "Loading mobility data...",
+    "error": "Could not load mobility data",
+    "noData": "No mobility data available for this area"
+  },
+  "inventoryMapView": {
+    "title": "Selected Inventories",
+    "removeFile": "Remove file",
+    "emptyMessage": "No inventories found",
+    "emptySubMessageWithQuery": "Try adjusting your search query",
+    "emptySubMessageNoQuery": "Select inventories to view them here",
+    "loadingMoreText": "Loading more...",
+    "yesRemove": "Yes, Remove",
+    "dontRemove": "Don't Remove",
+    "removeConfirmMessage": "Are you sure you want to remove the inventory -",
+    "thisItem": "this item",
+    "estimatedCost": "Estimated Cost",
+    "smartScore": "Smart score",
+    "poiFilter": "POIs",
+    "locationsDropdown": "Locations",
+    "locationsEmpty": "No locations selected",
+    "poiEmpty": "No POIs selected",
+    "inventoriesCount": "Inventories",
+    "searchPlaceholder": "Search locations, inventories here...",
+    "mediaOwner": "Media Owner",
+    "cpm": "CPM",
+    "impression": "Impression",
+    "availability": "Availability"
+  },
+  "inventoryCsvUpload": {
+    "title": "Import Inventories",
+    "tabs": {
+      "existingFiles": "Existing Files",
+      "uploadNew": "Upload New"
+    },
+    "uploadPlaceholder": "Tap or Drag & Drop your file here",
+    "dataProcessingResults": "Data Processing Results",
+    "columns": {
+      "srNo": "S.No",
+      "fileName": "File Name",
+      "noOfInventories": "No. of inventories",
+      "uploadedBy": "Uploaded by",
+      "uploadedOn": "Uploaded On",
+      "action": "Action"
+    },
+    "actions": {
+      "view": "View",
+      "download": "Download",
+      "delete": "Delete"
+    },
+    "deleteFileTitle": "Delete file",
+    "deleteFileConfirm": "Yes, Delete",
+    "deleteFileCancel": "Don't Delete",
+    "deleteFileMessage": "Are you sure you want to delete the file -",
+    "deleteFileThisFile": "this file",
+    "errors": {
+      "campaignIdRequired": "Plan ID is required for upload",
+      "failedToUpload": "Failed to upload CSV file. Please try again.",
+      "uploadAndVerifyFirst": "Please upload and verify a CSV file first",
+      "selectFileToUse": "Please select a file to use",
+      "campaignIdRequiredForUse": "Plan ID is required",
+      "failedToDelete": "Failed to delete file. Please try again.",
+      "failedToDownload": "Failed to download file. Please try again."
+    },
+    "success": {
+      "uploaded": "CSV file uploaded successfully",
+      "fileUsed": "File used successfully",
+      "deleted": "File deleted successfully",
+      "downloaded": "File downloaded successfully"
+    },
+    "loadingFiles": "Loading files...",
+    "noFilesAvailable": "No files available"
+  },
+  "locationCsvUpload": {
+    "errors": {
+      "countryNameRequired": "Country name is required for import",
+      "noLocationsFound": "No locations found in the file",
+      "noValidLocations": "No valid locations found in the file",
+      "failedToReadFile": "Failed to read file. Please try again.",
+      "failedToImport": "Failed to import CSV file. Please try again.",
+      "selectFile": "Please select a file",
+      "importCallbackNotAvailable": "Import callback not available",
+      "failedToDelete": "Failed to delete file. Please try again.",
+      "failedToDownload": "Failed to download file. Please try again."
+    },
+    "success": {
+      "imported": "CSV file imported successfully",
+      "deleted": "File deleted successfully",
+      "downloaded": "File downloaded successfully"
+    }
+  },
+  "dataProcessingResults": {
+    "title": "Data Processing Results",
+    "totalRows": "Total Rows",
+    "valid": "Valid",
+    "invalid": "Invalid"
+  },
+  "campaignDetails": {
+    "errorLoadingSplitCost": "Error loading cost split data"
+  },
+  "geofencingDrawer": {
+    "deleteFile": {
+      "title": "Delete file",
+      "confirm": "Yes, Delete",
+      "cancel": "Don't Delete",
+      "message": "Are you sure you want to delete the file -",
+      "thisFile": "this file"
+    },
+    "uploadTab": {
+      "placeholder": "Tap or Drag & Drop your file here",
+      "allProcessed": "All data processed successfully! - {count} Locations Verified"
+    },
+    "dataProcessing": {
+      "title": "Data Processing Results",
+      "successRate": "{rate}% Success Rate",
+      "totalRows": "Total Rows",
+      "valid": "Valid",
+      "invalid": "Invalid",
+      "note": "Note :",
+      "noteText": "Only the valid data will be saved and used for location selection",
+      "locationsVerified": "{count} Locations Verified",
+      "invalidLocations": "{count} Invalid Locations",
+      "duplicateLocations": "{count} Duplicate Locations",
+      "viewLogs": "View Logs"
+    }
+  },
+  "commentsTab": {
+    "placeholder": "Enter your comments here..",
+    "emptyError": "Comment cannot be empty",
+    "campaignIdRequired": "Plan ID is required",
+    "postSuccess": "Comment posted successfully!",
+    "postError": "Failed to post comment. Please try again.",
+    "posting": "Posting...",
+    "postComment": "Post Comment",
+    "viewAttachment": "View",
+    "downloadAttachment": "Download",
+    "addComment": "Add Comment",
+    "attachFiles": "Attach Files",
+    "attachmentTypes": "PDF, Images (max 5MB each)",
+    "campaignComments": "Plan Comments",
+    "loadingComments": "Loading comments...",
+    "loadError": "Failed to load comments. Please try again.",
+    "noComments": "No comments yet. Be the first to comment!",
+    "fileSizeError": "{fileName} exceeds 5MB limit",
+    "validationError": "Validation error"
+  },
+  "campaignWrapper": {
+    "invalidStep": "Invalid step",
+    "previousStep": "Previous Step",
+    "nextStep": "Next Step",
+    "processing": "Processing...",
+    "saving": "Saving...",
+    "errors": {
+      "failedToLoadData": "Failed to load plan data for editing.",
+      "campaignIdRequired": "Plan ID is required to finalise the plan.",
+      "failedToFinalise": "Failed to finalise plan. Please try again.",
+      "companySwitched": "Company switched. Please create a new plan for the selected company.",
+      "minDaysViolation": "Some inventories do not have enough scheduled days to meet their minimum day requirement. Please review the schedules before finalising the plan.",
+      "minDaysViolationDetail": "{name} requires at least {minDays} scheduled day(s) but currently has {actualDays}."
+    },
+    "success": {
+      "statusUpdated": "Plan Status updated."
+    }
+  },
+  "mediaPlan": {
+    "theme": {
+      "primary": "Modern Executive",
+      "warning": "Vibrant Orange",
+      "success": "Professional Green",
+      "purple-warning": "Elegant Purple"
+    },
+    "geographicTargeting": "Geographic Targeting",
+    "errors": {
+      "campaignIdMissing": "Plan ID is missing",
+      "failedToGenerateToken": "Failed to generate public token",
+      "failedToFetchInventories": "Failed to fetch inventories",
+      "failedToOpenMapView": "Failed to open map view. Please try again.",
+      "failedToGenerateExcel": "Failed to generate Excel. Please try again."
+    },
+    "success": {
+      "excelDownloaded": "Excel file downloaded successfully!"
+    },
+    "analyticsView": {
+      "tabs": {
+        "campaignPlan": "Plan",
+        "inventoryDetails": "Inventory Details",
+        "doohSchedules": "DOOH Schedules",
+        "operationDetails": "Operation Details"
+      },
+      "inactiveDays": "Inactive Days"
+    },
+    "defaultTitle": "Plan",
+    "noScheduleData": "No schedule data available",
+    "percentage": "Percentage"
+  },
+  "shareModal": {
+    "title": "Share a link",
+    "linkCopied": "Link copied to clipboard",
+    "sharedInternally": "Shared internally successfully",
+    "shareLink": "Share Link",
+    "shareVia": "Share via",
+    "email": "Email",
+    "whatsApp": "WhatsApp"
+  },
+  "agencyForm": {
+    "success": "Agency created successfully."
+  },
+  "approvals": {
+    "title": "Plan Approval",
+    "subtitle": "{total, plural, one {# plan} other {# plans}} in review · {awaiting} awaiting your action",
+    "errorLoadingData": "Failed to load the approval inbox.",
+    "emptyTitle": "Inbox zero",
+    "emptyDescription": "No plans are waiting for review right now.",
+    "awaitingYou": "Awaiting You",
+    "awaitingStage": "Awaiting {stage}",
+    "inNegotiation": "In negotiation — prices are being countered",
+    "pricesPending": "Changed prices must be accepted before approval",
+    "review": "Review",
+    "viewProgress": "View Progress",
+    "authority": {
+      "AGENCY": "Agency Acceptance",
+      "INTERNAL": "Internal Review",
+      "MEDIA_OWNER": "Media Owner Approval"
+    },
+    "tabAll": "All plans",
+    "tabNeedsAction": "Needs your action",
+    "tabNegotiating": "In negotiation",
+    "searchPlaceholder": "Search by plan, number or company...",
+    "noMatches": "No plans match your filters.",
+    "fromCompany": "From {company}",
+    "yourMediaCost": "Your media cost: {cost}",
+    "yourInventories": "{count} of your inventories",
+    "mediaOwnersLabel": "Media owners",
+    "yourStatusLabel": "Your approval",
+    "counterOffer": "Counter offer",
+    "counterOfferOpen": "Your counter offer is awaiting the buyer's response",
+    "ownerStatus": {
+      "PENDING": "Awaiting response",
+      "APPROVED": "Approved",
+      "NEGOTIATING": "Counter offer",
+      "REJECTED": "Rejected"
+    }
+  },
+  "executionPlan": {
+    "title": "Execution Plan",
+    "errorLoadingData": "Failed to load the execution plan.",
+    "push": "Push to Execution",
+    "reset": "Reset to Baseline",
+    "retryFailed": "Retry Failed Lines",
+    "retry": "Retry",
+    "pushSuccess": "Execution plan pushed successfully! Your plan is now live.",
+    "pushError": "Failed to push the execution plan. Please try again.",
+    "resetSuccess": "Execution plan reset to the recommended baseline.",
+    "resetError": "Failed to reset the execution plan.",
+    "lockedBanner": "This plan has been pushed to execution and is locked.",
+    "pushedAt": "Pushed on {date}.",
+    "noLines": "No inventories are selected for this plan yet, so there is nothing to hand off. Add inventories to the plan first.",
+    "unknownMediaOwner": "Unknown media owner",
+    "summary": {
+      "lines": "Execution Lines",
+      "inventories": "{count} inventories",
+      "plannedCost": "Planned Cost",
+      "ofBudget": "of {budget} budget",
+      "plannedImpressions": "Planned Impressions",
+      "handoff": "Acknowledged",
+      "failed": "{count} failed",
+      "inFlight": "{count} in progress"
+    },
+    "classification": {
+      "DIGITAL": "Digital",
+      "CLASSIC": "Classic"
+    },
+    "destination": {
+      "INFLUENCE": "Influence",
+      "OMS": "OMS"
+    },
+    "purchaseType": {
+      "GUARANTEED": "Guaranteed Deal",
+      "DIRECT": "Direct",
+      "ORDER": "Order"
+    },
+    "handoffStatus": {
+      "PENDING_HANDOFF": "Pending Handoff",
+      "QUEUED": "Queued",
+      "SENT": "Sent",
+      "ACKNOWLEDGED": "Acknowledged",
+      "FAILED": "Failed"
+    },
+    "line": {
+      "inventories": "Inventories",
+      "plannedCost": "Planned Cost",
+      "plannedImpressions": "Planned Impressions",
+      "handedOffAt": "Handed Off At",
+      "inventoryList": "Inventory"
+    },
+    "pushModal": {
+      "title": "Push plan to execution?",
+      "retryTitle": "Retry failed handoff?",
+      "message": "All pending lines will be handed off to their execution systems (Influence for digital, OMS for classic). The plan will be locked and your plan will go live. This cannot be undone.",
+      "retryMessage": "The selected failed line(s) will be handed off again.",
+      "yes": "Yes, Push",
+      "no": "Cancel",
+      "summaryTitle": "What goes live"
+    },
+    "blocked": {
+      "NOT_APPROVED": "This plan cannot be pushed yet: the campaign must be approved first.",
+      "UNACCEPTED_PRICES": "This plan cannot be pushed yet: there are price changes awaiting acceptance.",
+      "NO_LINES": "This plan cannot be pushed: there are no execution lines. Add inventories to the plan first."
+    }
+  },
+  "campaignActions": {
+    "deleteSuccess": "Plan deleted successfully",
+    "downloadPPTSuccess": "PPT downloaded successfully!",
+    "downloadPPTFailed": "Failed to generate PPT. Please try again.",
+    "duplicatedSuccess": "Plan duplicated successfully",
+    "archivedSuccess": "Plan archived successfully",
+    "deleteError": "Failed to delete plan. Please try again.",
+    "duplicateError": "Failed to duplicate plan. Please try again.",
+    "archiveError": "Failed to archive plan. Please try again.",
+    "cancel": "Cancel",
+    "editModal": {
+      "title": "Edit Plan",
+      "message1": "Please note that making changes to the plan may impact your current setup.",
+      "message2": "If you change the plan dates, inventory schedules will reset to default.",
+      "message3": "If you change the country, selected inventories will be removed.",
+      "message4": "Are you sure you want to proceed?",
+      "primaryButton": "Yes"
+    },
+    "duplicateModal": {
+      "title": "Duplicate Plan",
+      "message": "Are you sure you want to duplicate this plan?",
+      "primaryButton": "Yes, Duplicate"
+    },
+    "archiveModal": {
+      "title": "Archive Plan",
+      "message": "Are you sure you want to archive this plan?",
+      "primaryButton": "Yes, Archive"
+    },
+    "bulkArchiveModal": {
+      "title": "Archive plans",
+      "message": "Are you sure you want to archive {count} plan(s)?",
+      "primaryButton": "Yes, Archive",
+      "archiving": "Archiving…"
+    },
+    "bulkArchiveBlockedModal": {
+      "title": "Cannot archive selected plans",
+      "message": "Some of the plans you selected cannot be archived (already completed):",
+      "ok": "OK"
+    },
+    "bulkArchive": "Archive",
+    "deleteModal": {
+      "title": "Delete Plan",
+      "message": "Are you sure you want to delete this plan? This action cannot be undone.",
+      "primaryButton": "Yes, Delete"
+    },
+    "bulkDeleteBlockedModal": {
+      "title": "Cannot delete selected plans",
+      "message": "Some of the plans you selected cannot be deleted:",
+      "ok": "OK"
+    },
+    "bulkDeleteModal": {
+      "title": "Delete plans",
+      "message": "Are you sure you want to delete {count} plan(s)? This action cannot be undone.",
+      "primaryButton": "Yes, Delete",
+      "deleting": "Deleting…"
+    }
+  },
+  "inventoryPage": {
+    "errors": {
+      "selectAtLeastOne": "Please select at least one inventory item to proceed."
+    }
+  },
+  "publicInventoryMap": {
+    "selectedInventories": "Selected Inventories",
+    "loadingMore": "Loading more..."
+  },
+  "slots": "slots",
+  "clients": "clients",
+  "minutes": "minutes",
+  "inventoryAvailability": {
+    "title": "Inventories Availability",
+    "loadingInventories": "Loading inventories...",
+    "noSelectedInventories": "No selected inventories",
+    "pleaseSelectInventories": "Please select inventories to view their availability"
+  },
+  "viewLogDrawer": {
+    "title": "View logs",
+    "downloadErrorLog": "Download error log",
+    "emptyMessage": "No logs available",
+    "columns": {
+      "srNo": "Sr. No",
+      "row": "Row",
+      "description": "Description"
+    }
+  },
+  "campaignsList": {
+    "emptyMessage": "No plans found",
+    "ariaCustomizeColumns": "Open column customization",
+    "inventoryUnits": "Units",
+    "durationDays": "Duration: {n} Days",
+    "notAvailable": "N/A",
+    "goalTypes": {
+      "IMPRESSIONS": "Impressions",
+      "REACH": "Reach",
+      "SOV": "Share of Voice",
+      "ADPLAYS": "Ad Plays"
+    },
+    "status": {
+      "DRAFT": "Draft",
+      "PLANNED": "Planned",
+      "ACTIVE": "Active",
+      "COMPLETED": "Completed",
+      "REVIEWING": "Reviewing",
+      "NEGOTIATING": "Negotiating",
+      "APPROVED": "Approved",
+      "PENDING": "Pending",
+      "ARCHIVED": "Archived",
+      "REJECTED": "Rejected"
+    },
+    "columns": {
+      "srNo": "S.No",
+      "campaignName": "Plan Name",
+      "brand": "Brand",
+      "plannedBy": "Planned by",
+      "flightDates": "Flight Dates",
+      "goalType": "Goal",
+      "status": "Status",
+      "inventories": "Inventories",
+      "budget": "Budget",
+      "totalCost": "Total Cost",
+      "actions": "Actions"
+    },
+    "externalUser": "External user",
+    "externalUserTooltip": "This plan was created by someone outside your company (for example a Moving Walls support user) working on your behalf."
+  },
+  "viewFileInventoryDrawer": {
+    "emptyMessage": "No inventory available",
+    "refId": "Ref ID",
+    "columns": {
+      "srNo": "S.No",
+      "inventoryName": "Inventory Name",
+      "referenceId": "Reference Id",
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "inventoryType": "Inventory Type"
+    }
+  },
+  "viewFileLocationDrawer": {
+    "emptyMessage": "No locations available",
+    "lat": "Lat",
+    "lng": "Lng",
+    "radius": "Radius",
+    "columns": {
+      "srNo": "S.No",
+      "locationName": "Location Name",
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "radius": "Radius",
+      "siteType": "Site Type"
+    }
+  },
+  "geofencingExistingFiles": {
+    "loadingFiles": "Loading files...",
+    "noFilesAvailable": "No files available",
+    "noFilesYet": "No files yet",
+    "startUploadingBulk": "Start uploading locations in bulk",
+    "uploadCsvXlsx": "Upload CSV/XLSX",
+    "autoSelectGps": "System will auto select available locations based on GPS Coordinates.",
+    "columns": {
+      "srNo": "S.No",
+      "fileName": "File Name",
+      "noOfLocations": "No. of locations",
+      "uploadedBy": "Uploaded by",
+      "uploadedOn": "Uploaded On",
+      "action": "Action"
+    },
+    "actions": {
+      "view": "View",
+      "download": "Download",
+      "delete": "Delete"
+    }
+  },
+  "geofencingPopup": {
+    "impressions": "Impressions",
+    "spots": "spots",
+    "view": "View",
+    "name": "Name:",
+    "address": "Address:",
+    "category": "Category:",
+    "rating": "Rating:",
+    "notAvailable": "N/A"
+  },
+  "viewMediaPlanPage": {
+    "geographicTargeting": "Geographic Targeting"
+  },
+  "inventoryPageForm": {
+    "selectAll": "Select All",
+    "failedSelectAll": "Failed to select all inventories. Please try again.",
+    "failedDeselectAll": "Failed to deselect all inventories. Please try again.",
+    "minInventoryRequired": "Please select at least one inventory item to proceed.",
+    "loadingInventories": "Loading inventories...",
+    "noInventoriesFound": "No inventories found",
+    "tryAdjustingSearch": "Try adjusting your search query",
+    "selectInventoriesToView": "Select inventories to view them here"
+  },
+  "inventoryCard": {
+    "to": "to"
+  },
+  "inventoryDetailCard": {
+    "cinema": {
+      "operator": "Operator",
+      "hall": "Cinema / Hall",
+      "seats": "Seats",
+      "showtimes": "Showtime windows",
+      "genres": "Genres",
+      "ratings": "Ratings"
+    },
+    "fitnessScoreCard": "Fitness score card",
+    "budgetRelevance": "Budget relevance",
+    "campaignGoalMatch": "Plan goal match",
+    "geographyRelevance": "Geography relevance",
+    "audienceRelevance": "Audience relevance",
+    "brandCategoryRelevance": "Brand/Category relevance",
+    "inventoryQuality": "Inventory quality",
+    "timeAlignment": "Time alignment",
+    "measureConfidence": "Measure confidence",
+    "availabilityWindow": "Availability window",
+    "smartRecommendationScore": "Smart Recommendation score",
+    "limitedAvailability": "Limited availability for your dates",
+    "unavailableForDates": "Unavailable for your dates"
+  },
+  "selectedInventoryListContainer": {
+    "inventory": "Inventory",
+    "inventories": "Inventories",
+    "noInventoriesFound": "No inventories found",
+    "loadingMore": "Loading more..."
+  },
+  "mediaOwnerDropdown": {
+    "loading": "Loading media owners...",
+    "placeholder": "Select media owners"
+  },
+  "searchOptionsPlaceholder": "Search options...",
+  "selectedCountryMapAria": "Selected Country Map",
+  "scheduleDrawerSelectAllDaysTooltip": "Select all days of the week",
+  "optimizeManuallySelectDateRange": "Select date range",
+  "signalsForm": {
+    "title": "Signals & Triggers",
+    "description": "Singals allow you to trigger advertisements based on real-time factors such as weather conditions, time of day, or events.",
+    "newSignalButton": "New Signal",
+    "label": "Signals & Triggers",
+    "placeholder": "Select Signals & Triggers",
+    "options": {
+      "weatherTrigger": {
+        "label": "Weather Trigger",
+        "description": "Show ads based on the local weather"
+      },
+      "searchBehaviour": {
+        "label": "Search Behaviour",
+        "description": "Target based on recent search"
+      },
+      "footfallPattern": {
+        "label": "Footfall Pattern",
+        "description": "Adjust based on real-time traffic pattern"
+      },
+      "timeBased": {
+        "label": "Time-Based",
+        "description": "Show different content based on time of day"
+      }
+    }
+  },
+  "tooltips": {
+    "inventory": {
+      "impressions": "The total number of times the ad is displayed on this screen over the plan period",
+      "reach": "The number of unique individuals estimated to see the ad at least once",
+      "frequency": "The average number of times each unique person sees the ad (Impressions ÷ Reach)",
+      "cpmRate": "Cost per 1,000 impressions — rate charged for every 1,000 views",
+      "cpsRate": "Flat cost charged per individual ad play on this screen",
+      "estimatedCost": "Projected total spend for this inventory based on plan dates and rate card",
+      "adPlays": "Total number of times the ad will play on this screen during the plan",
+      "screens": "Number of physical screens or displays at this inventory location",
+      "poi": "Nearby points of interest — locations like malls, offices, and transit hubs surrounding this inventory",
+      "owner": "The media owner or operator responsible for managing this inventory"
+    },
+    "schedule": {
+      "days": "Days of the week this inventory is scheduled to display your ad",
+      "hours": "Operating hours during which your ad will be displayed on this screen",
+      "slotDuration": "Duration of each individual ad slot in seconds",
+      "expectedImpressions": "Projected number of times your ad will be seen based on this schedule",
+      "adPlays": "Total number of times your ad will play on this screen during the plan",
+      "sov": "Share of Voice — percentage of available ad slots on this screen occupied by your plan",
+      "trafficLevel": "Each time block is tiered by its share of the day's activity: Low (under 25%), Medium (25–49%), High (50% and above)."
+    },
+    "performance": {
+      "totalImpressions": "The total number of people expected to be exposed to your ad. For each ad play, the number of devices (people) detected in the vicinity of the inventory is counted. Impressions = Ad Plays × Avg Audience per Play.",
+      "estimatedReach": "The number of unique individuals estimated to pass by the inventory at least once during the plan period. Derived from device detection data, deduplicated so each person is counted only once regardless of how many ad plays they were present for.",
+      "frequency": "The average number of times each unique individual is estimated to be present near the inventory during an ad play. Calculated as Total Impressions ÷ Estimated Reach. A frequency of 2.3 means each person is exposed on average 2–3 times across the plan.",
+      "plannedAdPlays": "The total number of times your creative is scheduled to play across all inventory slots for the plan duration. Each ad play is a single broadcast of your creative on one screen.",
+      "avgCpmCost": "The average cost per 1,000 impressions across all inventory in this plan. Calculated as (Total Media Cost ÷ Total Impressions) × 1,000. Useful for comparing cost efficiency between plans.",
+      "eCpm": "The effective cost per 1,000 impressions based on the actual plan rate agreed upon, inclusive of all fees and discounts. Reflects the true cost of reaching 1,000 viewers under the negotiated terms.",
+      "sov": "Percentage of total ad plays your plan gets compared to all possible ad slots on the selected inventory during the plan period.",
+      "sot": "Total hours your ads will be displayed compared to the total operational hours of the inventory. Shows time-based exposure rather than play count."
+    },
+    "planSummary": {
+      "inventories": "Number of inventory panels currently in the plan.",
+      "impressions": "Total expected ad exposures. Ad Plays × Avg Audience per Play, summed across all selected inventory.",
+      "reach": "Unique individuals expected to pass by selected inventory at least once during the plan, deduplicated.",
+      "frequency": "Average times each unique person is exposed. Impressions ÷ Reach.",
+      "adPlays": "Total scheduled creative broadcasts across all inventory slots for the plan duration.",
+      "co2PerPlay": "Estimated CO₂e per ad play, based on screen energy consumption.",
+      "co2PerPlayNoData": "No carbon data available for the current selection.",
+      "avgCpm": "Average cost per 1,000 impressions across selected inventory. (Total Media Cost ÷ Impressions) × 1,000.",
+      "eCpm": "Effective CPM at the agreed plan rate, inclusive of fees and discounts.",
+      "sov": "Share of Voice — your planned ad plays vs total available ad slots on the selected inventory.",
+      "sot": "Share of Time — total airtime your creative will be on screen across the plan, computed as Ad Plays × 15s spot length. Currently {percent}% of the inventory's operating time.",
+      "cost": "Planned media cost across selected inventory.",
+      "remaining": "Budget left after the current plan. Negative values mean the plan is over budget."
+    },
+    "inventoryDetails": {
+      "mediaOwner": "The company or individual that owns and manages this inventory",
+      "type": "Indicates the billboard type (e.g. Digital, Classic)",
+      "format": "Display format of the inventory",
+      "size": "Size of the inventory (e.g. XS, S, M, L, XL)",
+      "screens": "Number of physical screens or displays at this inventory location",
+      "operationMode": "Indicates whether the inventory operates on a loop or spot basis"
+    },
+    "inventoryLocation": {
+      "address": "Full street address of the inventory location",
+      "coordinates": "GPS latitude and longitude coordinates of the inventory",
+      "visibility": "Estimated viewing distance and angle from which this inventory is visible",
+      "venueType": "Type of venue or environment where this inventory is located (e.g. Mall, Transit, Roadside)"
+    },
+    "inventoryOperations": {
+      "startTime": "Time when the inventory starts displaying ads each day",
+      "endTime": "Time when the inventory stops displaying ads each day",
+      "operatingDays": "Number of days per week this inventory is active and displaying ads",
+      "maintenanceWindow": "Scheduled downtime when the inventory is offline for maintenance",
+      "loopSize": "Number of ad loops played per hour on this inventory",
+      "slotDuration": "Duration of each individual ad slot in seconds",
+      "clientsPerLoop": "Number of advertisers sharing each loop — your ad appears once per loop",
+      "cycleTime": "Total duration of one complete loop cycle before it repeats"
+    }
+  },
+  "campaignHistory": {
+    "errorLoading": "Error loading plan history.",
+    "noHistory": "No history available",
+    "columns": {
+      "serialNumber": "S.No",
+      "date": "Date",
+      "user": "User",
+      "action": "Action"
+    }
+  },
+  "performanceMetrics": {
+    "title": "Performance Metrics",
+    "metrics": {
+      "totalImpressions": {
+        "title": "Total Impressions",
+        "subtitle": "Plan Duration"
+      },
+      "estimatedReach": {
+        "title": "Estimated Reach",
+        "subtitle": "Unique Viewers"
+      },
+      "frequency": {
+        "title": "Frequency",
+        "subtitle": "Avg Per Person"
+      },
+      "plannedAdPlays": {
+        "title": "Planned Ad Plays",
+        "subtitle": "Total Scheduled"
+      },
+      "avgCPMCost": {
+        "title": "Avg CPM Cost",
+        "subtitle": "Per M Impressions"
+      },
+      "eCPM": {
+        "title": "eCPM",
+        "subtitle": "Plan Rate"
+      },
+      "sov": {
+        "title": "Share of Voice (SOV)",
+        "subtitle": "Planned ad plays vs total inventory capacity",
+        "description": "Planned ad plays vs total inventory capacity",
+        "valueFormat": "{pct}% of Available Spots"
+      },
+      "sot": {
+        "title": "Share of Time (SOT)",
+        "subtitle": "Your ads will display during the plan duration",
+        "description": "Your ads will display during the plan duration",
+        "valueFormat": "{planned}H out of {total} H"
+      }
+    }
+  },
+  "mediaPlanAnalytics": {
+    "tabs": {
+      "campaignPlan": "Plan",
+      "inventoryDetails": "Inventory Details",
+      "costing": "Costing",
+      "operationDetails": "Operation Details",
+      "doohSchedules": "DOOH Schedules",
+      "geographyTargeting": "Geography Targeting",
+      "cinema": "Cinema"
+    },
+    "geographyTargeting": {
+      "title": "Geography Targeting",
+      "subtitle": "Country › Region › City hierarchy with per-area performance.",
+      "noData": "No data",
+      "columns": {
+        "geography": "Geography",
+        "inventories": "Inventories",
+        "impressions": "Impressions",
+        "reach": "Reach",
+        "frequency": "Frequency",
+        "ecpm": "eCPM ({currency})"
+      }
+    },
+    "costing": {
+      "title": "Costing",
+      "noData": "No data",
+      "totals": "Totals",
+      "columns": {
+        "inventory": "Inventory",
+        "city": "City",
+        "baseCpm": "Base CPM",
+        "proposed": "Proposed",
+        "accepted": "Accepted",
+        "impressions": "Impressions",
+        "mediaCost": "Media Cost",
+        "feeShare": "Fee Share",
+        "total": "Total"
+      }
+    },
+    "doohSchedules": {
+      "sno": "S.No",
+      "billboardName": "Billboard Name",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "duration": "Duration",
+      "operationHours": "Operation Hours",
+      "mon": "M",
+      "tue": "T",
+      "wed": "W",
+      "thu": "TH",
+      "fri": "F",
+      "sat": "SA",
+      "sun": "SU",
+      "noData": "No data",
+      "weeklyScheduleTitle": "Weekly Schedule of Digital Billboards",
+      "campaignName": "Plan name",
+      "activeCampaignDays": "Active Plan Days",
+      "inactiveDays": "Inactive Days",
+      "totalAdPlays": "Total Ad Plays",
+      "totalImpressions": "Total Impressions",
+      "days": "days",
+      "calendar": {
+        "title": "DOOH Schedule Calendar",
+        "subtitle": "{count} digital panels · week-by-week activity (Sun → Sat). Shaded cells = the panel runs that day.",
+        "mixed": "Mixed",
+        "columns": {
+          "schedule": "Schedule",
+          "billboardSegment": "Billboard / Segment",
+          "start": "Start",
+          "end": "End",
+          "days": "Days",
+          "opHours": "Op Hrs"
+        }
+      },
+      "cadence": {
+        "title": "Per-inventory cadence",
+        "subtitle": "{total} panels · {custom} with custom day-parting · {default} on 24/7 default",
+        "columns": {
+          "inventory": "Inventory",
+          "channel": "Channel",
+          "pattern": "Pattern",
+          "spotsPerLoop": "Spots/Loop",
+          "spotsPerHour": "Spots/Hour",
+          "activeHrsPerDay": "Active Hrs/Day",
+          "daysPerWeek": "Days/Week",
+          "sov": "SOV"
+        },
+        "tooltips": {
+          "spotsPerLoop": "Day-weighted average spots per loop across this panel's schedule segments.",
+          "spotsPerHour": "Day-weighted average spots per hour across this panel's schedule segments.",
+          "activeHrsPerDay": "Day-weighted average of distinct active hours per day.",
+          "daysPerWeek": "Distinct weekdays active across all of this panel's schedule segments.",
+          "sov": "Day-weighted average share of voice across this panel's schedule segments."
+        }
+      },
+      "pattern": {
+        "default": "Default",
+        "commuter": "Commuter",
+        "business": "Business Hours",
+        "nightlife": "Nightlife",
+        "weekend": "Weekend Focus",
+        "twentyFourSeven": "24/7",
+        "custom": "Custom"
+      },
+      "rollup": {
+        "toggleLabel": "Show plan-level rollup heatmap",
+        "summary": "{schedules} schedules · {patterns} patterns",
+        "title": "Plan-level activity"
+      }
+    },
+    "columns": {
+      "stateName": "State Name",
+      "population": "Population",
+      "inventories": "Inventories",
+      "oohImpressions": "OOH Impressions",
+      "reach": "Reach",
+      "frequency": "Frequency",
+      "cpm": "CPM ({currency})",
+      "cps": "CPS ({currency})",
+      "name": "Name",
+      "billboardName": "Billboard Name",
+      "referenceId": "Reference ID",
+      "uniqueReach": "Unique Reach",
+      "ecpm": "eCPM ({currency})",
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "distanceM": "Distance (m)",
+      "districtName": "District Name"
+    },
+    "campaignPlan": {
+      "noData": "No data",
+      "days": "days",
+      "cityInsights": {
+        "title": "City Insights",
+        "subtitle": "City-level OOH performance based on the selected inventories. Population is an indicative estimate.",
+        "cityName": "City Name",
+        "impressions": "Impressions"
+      },
+      "deliveryBreakdown": {
+        "title": "Delivery Breakdown",
+        "subtitle": "Projected impressions and unique reach per period across the campaign flight.",
+        "period": "Period",
+        "badge": "{granularity} delivery"
+      },
+      "campaignDetails": {
+        "title": "Plan Details",
+        "campaignName": "Plan Name",
+        "campaignId": "Plan ID",
+        "createdOn": "Created On",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "goal": "Goal",
+        "kpi": "KPI",
+        "status": "Status",
+        "start": "Start",
+        "end": "End",
+        "duration": "Duration",
+        "currency": "Currency",
+        "channels": "Channels",
+        "budget": "Budget"
+      },
+      "buyerDetails": {
+        "title": "Buyer Details",
+        "createdBy": "Created By",
+        "company": "Company",
+        "emailAddress": "Email Address",
+        "dsp": "DSP",
+        "seatId": "Seat ID",
+        "brand": "Brand",
+        "brandCategory": "Brand Category",
+        "clientType": "Client Type",
+        "plannedBy": "Planned By",
+        "clientTypeDirect": "Direct",
+        "clientTypeAgency": "Agency"
+      },
+      "estimation": {
+        "title": "Estimated Performance Metrics",
+        "totalImpressions": "Total Impressions",
+        "estimatedReach": "Estimated Reach",
+        "avgFrequency": "Avg Frequency",
+        "adPlays": "Est. Ad Plays",
+        "avgCpm": "Avg CPM",
+        "avgCps": "Avg CPS",
+        "ecpm": "eCPM",
+        "sov": "Share of Voice (SOV)",
+        "sot": "Share of Time (SOT)",
+        "totalCost": "Total Cost",
+        "inventories": "Inventories",
+        "cities": "Cities",
+        "channels": "Channels",
+        "note": "Priced on CPS (cost per spot) — the campaign goal is share-of-voice, ad plays or unset. Avg CPS is the cost-per-spot price provided by media owners. eCPM is calculated from total impressions and total cost (cost ÷ impressions × 1,000)."
+      },
+      "targetingApplied": {
+        "title": "Targeting Applied",
+        "demographics": "Demographics",
+        "income": "Income",
+        "interests": "Interests",
+        "venueEnvironments": "Venue Environments",
+        "behaviour": "Behaviour"
+      },
+      "statePlanning": {
+        "title": "State Planning",
+        "tooltip": "State level OOH Impressions and Reach is estimated based on OOH inventories selected in your media plan"
+      },
+      "cityPlanning": {
+        "title": "City Planning",
+        "tooltip": "City level OOH Impressions and Reach is estimated based on OOH inventories selected in your media plan"
+      },
+      "inventoryPlanning": {
+        "title": "Inventory Planning"
+      },
+      "inventoryMapping": {
+        "title": "Inventories Mapping"
+      }
+    },
+    "inventoryDetails": {
+      "noData": "No data",
+      "title": "Inventory Details ({count})",
+      "scheduleCustom": "Custom",
+      "columns": {
+        "assetImages": "Asset Images",
+        "venueType": "Venue Type",
+        "billboardName": "Billboard Name",
+        "referenceId": "Reference ID",
+        "mediaOwner": "Media Owner",
+        "format": "Format",
+        "size": "Size (W x H) ft",
+        "latitude": "Latitude",
+        "longitude": "Longitude",
+        "exclusions": "Exclusions",
+        "category": "Category",
+        "location": "Location",
+        "noOfFaces": "No of Faces",
+        "boardFacing": "Board Facing",
+        "languageSupport": "Language Support",
+        "description": "Description",
+        "noOfBillboards": "No of Billboards",
+        "resolution": "Resolution (W x H) px",
+        "creative": "Creative",
+        "noOfScreens": "No of Screens",
+        "spotDuration": "Spot Duration (sec)",
+        "spotsPerHour": "Spots / Hour",
+        "totalSpots": "Total Spots",
+        "campaignBudget": "Plan Budget",
+        "dailyBudget": "Daily Budget",
+        "bidRate": "Bid Rate (CPM)",
+        "advertiserDomain": "Advertiser Domain",
+        "frequencyCapping": "Frequency Capping",
+        "inventory": "Inventory",
+        "channel": "Channel",
+        "city": "City",
+        "schedule": "Schedule",
+        "impressions": "Impr.",
+        "playsPerDay": "Plays/day"
+      }
+    },
+    "operationDetails": {
+      "noData": "No data",
+      "totalLabel": "Total",
+      "ariaLabel": "Operation details",
+      "sectionTitle": {
+        "classic": "Classic",
+        "digital": "Digital",
+        "mobile": "Mobile"
+      },
+      "columns": {
+        "segment": "Segment",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "operationDays": "Operation Days",
+        "start": "Start",
+        "end": "End",
+        "scheduleType": "Schedule Type",
+        "opDays": "Op Days",
+        "opHours": "Op Hours",
+        "startTime": "Start Time",
+        "endTime": "End Time",
+        "totalSpots": "Total Spots"
+      }
+    },
+    "cinema": {
+      "tabLabel": "Cinema",
+      "title": "Cinema ({count})",
+      "noData": "No cinema inventory",
+      "indicativeNote": "Films are indicative only — the buy is operator/hall/showtime.",
+      "columns": {
+        "inventory": "Inventory",
+        "operator": "Operator",
+        "cinema": "Cinema",
+        "hall": "Hall",
+        "showtimeWindows": "Showtime Windows",
+        "genres": "Genres",
+        "ratings": "Ratings",
+        "impressions": "Impressions",
+        "cpm": "CPM ({currency})",
+        "mediaCost": "Media Cost ({currency})"
+      }
+    }
+  },
+  "executionWorkspace": {
+    "title": "Execution Workspace",
+    "fromAgency": "From {agency}",
+    "goal": "Goal: {goal} · {target}",
+    "pushToInfluence": "Push to Influence",
+    "notApprovedYet": "Execution setup unlocks once you approve this plan in Plan Approval.",
+    "noInfluenceAccess": "Your company does not have access to MW Influence. Execution for this plan is handled offline — set it up in your own systems and report delivery progress back to the advertiser.",
+    "pushedAt": "Line items pushed to execution on {date}. Editing is locked.",
+    "kpi": {
+      "approvedCost": "Approved media cost",
+      "plannedImpressions": "Planned impressions",
+      "adPlays": "{count} ad plays",
+      "potentialImpressions": "Deliverable potential",
+      "potentialHint": "Planned + free loop capacity",
+      "linesInventories": "Lines / inventories",
+      "linesInventoriesHint": "Your line items and screens"
+    },
+    "deliveryShort": "Committed {committed} of {planned} planned impressions — {gap} short. Raise targets or free up loop capacity.",
+    "deliveryOk": "Committed {committed} impressions covers the planned {planned}.",
+    "inventorySection": "Your inventories & availability",
+    "loopOf": "{count}-spot loop",
+    "invCost": "Approved cost",
+    "invPlanned": "Planned impressions",
+    "invPotential": "Potential",
+    "perSpotDay": "Per spot/day",
+    "legendOwn": "This campaign",
+    "legendOther": "Other campaigns",
+    "legendFree": "Free spots",
+    "lineSection": "Line items",
+    "addDigitalLine": "Add digital line",
+    "addClassicLine": "Add poster-ops line",
+    "destInfluence": "Influence",
+    "destOms": "OMS (poster ops)",
+    "purchase": {
+      "GUARANTEED": "Guaranteed",
+      "DIRECT": "Preferred deal",
+      "ORDER": "Order"
+    },
+    "lineCost": "Planned cost",
+    "deleteLine": "Delete empty line",
+    "floorRate": "Floor rate (CPM)",
+    "targetImpressions": "Target impressions",
+    "capacityOf": "Capacity: {capacity} impressions",
+    "moveTo": "Move to…",
+    "lineOption": "{type} line {index}",
+    "emptyLine": "No inventories — move one here or delete this line.",
+    "pushModalTitle": "Push to Influence?",
+    "pushModalBody": "{lines} line item(s) targeting {impressions} impressions will be handed off to execution. This locks further editing.",
+    "cancel": "Cancel",
+    "confirmPush": "Push",
+    "pushSuccess": "Line items pushed to execution.",
+    "actionError": "That change could not be applied.",
+    "lineUpdated": "Line updated.",
+    "errorLoadingData": "Could not load the execution workspace."
+  }
+}

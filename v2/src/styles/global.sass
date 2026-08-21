@@ -1,0 +1,78 @@
+/* Global styles & theme bridge for Tailwind dark mode */
+:root
+  /* color-scheme: light dark; */
+  /* Toast banners must use the platform font, not react-toastify's default sans-serif (SI 52) */
+  --toastify-font-family: "Poppins", sans-serif
+
+html.dark
+  /* Tailwind uses class strategy for dark mode */
+
+html, body, #root
+  height: 100%
+  overflow: hidden
+
+body
+  font-family: "Poppins"
+  background-color: #F9FAFB
+  .mapboxgl-popup-close-button
+    top: 5px
+    right: 5px
+  .mapboxgl-ctrl-bottom-right
+    .mapboxgl-ctrl.mapboxgl-ctrl-group
+      margin: 10px 10px 0 0
+      button
+        box-sizing: content-box
+        height: auto
+        width: auto
+        padding: 8px
+        .mapboxgl-ctrl-icon
+          height: 16px
+          width: 16px
+          background-position: unset
+          background-size: contain
+        &.mapboxgl-ctrl-fullscreen .mapboxgl-ctrl-icon
+          background-image: url("/img/expand.svg")
+        &.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon
+          background-image: url("/img/plus.svg")
+        &.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon
+          background-image: url("/img/minus.svg")
+        &.mapboxgl-ctrl-compass .mapboxgl-ctrl-icon
+          background-image: url("/img/compass-neeedle.svg")
+
+/* Dropdown Overlay and Responsive Styles */
+.dropdown-overlay
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 9998
+  cursor: pointer
+  pointer-events: auto
+
+.dropdown-content
+  z-index: 9999
+  position: fixed
+  pointer-events: auto
+
+/* Tablet Styles (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px)
+  .dropdown-content
+    min-width: 280px
+    max-width: 90vw
+    font-size: 0.9375rem
+
+
+/* Laptop Styles (1024px - 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px)
+  .dropdown-content
+    min-width: 300px
+    max-width: 400px
+    font-size: 0.9375rem
+
+/* Desktop Styles (1440px and above) */
+@media (min-width: 1440px)
+  .dropdown-content
+    min-width: 320px
+    max-width: 450px
+    font-size: 1rem

@@ -1,0 +1,2883 @@
+{
+  "title": "プラン",
+  "description": "プランの容易さと完全な効率を管理します",
+  "new_campaign": "新しいプラン",
+  "empty_state": {
+    "headline": "あなたの次の大きな瞬間はここから始まります",
+    "description": "視聴者が住んでいて、働き、遊ぶことに届けるインパクトのある屋外広告の構築を開始します。"
+  },
+  "create_new_campaign": "新しいプランを作成",
+  "edit_new_campaign": "プランを編集",
+  "campaignCreatedSuccess": "プランが正常に作成されました！",
+  "campaignUpdateFailed": "プランの更新に失敗しました",
+  "campaignCreateFailed": "プランの作成に失敗しました",
+  "create_campaign": {
+    "title": "プラン詳細",
+    "subtitle": "以下の手順に従って、広告プランを設定する",
+    "steps": {
+      "campaign_details": "プランの詳細",
+      "campaign_setup_description": "プラン情報を設定します",
+      "budgeting": "予算編成",
+      "targeting": "ターゲティング",
+      "inventories": "インベントリ",
+      "optimisation": "最適化",
+      "optional": "オプション",
+      "demographics": "人口統計",
+      "geofencing": "ジオフェンシング",
+      "signals": "シグナル"
+    },
+    "form": {
+      "campaign_name": "プラン名",
+      "campaign_dates": "プランの日付",
+      "brand": "ブランド",
+      "brand_optional": "ブランド（オプション）",
+      "client_type": "クライアントタイプ",
+      "agency": "代理店",
+      "agency_child_company_note": "子会社のプランは、まずその会社になりすます（インパーソネート）ことで作成します。ヘッダーから会社を切り替えて、代わりにプランを作成してください。",
+      "select_agency": "代理店を選択します",
+      "search_here": "ここで検索してください...",
+      "enter_campaign_name": "プラン名を入力します",
+      "generating": "生成中...",
+      "select_dates": "日付を選択します",
+      "enter_brand_name": "ブランド名を入力します",
+      "select_client_type": "クライアントタイプを選択します",
+      "dsp": "DSP",
+      "select_dsp": "DSPを選択",
+      "seat_id": "シートID",
+      "seat_id_placeholder": "自動入力",
+      "seat_id_helper": "DSP設定から自動入力されます",
+      "optional_label": "（オプション）",
+      "days_duration": "日間",
+      "media_channels": "メディアチャンネル",
+      "select_media_channel": "メディアチャンネルを選択",
+      "media_channel_hint": "{count}チャンネルが選択されました — ウィザードは順番に各チャンネルを処理します。",
+      "media_channel_hint_single": "シングルチャンネルプラン — ウィザードは1回実行されます。",
+      "dsp_active": "アクティベート",
+      "dsp_none": "なし",
+      "dsp_recommendation_hint": "デジタルの場合、選択したDSPに公開されているインベントリのみが推奨されます。クラシックインベントリはDSPの選択による影響を受けません。",
+      "dsp_add_seat_id_hint": "別のDSPをお探しですか？",
+      "dsp_add_seat_id_link": "管理コンソールでシートIDを追加"
+    },
+    "client_types": {
+      "agency": "代理店",
+      "direct": "直接広告主"
+    },
+    "media_channels": {
+      "DIGITAL_OOH": {
+        "label": "デジタルOOH",
+        "description": "デジタルビルボード、LEDスクリーン、スペクタキュラー、ネットワーク型デジタルディスプレイ。"
+      },
+      "CLASSIC_OOH": {
+        "label": "クラシックOOH",
+        "description": "従来のビルボード、ポスター、壁面広告、静的屋外ディスプレイ。"
+      },
+      "CINEMA": {
+        "label": "シネマ",
+        "description": "オペレーター、ホール、上映時間帯単位で購入するシネマ広告。ジャンルとレーティングの条件付き。"
+      },
+      "TRANSIT": {
+        "label": "トランジット",
+        "description": "バスシェルター、地下鉄駅、空港、および通勤者向けトランジットメディア。"
+      },
+      "RETAIL": {
+        "label": "リテール",
+        "description": "店内スクリーン、ショッピングモールディスプレイ、購買時点メディア環境。"
+      }
+    },
+    "agencies": {
+      "aron_tech": "Aron Tech Agency",
+      "newgen_ooh": "Newgen ooh",
+      "nextgen_dooh": "Nextgen Dooh",
+      "patron_digital": "パトロンデジタル会社"
+    },
+    "sidebar": {
+      "form_insights": "洞察を形成します",
+      "brand_insights": "ブランド洞察",
+      "quick_tips": "簡単なヒント",
+      "form_insights_tips": {
+        "campaign_name_unique": "プラン名は説明的で一意でなければなりません",
+        "realistic_dates": "在庫の可用性を向上させるために、現実的なプランの日付を設定します",
+        "brand_targeting": "ブランドを選択すると、ターゲットの推奨事項が役立ちます"
+      },
+      "insights": {
+        "category": "カテゴリ：テクノロジーとコンピューティング",
+        "iab_id": "IAB ID：IAB19",
+        "targeting_help": "ブランドの選択は、より良いターゲティングの推奨事項に役立ちます"
+      },
+      "tips": {
+        "brand_recommendations": "ブランドを選択すると、より良い推奨事項に役立ちます",
+        "brand_targeting_recommendations": "ブランドを選択すると、推奨事項が向上するのに役立ちます",
+        "budget_next": "予算と目標は次のステップに設定されます",
+        "can_change_later": "これらの詳細はいつでも後で変更できます"
+      }
+    },
+    "buttons": {
+      "cancel": "キャンセル",
+      "next_step": "次のステップ",
+      "next_demographics": "次へ: 人口統計",
+      "next_geofencing": "次へ: ジオフェンシング",
+      "next_inventory_type": "次へ: インベントリタイプ"
+    }
+  },
+  "budget_goal": {
+    "title": "予算編成",
+    "subtitle": "以下の手順に従って、広告プランを設定する",
+    "market_selection": {
+      "title": "市場選択",
+      "description": "ターゲット市場を選択してください",
+      "target_country": "対象国",
+      "select_country": "国を選択",
+      "loading_countries": "国を読み込み中..."
+    },
+    "budget_goal_setup": {
+      "title": "予算と目標設定（オプション）",
+      "description": "プランの予算と目標を設定してください",
+      "currency": "通貨",
+      "currency_placeholder": "通貨は自動的に設定されます",
+      "budget_amount": "予算金額",
+      "budget_placeholder": "予算金額を入力してください",
+      "goal_type": "目標タイプ",
+      "select_goal_type": "目標タイプを選択",
+      "target_percentage_optional": "目標パーセンテージ（オプション）",
+      "target_value_optional": "目標値（オプション）",
+      "enter_percentage": "パーセンテージを入力（0-100）",
+      "enter_target_value": "目標値を入力してください",
+      "target_name": "目標名",
+      "enter_target_name": "カスタム目標名を入力してください",
+      "percentage_hint": "パーセンテージ値を入力（0-100%）",
+      "goal_type_cpm_hint": "コスト計算にはCPM価格が適用されます。",
+      "goal_type_cps_hint": "コスト計算にはCPS価格が適用されます。",
+      "unit_label": "単位：",
+      "sov_range": "（0〜100%）",
+      "target_required": "目標タイプを選択した場合、目標値は必須です",
+      "whole_number_required": "整数を入力してください（小数不可）",
+      "target_too_large": "目標値は{max}以下である必要があります",
+      "target_too_small": "目標値は{min}以上である必要があります",
+      "target_out_of_range": "目標値は{min}〜{max}の範囲内である必要があります",
+      "target_decimal_places": "目標値は小数点以下2桁までです",
+      "reach_planning_note": "リーチを目標として計画を立てることができますが、リーチは参考値であり保証されるものではありません。配信の主要KPIはインプレッション数となります。"
+    },
+    "goal_types": {
+      "impressions": "インプレッション",
+      "impressions_desc": "ターゲットオーディエンスへの広告表示/露出の合計数",
+      "impressions_target_label": "インプレッション数",
+      "impressions_placeholder": "目標インプレッション数を入力",
+      "impressions_unit": "インプレッション",
+      "reach": "リーチ",
+      "reach_desc": "ユニークな視聴者がプランを見た数",
+      "reach_target_label": "ユニークユーザー数",
+      "reach_placeholder": "目標リーチ数を入力",
+      "reach_unit": "ユーザー",
+      "sov": "シェア・オブ・ボイス",
+      "sov_desc": "総市場活動の%でのブランド存在度",
+      "sov_target_label": "シェア・オブ・ボイス（%）",
+      "sov_placeholder": "パーセントを入力（0〜100）",
+      "sov_unit": "%",
+      "attribution": "アトリビューション",
+      "attribution_desc": "特定のアクションを追跡する",
+      "other": "その他",
+      "other_desc": "カスタムメトリクス",
+      "adplays": "広告再生回数",
+      "adplays_desc": "広告が再生された回数",
+      "adplays_target_label": "広告再生数",
+      "adplays_placeholder": "目標広告再生数を入力",
+      "adplays_unit": "広告再生"
+    },
+    "countries": {
+      "MY": "マレーシア",
+      "SG": "シンガポール",
+      "TH": "タイ",
+      "ID": "インドネシア",
+      "PH": "フィリピン",
+      "VN": "ベトナム"
+    },
+    "market_insights": {
+      "title": "市場インサイト",
+      "market": "市場",
+      "population": "人口",
+      "inventories": "インベントリ",
+      "impressions": "インプレッション"
+    },
+    "quick_tips": {
+      "title": "予算と目標のヒント",
+      "tip1": "明確なプラン目標を設定して、より良い推奨事項を取得してください",
+      "tip2": "目標は在庫選択とターゲティングの最適化に役立ちます",
+      "tip3": "最適化ステップで後から目標を変更できます"
+    },
+    "distribution": {
+      "title": "タイプ別予算配分",
+      "subtitle_collapsed": "在庫数の割合に基づいて予算が自動配分されています。クリックして表示または調整してください。",
+      "subtitle_expanded": "在庫数の割合に基づいて予算が自動配分されています。必要に応じて調整できます。",
+      "distribute_evenly": "均等に配分",
+      "reset": "リセット",
+      "total": "合計：",
+      "looks_good": "合計が100%になっています — 問題ありません。",
+      "exceeds_100": "{amount}%超過配分です。これは計画上のヒントです — 続行できます。",
+      "below_100": "{amount}%未配分です。これは計画上のヒントです — 続行できます。",
+      "edit_btn": "編集",
+      "cancel": "キャンセル",
+      "apply": "適用",
+      "adjust_manually": "配分を手動で調整したい",
+      "lock_distribution": "配分をロック"
+    },
+    "goal_insights": {
+      "default": {
+        "title": "プラン目標選択",
+        "insight1": "明確なプラン目標を設定して、より良い推奨事項を取得してください",
+        "insight2": "目標は在庫選択とターゲティングの最適化に役立ちます",
+        "insight3": "最適化ステップで後から目標を変更できます"
+      },
+      "impressions": {
+        "title": "インプレッションプラン戦略",
+        "insight1": "高トラフィックの場所とプライムタイムスロットに焦点を当てる",
+        "insight2": "デジタル看板は通常2-3倍のインプレッションを提供します",
+        "insight3": "視聴者の疲労を避けるために頻度制限を検討してください"
+      },
+      "reach": {
+        "title": "リーチプラン戦略",
+        "insight1": "ユニークな視聴者露出を最大化するために場所を多様化する",
+        "insight2": "交通広告は幅広い人口統計に到達するのに優れています",
+        "insight3": "フォーマットタイプの組み合わせは全体的なリーチポテンシャルを向上させます"
+      },
+      "sov": {
+        "title": "シェア・オブ・ボイス戦略",
+        "insight1": "競争の激しいカテゴリーでのプレミアムロケーションが不可欠です",
+        "insight2": "時間をかけた持続的な存在はより強いブランドリコールを構築します",
+        "insight3": "ターゲット市場での競合他社の活動を監視してください"
+      },
+      "adplays": {
+        "title": "広告再生プラン戦略",
+        "insight1": "デジタルOOH在庫では、決まった広告再生回数を保証できます",
+        "insight2": "滞在時間の長い場所での再生が多いほど、1回あたりの視認性が高まります",
+        "insight3": "サイト間で再生頻度のバランスを取り、視聴者の疲労を抑えます"
+      },
+      "attribution": {
+        "title": "アトリビューションプラン戦略",
+        "insight1": "小売店やショッピングセンターの近くに看板を設置する",
+        "insight2": "ブランドリフトスタディを使用してプランが売上に与える影響を測定する",
+        "insight3": "ピークショッピング時間中に高トラフィックエリアをターゲットにする"
+      },
+      "other": {
+        "title": "カスタムプラン戦略",
+        "insight1": "あなたのユニークな目標のための具体的な成功指標を定義する",
+        "insight2": "OOHが他のマーケティングチャネルとどのように統合されるかを検討する",
+        "insight3": "定期的なパフォーマンス監視が結果を最適化します"
+      }
+    }
+  },
+  "targeting": {
+    "title": "ターゲティング",
+    "comingSoon": "近日公開",
+    "tabTitles": {
+      "demographics": "人口動態",
+      "geoFencing": "ジオフェンシング",
+      "inventoryTypes": "インベントリタイプ",
+      "signals": "信号"
+    },
+    "movingwallsSmartSuggestionTitle": "ムビングウォールズ のスマートな提案",
+    "movingwallsSmartSuggestionDescription": "プランの詳細に基づいて、次のターゲティング オプションをお勧めします。",
+    "demography_selection": {
+      "title": "人口統計",
+      "description": "ターゲットオーディエンスを定義するために人口統計情報を入力してください。",
+      "loading": "人口統計データの読み込み..."
+    },
+    "age": {
+      "title": "年齢層",
+      "placeholder": "年齢層を選択します"
+    },
+    "gender": {
+      "title": "性別",
+      "placeholder": "性別を選択します"
+    },
+    "incomeGroup": {
+      "title": "収入グループ",
+      "placeholder": "収入グループを選択します"
+    },
+    "interestActivity": {
+      "title": "興味とアクティビティ",
+      "placeholder": "関心活動を選択します"
+    },
+    "venueType": {
+      "title": "会場の種類",
+      "placeholder": "会場の種類を選択します"
+    },
+    "audienceBehavior": {
+      "title": "聴衆の行動",
+      "placeholder": "視聴者の動作を選択します"
+    },
+    "inventoryTypes": {
+      "sectionTitle": "会場タイプ",
+      "digitalOoh": {
+        "title": "デジタルOOH",
+        "placeholder": "デジタルOOHのサブタイプを選択してください"
+      },
+      "classicOoh": {
+        "title": "クラシックOOH",
+        "placeholder": "クラシックOOHのサブタイプを選択してください"
+      }
+    },
+    "inventoryClusters": {
+      "title": "インベントリタイプ",
+      "description": "チャネルごとに含めるインベントリタイプを選択してください。トランジットは移動中のオブジェクト（バス、タクシー、電車、トラム、フェリー）上の画面やラッピングのみを対象とします。バス停、鉄道プラットフォーム、空港などの固定インベントリはトランジットに含まれません。それらの環境は下の会場タイプでターゲティングしてください。",
+      "digitalOoh": {
+        "title": "デジタルOOH"
+      },
+      "classicOoh": {
+        "title": "クラシックOOH"
+      },
+      "options": {
+        "DIGITAL": "デジタルスクリーン",
+        "DIGITAL_NETWORK": "デジタルネットワーク",
+        "DIGITAL_TRANSIT": "デジタルトランジット",
+        "CLASSIC": "クラシックビルボード",
+        "CLASSIC_NETWORK": "クラシックネットワーク",
+        "CLASSIC_TRANSIT": "クラシックトランジット"
+      }
+    },
+    "programmaticBuying": {
+      "title": "プログラマティック購入",
+      "description": "プログラマティックインベントリは、接続された取引所（DSP）を通じて自動的に購入されるデジタル画面で、リアルタイムの配信とレポートが可能です。",
+      "toggleLabel": "プログラマティックインベントリのみをターゲットにする",
+      "toggleDescription": "オンにすると、プランはプログラマティック対応のインベントリを優先します。予算がプログラマティックインベントリで使い切れない場合、未使用分は選択中の他のインベントリタイプに自動的に振り分けられます。",
+      "lockedNote": "ステップ1でDSPが選択されているため、プログラマティックターゲティングがオンになっています。オフにするにはDSPを「なし」に戻してください。",
+      "noDigitalChannelNote": "このプランにはデジタルOOHチャンネルが含まれていないため、プログラマティック限定のターゲティングは利用できません。クラシックOOH（印刷広告、ラッピング、ポスターなど）のような非デジタルインベントリはプログラマティックで購入できません — このオプションを有効にするには、ステップ1でデジタルOOHチャンネルを追加してください。"
+    },
+    "geofencing": {
+      "poi_types": {
+        "restaurant": "レストラン",
+        "hotel": "ホテル",
+        "cafe": "カフェ",
+        "shopping": "ショッピング",
+        "park": "公園",
+        "museum": "博物館",
+        "entertainment": "エンターテイメント",
+        "transport": "交通機関"
+      },
+      "selected_locations": "選択された場所",
+      "add_locations_hint": "マップをクリックするか、検索して場所を追加します",
+      "search_placeholder": "追加された場所をここで検索...",
+      "no_locations": "まだ場所が追加されていません",
+      "location_count": "場所",
+      "location_count_plural": "場所",
+      "added": "追加済み",
+      "enable_all": "すべて有効にする",
+      "delete_location": "場所を削除",
+      "import_locations": "場所をインポート",
+      "import_button": "インポート",
+      "need_template": "テンプレートが必要ですか?",
+      "download_template_desc": "サンプル CSV テンプレートをダウンロードして始めましょう",
+      "download_template": "テンプレートをダウンロード",
+      "import": {
+        "errors": {
+          "title": "ファイルのアップロードに失敗しました",
+          "invalid_file_type": "csvまたはxlsファイルのみ受け付けます。別のファイルをアップロードしてください。",
+          "file_too_large": "{fileName}が大きすぎます。圧縮するか、より小さいバージョンをアップロードしてください",
+          "connection_lost": "アップロード中に接続が失われました。インターネット接続を確認してもう一度お試しください。",
+          "parse_error": "ファイルの解析エラー。フォーマットを確認して再試行してください。",
+          "invalid_latitude": "無効な緯度値",
+          "latitude_range": "緯度は-90から+90の間でなければなりません",
+          "invalid_longitude": "無効な経度値",
+          "longitude_range": "経度は-180から+180の間でなければなりません"
+        },
+        "progress": {
+          "loading": "ファイルを読み込んでいます...",
+          "parsing": "データを解析しています...",
+          "validating": "場所を検証しています...",
+          "complete": "完了！"
+        },
+        "no_locations_selected": "インポートする場所が選択されていません",
+        "partial_import": "{total}項目中{imported}項目がインポートされました。緯度/経度が一致しません: {{failed}}",
+        "success": "有効な場所が正常にインポートされました。"
+      },
+      "loading_map": "マップを読み込み中...",
+      "map_error": "マップの読み込みに失敗しました。もう一度お試しください。",
+      "poi": {
+        "hint": "*POIは最大5件まで追加できます",
+        "buttonName": "POIを追加",
+        "reachLimit": "*POI上限に達しました"
+      },
+      "removeLocation": "場所を削除",
+      "yesRemove": "はい、削除します",
+      "cancelRemove": "削除しない",
+      "askRemove": "この場所を削除してもよろしいですか",
+      "localRegion": "地域",
+      "placeType": "種類",
+      "included": "含む",
+      "excluded": "除外",
+      "placePhoto": "場所の写真",
+      "searchLoading": "検索中..."
+    },
+    "fallback": {
+      "gender": {
+        "male": "男性",
+        "female": "女性",
+        "other": "その他"
+      },
+      "income": {
+        "low": "低所得",
+        "lower_middle": "中低所得",
+        "middle": "中間所得",
+        "upper_middle": "中高所得",
+        "high": "高所得"
+      },
+      "interests": {
+        "sports_fitness": "スポーツ＆フィットネス"
+      },
+      "behavior": {
+        "commuters": "通勤者",
+        "shoppers": "買い物客"
+      }
+    }
+  },
+  "commuters": "通勤者",
+  "tourists": "観光客",
+  "businessTravelers": "出張者",
+  "students": "学生",
+  "families": "家族",
+  "healthSeekers": "健康志向",
+  "fitnessEnthusiasts": "フィットネス愛好家",
+  "shoppers": "買い物客",
+  "sportsFitness": "スポーツ＆フィットネス",
+  "technology": "テクノロジー",
+  "foodDining": "飲食",
+  "travel": "旅行",
+  "music": "音楽",
+  "homeGarden": "家＆庭",
+  "healthWellness": "健康＆ウェルネス",
+  "automotive": "自動車",
+  "transit": {
+    "key": "交通機関",
+    "airports": {
+      "key": "空港",
+      "arrivals_hall": "到着ホール",
+      "baggage_claim": "手荷物の受け取り",
+      "departures_hall": "出発ホール",
+      "food_court": "フードコート",
+      "gates": "ゲイツ",
+      "lounges": "ラウンジ",
+      "shopping_area": "ショッピングエリア"
+    },
+    "buses": {
+      "key": "バス",
+      "bus": "バス（車内）",
+      "terminal": "ターミナル",
+      "bus_outside": "バス（外回り）"
+    },
+    "taxi_rideshare_tv": "タクシー＆ライドシェアTV",
+    "taxi_rideshare_top": "タクシー・相乗りトップ",
+    "subway": {
+      "key": "地下鉄",
+      "train": "地下鉄の電車",
+      "platform": "プラットフォーム"
+    },
+    "train_stations": {
+      "key": "鉄道駅",
+      "train": "電車",
+      "platform": "プラットフォーム"
+    },
+    "ferry": "フェリー"
+  },
+  "retail": {
+    "key": "小売り",
+    "gas_stations": {
+      "key": "給油所",
+      "pump": "燃料ディスペンサー",
+      "shop": "店"
+    },
+    "convenience_store": "コンビニエンスストア",
+    "grocery": {
+      "key": "食料品",
+      "shop_entrance": "店舗入口",
+      "check_out": "チェックアウト",
+      "aisles": "通路"
+    },
+    "liquor_stores": "酒屋",
+    "malls": {
+      "key": "モール",
+      "concourse": "コンコース",
+      "food_court": "フードコート",
+      "spectacular": "素晴らしい"
+    },
+    "dispensaries": "大麻薬局",
+    "pharmacies": "薬局",
+    "parking_garages": "駐車場"
+  },
+  "outdoor": {
+    "key": "アウトドア",
+    "billboards": {
+      "key": "看板",
+      "roadside": "道端",
+      "highway": "高速道路",
+      "spectacular": "素晴らしい"
+    },
+    "urban_panels": "アーバンパネル",
+    "bus_shelters": "バスシェルター"
+  },
+  "health_beauty": {
+    "key": "健康と美容",
+    "gyms": {
+      "key": "ジム",
+      "lobby": "ロビー",
+      "equipment": "フィットネス機器"
+    },
+    "salons": {
+      "key": "サロン",
+      "unisex": "ユニセックスサロン",
+      "mens": "メンズサロン",
+      "womens": "女性専用サロン"
+    },
+    "spas": "スパ"
+  },
+  "point_care": {
+    "key": "ポイントオブケア",
+    "doctor_offices": "診療所",
+    "veterinary_offices": "動物病院"
+  },
+  "education": {
+    "key": "教育",
+    "schools": "学校",
+    "colleges": {
+      "key": "単科大学と総合大学",
+      "residences": "住宅",
+      "common": "共用エリア",
+      "athletics": "アスレチック施設"
+    }
+  },
+  "office_buildings": {
+    "key": "オフィスビル",
+    "office_buildings": {
+      "key": "オフィスビル",
+      "elevator": "エレベーター",
+      "lobby": "ロビー"
+    }
+  },
+  "entertainment": {
+    "key": "レジャー",
+    "recreational": {
+      "key": "レクリエーションの場所",
+      "theme_parks": "テーマパーク",
+      "museums_galleries": "博物館とギャラリー",
+      "concert_venues": "コンサート会場"
+    },
+    "movie_theaters": {
+      "key": "映画館",
+      "lobby": "ロビー",
+      "food_court": "フードコート"
+    },
+    "sports": {
+      "key": "スポーツエンターテイメント",
+      "arena": "スポーツアリーナ",
+      "club_house": "クラブハウス"
+    },
+    "bars": "バー",
+    "casual_dining": "カジュアルダイニング",
+    "qsr": "QSR",
+    "hotels": {
+      "key": "ホテル",
+      "lobby": "ロビー",
+      "elevator": "エレベーター",
+      "room": "部屋"
+    },
+    "golf_cart": "ゴルフカート",
+    "night_club": "ナイトクラブ",
+    "high_end_dining": "高級ダイニング"
+  },
+  "government": {
+    "key": "政府",
+    "dmv": "DMV",
+    "military_bases": "軍事基地",
+    "postal": "郵便局"
+  },
+  "financial": {
+    "key": "金融",
+    "banks": "銀行"
+  },
+  "residential": {
+    "key": "居住の",
+    "apartment": {
+      "key": "アパート・マンション",
+      "lobby": "ロビー",
+      "elevator": "エレベーター"
+    }
+  },
+  "inventories": {
+    "title": "インベントリ",
+    "description": "適切なインベントリを選択してください",
+    "search_placeholder": "ここで検索",
+    "inventories_count": " インベントリ",
+    "group_by": "グループ化:",
+    "group_by_options": {
+      "all": "すべてのインベントリ",
+      "city": "都市別にグループ化",
+      "owner": "メディアオーナー別にグループ化",
+      "type": "タイプ別にグループ化"
+    },
+    "menu": {
+      "map_view": "マップビューのインベントリ",
+      "availability": "インベントリの可用性",
+      "upload_csv": "CSVをアップロード"
+    },
+    "item": {
+      "view_details": "詳細を表示"
+    },
+    "metrics": {
+      "impressions": "インプレッション",
+      "reach": "リーチ",
+      "frequency": "頻度",
+      "cpm_rate": "CPMレート",
+      "cps_rate": "CPSレート",
+      "est_cost": "推定コスト",
+      "ad_plays": "広告再生",
+      "screens": "スクリーン",
+      "poi": "POI",
+      "owner": "オーナー",
+      "ecpm": "eCPM",
+      "na": "N/A",
+      "est": "推定",
+      "daily_plays": "日次再生数"
+    },
+    "forecast": {
+      "title": "プラン予測",
+      "est_impressions": "推定インプレッション",
+      "est_reach": "推定リーチ",
+      "avg_frequency": "平均頻度",
+      "est_ad_plays": "推定広告再生",
+      "sov_percentage": "SOV %",
+      "avg_cpm": "平均 CPM",
+      "avg_ecpm": "平均 eCPM",
+      "total_cost": "総コスト",
+      "sot_percentage": "SOT %",
+      "sot": "SOT"
+    },
+    "view": {
+      "title": "在庫を表示",
+      "tabs": {
+        "map": "マップ",
+        "availability": "空き状況"
+      }
+    },
+    "manual": {
+      "title": "インベントリ - 手動選択",
+      "selectAll": "すべて選択",
+      "selectFailed": "選択の更新に失敗しました。もう一度お試しください。",
+      "save": "保存",
+      "resizeHandle": "リストと地図パネルのサイズを変更",
+      "pasteIds": {
+        "title": "参照IDを貼り付け",
+        "description": "在庫の参照IDのリスト（カンマ、スペース、改行区切り）を貼り付けて一括選択します。",
+        "placeholder": "例：REF-1001, REF-1002, REF-1003",
+        "submit": "一致する在庫を選択",
+        "cancel": "キャンセル",
+        "modeAdd": "現在の選択に追加",
+        "modeReplace": "現在の選択を置き換え",
+        "success": "在庫の選択を更新しました。"
+      },
+      "close": "閉じる",
+      "loadFailed": "選択済みインベントリの読み込みに失敗しました。",
+      "saveFailed": "選択の保存に失敗しました。",
+      "footer": {
+        "inventories": "インベントリ",
+        "estimatedImpressions": "推定インプレッション",
+        "estimatedTotalBudget": "推定合計予算",
+        "of": "/",
+        "budgetByChannel": "チャネル別予算",
+        "overPlan": "予算超過",
+        "onPlan": "予算内",
+        "cancel": "キャンセル",
+        "saveSelection": "選択を保存",
+        "overBudgetTitle": "予算上限を超えています",
+        "overBudgetMessage": "推定予算 {planned} を {overBy} 超過しています。"
+      },
+      "channelPopup": {
+        "title": "チャネル別の予算と選択",
+        "subtitle": "ステップ2で配分した予算と現在の選択のコストを比較します。目安です。チャネルが超過していても保存できます。",
+        "channel": "チャネル",
+        "planned": "計画",
+        "selected": "選択済み",
+        "difference": "差分",
+        "inventories": "インベントリ",
+        "total": "合計",
+        "overNote": "一部のチャネルは計画予算を超過しているか、計画外のチャネルを含みます。保存は可能です。意図的かご確認ください。"
+      }
+    },
+    "fitness": {
+      "title": "フィットネススコアカード",
+      "budgetRelevance": "予算の関連性",
+      "campaignGoalMatch": "プラン目標の一致",
+      "geographyRelevance": "地理の関連性",
+      "audienceRelevance": "オーディエンスの関連性",
+      "brandRelevance": "ブランド/カテゴリの関連性",
+      "inventoryQuality": "在庫の品質",
+      "timeAlignment": "時間の整合性",
+      "measureConfidence": "測定の信頼度",
+      "availabilityWindow": "空き状況ウィンドウ"
+    },
+    "planSummary": {
+      "view": "表示",
+      "heading": "プランサマリー",
+      "breakdown": "このプランの %COUNT% 件の在庫の予測と内訳",
+      "empty": "このプランに在庫がありません",
+      "emptyHint": "現在のターゲティングに一致する在庫がありません。フィルターを緩めるか、フライト日程を変更してください。または「手動で編集」から在庫をプランに追加してください。",
+      "noReachData": "この選択に利用できるリーチデータがありません",
+      "goalOverAchieved": "このプランは約{achieved} {goalLabel}を配信予定で、目標の{target}を大きく上回っています。このまま進めるか、予算を抑えて目標のみに最適化しますか？",
+      "budgetShortfall": "現在の予算では、目標の{target} {goalLabel}のうち約{percent}%しかカバーできません。予算を追加する、目標を下げる、またはこのまま進めることができます。",
+      "keepPlan": "このまま進める",
+      "optimizeToGoal": "目標に最適化",
+      "adjustBudget": "予算を調整",
+      "lowerGoal": "目標を下げる",
+      "continueAnyway": "続行",
+      "tiles": {
+        "inventories": "在庫数",
+        "impressions": "インプレッション",
+        "reach": "リーチ",
+        "frequency": "頻度",
+        "ad_plays": "広告再生回数",
+        "co2_per_play": "CO₂ / 再生",
+        "avg_cpm": "平均 CPM",
+        "ecpm": "eCPM",
+        "sov": "SOV",
+        "sot": "SOT",
+        "cost": "コスト",
+        "remaining": "残高",
+        "beta": "ベータ"
+      },
+      "reachBuild": {
+        "title": "リーチ構築",
+        "subtitle": "%COUNT% 件の在庫全体",
+        "yAxisLabel": "リーチ %"
+      }
+    },
+    "aiRecommendation": {
+      "title": "AI スマートレコメンデーション",
+      "description": "ターゲティング、予算、日付を変更すると、プランが自動的に更新されます。",
+      "editManually": "手動で編集",
+      "restoreAi": "AIレコメンドを復元",
+      "restoreConfirm": "復元",
+      "restoreCancel": "キャンセル",
+      "restoreConfirmMessage": "AIレコメンドを再生成し、手動の変更を破棄します。続行しますか？",
+      "tiles": {
+        "sov": "SOV",
+        "sot": "SOT",
+        "budget": "予算",
+        "goal": "目標"
+      }
+    },
+    "recommendationChoice": {
+      "title": "このプランをどのように作成しますか？",
+      "description": "AIにターゲティングと予算に最適なインベントリを提案させるか、レコメンデーションをスキップして自分でインベントリを選択できます。後からいつでもレコメンデーションに切り替えられます。",
+      "useAiTitle": "AIレコメンデーションを使用",
+      "useAiDescription": "ターゲティング、予算、日付に基づいてスマートなインベントリ提案を生成します。",
+      "manualTitle": "手動でインベントリを選択",
+      "manualDescription": "レコメンデーションをスキップし、カタログ全体から自分でインベントリを選択します。"
+    },
+    "manualMode": {
+      "title": "手動インベントリ選択",
+      "description": "このプランではレコメンデーションがオフになっています。自分でインベントリを選択するか、いつでもAIレコメンデーションに切り替えられます。",
+      "selectInventory": "インベントリを選択",
+      "useRecommendations": "AIレコメンデーションを使用"
+    },
+    "csv_upload": {
+      "title": "インベントリアップロード",
+      "download_template": "テンプレートをダウンロード",
+      "upload_label": "CSVファイルをアップロード",
+      "upload_placeholder": "ここをタップするか、CSVファイルをドラッグ＆ドロップしてください",
+      "import_errors": "インポートエラー",
+      "importing": "インポート中...",
+      "import_button": "インベントリをインポート"
+    },
+    "filters": {
+      "title": "高度なフィルター",
+      "clear_filters": "フィルターをクリア",
+      "apply_filters": "フィルターを適用",
+      "location_section": "場所ベースのフィルター",
+      "operations_section": "操作",
+      "state": "州",
+      "state_placeholder": "州を選択",
+      "city": "地区/都市",
+      "city_placeholder": "都市を選択",
+      "latitude": "緯度",
+      "latitude_placeholder": "例: 40.7128",
+      "longitude": "経度",
+      "longitude_placeholder": "例: -74.0060",
+      "media_owner": "メディアオーナー",
+      "media_owner_placeholder": "メディアオーナーを選択",
+      "venue_type": "会場タイプ",
+      "venue_type_placeholder": "会場タイプを選択",
+      "inventory_classification": "インベントリ分類",
+      "inventory_classification_placeholder": "分類を選択",
+      "environment": "環境",
+      "environment_placeholder": "環境を選択",
+      "mode_of_operation": "動作モード",
+      "mode_of_operation_placeholder": "動作モードを選択",
+      "size": "サイズ",
+      "size_placeholder": "サイズを選択",
+      "programmatic_deal": "プログラムマティック取引",
+      "programmatic_deal_all": "すべて",
+      "programmatic_deal_yes": "はい",
+      "programmatic_deal_no": "いいえ",
+      "programmatic_deal_type": "プログラムマティック取引タイプ",
+      "programmatic_deal_type_placeholder": "取引タイプを選択",
+      "cinema_section": "シネマ",
+      "cinema_genres": "映画ジャンル",
+      "cinema_genres_placeholder": "ジャンルを選択",
+      "cinema_ratings": "コンテンツレーティング",
+      "cinema_ratings_placeholder": "レーティングを選択",
+      "classification_not_available": "{goalType}ゴールタイプでは利用できません",
+      "classification_required": "{goalType}ゴールタイプでは必須です",
+      "classification_locked_by_channel": "プランのメディアチャネルで選択されています",
+      "classification_not_in_channel": "プランのメディアチャネルで選択されていません"
+    },
+    "list": {
+      "loadError": "インベントリデータの読み込みに問題が発生しています",
+      "retry": "再試行",
+      "empty": "インベントリアイテムが見つかりません",
+      "emptyHint": "フィルターまたは検索クエリを調整してみてください"
+    },
+    "smartSuggestion": {
+      "retry": "再試行",
+      "errorMessage": "AIスマート提案は、リクエストの処理中に予期しないエラーに遭遇しました。ニューラルネットワークがタスクを完了できませんでした。",
+      "progress": {
+        "budgetFit": "AIスマート提案は予算適合性に取り組んでいます",
+        "goalFit": "AIスマート提案は目標適合性に取り組んでいます",
+        "geoFitness": "AIスマート提案は地理的適合性に取り組んでいます",
+        "audienceFit": "AIスマート提案はオーディエンス適合性に取り組んでいます",
+        "brandCategoryFit": "AIスマート提案はブランドとカテゴリーの適合性に取り組んでいます",
+        "inventoryAvailability": "AIスマート提案はインベントリの可用性に取り組んでいます",
+        "timeFit": "AIスマート提案は時間適合性に取り組んでいます",
+        "selectingInventory": "最適なフィットに基づいてインベントリを選択しようとしています"
+      }
+    }
+  },
+  "card": {
+    "days_left": "日残り",
+    "brand": "ブランド",
+    "inventories_used": "使用されたインベントリ",
+    "units": "ユニット",
+    "budget_utilization": "予算利用",
+    "impressions": "インプレッション",
+    "reach": "リーチ",
+    "sov": "SOV",
+    "sot": "SOT",
+    "view_details": "詳細を表示",
+    "edit": "プランの編集",
+    "duplicate": "プランを複製",
+    "delete": "削除",
+    "share_of_voice": "シェア・オブ・ボイス",
+    "share_of_target": "シェア・オブ・ターゲット",
+    "view_media_plan": "メディアプランを表示",
+    "execution_plan": "実行プラン",
+    "assign_creative": "クリエイティブを割り当て",
+    "reserve_inventories": "インベントリを予約",
+    "campaign_approval": "プラン承認",
+    "price_management": "価格管理",
+    "archive": "アーカイブ",
+    "share": "共有",
+    "download": "ダウンロード"
+  },
+  "filter": {
+    "title": "フィルター",
+    "status": "ステータス",
+    "planned_by": "計画者",
+    "period": "期間",
+    "campaign_goal": "プラン目標",
+    "clear_filters": "フィルターをクリア",
+    "apply_filters": "フィルターを適用",
+    "select_status": "ステータスを選択...",
+    "select_planners": "計画者を選択...",
+    "select_date_range": "日付範囲を選択...",
+    "select_goals": "プラン目標を選択...",
+    "select_options": "オプションを選択",
+    "reset": "リセット",
+    "tooltip_status": "現在のステータス（下書き、計画済み、アクティブ、完了など）でプランをフィルタリングします",
+    "tooltip_planned_by": "プランを作成または計画したユーザーでフィルタリングします",
+    "tooltip_period": "フライト期間でプランをフィルタリングします。選択した日付範囲内に実施されるプランのみ表示されます",
+    "tooltip_campaign_goal": "最適化目標タイプ（インプレッション、リーチ、シェアオブボイス、広告再生）でプランをフィルタリングします",
+    "all": "すべて",
+    "active_filters": "有効なフィルター:",
+    "clear_all": "すべてクリア",
+    "status_draft": "下書き",
+    "status_planned": "計画済み",
+    "status_active": "アクティブ",
+    "status_completed": "完了",
+    "allStatus": "すべてのステータス",
+    "allUsers": "すべてのユーザー",
+    "allGoals": "すべての目標",
+    "selectEndDateError": "終了日を選択してください"
+  },
+  "table": {
+    "search_placeholder": "ここで検索...",
+    "filter": "フィルター",
+    "list_view": "リストビュー",
+    "grid_view": "グリッドビュー",
+    "no_data": "データがありません",
+    "customize_columns": "列をカスタマイズ"
+  },
+  "column_customization": {
+    "title": "テーブル要素のカスタマイズ",
+    "enable_all": "すべてのフィールドを有効にする",
+    "cancel": "変更をキャンセル",
+    "apply": "変更を適用",
+    "at_least_one_visible_required": "少なくとも1つの列を表示する必要があります。"
+  },
+  "agency_form": {
+    "title": "新しい代理店を作成",
+    "general_info": "一般情報",
+    "contact_info": "連絡先情報",
+    "location_info": "所在地の詳細",
+    "name": "代理店名",
+    "name_placeholder": "代理店名を入力",
+    "website": "ウェブサイト",
+    "website_placeholder": "https://example.com",
+    "phone": "電話番号",
+    "phone_placeholder": "+60 12 345 6789",
+    "company_email": "会社メール",
+    "company_email_placeholder": "company@example.com",
+    "domain": "ドメイン",
+    "domain_placeholder": "example.com",
+    "notification_email": "通知メール",
+    "notification_email_placeholder": "notifications@example.com",
+    "registration_number": "登録番号",
+    "registration_number_placeholder": "登録番号を入力",
+    "gst_number": "GST番号（オプション）",
+    "gst_number_placeholder": "GST番号を入力",
+    "street": "住所",
+    "street_placeholder": "住所を入力",
+    "postal_code": "郵便番号",
+    "postal_code_placeholder": "郵便番号を入力",
+    "country": "国",
+    "country_placeholder": "国を選択",
+    "state": "州",
+    "state_placeholder": "州を選択",
+    "district": "地区",
+    "district_placeholder": "地区を選択",
+    "cancel": "キャンセル",
+    "create": "代理店を作成",
+    "creating": "作成中...",
+    "name_required": "代理店名は必須です",
+    "email_invalid": "有効なメールアドレスを入力してください",
+    "country_required": "国は必須です",
+    "create_error": "代理店の作成に失敗しました。もう一度お試しください。",
+    "loading_countries": "国を読み込み中...",
+    "countries_error": "国の読み込みに失敗しました",
+    "no_countries": "利用可能な国がありません",
+    "title_link": "既存の代理店をリンク",
+    "media_owner": "メディアオーナー",
+    "active": "アクティブ",
+    "inactive": "非アクティブ",
+    "link": "代理店をリンク",
+    "linking": "リンク中...",
+    "searching": "検索中...",
+    "own_agency_exists": "この名前の代理店は既に存在します。",
+    "similar_agencies_header": "類似の代理店が見つかりました — 新規作成の代わりにリンクする代理店を選択してください。",
+    "exact_agency_match_header": "この代理店は既に存在します - 新規作成の代わりに会社にリンクしてください。",
+    "no_similar_agencies": "類似の代理店が見つかりません",
+    "link_notice": "この代理店をリンクすると、会社に関連付けられます。チームは重複した代理店エントリを作成することなく、プランで使用できるようになります。",
+    "link_agency_success": "代理店がリンクされました。"
+  },
+  "brand_dropdown": {
+    "search_brands": "ブランドを検索...",
+    "no_brands": "ブランドが見つかりません。開始するには新しいブランドを作成してください。",
+    "create_brand": "新しいブランドを作成",
+    "brand_selection_help": "ブランドを選択すると、より良いターゲティングの推奨事項が得られます",
+    "category_label": "カテゴリ"
+  },
+  "agency_dropdown": {
+    "no_agencies": "代理店が見つかりません。開始するには新しい代理店を作成してください。",
+    "create_agency": "新しい代理店を作成"
+  },
+  "optimization": {
+    "title": "最適化",
+    "subtitle": "プラン設定を最適化する",
+    "budgetAllocation": {
+      "tabtitle": "予算の配分",
+      "title": "予算配分",
+      "subtitle": "予算を広告枠タイプに配分する方法を調整する",
+      "description": "インベントリ タイプには、個別の資産とネットワークの両方が含まれます",
+      "digital": "デジタル",
+      "classic": "クラシック",
+      "cinema": "シネマ",
+      "retail": "小売り",
+      "transit": "交通機関",
+      "validationFailed": "もう一度検証してください！",
+      "totalValidationMessage": "予算割り当ての合計は 0 を超えるか、100% 以下である必要があります",
+      "companyTooltip": "ドロップダウンから会社を選択してください"
+    },
+    "schedulingTargeting": {
+      "title": "スケジュールのプリセット",
+      "tabtitle": "スケジュール",
+      "contentDescription": "一般的なスケジュール パターンをプランに適用する",
+      "commuterButtonLabel": "通勤パターン",
+      "weekendButtonLabel": "週末の集中",
+      "businessButtonLabel": "営業時間",
+      "nightButtonLabel": "ナイトライフ",
+      "customButtonLabel": "カスタム",
+      "validationFailed": "もう一度検証してください！",
+      "weekdayDistribution": {
+        "totalValidationMessage": "平日の合計分布は 0 を超えるか、100% 以下でなければなりません",
+        "monday": "月曜日",
+        "tuesday": "火曜日",
+        "wednesday": "水曜日",
+        "thursday": "木曜日",
+        "friday": "金曜日",
+        "saturday": "土曜日",
+        "sunday": "日曜日"
+      },
+      "daypartDistribution": {
+        "title": "時間帯の分布",
+        "totalValidationMessage": "時間帯の合計分布は 0 を超えるか、100% 以下でなければなりません",
+        "morning": "朝（6時～10時）",
+        "midday": "正午（午前10時～午後2時）",
+        "afternoon": "午後（午後2時～午後6時）",
+        "evening": "夕方（午後6時～午後10時）",
+        "night": "夜（午後10時～午前6時）"
+      },
+      "autoOptimizeSuccess": "インベントリスケジュールが正常に最適化されました",
+      "errorAutoOptimize": "インベントリスケジュールの最適化中にエラーが発生しました",
+      "scheduleDates": "スケジュール日付",
+      "scheduleDays": "スケジュール曜日",
+      "scheduleDuration": "期間",
+      "scheduleSpotsLoop": "スポット/ループ",
+      "scheduleSpotsHour": "スポット/時間",
+      "schedulePlayHours": "再生時間/日",
+      "secondsLabel": "秒",
+      "errorFetchingSchedules": "インベントリスケジュールの取得中にエラーが発生しました",
+      "defaultScheduleDeleteError": "続行するには少なくとも1つのスケジュールが必要です。これは削除できません",
+      "removeScheduleTitle": "スケジュールを削除",
+      "removeScheduleYesButtonLabel": "はい、削除します",
+      "removeScheduleNoButtonLabel": "削除しない",
+      "removeScheduleConfirmationMessage": "このスケジュールを削除してもよろしいですか -",
+      "removeInventoryTitle": "インベントリを削除",
+      "removeInventoryYesButtonLabel": "はい、削除します",
+      "removeInventoryNoButtonLabel": "キャンセル",
+      "removeInventoryConfirmationMessage": "このインベントリをプランから削除してもよろしいですか？スケジュールも削除されます -",
+      "removeInventorySuccess": "インベントリをプランから削除しました",
+      "removeInventoryError": "インベントリの削除に失敗しました。もう一度お試しください。",
+      "cannotRemoveLastInventory": "少なくとも1つのインベントリが必要です。これは削除できません。",
+      "noScheduleText": "インベントリを選択してスケジュールの詳細を表示してください。"
+    },
+    "configureScheduling": {
+      "title": "在庫固有のスケジュール設定",
+      "description": "個々の在庫品目にカスタム スケジュールと営業時間を設定する",
+      "tooltipSection": {
+        "title": "高度なスケジュール制御",
+        "description": "各在庫場所に固有の営業時間、表示頻度、日付範囲を設定します。"
+      },
+      "configureSchedulingButtonLabel": "インベントリスケジュールの構成",
+      "optimizeManuallyButtonLabel": "手動で最適化",
+      "aiOptimizeButtonLabel": "AI最適化",
+      "selectedInventoryInfo": "選択されたすべてのインベントリのリスト",
+      "loadingInventories": "インベントリを読み込み中...",
+      "noInventories": "インベントリが見つかりません",
+      "loadingMore": "さらに読み込み中..."
+    },
+    "optimizeManuallyDrawer": {
+      "title": "手動で最適化",
+      "description": "各インベントリアイテムのスケジュールパラメーターを手動で調整する",
+      "clearPreviousSchedule": "選択した看板の以前のスケジュールをクリアする",
+      "cancel": "キャンセル",
+      "saving": "保存中...",
+      "saveChanges": "変更を保存",
+      "selectedInventories": "選択されたインベントリ",
+      "searchInventoryPlaceholder": "インベントリをここで検索...",
+      "optimizeSchedule": "スケジュールを最適化",
+      "scheduleDate": "スケジュール日付",
+      "dayScheduleTitle": "スケジュールの曜日を選択",
+      "selectAllDays": "すべての日を選択",
+      "scheduleGrids": "スケジュールグリッド",
+      "selectAll": "すべて選択",
+      "deselectAll": "すべて選択解除",
+      "scheduleErrorPart1": "この看板インベントリの運営時間は ",
+      "scheduleErrorPart2": " 選択を見直すか、メディアオーナーに一度確認してください",
+      "scheduleWarning": "この看板インベントリは他のインベントリと重複するスケジュールがあります",
+      "classicHourlyNotApplicable": "時間帯スケジュールとパターン（コミューターパターンなど）はデジタルインベントリにのみ適用されます。この選択に含まれるクラシックインベントリには、上記の日付範囲のみが適用されます。",
+      "saveChangesTitle": "変更を保存 - 確認",
+      "saveChangesBodeyText": "選択した箇所にのみ変更が適用されます ",
+      "saveChangesPrimaryButtonLabel": "OK",
+      "noHoursSelected": "インベントリのスケジュールを保存するには、任意の日の任意の時間を選択してください！",
+      "errorWhileSaving": "保存中にエラーが発生しました！",
+      "scheduleErrorTo": " から ",
+      "minHoursViolation": "一部のインベントリで、スケジュールされた日の時間数が必要な最低時間を下回っています。保存する前に選択内容を調整してください。",
+      "minHoursViolationTooltip": "このインベントリは、スケジュールされた各日に最低{minHours}時間を選択する必要があります。"
+    }
+  },
+  "targetingTab": {
+    "audienceTitle": "オーディエンス人口統計",
+    "geographyTitle": "地理的ターゲティング",
+    "byCityTitle": "都市別",
+    "byVenueTypeTitle": "会場タイプ別",
+    "ageGroups": "年齢層",
+    "incomeLevel": "収入レベル",
+    "interests": "興味・関心",
+    "lifestyle": "ライフスタイル",
+    "adPlays": "広告再生"
+  },
+  "media_plan": {
+    "title": "メディアプラン",
+    "view_type": {
+      "presentation": "プレゼンテーション",
+      "analytics": "分析"
+    },
+    "actions": {
+      "download_ppt": "PPTをダウンロード",
+      "download_excel": "Excelをダウンロード",
+      "share": "共有",
+      "confirm_proposal": "提案を確認",
+      "processing": "処理中...",
+      "preparing": "準備中..."
+    },
+    "theme_selector": {
+      "select_theme": "テーマを選択"
+    },
+    "title_slide": {
+      "total_budget": "総予算",
+      "total_cost": "総コスト",
+      "impressions": "インプレッション",
+      "campaign_period": "キャンペーン期間",
+      "prepared_by": "作成者",
+      "plan_dates": "プラン期間",
+      "planned_by": "作成者",
+      "days": "{count}日間",
+      "moving_walls": "Moving Walls",
+      "moving_walls_internal": "MW Planner Internal"
+    },
+    "performance_metrics": {
+      "title": "推定パフォーマンス指標",
+      "subtitle": "主要な数値の概要",
+      "geography": "地域",
+      "geography_unit": "都市",
+      "geography_sub": "{countries}か国 · {pois} POI",
+      "inventories": "在庫",
+      "inventories_unit": "配置",
+      "inventories_sub": "選択したすべてのチャネル全体",
+      "channels": "チャネル",
+      "channels_unit": "チャネル",
+      "channels_sub": "プラン上の個別メディアチャネル",
+      "total_impressions": "総インプレッション",
+      "total_impressions_unit": "インプレッション",
+      "total_impressions_sub": "プラン全体の予測",
+      "estimated_reach": "推定リーチ",
+      "estimated_reach_unit": "ユニークユーザー",
+      "estimated_reach_sub": "到達したネットユニークオーディエンス",
+      "avg_frequency_unit": "1人あたり",
+      "avg_frequency_sub": "ユニーク視聴者あたりの平均露出",
+      "avg_cpm_unit": "1千imp当たり",
+      "avg_cpm_sub": "メディアオーナーのグロスレート",
+      "avg_cps": "平均CPS",
+      "avg_cps_unit": "1スポットあたり",
+      "avg_cps_sub": "スポット単価",
+      "ecpm": "eCPM",
+      "ecpm_unit": "1千imp当たり",
+      "ecpm_sub": "実効：総コスト ÷ 総インプレッション",
+      "sov_unit": "SOV",
+      "sov_sub": "競合市場におけるプランレベルのシェア",
+      "sot_unit": "SOT",
+      "sot_sub": "プラン全体のブレンド放映時間シェア",
+      "total_cost": "総コスト",
+      "total_cost_unit": "メディア＋手数料",
+      "total_cost_sub": "本プランに示された投資額",
+      "ad_plays": "広告再生",
+      "ad_plays_unit": "回",
+      "ad_plays_sub": "プラン全体の総広告表示数",
+      "note_pricing": "本プランはCPS（スポット単価）で価格設定されています。キャンペーン目標がシェア・オブ・ボイス、広告再生、または未設定のためです。平均CPSはメディアオーナーが提供するスポット単価です。eCPMは総インプレッションと総コストから算出されます（コスト ÷ インプレッション × 1,000）。",
+      "note_derivation": "数値は{days}日間にわたる{count}件の計画在庫から算出。CPMは全パネルでブレンドされ、リーチはチャネルミックスのベンチマークを使用します。",
+      "est_impressions": "推定インプレッション",
+      "campaign_duration": "プラン期間",
+      "est_reach": "推定リーチ",
+      "unique_viewers": "ユニーク視聴者",
+      "avg_frequency": "平均頻度",
+      "avg_per_person": "1人あたり平均",
+      "avg_ecpm": "平均 eCPM",
+      "effective_rate": "実効レート",
+      "avg_cpm": "平均 CPM",
+      "media_owner_rate": "メディアオーナーレート",
+      "est_ad_plays": "推定広告再生",
+      "total_displays": "総表示数",
+      "sov": "SOV",
+      "share_of_voice": "シェア・オブ・ボイス",
+      "sot": "SOT",
+      "daily_hours_used": "使用時間（日次）"
+    },
+    "inventory_mix": {
+      "title": "在庫ミックス",
+      "subtitle": "{channels}メディアチャネルにわたる{inventories}件の在庫",
+      "col_media_channel": "メディアチャネル",
+      "col_inventories": "在庫数",
+      "col_impressions": "インプレッション",
+      "col_cost": "コスト",
+      "col_cpm": "CPM",
+      "col_cps": "CPS",
+      "col_share": "シェア",
+      "total": "合計",
+      "summary_media_channels": "メディアチャネル",
+      "summary_total_inventories": "総在庫数",
+      "summary_total_cost": "総コスト",
+      "note": "{channel}が{inventories}件の在庫でコストの{share}%を占め、最大です。",
+      "empty": "チャネルデータがありません",
+      "channel_digital_ooh": "デジタル",
+      "channel_classic_ooh": "クラシック"
+    },
+    "audience_trends": {
+      "title": "オーディエンストレンド",
+      "subtitle": "プラン期間を通じてリーチが着実に積み上がります",
+      "cumulative_reach": "累積リーチ",
+      "reach_headline": "フライト終了までに{reach}人のユニークユーザーに到達",
+      "reach_loading": "リーチカーブを読み込み中…",
+      "reach_unavailable": "リーチカーブは利用できません",
+      "activity_by_day": "曜日別オーディエンスアクティビティ",
+      "concentration_index": "ターゲティング集中度インデックス",
+      "concentration_subtitle": "プランニングの目安 — コホート別の相対リーチリフト（実測の人口調査ではありません）。",
+      "age_gender": "年齢・性別",
+      "income_group": "所得層",
+      "behavior": "行動",
+      "interest": "興味関心",
+      "note": "棒グラフは各曜日のアクティブな予約時間の割合（プラン全体のスケジュール基準）、折れ線は累積リーチの推移を示します。集中度は本プランで設定されたターゲティング項目を反映します。"
+    },
+    "geographic_plan": {
+      "title": "地域プラン",
+      "subtitle": "{cities}都市にわたる{inventories}件の在庫",
+      "page_range": "都市 {start}–{end} / {total} · インプレッション順",
+      "col_city": "都市",
+      "col_country": "国",
+      "col_inventories": "在庫",
+      "col_impressions": "インプレッション",
+      "col_reach": "推定リーチ",
+      "col_cost": "コスト",
+      "col_cpm": "CPM",
+      "col_cps": "CPS",
+      "summary_cities": "都市",
+      "summary_inventories": "在庫",
+      "summary_total_cost": "総コスト",
+      "summary_avg_cpm": "平均CPM",
+      "summary_avg_cps": "平均CPS",
+      "note": "{countries}か国{cities}都市。最大市場{topMarket}がインプレッションの{share}%を占めます。",
+      "empty": "都市データがありません",
+      "not_available": "—"
+    },
+    "audience_map": {
+      "title": "オーディエンスマップ — ヒートマップと在庫",
+      "subtitle": "{markets}市場にわたる{sites}サイト・最密 {market}",
+      "sites_pinned": "サイト数",
+      "total_inventory": "総在庫",
+      "densest_market": "最密市場",
+      "note": "各ピンは在庫サイトを示し、網掛けの円はそのカバー範囲（屋外250m、屋内50m）を表します。",
+      "not_available": "—"
+    },
+    "targeting_card": {
+      "title": "ターゲティング",
+      "subtitle": "このプランが最適化して到達する対象",
+      "demographics": "デモグラフィック",
+      "demographics_sub": "年齢 · 性別 · 所得",
+      "age": "年齢",
+      "gender": "性別",
+      "income": "所得",
+      "venue_types": "ベニュータイプ",
+      "venue_types_sub": "計画された在庫ミックスから",
+      "behaviour": "行動",
+      "behaviour_sub": "訴求するオーディエンスの瞬間",
+      "interests": "興味関心",
+      "interests_sub": "オーディエンスが関心を持つカテゴリー",
+      "not_selected": "未選択"
+    },
+    "goals_kpis": {
+      "title": "目標とKPI",
+      "subtitle": "本プランは目標の{pct}%を予測 · インプレッションは{peak}にピーク",
+      "target": "目標",
+      "goal_type": "目標タイプ：{type}",
+      "planned_forecast": "計画予測",
+      "on_track": "達成見込み",
+      "forecast_vs_target": "予測 vs 目標",
+      "expected_delivery": "配信予定 · {granularity}区分",
+      "granularity": "粒度",
+      "granularity_weekly": "週次",
+      "granularity_monthly": "月次",
+      "peak_bin": "ピーク区分",
+      "peak_impressions": "ピークインプレッション",
+      "tip_impressions": "インプレッション",
+      "tip_reach": "リーチ",
+      "note": "目標{target}{targetNoun}に対して予測{forecast}{forecastNoun}（{pct}%達成）。棒は{granularity}区分ごとの計画インプレッションを示し、ハイライトされた棒は{peak}を表します。",
+      "reach": {
+        "label": "リーチ",
+        "target_noun": "ユニークリーチ",
+        "forecast_noun": "予測リーチ"
+      },
+      "impressions": {
+        "label": "インプレッション",
+        "target_noun": "インプレッション",
+        "forecast_noun": "予測インプレッション"
+      },
+      "adplays": {
+        "label": "広告再生",
+        "target_noun": "広告再生",
+        "forecast_noun": "予測広告再生"
+      },
+      "sov": {
+        "label": "シェア・オブ・ボイス",
+        "target_noun": "SOV",
+        "forecast_noun": "予測SOV"
+      }
+    },
+    "inventory_snapshots": {
+      "title": "インベントリスナップショット",
+      "subtitle": "パネル {start}–{end} / {total} · インプレッション順",
+      "impressions": "インプレッション",
+      "reach": "リーチ",
+      "plays_day": "再生/日",
+      "sov": "SOV",
+      "cost": "コスト",
+      "cpm": "CPM",
+      "cps": "CPS",
+      "empty": "選択された在庫がありません",
+      "note": "在庫は日次インプレッション順に表示。全{total}パネルを6件/スライドで分割（本ページは{shown}件）。"
+    },
+    "why_plan": {
+      "title": "このプランが機能する理由",
+      "subtitle": "ブリーフを達成する3つの理由 — さらにマイルストーンロードマップ",
+      "reason": "理由 {number}",
+      "reason_geography": "{market}に{inventories}件の在庫を集中させ、ブランドのオーディエンス密度が最も高い場所で{impressions}インプレッションを創出します。",
+      "reason_scale": "{inventories}件の在庫で合計{impressions}インプレッションを、ブレンドCPM {cpm}で提供します。",
+      "reason_audience": "{segments}がブランドの定めるターゲティングプロファイルに合致します。",
+      "reason_audience_venue": "ターゲットオーディエンスに合致する{venues}のベニュー環境を優先します。",
+      "reason_audience_generic": "配置はリーチとフリークエンシー効率のカテゴリー基準に照らして評価されています。",
+      "fallback_market": "主要市場",
+      "inventory_in_plan": "プラン内の在庫",
+      "expected_goal_achievement": "目標達成の見込み",
+      "phase_ramp": "立ち上げ",
+      "phase_mid_flight": "中間",
+      "phase_closeout": "締めくくり",
+      "unit_day": "日",
+      "unit_week": "週",
+      "unit_month": "月",
+      "unit_quarter": "四半期",
+      "desc_ramp": "掲出開始、クリエイティブが配信され、学習フェーズが始まります。",
+      "desc_mid_flight": "全在庫が稼働し、インプレッションの大部分がここで配信されます。",
+      "desc_closeout": "最後の追い込みと、季節変動を吸収する超過配信バッファ。",
+      "track_note_day": "短期プラン — マイルストーンは日単位で追跡されます。",
+      "track_note_week": "短期プラン — マイルストーンは週単位で追跡されます。",
+      "track_note_month": "長期プラン — マイルストーンは月単位で追跡されます。",
+      "track_note_quarter": "長期プラン — マイルストーンは四半期単位で追跡されます。",
+      "note": "マイルストーンはフライトを立ち上げ・中間・締めくくりの3分割にし、達成率は目標に対するプラン予測のSカーブペーシングに従います。理由は地理、プランの経済性、ターゲティングから算出されます。"
+    },
+    "targeting_strategy": {
+      "title": "ターゲティング戦略",
+      "subtitle": "プラン期間の予測パフォーマンスデータ",
+      "age_groups": "年齢層",
+      "income_level": "所得レベル",
+      "interests": "興味・関心",
+      "lifestyle": "ライフスタイル"
+    },
+    "geographic_targeting": {
+      "title": "地理的ターゲティング",
+      "subtitle_cities": "都市別のプランターゲット地域の予測パフォーマンスデータ",
+      "subtitle_venue_types": "会場タイプ別のプランターゲット地域の予測パフォーマンスデータ",
+      "cities": "都市",
+      "venue_type": "会場タイプ",
+      "ad_plays": "広告再生",
+      "budget_allocation_percent": "予算配分（%）",
+      "of_total_cost": "総コストの",
+      "page": "ページ",
+      "of": "/",
+      "impressions": "インプレッション",
+      "noData": "データがありません"
+    },
+    "schedule": {
+      "title": "プランスケジュール",
+      "subtitle": "詳細なスケジュールとタイミング戦略",
+      "flight_schedule": "フライトスケジュール",
+      "daypart_performance": "時間帯別パフォーマンス",
+      "ramp_up_phase": "立ち上げフェーズ",
+      "budget_allocation": "予算配分",
+      "high_traffic": "高トラフィック",
+      "medium_traffic": "中トラフィック",
+      "low_traffic": "低トラフィック",
+      "chart_unavailable": "チャート画像を利用できません",
+      "chart_not_provided": "チャート画像が提供されていません"
+    },
+    "cost_breakdown": {
+      "title": "コスト内訳",
+      "subtitle": "インベントリタイプ別の詳細なコスト配分と分析",
+      "cost_split": "コスト分割",
+      "fee_structure": "料金構造",
+      "media_cost": "メディアコスト",
+      "platform_fee": "プラットフォーム手数料（6%）",
+      "agency_commission": "代理店手数料（8%）",
+      "total_investment": "総投資額",
+      "of_total_cost": "総コストの",
+      "loading": "読み込み中...",
+      "error": "コスト分割データの読み込みエラー",
+      "no_data": "コスト分割データがありません"
+    },
+    "selected_inventory": {
+      "title": "選択されたインベントリ",
+      "subtitle": "選択されたすべての広告資産の概要",
+      "summary_statistics": "統計サマリー",
+      "format_distribution": "フォーマット分布",
+      "total_inventories": "総インベントリ数",
+      "format_types": "フォーマットタイプ",
+      "cities": "都市",
+      "est_impressions": "推定インプレッション",
+      "inventory_name": "インベントリ名",
+      "type": "タイプ",
+      "city": "都市",
+      "schedule_dates": "スケジュール日付",
+      "schedule_hours": "スケジュール時間",
+      "impression": "インプレッション",
+      "cost": "コスト",
+      "total_media_cost": "総メディアコスト",
+      "schedule_title": "選択されたインベントリとスケジュール",
+      "schedule_subtitle": "選択されたすべてのインベントリの概要"
+    },
+    "map_view": {
+      "title": "インベントリマップビュー",
+      "subtitle": "選択された広告資産の地理的分布",
+      "click_here": "ここをクリック",
+      "map_load_error": "マップ画像を読み込めませんでした",
+      "click_to_view": "クリックしてインタラクティブマップを表示",
+      "loading": "読み込み中..."
+    },
+    "common_labels": {
+      "na": "N/A",
+      "moving_walls": "Moving Walls"
+    },
+    "analytics": {
+      "title": "分析ビュー",
+      "subtitle": "詳細な分析とインサイト",
+      "coming_soon": "分析ビューは近日公開予定"
+    },
+    "errors": {
+      "loading": "読み込み中...",
+      "error_loading": "メディアプランデータの読み込みエラー",
+      "data_not_available": "メディアプランデータが利用できません",
+      "download_failed": "PPTの生成に失敗しました。もう一度お試しください。",
+      "download_success": "PPTが正常にダウンロードされました！",
+      "excel_not_implemented": "Excelダウンロードはまだ実装されていません",
+      "excelSuccess": "Excelファイルをダウンロードしました！",
+      "excelFailed": "Excelの生成に失敗しました。もう一度お試しください。",
+      "campaignIdMissing": "プランIDがありません",
+      "publicTokenFailed": "パブリックトークンの生成に失敗しました",
+      "fetchInventoriesFailed": "インベントリの取得に失敗しました",
+      "mapViewFailed": "マップビューを開けませんでした。もう一度お試しください。",
+      "mapCaptureFailed": "マップ画像のキャプチャに失敗しました",
+      "pptMapTokenFailed": "PPTマップリンク用のパブリックトークンの生成に失敗しました",
+      "scheduleChartCaptureFailed": "スケジュールチャート画像のキャプチャに失敗しました",
+      "inventoryChartCaptureFailed": "選択インベントリチャート画像のキャプチャに失敗しました"
+    },
+    "cinema": {
+      "title": "シネマ",
+      "subtitle": "運営会社・スクリーン・上映時間帯 — ジャンル／レーティング制約",
+      "operator": "運営会社",
+      "cinema": "映画館",
+      "hall": "スクリーン",
+      "showtime": "上映時間帯",
+      "genre": "ジャンル",
+      "rating": "レーティング",
+      "more": "他{count}件",
+      "empty": "シネマ在庫はありません",
+      "note": "作品は参考情報です。購入対象は運営会社／スクリーン／上映時間帯です。",
+      "inventory": "在庫",
+      "genre_rating": "ジャンル／レーティング"
+    }
+  },
+  "approval": {
+    "title": "プランの承認",
+    "loading": "読み込み中...",
+    "error": "承認詳細の読み込みエラー",
+    "approve": "承認",
+    "reject": "拒否",
+    "sections": {
+      "campaign_details": "プラン詳細",
+      "approval_progress": "承認進行状況"
+    },
+    "campaign_name": "プラン名",
+    "campaign_id": "プランID",
+    "status_label": "ステータス",
+    "status_tooltip": "プランステータス",
+    "budget": "予算",
+    "campaign_duration": "プラン期間",
+    "days": "日",
+    "created_by": "作成者",
+    "no_progress": "承認進行状況が利用できません",
+    "status": {
+      "completed": "完了",
+      "in_progress": "進行中",
+      "pending": "保留中",
+      "rejected": "拒否"
+    },
+    "authority": {
+      "agency": "代理店",
+      "internal": "内部",
+      "media_owner": "メディアオーナー",
+      "agency_acceptance": "代理店承認",
+      "internal_review": "内部レビュー",
+      "media_owner_approval": "メディアオーナー承認"
+    },
+    "approved_by": "承認者",
+    "rejected_by": "拒否者",
+    "approved_on": "承認日",
+    "rejected_on": "拒否日",
+    "pending": {
+      "agency": "代理店の回答を待っています",
+      "internal": "内部チームの回答を待っています",
+      "media_owner": "メディアオーナーの承認を待っています",
+      "default": "承認を待っています"
+    },
+    "modal": {
+      "note": "注記 ：",
+      "approve": {
+        "title": "承認を確認",
+        "message": "プランを承認してもよろしいですか？",
+        "note": "承認後, 追加のコスト変更は許可されません. プランはロックされ, メディアオーナーに最終承認のために送信されます.",
+        "yes": "はい, 承認",
+        "no": "いいえ, 承認しない"
+      },
+      "reject": {
+        "title": "拒否を確認",
+        "message": "プランを拒否してもよろしいですか？",
+        "note": "拒否後, プランは修正のために返されます. 拒否の理由を提供してください.",
+        "reason_label": "拒否理由",
+        "reason_placeholder": "拒否理由を提供してください...",
+        "yes": "はい, 拒否",
+        "no": "いいえ, 拒否しない"
+      }
+    },
+    "rejection_reason_required": "拒否理由は必須です",
+    "reason_visibility_note": "この理由はすべての関係者に表示され、プラン履歴に記録されます。",
+    "approval_completed": "プラン承認が完了しました",
+    "already_rejected": "このプランはすでに拒否されています",
+    "already_approved": "このプランはすでに承認されています"
+  },
+  "buttons": {
+    "saveAsDraft": "下書きとして保存",
+    "finaliseCampaign": "プランを確定",
+    "savingDraft": "保存中..."
+  },
+  "viewCampaign": {
+    "ID": "ID",
+    "budget": "予算",
+    "campaignStartDate": "プラン開始日",
+    "campaignEndDate": "プラン終了日",
+    "campaignKeyStakeholders": "プラン主要関係者",
+    "planner": "プランナー",
+    "brandCategory": "ブランドカテゴリー",
+    "MEDIA_OWNER": "メディアオーナー",
+    "COUNTRY": "国",
+    "INVENTORY_TYPE": "インベントリタイプ",
+    "VENUE_TYPE": "会場タイプ",
+    "STATE": "州",
+    "CITY": "都市",
+    "SIZE": "サイズ",
+    "tabs": {
+      "campaignDetails": "プラン詳細",
+      "campaignHistory": "プラン履歴"
+    },
+    "submitCampaign": "プランを提出",
+    "errorLoadingData": "プランデータの読み込みエラー。",
+    "defaultCampaignName": "プラン 1",
+    "submitModal": {
+      "title": "提出を確認",
+      "message": "プランを承認のために提出してもよろしいですか？",
+      "note": "提出後、プランが拒否されない限り、それ以上の編集は許可されません。",
+      "yes": "はい、提出します",
+      "no": "いいえ、提出しない"
+    },
+    "submitSuccess": "プランが審査のために正常に提出されました。",
+    "submitError": "プランの審査提出に失敗しました。もう一度お試しください。",
+    "tabTitles": {
+      "goal": "目標",
+      "inventory": "インベントリ",
+      "performance": "パフォーマンス",
+      "costBreakdown": "コスト内訳",
+      "comments": "コメント"
+    },
+    "targetingTab": {
+      "audienceTitle": "オーディエンス人口統計",
+      "geographyTitle": "地理的ターゲティング",
+      "byCityTitle": "都市別",
+      "byVenueTypeTitle": "会場タイプ別",
+      "ageGroups": "年齢層",
+      "incomeLevel": "収入レベル",
+      "interests": "興味・関心",
+      "lifestyle": "ライフスタイル",
+      "adPlays": "広告再生",
+      "ofTotal": " 総コストの",
+      "mapView": "マップビュー"
+    },
+    "inventoryTab": {
+      "title": "インベントリ概要",
+      "totalInventory": "総インベントリ",
+      "format": "フォーマット",
+      "types": "タイプ",
+      "cities": "都市",
+      "adPlays": "広告再生",
+      "selectedInventory": "選択されたインベントリ",
+      "inventoryInfo": "パフォーマンス予測は過去のインベントリデータとスケジュール設定に基づいています。実際の結果は異なる場合があります。",
+      "selectedInventoryInfo": "選択されたすべてのインベントリの完全なリスト"
+    },
+    "scheduleTab": {
+      "title": "プランスケジュール",
+      "subTitle": "プラン計画中に設定された各インベントリ資産の計画スケジュールを表示・管理します。",
+      "scheduleConfiguration": "スケジュール設定",
+      "expectedPerformance": "期待されるパフォーマンス",
+      "hours": "時間",
+      "expectedImpressions": "期待されるインプレッション"
+    },
+    "campaignGoalView": {
+      "selectedCampaignGoal": "選択されたプラン目標",
+      "noGoalSelected": "目標が選択されていません",
+      "noMetricsToShow": "表示するメトリクスがありません",
+      "targetVsPlanned": "目標と計画のパフォーマンス比較",
+      "overTarget": "目標超過",
+      "underTarget": "目標未達",
+      "plannedProgressToTarget": "目標への計画進捗",
+      "progressInfoText": "目標への進捗状況を表示します",
+      "yourTarget": "あなたの目標",
+      "plannedDelivery": "計画された配信",
+      "target": "目標",
+      "projected": "予測",
+      "expectedGoalAchievement": "期待される目標達成",
+      "noGoalAchievement": "目標達成なし",
+      "expectedToOverdeliver": "目標を超える配信が見込まれます",
+      "expectedToReachTarget": "目標の100%達成が見込まれます",
+      "expectedToReach": "達成見込み",
+      "ofTarget": "目標の",
+      "howYourPlanAchieves": "このプランが目標を達成する方法",
+      "strategies": {
+        "highTraffic": {
+          "title": "高トラフィック場所戦略",
+          "description": "タイムズスクエア、ミシガンアベニュー、サンセットブルバードの選択されたインベントリがピーク時間中の最大の視認性を確保します"
+        },
+        "formatMix": {
+          "title": "フォーマットミックス最適化",
+          "description": "デジタルと静的フォーマットの組み合わせが24時間365日の露出を提供し、昼間はエンゲージメントが向上します"
+        },
+        "overDelivery": {
+          "title": "超過配信バッファー",
+          "description": "プランには目標より18%多いインプレッションが含まれており、季節的な変動に対する保護を提供します"
+        }
+      },
+      "impression": "インプレッション",
+      "noGoal": "ゴールなし",
+      "expectedOverdeliver": "超過配信予定 ({n})",
+      "expectedReachTarget": "ターゲット目標100%達成予定",
+      "expectedReachPartial": "ターゲット {goalType} の {n}% 達成予定"
+    },
+    "costSplit": "コスト分割",
+    "totalLabel": "合計",
+    "splitByLabel": "分割基準",
+    "ofTotalCost": "総コストの",
+    "execution": {
+      "pushed": "実行システムへ引き渡し済み",
+      "handedOff": "{acknowledged}/{total} ライン確認済み",
+      "inProgress": "{count} 件処理中",
+      "failed": "{count} 件失敗",
+      "view": "実行プランを見る"
+    }
+  },
+  "scheduleDrawer": {
+    "title": "新しいスケジュール",
+    "noInventorySelected": "インベントリが選択されていません。最初にインベントリを選択してください。",
+    "clearPreviousSchedule": "選択した看板の以前のスケジュールをクリアする",
+    "saving": "保存中...",
+    "saveChanges": "変更を保存",
+    "selectedInventories": "選択されたインベントリ",
+    "searchPlaceholder": "追加された場所をここで検索...",
+    "scheduleDate": "スケジュール日付",
+    "selectDateRange": "日付範囲を選択",
+    "duration": "期間",
+    "spotsLoop": "スポット/ループ",
+    "spotsHour": "スポット/時間",
+    "scheduleGrids": "スケジュールグリッド",
+    "selectAllDays": "すべての日を選択",
+    "selectAll": "すべて選択",
+    "deselectAll": "すべて選択解除",
+    "selectScheduleDatesFirst": "最初にスケジュール日付を選択してください",
+    "datesOutsideCampaignRange": "スケジュール日付はプラン期間内に設定してください",
+    "spotsLoopCapped": "スポット/ループは{max}（クライアントごとのループ）を超えることはできません。値は上限に設定されます。",
+    "spotsHourCapped": "スポット/時間は{max}（クライアントごとのループ × 初期スポット/時間）を超えることはできません。値は上限に設定されます。",
+    "selectAtLeastOneHour": "スケジュールグリッドで少なくとも1時間を選択してください",
+    "scheduleNameDefault": "スケジュール {order}",
+    "scheduleSavedSuccessfully": "スケジュールが正常に保存されました",
+    "hoursOutsideOperationTime": "選択した時間帯の一部がインベントリの運営時間外です。",
+    "overlappingSchedulesClassic": "警告：このスケジュールは既存のスケジュールと重複しています。日付を確認してください。",
+    "overlappingSchedulesDigital": "警告：このスケジュールは既存のスケジュールと重複しています。日付と時間を確認してください。",
+    "customPattern": "カスタム",
+    "schedulePatterns": {
+      "default": "デフォルト",
+      "commuter": "通勤パターン",
+      "business": "営業時間",
+      "nightlife": "ナイトライフ",
+      "weekend": "週末フォーカス",
+      "24/7": "24/7",
+      "custom": "カスタム"
+    },
+    "errors": {
+      "fillRequiredFields": "すべての必須フィールドを入力してください",
+      "selectScheduleDates": "スケジュール日付を選択してください",
+      "selectAtLeastOneHour": "スケジュールグリッドで少なくとも1時間を選択してください",
+      "failedToSave": "スケジュールの保存に失敗しました",
+      "failedToSaveRetry": "スケジュールの保存に失敗しました。もう一度お試しください。"
+    },
+    "newTitle": "新規 {title}",
+    "selectDaysLabel": "スケジュールの曜日を選択",
+    "invalidInventoryType": "有効な在庫タイプを選択してください",
+    "minHoursViolation": "スケジュールされた各日には、このインベントリに対して最低{minHours}時間を選択する必要があります。保存する前に選択内容を調整してください。"
+  },
+  "scheduleOptimization": {
+    "allInventories": "すべてのインベントリ",
+    "scheduleName": "スケジュール {order}",
+    "scheduleDefault": "（デフォルト）",
+    "days": {
+      "MONDAY": "月",
+      "TUESDAY": "火",
+      "WEDNESDAY": "水",
+      "THURSDAY": "木",
+      "FRIDAY": "金",
+      "SATURDAY": "土",
+      "SUNDAY": "日"
+    },
+    "errors": {
+      "failedToLoadInventory": "インベントリの読み込みに失敗しました",
+      "cannotDeleteSchedule": "スケジュールを削除できません：IDが見つかりません",
+      "failedToDeleteSchedule": "スケジュールの削除に失敗しました",
+      "failedToDeleteScheduleRetry": "スケジュールの削除に失敗しました。もう一度お試しください。"
+    },
+    "scheduleDeletedSuccessfully": "スケジュールを削除しました",
+    "of": "の"
+  },
+  "optimizeManually": {
+    "errors": {
+      "selectInventory": "スケジュールを保存するインベントリを選択してください！",
+      "selectScheduleDates": "スケジュール日付を選択してください"
+    }
+  },
+  "inventoryDetails": {
+    "tabs": {
+      "details": "詳細",
+      "locationMap": "場所とマップ",
+      "operations": "運営",
+      "availability": "可用性"
+    },
+    "noImageAvailable": "画像がありません",
+    "inventoryInformations": "インベントリ情報",
+    "copyName": "名前をコピー",
+    "nameCopied": "名前をクリップボードにコピーしました",
+    "cinema": {
+      "lineupTitle": "参考上映ラインナップ",
+      "lineupAsOf": "参考ラインナップ（{date}時点）",
+      "runtime": "{minutes}分",
+      "notABuyUnit": "映画は参考表示のみで、購入単位ではありません。シネマ枠はオペレーター、ホール、上映時間帯で購入します。"
+    },
+    "labels": {
+      "mediaOwner": "メディアオーナー",
+      "type": "タイプ",
+      "format": "フォーマット",
+      "size": "サイズ",
+      "screens": "スクリーン",
+      "operationMode": "動作モード",
+      "execution": "実行",
+      "loopBased": "ループベース",
+      "inventoryId": "インベントリID"
+    },
+    "typeLabel": {
+      "digital": "デジタル",
+      "digitalTransit": "デジタルトランジット",
+      "classic": "クラシック",
+      "classicTransit": "クラシックトランジット"
+    },
+    "bookingMode": {
+      "spot": "スポット",
+      "loop": "ループ"
+    },
+    "locationDetails": "場所の詳細",
+    "locationLabels": {
+      "address": "住所",
+      "coordinates": "座標",
+      "visibility": "視認性",
+      "areaType": "エリアタイプ",
+      "venueType": "会場タイプ"
+    },
+    "nearbyPOI": "近くのポイント・オブ・インタレスト",
+    "poiLabels": {
+      "restaurants": "レストラン",
+      "shopping": "ショッピング",
+      "transit": "交通機関",
+      "hotels": "ホテル"
+    },
+    "operatingSchedule": "運営スケジュール",
+    "scheduleLabels": {
+      "startTime": "開始時刻",
+      "endTime": "終了時刻",
+      "operatingDays": "営業日",
+      "maintenanceWindow": "メンテナンス時間"
+    },
+    "loopConfiguration": "ループ設定",
+    "loopLabels": {
+      "loopSize": "ループサイズ",
+      "slotDuration": "スロット時間",
+      "clientsPerLoop": "ループあたりのクライアント数",
+      "cycleTime": "サイクルタイム"
+    },
+    "daysPerWeek": "{count}日 / 週",
+    "notAvailable": "N/A",
+    "performanceMetricsPlaceholder": "パフォーマンス指標がここに表示されます",
+    "busynessDataPlaceholder": "混雑データがここに表示されます"
+  },
+  "mobilityHeatmap": {
+    "title": "オーディエンスヒートマップ",
+    "tooltip": "オーディエンスモビリティ（人流）データに基づき、ターゲットオーディエンスの移動状況を表示します。濃い赤色ほど人流が多いエリアです。",
+    "timeOfDay": "時間帯",
+    "buckets": {
+      "all": "終日",
+      "morning": "朝",
+      "afternoon": "昼",
+      "evening": "夕方",
+      "night": "夜"
+    },
+    "low": "低",
+    "high": "高",
+    "loading": "モビリティデータを読み込み中...",
+    "error": "モビリティデータを読み込めませんでした",
+    "noData": "このエリアのモビリティデータはありません"
+  },
+  "inventoryMapView": {
+    "title": "選択されたインベントリ",
+    "removeFile": "ファイルを削除",
+    "emptyMessage": "インベントリが見つかりません",
+    "emptySubMessageWithQuery": "検索クエリを調整してみてください",
+    "emptySubMessageNoQuery": "インベントリを選択してここに表示してください",
+    "loadingMoreText": "さらに読み込み中...",
+    "yesRemove": "はい、削除します",
+    "dontRemove": "削除しない",
+    "removeConfirmMessage": "このインベントリを削除してもよろしいですか -",
+    "thisItem": "このアイテム",
+    "estimatedCost": "推定コスト",
+    "smartScore": "スマートスコア",
+    "poiFilter": "POI",
+    "locationsDropdown": "ロケーション",
+    "locationsEmpty": "ロケーションが選択されていません",
+    "poiEmpty": "POIが選択されていません",
+    "inventoriesCount": "在庫",
+    "searchPlaceholder": "ロケーション、在庫を検索...",
+    "mediaOwner": "メディアオーナー",
+    "cpm": "CPM",
+    "impression": "インプレッション",
+    "availability": "空き状況"
+  },
+  "inventoryCsvUpload": {
+    "title": "インベントリをインポート",
+    "tabs": {
+      "existingFiles": "既存ファイル",
+      "uploadNew": "新規アップロード"
+    },
+    "uploadPlaceholder": "ここにファイルをタップまたはドラッグ＆ドロップ",
+    "dataProcessingResults": "データ処理結果",
+    "loadingFiles": "ファイルを読み込み中...",
+    "noFilesAvailable": "利用可能なファイルがありません",
+    "columns": {
+      "srNo": "連番",
+      "fileName": "ファイル名",
+      "noOfInventories": "インベントリ数",
+      "uploadedBy": "アップロード者",
+      "uploadedOn": "アップロード日",
+      "action": "アクション"
+    },
+    "actions": {
+      "view": "表示",
+      "download": "ダウンロード",
+      "delete": "削除"
+    },
+    "deleteFileTitle": "ファイルを削除",
+    "deleteFileConfirm": "はい、削除します",
+    "deleteFileCancel": "削除しない",
+    "deleteFileMessage": "このファイルを削除してもよろしいですか -",
+    "deleteFileThisFile": "このファイル",
+    "errors": {
+      "campaignIdRequired": "アップロードにはプランIDが必要です",
+      "failedToUpload": "CSVファイルのアップロードに失敗しました。もう一度お試しください。",
+      "uploadAndVerifyFirst": "最初にCSVファイルをアップロードして確認してください",
+      "selectFileToUse": "使用するファイルを選択してください",
+      "campaignIdRequiredForUse": "プランIDが必要です",
+      "failedToDelete": "ファイルの削除に失敗しました。もう一度お試しください。",
+      "failedToDownload": "ファイルのダウンロードに失敗しました。もう一度お試しください。"
+    },
+    "success": {
+      "uploaded": "CSVファイルが正常にアップロードされました",
+      "fileUsed": "ファイルが正常に使用されました",
+      "deleted": "ファイルが正常に削除されました",
+      "downloaded": "ファイルが正常にダウンロードされました"
+    }
+  },
+  "locationCsvUpload": {
+    "errors": {
+      "countryNameRequired": "インポートには国名が必要です",
+      "noLocationsFound": "ファイルに場所が見つかりません",
+      "noValidLocations": "ファイルに有効な場所が見つかりません",
+      "failedToReadFile": "ファイルの読み込みに失敗しました。もう一度お試しください。",
+      "failedToImport": "CSVファイルのインポートに失敗しました。もう一度お試しください。",
+      "selectFile": "ファイルを選択してください",
+      "importCallbackNotAvailable": "インポートコールバックが利用できません",
+      "failedToDelete": "ファイルの削除に失敗しました。もう一度お試しください。",
+      "failedToDownload": "ファイルのダウンロードに失敗しました。もう一度お試しください。"
+    },
+    "success": {
+      "imported": "CSVファイルが正常にインポートされました",
+      "deleted": "ファイルが正常に削除されました",
+      "downloaded": "ファイルが正常にダウンロードされました"
+    }
+  },
+  "dataProcessingResults": {
+    "title": "データ処理結果",
+    "totalRows": "総行数",
+    "valid": "有効",
+    "invalid": "無効"
+  },
+  "campaignDetails": {
+    "errorLoadingSplitCost": "コスト分割データの読み込みエラー"
+  },
+  "geofencingDrawer": {
+    "deleteFile": {
+      "title": "ファイルを削除",
+      "confirm": "はい、削除します",
+      "cancel": "削除しない",
+      "message": "このファイルを削除してもよろしいですか -",
+      "thisFile": "このファイル"
+    },
+    "uploadTab": {
+      "placeholder": "タップまたはドラッグ＆ドロップしてファイルをアップロード",
+      "allProcessed": "すべてのデータが正常に処理されました！ - {count} 件の場所が確認されました"
+    },
+    "dataProcessing": {
+      "title": "データ処理結果",
+      "successRate": "{rate}% 成功率",
+      "totalRows": "総行数",
+      "valid": "有効",
+      "invalid": "無効",
+      "note": "注意：",
+      "noteText": "有効なデータのみが保存され、場所の選択に使用されます",
+      "locationsVerified": "{count} 件の場所が確認されました",
+      "invalidLocations": "{count} 件の無効な場所",
+      "duplicateLocations": "{count} 件の重複した場所",
+      "viewLogs": "ログを表示"
+    }
+  },
+  "commentsTab": {
+    "placeholder": "コメントをここに入力してください..",
+    "emptyError": "コメントは空にできません",
+    "campaignIdRequired": "プランIDが必要です",
+    "postSuccess": "コメントが正常に投稿されました！",
+    "postError": "コメントの投稿に失敗しました。もう一度お試しください。",
+    "posting": "投稿中...",
+    "postComment": "コメントを投稿",
+    "viewAttachment": "表示",
+    "downloadAttachment": "ダウンロード",
+    "addComment": "コメントを追加",
+    "attachFiles": "ファイルを添付",
+    "attachmentTypes": "PDF、画像（各最大5MB）",
+    "campaignComments": "プランコメント",
+    "loadingComments": "コメントを読み込み中...",
+    "loadError": "コメントの読み込みに失敗しました。もう一度お試しください。",
+    "noComments": "まだコメントはありません。最初のコメントを投稿してください！",
+    "fileSizeError": "{fileName}は5MBの制限を超えています",
+    "validationError": "検証エラー"
+  },
+  "campaignWrapper": {
+    "invalidStep": "無効なステップ",
+    "previousStep": "前のステップ",
+    "nextStep": "次のステップ",
+    "processing": "処理中...",
+    "saving": "保存中...",
+    "errors": {
+      "failedToLoadData": "編集用のプランデータの読み込みに失敗しました。",
+      "campaignIdRequired": "プランを確定するにはプランIDが必要です。",
+      "failedToFinalise": "プランの確定に失敗しました。もう一度お試しください。",
+      "companySwitched": "会社が切り替わりました。選択した会社で新しいプランを作成してください。",
+      "minDaysViolation": "一部のインベントリで、必要な最低スケジュール日数を満たしていません。プランを確定する前にスケジュールを確認してください。",
+      "minDaysViolationDetail": "{name}には最低{minDays}日のスケジュールが必要ですが、現在{actualDays}日です。"
+    },
+    "success": {
+      "statusUpdated": "プランステータスが更新されました。"
+    }
+  },
+  "mediaPlan": {
+    "theme": {
+      "primary": "モダンエグゼクティブ",
+      "warning": "バイブラントオレンジ",
+      "success": "プロフェッショナルグリーン",
+      "purple-warning": "エレガントパープル"
+    },
+    "geographicTargeting": "地理的ターゲティング",
+    "errors": {
+      "campaignIdMissing": "プランIDがありません",
+      "failedToGenerateToken": "公開トークンの生成に失敗しました",
+      "failedToFetchInventories": "インベントリの取得に失敗しました",
+      "failedToOpenMapView": "マップビューを開けませんでした。もう一度お試しください。",
+      "failedToGenerateExcel": "Excelの生成に失敗しました。もう一度お試しください。"
+    },
+    "success": {
+      "excelDownloaded": "Excelファイルが正常にダウンロードされました！"
+    },
+    "analyticsView": {
+      "tabs": {
+        "campaignPlan": "プラン",
+        "inventoryDetails": "インベントリ詳細",
+        "doohSchedules": "DOOHスケジュール",
+        "operationDetails": "運営詳細"
+      },
+      "inactiveDays": "非活動日"
+    },
+    "defaultTitle": "プラン",
+    "noScheduleData": "スケジュールデータがありません",
+    "percentage": "パーセンテージ"
+  },
+  "shareModal": {
+    "title": "リンクを共有",
+    "linkCopied": "リンクがクリップボードにコピーされました",
+    "sharedInternally": "内部で正常に共有されました",
+    "shareLink": "リンクを共有",
+    "shareVia": "共有方法",
+    "email": "メール",
+    "whatsApp": "WhatsApp"
+  },
+  "agencyForm": {
+    "success": "代理店が正常に作成されました。"
+  },
+  "approvals": {
+    "title": "プラン承認",
+    "subtitle": "{total} 件のプランがレビュー中 · {awaiting} 件があなたの対応待ち",
+    "errorLoadingData": "承認インボックスの読み込みに失敗しました。",
+    "emptyTitle": "インボックスは空です",
+    "emptyDescription": "現在レビュー待ちのプランはありません。",
+    "awaitingYou": "あなたの対応待ち",
+    "awaitingStage": "{stage} 待ち",
+    "inNegotiation": "交渉中 — 価格のカウンターが進行中です",
+    "pricesPending": "承認の前に変更された価格を承諾する必要があります",
+    "review": "レビュー",
+    "viewProgress": "進捗を表示",
+    "authority": {
+      "AGENCY": "代理店承諾",
+      "INTERNAL": "社内レビュー",
+      "MEDIA_OWNER": "メディアオーナー承認"
+    },
+    "tabAll": "すべてのプラン",
+    "tabNeedsAction": "要対応",
+    "tabNegotiating": "交渉中",
+    "searchPlaceholder": "プラン名・番号・会社名で検索...",
+    "noMatches": "条件に一致するプランがありません。",
+    "fromCompany": "{company} から",
+    "yourMediaCost": "貴社メディアコスト: {cost}",
+    "yourInventories": "貴社インベントリ {count} 件",
+    "mediaOwnersLabel": "メディアオーナー",
+    "yourStatusLabel": "貴社の承認",
+    "counterOffer": "カウンターオファー",
+    "counterOfferOpen": "カウンターオファーはバイヤーの回答待ちです",
+    "ownerStatus": {
+      "PENDING": "回答待ち",
+      "APPROVED": "承認済み",
+      "NEGOTIATING": "カウンターオファー",
+      "REJECTED": "却下"
+    }
+  },
+  "executionPlan": {
+    "title": "実行プラン",
+    "errorLoadingData": "実行プランの読み込みに失敗しました。",
+    "push": "実行にプッシュ",
+    "reset": "ベースラインにリセット",
+    "retryFailed": "失敗したラインを再試行",
+    "retry": "再試行",
+    "pushSuccess": "実行プランをプッシュしました。プランが配信中になりました。",
+    "pushError": "実行プランのプッシュに失敗しました。もう一度お試しください。",
+    "resetSuccess": "実行プランを推奨ベースラインにリセットしました。",
+    "resetError": "実行プランのリセットに失敗しました。",
+    "lockedBanner": "このプランは実行にプッシュ済みのためロックされています。",
+    "pushedAt": "{date} にプッシュされました。",
+    "noLines": "このプランにはまだ在庫が選択されていないため、引き渡すものがありません。まず在庫を追加してください。",
+    "unknownMediaOwner": "不明なメディアオーナー",
+    "summary": {
+      "lines": "実行ライン",
+      "inventories": "{count} 件の在庫",
+      "plannedCost": "計画コスト",
+      "ofBudget": "予算 {budget} のうち",
+      "plannedImpressions": "計画インプレッション",
+      "handoff": "確認済み",
+      "failed": "{count} 件失敗",
+      "inFlight": "{count} 件処理中"
+    },
+    "classification": {
+      "DIGITAL": "デジタル",
+      "CLASSIC": "クラシック"
+    },
+    "destination": {
+      "INFLUENCE": "Influence",
+      "OMS": "OMS"
+    },
+    "purchaseType": {
+      "GUARANTEED": "保証型ディール",
+      "DIRECT": "ダイレクト",
+      "ORDER": "オーダー"
+    },
+    "handoffStatus": {
+      "PENDING_HANDOFF": "引き渡し待ち",
+      "QUEUED": "キュー済み",
+      "SENT": "送信済み",
+      "ACKNOWLEDGED": "確認済み",
+      "FAILED": "失敗"
+    },
+    "line": {
+      "inventories": "在庫",
+      "plannedCost": "計画コスト",
+      "plannedImpressions": "計画インプレッション",
+      "handedOffAt": "引き渡し日時",
+      "inventoryList": "在庫リスト"
+    },
+    "pushModal": {
+      "title": "プランを実行にプッシュしますか？",
+      "retryTitle": "失敗した引き渡しを再試行しますか？",
+      "message": "保留中のすべてのラインが実行システム（デジタルはInfluence、クラシックはOMS）に引き渡されます。プランはロックされ、配信中になります。この操作は取り消せません。",
+      "retryMessage": "選択した失敗ラインが再度引き渡されます。",
+      "yes": "はい、プッシュする",
+      "no": "キャンセル",
+      "summaryTitle": "公開される内容"
+    },
+    "blocked": {
+      "NOT_APPROVED": "このプランはまだ実行できません。先にキャンペーンの承認が必要です。",
+      "UNACCEPTED_PRICES": "このプランはまだ実行できません。承認待ちの価格変更があります。",
+      "NO_LINES": "このプランは実行できません。実行ラインがありません。先にインベントリを追加してください。"
+    }
+  },
+  "campaignActions": {
+    "deleteSuccess": "プランが正常に削除されました",
+    "downloadPPTSuccess": "PPTが正常にダウンロードされました！",
+    "downloadPPTFailed": "PPTの生成に失敗しました。もう一度お試しください。",
+    "duplicatedSuccess": "プランを複製しました",
+    "archivedSuccess": "プランをアーカイブしました",
+    "deleteError": "プランの削除に失敗しました。もう一度お試しください。",
+    "duplicateError": "プランの複製に失敗しました。もう一度お試しください。",
+    "archiveError": "プランのアーカイブに失敗しました。もう一度お試しください。",
+    "cancel": "キャンセル",
+    "editModal": {
+      "title": "プランを編集",
+      "message1": "プランを変更すると、現在の設定に影響が出る可能性があります。",
+      "message2": "プラン日程を変更すると、インベントリのスケジュールがデフォルトにリセットされます。",
+      "message3": "国を変更すると、選択したインベントリが削除されます。",
+      "message4": "続行してよろしいですか？",
+      "primaryButton": "はい"
+    },
+    "duplicateModal": {
+      "title": "プランを複製",
+      "message": "このプランを複製してよろしいですか？",
+      "primaryButton": "はい、複製する"
+    },
+    "archiveModal": {
+      "title": "プランをアーカイブ",
+      "message": "このプランをアーカイブしてよろしいですか？",
+      "primaryButton": "はい、アーカイブする"
+    },
+    "bulkArchiveModal": {
+      "title": "プランをアーカイブ",
+      "message": "選択した{count}件のプランをアーカイブしてよろしいですか？",
+      "primaryButton": "はい、アーカイブする",
+      "archiving": "アーカイブ中…"
+    },
+    "bulkArchiveBlockedModal": {
+      "title": "選択したプランをアーカイブできません",
+      "message": "選択したプランの一部はアーカイブできません（完了済みのため）：",
+      "ok": "OK"
+    },
+    "bulkArchive": "アーカイブ",
+    "deleteModal": {
+      "title": "プランを削除",
+      "message": "このプランを削除してよろしいですか？この操作は取り消せません。",
+      "primaryButton": "はい、削除する"
+    },
+    "bulkDeleteBlockedModal": {
+      "title": "選択したプランを削除できません",
+      "message": "選択したプランの一部は削除できません：",
+      "ok": "OK"
+    },
+    "bulkDeleteModal": {
+      "title": "プランを削除",
+      "message": "選択した{count}件のプランを削除してもよろしいですか？この操作は取り消せません。",
+      "primaryButton": "はい、削除する",
+      "deleting": "削除中…"
+    }
+  },
+  "inventoryPage": {
+    "errors": {
+      "selectAtLeastOne": "続行するには少なくとも1つのインベントリアイテムを選択してください。"
+    }
+  },
+  "publicInventoryMap": {
+    "selectedInventories": "選択されたインベントリ",
+    "loadingMore": "さらに読み込み中..."
+  },
+  "slots": "スロット",
+  "clients": "クライアント",
+  "minutes": "分",
+  "inventoryAvailability": {
+    "title": "インベントリの可用性",
+    "loadingInventories": "インベントリを読み込み中...",
+    "noSelectedInventories": "選択されたインベントリがありません",
+    "pleaseSelectInventories": "可用性を表示するインベントリを選択してください"
+  },
+  "viewLogDrawer": {
+    "title": "ログを表示",
+    "downloadErrorLog": "エラーログをダウンロード",
+    "emptyMessage": "ログがありません",
+    "columns": {
+      "srNo": "Sr. No",
+      "row": "行",
+      "description": "説明"
+    }
+  },
+  "campaignsList": {
+    "emptyMessage": "プランが見つかりません",
+    "ariaCustomizeColumns": "列のカスタマイズを開く",
+    "inventoryUnits": "ユニット",
+    "durationDays": "期間: {n}日",
+    "notAvailable": "N/A",
+    "goalTypes": {
+      "IMPRESSIONS": "インプレッション数",
+      "REACH": "リーチ",
+      "SOV": "シェア・オブ・ボイス",
+      "ADPLAYS": "広告再生数"
+    },
+    "status": {
+      "DRAFT": "下書き",
+      "PLANNED": "計画済み",
+      "ACTIVE": "アクティブ",
+      "COMPLETED": "完了",
+      "REVIEWING": "レビュー中",
+      "NEGOTIATING": "交渉中",
+      "APPROVED": "承認済み",
+      "PENDING": "保留中",
+      "ARCHIVED": "アーカイブ済み",
+      "REJECTED": "却下"
+    },
+    "columns": {
+      "srNo": "連番",
+      "campaignName": "プラン名",
+      "brand": "ブランド",
+      "plannedBy": "計画者",
+      "flightDates": "フライト日付",
+      "goalType": "目標",
+      "status": "ステータス",
+      "inventories": "インベントリ",
+      "budget": "予算",
+      "totalCost": "総コスト",
+      "actions": "アクション"
+    },
+    "externalUser": "外部ユーザー",
+    "externalUserTooltip": "このプランは、あなたの会社以外の人物（例：Moving Wallsのサポート担当者）があなたに代わって作成したものです。"
+  },
+  "viewFileInventoryDrawer": {
+    "emptyMessage": "利用可能なインベントリがありません",
+    "refId": "参照ID",
+    "columns": {
+      "srNo": "S.No",
+      "inventoryName": "インベントリ名",
+      "referenceId": "参照ID",
+      "latitude": "緯度",
+      "longitude": "経度",
+      "inventoryType": "インベントリタイプ"
+    }
+  },
+  "viewFileLocationDrawer": {
+    "emptyMessage": "利用可能な場所がありません",
+    "lat": "緯度",
+    "lng": "経度",
+    "radius": "半径",
+    "columns": {
+      "srNo": "S.No",
+      "locationName": "場所名",
+      "latitude": "緯度",
+      "longitude": "経度",
+      "radius": "半径",
+      "siteType": "サイトタイプ"
+    }
+  },
+  "geofencingExistingFiles": {
+    "loadingFiles": "ファイルを読み込み中...",
+    "noFilesAvailable": "利用可能なファイルがありません",
+    "noFilesYet": "ファイルがまだありません",
+    "startUploadingBulk": "一括で場所のアップロードを開始する",
+    "uploadCsvXlsx": "CSV/XLSXをアップロード",
+    "autoSelectGps": "GPS座標に基づいて利用可能な場所が自動的に選択されます。",
+    "columns": {
+      "srNo": "連番",
+      "fileName": "ファイル名",
+      "noOfLocations": "場所の数",
+      "uploadedBy": "アップロード者",
+      "uploadedOn": "アップロード日",
+      "action": "アクション"
+    },
+    "actions": {
+      "view": "表示",
+      "download": "ダウンロード",
+      "delete": "削除"
+    }
+  },
+  "geofencingPopup": {
+    "impressions": "インプレッション数",
+    "spots": "スポット",
+    "view": "表示",
+    "name": "名称:",
+    "address": "住所:",
+    "category": "カテゴリ:",
+    "rating": "評価:",
+    "notAvailable": "N/A"
+  },
+  "viewMediaPlanPage": {
+    "geographicTargeting": "地理的ターゲティング"
+  },
+  "inventoryPageForm": {
+    "selectAll": "すべて選択",
+    "failedSelectAll": "すべてのインベントリの選択に失敗しました。もう一度お試しください。",
+    "failedDeselectAll": "すべてのインベントリの選択解除に失敗しました。もう一度お試しください。",
+    "minInventoryRequired": "続行するには少なくとも1つのインベントリアイテムを選択してください。",
+    "loadingInventories": "インベントリを読み込んでいます...",
+    "noInventoriesFound": "インベントリが見つかりません",
+    "tryAdjustingSearch": "検索クエリを調整してみてください",
+    "selectInventoriesToView": "インベントリを選択してここに表示します"
+  },
+  "inventoryCard": {
+    "to": "〜"
+  },
+  "inventoryDetailCard": {
+    "cinema": {
+      "operator": "オペレーター",
+      "hall": "シネマ／ホール",
+      "seats": "座席数",
+      "showtimes": "上映時間帯",
+      "genres": "ジャンル",
+      "ratings": "レーティング"
+    },
+    "fitnessScoreCard": "フィットネススコアカード",
+    "budgetRelevance": "予算との関連性",
+    "campaignGoalMatch": "プラン目標の一致",
+    "geographyRelevance": "地理的関連性",
+    "audienceRelevance": "オーディエンスの関連性",
+    "brandCategoryRelevance": "ブランド／カテゴリの関連性",
+    "inventoryQuality": "インベントリの品質",
+    "timeAlignment": "時間の適合性",
+    "measureConfidence": "測定の信頼性",
+    "availabilityWindow": "空き状況",
+    "smartRecommendationScore": "スマートレコメンデーションスコア",
+    "limitedAvailability": "指定期間の空き枠に制限があります",
+    "unavailableForDates": "指定期間は利用できません"
+  },
+  "selectedInventoryListContainer": {
+    "inventory": "インベントリ",
+    "inventories": "インベントリ",
+    "noInventoriesFound": "インベントリが見つかりません",
+    "loadingMore": "読み込み中..."
+  },
+  "mediaOwnerDropdown": {
+    "loading": "メディアオーナーを読み込み中...",
+    "placeholder": "メディアオーナーを選択"
+  },
+  "searchOptionsPlaceholder": "オプションを検索...",
+  "selectedCountryMapAria": "選択された国のマップ",
+  "scheduleDrawerSelectAllDaysTooltip": "週の全日を選択",
+  "optimizeManuallySelectDateRange": "日付範囲を選択",
+  "signalsForm": {
+    "title": "シグナルとトリガー",
+    "description": "シグナルを使用すると、天気、時間帯、イベントなどのリアルタイム要因に基づいて広告をトリガーできます。",
+    "newSignalButton": "新しいシグナル",
+    "label": "シグナルとトリガー",
+    "placeholder": "シグナルとトリガーを選択",
+    "options": {
+      "weatherTrigger": {
+        "label": "天気トリガー",
+        "description": "現地の天気に基づいて広告を表示"
+      },
+      "searchBehaviour": {
+        "label": "検索行動",
+        "description": "最近の検索に基づいてターゲット設定"
+      },
+      "footfallPattern": {
+        "label": "歩行者パターン",
+        "description": "リアルタイムの交通パターンに基づいて調整"
+      },
+      "timeBased": {
+        "label": "時間ベース",
+        "description": "時間帯に基づいて異なるコンテンツを表示"
+      }
+    }
+  },
+  "tooltips": {
+    "inventory": {
+      "impressions": "プラン期間中にこの画面で広告が表示される合計回数",
+      "reach": "少なくとも1回広告を見たと推定されるユニーク個人の数",
+      "frequency": "各ユニーク個人が広告を見る平均回数（インプレッション÷リーチ）",
+      "cpmRate": "1,000インプレッションあたりのコスト — 1,000回の視聴ごとに請求される料金",
+      "cpsRate": "この画面での個別の広告再生1回あたりに請求される定額コスト",
+      "estimatedCost": "プラン期間とレートカードに基づくこのインベントリの推定総支出",
+      "adPlays": "プラン期間中にこの画面で広告が再生される合計回数",
+      "screens": "このインベントリ拠点の物理的なスクリーンまたはディスプレイの数",
+      "poi": "周辺の注目スポット — ショッピングモール、オフィス、交通ハブなどこのインベントリ周辺の施設",
+      "owner": "このインベントリを所有・管理するメディアオーナーまたは運営者"
+    },
+    "schedule": {
+      "days": "このインベントリで広告が配信される予定の曜日",
+      "hours": "この画面で広告が表示される稼働時間",
+      "slotDuration": "各広告スロットの時間（秒）",
+      "expectedImpressions": "このスケジュールに基づいて広告が視聴されると予測される回数",
+      "adPlays": "プラン期間中にこの画面で広告が再生される合計回数",
+      "sov": "シェア・オブ・ボイス — あなたのプランが占めるこの画面の利用可能な広告スロットの割合",
+      "trafficLevel": "各時間帯は、その日の活動量に占める割合に応じて分類されます：低（25%未満）、中（25〜49%）、高（50%以上）。"
+    },
+    "performance": {
+      "totalImpressions": "広告に接触すると予想される人数の合計。各広告再生ごとに、インベントリ付近で検出されたデバイス（人）の数がカウントされます。インプレッション = 広告再生数 × 再生あたりの平均視聴者数。",
+      "estimatedReach": "プラン期間中にインベントリの前を少なくとも1回通過したと推定されるユニーク個人の数。デバイス検出データから算出し、何回の広告再生に立ち会ったかに関わらず各人を1回のみカウントします。",
+      "frequency": "各ユニーク個人が広告再生中にインベントリ付近にいると推定される平均回数。合計インプレッション÷推定リーチで算出。頻度2.3は、各視聴者がプラン期間中に平均2〜3回接触することを意味します。",
+      "plannedAdPlays": "プラン期間中にすべてのインベントリスロットでクリエイティブが再生される予定の合計回数。各広告再生は1つの画面でのクリエイティブの1回の放送です。",
+      "avgCpmCost": "このプランのすべてのインベントリにわたる1,000インプレッションあたりの平均コスト。（総メディアコスト÷総インプレッション）× 1,000で算出。プラン間のコスト効率比較に役立ちます。",
+      "eCpm": "合意した実際のプランレートに基づく実効1,000インプレッションあたりのコスト。すべての手数料と割引を含み、交渉条件のもとで1,000人の視聴者にリーチする実際のコストを反映します。",
+      "sov": "プラン期間中に選択したインベントリで可能なすべての広告スロットと比較した、あなたのプランが獲得する広告再生の割合。",
+      "sot": "インベントリの総稼働時間と比較した広告表示時間の合計。再生回数ではなく時間ベースの露出を示します。"
+    },
+    "planSummary": {
+      "inventories": "現在プランに含まれているインベントリパネルの数。",
+      "impressions": "予想される総広告接触数。広告再生数 × 再生あたりの平均視聴者数を、選択したすべてのインベントリで合計したもの。",
+      "reach": "プラン期間中に選択したインベントリの前を少なくとも1回通過すると予想されるユニーク個人数（重複排除済み）。",
+      "frequency": "各ユニーク個人が接触する平均回数。インプレッション ÷ リーチ。",
+      "adPlays": "プラン期間中にすべてのインベントリスロットで予定されているクリエイティブ放送の合計数。",
+      "co2PerPlay": "画面のエネルギー消費に基づく、広告再生あたりの推定CO₂e。",
+      "co2PerPlayNoData": "現在の選択にはカーボンデータがありません。",
+      "avgCpm": "選択したインベントリ全体での1,000インプレッションあたりの平均コスト。（総メディアコスト ÷ インプレッション）× 1,000。",
+      "eCpm": "合意したプランレートでの実効CPM（手数料および割引を含む）。",
+      "sov": "シェア・オブ・ボイス — 選択したインベントリにおける、計画した広告再生数と利用可能な総広告スロットの比率。",
+      "sot": "シェア・オブ・タイム — プラン期間中にクリエイティブが画面に表示される合計時間（広告再生数 × 15秒スポット長で算出）。現在、インベントリの稼働時間の{percent}%です。",
+      "cost": "選択したインベントリ全体でのプランメディアコスト。",
+      "remaining": "現在のプラン後に残る予算。マイナスの値は予算超過を意味します。"
+    },
+    "inventoryDetails": {
+      "mediaOwner": "このインベントリを所有・管理する企業または個人",
+      "type": "看板の種類（例：デジタル、クラシック）を示します。",
+      "format": "インベントリの表示フォーマット",
+      "size": "在庫のサイズ（例：XS、S、M、L、XL）",
+      "screens": "このインベントリ拠点の物理的なスクリーンまたはディスプレイの数",
+      "operationMode": "インベントリがループベースかスポットベースで運用されるかを示します"
+    },
+    "inventoryLocation": {
+      "address": "インベントリ拠点の完全な住所",
+      "coordinates": "インベントリのGPS緯度・経度座標",
+      "visibility": "このインベントリが見える推定視認距離と角度",
+      "venueType": "インベントリが設置されている場所や環境の種類（例：ショッピングモール、交通機関、路上）"
+    },
+    "inventoryOperations": {
+      "startTime": "インベントリが毎日広告の表示を開始する時刻",
+      "endTime": "インベントリが毎日広告の表示を停止する時刻",
+      "operatingDays": "インベントリが広告を表示している週あたりの日数",
+      "maintenanceWindow": "インベントリがメンテナンスのためにオフラインになる予定のダウンタイム",
+      "loopSize": "このインベントリで1時間あたりに再生される広告ループ数",
+      "slotDuration": "各広告スロットの時間（秒）",
+      "clientsPerLoop": "各ループを共有する広告主の数 — あなたの広告はループごとに1回表示されます",
+      "cycleTime": "1つの完全なループサイクルが繰り返されるまでの合計時間"
+    }
+  },
+  "campaignHistory": {
+    "errorLoading": "プラン履歴の読み込みに失敗しました。",
+    "noHistory": "履歴はありません",
+    "columns": {
+      "serialNumber": "No.",
+      "date": "日付",
+      "user": "ユーザー",
+      "action": "アクション"
+    }
+  },
+  "performanceMetrics": {
+    "title": "パフォーマンス指標",
+    "metrics": {
+      "totalImpressions": {
+        "title": "総インプレッション数",
+        "subtitle": "プラン期間"
+      },
+      "estimatedReach": {
+        "title": "推定リーチ",
+        "subtitle": "ユニーク視聴者数"
+      },
+      "frequency": {
+        "title": "フリクエンシー",
+        "subtitle": "1人あたり平均"
+      },
+      "plannedAdPlays": {
+        "title": "計画広告再生数",
+        "subtitle": "総スケジュール数"
+      },
+      "avgCPMCost": {
+        "title": "平均CPMコスト",
+        "subtitle": "100万インプレッションあたり"
+      },
+      "eCPM": {
+        "title": "eCPM",
+        "subtitle": "プランレート"
+      },
+      "sov": {
+        "title": "シェア・オブ・ボイス（SOV）",
+        "subtitle": "計画広告再生数と総インベントリキャパシティの比率",
+        "description": "計画広告再生数と総インベントリキャパシティの比率",
+        "valueFormat": "{pct}%の利用可能スポット"
+      },
+      "sot": {
+        "title": "シェア・オブ・タイム（SOT）",
+        "subtitle": "プラン期間中に広告が表示されます",
+        "description": "プラン期間中に広告が表示されます",
+        "valueFormat": "{total} Hのうち{planned}H"
+      }
+    }
+  },
+  "mediaPlanAnalytics": {
+    "tabs": {
+      "campaignPlan": "プラン",
+      "inventoryDetails": "インベントリ詳細",
+      "costing": "コスト計算",
+      "operationDetails": "運営詳細",
+      "doohSchedules": "DOOHスケジュール",
+      "geographyTargeting": "ジオグラフィーターゲティング",
+      "cinema": "シネマ"
+    },
+    "geographyTargeting": {
+      "title": "ジオグラフィーターゲティング",
+      "subtitle": "国 › 地域 › 都市の階層別パフォーマンス。",
+      "noData": "データなし",
+      "columns": {
+        "geography": "地域",
+        "inventories": "インベントリ",
+        "impressions": "インプレッション数",
+        "reach": "リーチ",
+        "frequency": "フリークエンシー",
+        "ecpm": "eCPM ({currency})"
+      }
+    },
+    "costing": {
+      "title": "コスティング",
+      "noData": "データなし",
+      "totals": "合計",
+      "columns": {
+        "inventory": "インベントリ",
+        "city": "都市",
+        "baseCpm": "基本CPM",
+        "proposed": "提案額",
+        "accepted": "承認額",
+        "impressions": "インプレッション数",
+        "mediaCost": "メディアコスト",
+        "feeShare": "手数料按分",
+        "total": "合計"
+      }
+    },
+    "doohSchedules": {
+      "sno": "No.",
+      "billboardName": "看板名",
+      "startDate": "開始日",
+      "endDate": "終了日",
+      "duration": "期間",
+      "operationHours": "運営時間",
+      "mon": "月",
+      "tue": "火",
+      "wed": "水",
+      "thu": "木",
+      "fri": "金",
+      "sat": "土",
+      "sun": "日",
+      "noData": "データなし",
+      "weeklyScheduleTitle": "デジタル看板の週次スケジュール",
+      "campaignName": "プラン名",
+      "activeCampaignDays": "プラン実施日",
+      "inactiveDays": "非実施日",
+      "totalAdPlays": "総広告再生数",
+      "totalImpressions": "総インプレッション数",
+      "days": "日",
+      "calendar": {
+        "title": "DOOHスケジュールカレンダー",
+        "subtitle": "デジタルパネル{count}枚・週ごとの稼働状況(日→土)。着色セルはパネルがその日に稼働することを示します。",
+        "mixed": "混在",
+        "columns": {
+          "schedule": "スケジュール",
+          "billboardSegment": "看板 / セグメント",
+          "start": "開始",
+          "end": "終了",
+          "days": "日数",
+          "opHours": "稼働時間"
+        }
+      },
+      "cadence": {
+        "title": "インベントリ別カデンス",
+        "subtitle": "パネル{total}枚 · うち{custom}枚がカスタムデイパーティング · {default}枚が24時間デフォルト",
+        "columns": {
+          "inventory": "インベントリ",
+          "channel": "チャネル",
+          "pattern": "パターン",
+          "spotsPerLoop": "スポット/ループ",
+          "spotsPerHour": "スポット/時間",
+          "activeHrsPerDay": "稼働時間/日",
+          "daysPerWeek": "稼働日数/週",
+          "sov": "SOV"
+        },
+        "tooltips": {
+          "spotsPerLoop": "このパネルのスケジュールセグメント全体における、日数加重平均のループあたりスポット数。",
+          "spotsPerHour": "このパネルのスケジュールセグメント全体における、日数加重平均の時間あたりスポット数。",
+          "activeHrsPerDay": "1日あたりの稼働時間数(日数加重平均)。",
+          "daysPerWeek": "このパネルの全スケジュールセグメントを通じて稼働する曜日の合計数。",
+          "sov": "このパネルのスケジュールセグメント全体における、日数加重平均のシェア・オブ・ボイス。"
+        }
+      },
+      "pattern": {
+        "default": "デフォルト",
+        "commuter": "コミューター",
+        "business": "ビジネスアワー",
+        "nightlife": "ナイトライフ",
+        "weekend": "週末重視",
+        "twentyFourSeven": "24時間",
+        "custom": "カスタム"
+      },
+      "rollup": {
+        "toggleLabel": "プランレベルのロールアップヒートマップを表示",
+        "summary": "スケジュール{schedules}件 · パターン{patterns}種類",
+        "title": "プランレベルの稼働状況"
+      }
+    },
+    "columns": {
+      "stateName": "州名",
+      "population": "人口",
+      "inventories": "インベントリ",
+      "oohImpressions": "OOHインプレッション",
+      "reach": "リーチ",
+      "frequency": "フリークエンシー",
+      "cpm": "CPM ({currency})",
+      "cps": "CPS ({currency})",
+      "name": "名前",
+      "billboardName": "看板名",
+      "referenceId": "参照ID",
+      "uniqueReach": "ユニークリーチ",
+      "ecpm": "eCPM ({currency})",
+      "latitude": "緯度",
+      "longitude": "経度",
+      "distanceM": "距離 (m)",
+      "districtName": "地区名"
+    },
+    "campaignPlan": {
+      "noData": "データなし",
+      "days": "日",
+      "cityInsights": {
+        "title": "都市別インサイト",
+        "subtitle": "選択された在庫に基づく都市別のOOHパフォーマンス。人口は目安の推定値です。",
+        "cityName": "都市名",
+        "impressions": "インプレッション数"
+      },
+      "deliveryBreakdown": {
+        "title": "配信内訳",
+        "subtitle": "キャンペーン期間中の期間ごとの推定インプレッション数とユニークリーチ。",
+        "period": "期間",
+        "badge": "{granularity}配信"
+      },
+      "campaignDetails": {
+        "title": "プラン詳細",
+        "campaignName": "プラン名",
+        "campaignId": "プランID",
+        "createdOn": "作成日",
+        "startDate": "開始日",
+        "endDate": "終了日",
+        "goal": "目標",
+        "kpi": "KPI",
+        "status": "ステータス",
+        "start": "開始",
+        "end": "終了",
+        "duration": "期間",
+        "currency": "通貨",
+        "channels": "チャネル",
+        "budget": "予算"
+      },
+      "buyerDetails": {
+        "title": "バイヤー詳細",
+        "createdBy": "作成者",
+        "company": "会社",
+        "emailAddress": "メールアドレス",
+        "dsp": "DSP",
+        "seatId": "シートID",
+        "brand": "ブランド",
+        "brandCategory": "ブランドカテゴリー",
+        "clientType": "顧客タイプ",
+        "plannedBy": "プランナー",
+        "clientTypeDirect": "ダイレクト",
+        "clientTypeAgency": "代理店"
+      },
+      "estimation": {
+        "title": "推定パフォーマンス指標",
+        "totalImpressions": "総インプレッション数",
+        "estimatedReach": "推定リーチ",
+        "avgFrequency": "平均フリークエンシー",
+        "adPlays": "推定広告再生回数",
+        "avgCpm": "平均CPM",
+        "avgCps": "平均CPS",
+        "ecpm": "eCPM",
+        "sov": "シェア・オブ・ボイス (SOV)",
+        "sot": "シェア・オブ・タイム (SOT)",
+        "totalCost": "総費用",
+        "inventories": "在庫数",
+        "cities": "都市数",
+        "channels": "チャネル数",
+        "note": "本プランはCPS(スポット単価)で価格設定されています。これはキャンペーン目標がシェア・オブ・ボイス、広告再生回数、または未設定であるためです。平均CPSはメディアオーナーが提供するスポット単価です。eCPMは総インプレッション数と総費用から算出されます(費用 ÷ インプレッション数 × 1,000)。"
+      },
+      "targetingApplied": {
+        "title": "適用されたターゲティング",
+        "demographics": "デモグラフィック",
+        "income": "収入",
+        "interests": "興味・関心",
+        "venueEnvironments": "設置環境",
+        "behaviour": "行動特性"
+      },
+      "statePlanning": {
+        "title": "州別プランニング",
+        "tooltip": "州レベルのOOHインプレッションとリーチは、メディアプランで選択されたOOHインベントリに基づいて推定されます"
+      },
+      "cityPlanning": {
+        "title": "都市別プランニング",
+        "tooltip": "都市レベルのOOHインプレッションとリーチは、メディアプランで選択されたOOHインベントリに基づいて推定されます"
+      },
+      "inventoryPlanning": {
+        "title": "インベントリプランニング"
+      },
+      "inventoryMapping": {
+        "title": "インベントリマッピング"
+      }
+    },
+    "inventoryDetails": {
+      "noData": "データなし",
+      "title": "インベントリ詳細 ({count})",
+      "scheduleCustom": "カスタム",
+      "columns": {
+        "assetImages": "アセット画像",
+        "venueType": "会場タイプ",
+        "billboardName": "看板名",
+        "referenceId": "参照ID",
+        "mediaOwner": "メディアオーナー",
+        "format": "フォーマット",
+        "size": "サイズ（W x H）フィート",
+        "latitude": "緯度",
+        "longitude": "経度",
+        "exclusions": "除外",
+        "category": "カテゴリ",
+        "location": "場所",
+        "noOfFaces": "面数",
+        "boardFacing": "看板の向き",
+        "languageSupport": "言語サポート",
+        "description": "説明",
+        "noOfBillboards": "看板数",
+        "resolution": "解像度（W x H）px",
+        "creative": "クリエイティブ",
+        "noOfScreens": "画面数",
+        "spotDuration": "スポット時間（秒）",
+        "spotsPerHour": "スポット数/時間",
+        "totalSpots": "合計スポット数",
+        "campaignBudget": "プラン予算",
+        "dailyBudget": "日次予算",
+        "bidRate": "入札レート（CPM）",
+        "advertiserDomain": "広告主ドメイン",
+        "frequencyCapping": "フリークエンシーキャップ",
+        "inventory": "インベントリ",
+        "channel": "チャネル",
+        "city": "都市",
+        "schedule": "スケジュール",
+        "impressions": "インプレッション数",
+        "playsPerDay": "1日あたりの再生回数"
+      }
+    },
+    "operationDetails": {
+      "noData": "データなし",
+      "totalLabel": "合計",
+      "ariaLabel": "運用詳細",
+      "sectionTitle": {
+        "classic": "クラシック",
+        "digital": "デジタル",
+        "mobile": "モバイル"
+      },
+      "columns": {
+        "segment": "セグメント",
+        "startDate": "開始日",
+        "endDate": "終了日",
+        "operationDays": "稼働日数",
+        "start": "開始",
+        "end": "終了",
+        "scheduleType": "スケジュールタイプ",
+        "opDays": "稼働日数",
+        "opHours": "稼働時間",
+        "startTime": "開始時間",
+        "endTime": "終了時間",
+        "totalSpots": "合計スポット数"
+      }
+    },
+    "cinema": {
+      "tabLabel": "シネマ",
+      "title": "シネマ ({count})",
+      "noData": "シネマ在庫はありません",
+      "indicativeNote": "作品は参考情報です。購入対象は運営会社／スクリーン／上映時間帯です。",
+      "columns": {
+        "inventory": "在庫",
+        "operator": "運営会社",
+        "cinema": "映画館",
+        "hall": "スクリーン",
+        "showtimeWindows": "上映時間帯",
+        "genres": "ジャンル",
+        "ratings": "レーティング",
+        "impressions": "インプレッション",
+        "cpm": "CPM ({currency})",
+        "mediaCost": "メディアコスト ({currency})"
+      }
+    }
+  },
+  "executionWorkspace": {
+    "title": "実行ワークスペース",
+    "fromAgency": "{agency} から",
+    "goal": "目標: {goal} · {target}",
+    "pushToInfluence": "Influence へ送信",
+    "notApprovedYet": "プラン承認でこのプランを承認すると、実行設定が利用できます。",
+    "noInfluenceAccess": "貴社は MW Influence へのアクセス権がありません。このプランの実行はオフラインで行い、配信の進捗を広告主へ報告してください。",
+    "pushedAt": "{date} にラインアイテムを実行システムへ送信しました。編集はロックされています。",
+    "kpi": {
+      "approvedCost": "承認済みメディア費用",
+      "plannedImpressions": "計画インプレッション",
+      "adPlays": "広告再生 {count} 回",
+      "potentialImpressions": "配信可能ポテンシャル",
+      "potentialHint": "計画 + 空きループ枠",
+      "linesInventories": "ライン / インベントリ",
+      "linesInventoriesHint": "貴社のラインアイテムと媒体"
+    },
+    "deliveryShort": "コミット {committed} / 計画 {planned} インプレッション — {gap} 不足しています。ターゲットを上げるか空き枠を確保してください。",
+    "deliveryOk": "コミット {committed} インプレッションで計画 {planned} をカバーしています。",
+    "inventorySection": "貴社のインベントリと空き状況",
+    "loopOf": "{count} スポットループ",
+    "invCost": "承認済み費用",
+    "invPlanned": "計画インプレッション",
+    "invPotential": "ポテンシャル",
+    "perSpotDay": "スポット/日あたり",
+    "legendOwn": "本キャンペーン",
+    "legendOther": "他キャンペーン",
+    "legendFree": "空きスポット",
+    "lineSection": "ラインアイテム",
+    "addDigitalLine": "デジタルラインを追加",
+    "addClassicLine": "ポスターオペレーションラインを追加",
+    "destInfluence": "Influence",
+    "destOms": "OMS(ポスターオペレーション)",
+    "purchase": {
+      "GUARANTEED": "ギャランティード",
+      "DIRECT": "優先取引",
+      "ORDER": "オーダー"
+    },
+    "lineCost": "計画費用",
+    "deleteLine": "空のラインを削除",
+    "floorRate": "フロアレート (CPM)",
+    "targetImpressions": "ターゲットインプレッション",
+    "capacityOf": "キャパシティ: {capacity} インプレッション",
+    "moveTo": "移動先…",
+    "lineOption": "{type} ライン {index}",
+    "emptyLine": "インベントリがありません — ここに移動するか、このラインを削除してください。",
+    "pushModalTitle": "Influence へ送信しますか?",
+    "pushModalBody": "{lines} 件のラインアイテム({impressions} インプレッション目標)を実行システムへ送信します。以降の編集はロックされます。",
+    "cancel": "キャンセル",
+    "confirmPush": "送信",
+    "pushSuccess": "ラインアイテムを送信しました。",
+    "actionError": "変更を適用できませんでした。",
+    "lineUpdated": "ラインを更新しました。",
+    "errorLoadingData": "実行ワークスペースを読み込めませんでした。"
+  }
+}

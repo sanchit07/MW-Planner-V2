@@ -1,0 +1,92 @@
+{
+  "title": "Settings",
+  "description": "Manage your application settings and preferences.",
+  "actions": {
+    "save": "Save",
+    "saving": "Saving..."
+  },
+  "tabs": {
+    "general": "General",
+    "terminology": "Terminology",
+    "targeting": "Targeting",
+    "numberFormats": "Number Formats",
+    "dashboard": "Dashboard",
+    "campaign": "Campaign",
+    "inventory": "Inventory",
+    "poi": "POI",
+    "schedule": "Schedule",
+    "reports": "Reports",
+    "filters": "Filters",
+    "approvals": "Approvals",
+    "bonusWorkflow": "Bonus Workflow",
+    "branding": "Branding"
+  },
+  "general": {
+    "dateFormat": "Date format",
+    "timeFormat": "Time format",
+    "currencyDisplay": "Currency display",
+    "currencyCode": "Currency code (USD)",
+    "currencySymbol": "Symbol ($)",
+    "fiscalYearStartMonth": "Fiscal year start month",
+    "helpBubbles": "Help bubbles",
+    "tour": "Guided tour"
+  },
+  "terminology": {
+    "description": "Relabel a canonical term without renaming any underlying identifier.",
+    "campaign": "Label for \"Campaign\""
+  },
+  "targeting": {
+    "ageGroupRanges": "Age group ranges (comma-separated)",
+    "incomeBrackets": "Income brackets (comma-separated)",
+    "radiusUnit": "Radius unit",
+    "defaultRadius": "Default radius"
+  },
+  "numberFormats": {
+    "thousandsSeparator": "Thousands separator",
+    "decimalSeparator": "Decimal separator",
+    "compactNotation": "Compact notation (1.2M vs 1,200,000)"
+  },
+  "dashboard": {
+    "visibleWidgets": "Visible widget keys (comma-separated)"
+  },
+  "campaign": {
+    "setupFeatures": "Setup features",
+    "targetingFeatures": "Targeting features",
+    "advancedFeatures": "Advanced features"
+  },
+  "inventory": {
+    "visibleColumns": "Visible columns (comma-separated)",
+    "visibleFilters": "Visible filters (comma-separated)"
+  },
+  "poi": {
+    "maxPerCampaign": "Max POI per campaign",
+    "visibilityScope": "Visibility scope",
+    "company": "Company-wide",
+    "user": "Per user"
+  },
+  "schedule": {
+    "frequencyCap": "Frequency cap",
+    "sovDefault": "Default share of voice (%)",
+    "spotDuration": "Spot duration (seconds)"
+  },
+  "reports": {
+    "defaultExportFormat": "Default export format"
+  },
+  "filters": {
+    "pinned": "Pinned filter keys (comma-separated)"
+  },
+  "approvals": {
+    "autoApproveHours": "Media owner auto-approve after (hours)",
+    "reminderBeforeHours": "Reminder before deadline (hours)"
+  },
+  "bonusWorkflow": {
+    "description": "Media-owner bonus inventory types (SAB/GB). Only media owner and admin users can edit this section.",
+    "enabled": "Bonus workflow enabled",
+    "allowedTypes": "Allowed bonus types (comma-separated)"
+  },
+  "branding": {
+    "description": "White-label the platform for this tenant. Admin-only.",
+    "whiteLabel": "White-label enabled",
+    "logoUrl": "Logo URL"
+  }
+}

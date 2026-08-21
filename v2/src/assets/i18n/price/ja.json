@@ -1,0 +1,371 @@
+{
+ "info": {
+  "select_multiple_inventories": {
+   "title": "複数の在庫を選択",
+   "subtitle": "チェックボックスを使用して複数の在庫を選択し、提案価格を一括で承認します。任意の在庫をクリックして詳細を確認します。"
+  },
+  "customize_view": {
+   "title": "ビューをカスタマイズ",
+   "subtitle": "列ボタンをクリックして列の表示/非表示を切り替えます。一括アクションを使用して、複数の在庫に一度に割引やボーナスを適用します。"
+  },
+  "campaign_approval_workflow": {
+   "title": "プラン承認ワークフロー",
+   "subtitle": "価格を受け入れるか変更を提案すると、プランは承認ワークフローに入ります。承認されると、代理店はプランを進めることができます。"
+  },
+  "understand_price_updates": {
+   "title": "価格更新を理解する",
+   "subtitle": "提案価格には、価格の下に最後の更新を行ったユーザーと会社が表示されます。他の会社からの更新は琥珀色で強調表示されます。"
+  },
+  "previous_tip": "前のヒント",
+  "next_tip": "次のヒント",
+  "go_to_tip": "ヒント{index}へ移動"
+ },
+ "table": {
+  "columns": {
+   "inventory_name": "在庫名",
+   "time_slot": "時間帯",
+   "sov": "SOV",
+   "ad_plays": "広告再生回数",
+   "initial_price": "初期価格",
+   "proposed_price": "提案価格",
+   "media_owner": "メディアオーナー",
+   "impression": "インプレッション",
+   "bonus_type": "ボーナスタイプ",
+   "discount": "割引",
+   "monthly_rate_card": "月額レートカード",
+   "weekly_rate_card": "週間レートカード",
+   "daily_rate": "日額レート",
+   "cpm_rate": "CPMレート",
+   "cps_rate": "CPSレート",
+   "reach": "リーチ",
+   "date_range": "期間",
+   "sov_ad_plays": "SOV / 広告再生回数"
+  },
+  "empty_message": "在庫が見つかりません",
+  "loading": "在庫を読み込んでいます...",
+  "single": "単一",
+  "multiple": "複数",
+  "applying_adjustment": "調整を適用中...",
+  "plays": "回再生",
+  "unsaved_change": "未保存の変更"
+ },
+ "actions": {
+  "clear_all": "すべてクリア",
+  "apply_discount": "割引を適用",
+  "apply_bonus": "ボーナスを適用",
+  "accept_all": "すべて承認",
+  "accepting": "承認中...",
+  "search_placeholder": "在庫を検索...",
+  "filter": "フィルター",
+  "summary": "概要",
+  "view": "表示",
+  "map": "マップ",
+  "calendar": "カレンダー",
+  "columns": "列",
+  "pending_price_edits_blocked": "未保存の価格変更を保存または破棄してください",
+  "price_history": "価格履歴"
+ },
+ "selection": {
+  "inventory_selected": "在庫が選択されました",
+  "inventories_selected": "在庫が選択されました",
+  "apply_actions": "選択した在庫にアクションを適用"
+ },
+ "drawers": {
+  "apply_discount": {
+   "title": "割引を適用",
+   "description": "{count}個の{item}に割引を適用します。",
+   "item_singular": "選択されたアイテム",
+   "item_plural": "選択されたアイテム",
+   "discount_percentage": "割引率",
+   "discount_placeholder": "割引率を入力",
+   "help_text": "0から100の値を入力してください",
+   "error_required": "続行するには割引率を入力してください。",
+   "error_invalid": "割引は0から100の数値である必要があります",
+   "cancel": "キャンセル",
+   "apply": "割引を適用"
+  },
+  "apply_bonus": {
+   "title": "ボーナスタイプを適用",
+   "description": "{count}個の{item}にボーナスタイプを適用します。",
+   "item_singular": "選択されたアイテム",
+   "item_plural": "選択されたアイテム",
+   "bonus_type": "ボーナスタイプ",
+   "select_option": "オプションを選択",
+   "error_required": "続行するにはボーナスタイプを入力してください。",
+   "cancel": "キャンセル",
+   "apply": "ボーナスを適用",
+   "options": {
+    "value_added": "付加価値",
+    "volume_bonus": "ボリュームボーナス",
+    "seasonal_bonus": "季節ボーナス",
+    "make_good": "メイクグッド",
+    "none": "なし"
+   }
+  },
+  "filters": {
+   "title": "フィルター",
+   "city": "都市",
+   "inventory_type": "在庫タイプ",
+   "media_owner": "メディアオーナー",
+   "min_pricing": "最小価格",
+   "max_pricing": "最大価格",
+   "select_cities": "都市を選択",
+   "select_inventory_types": "在庫タイプを選択",
+   "select_media_owners": "メディアオーナーを選択",
+   "cancel": "キャンセル",
+   "apply_filters": "フィルターを適用"
+  },
+  "pricing_summary": {
+   "title": "価格概要",
+   "description": "プランレベルで現在と提案された変更を確認します。",
+   "current_price": "現在の価格",
+   "proposed_price": "提案価格",
+   "change_in_price": "価格の変更:",
+   "breakdown": "内訳",
+   "media_cost": "メディアコスト:",
+   "standard_fees": "標準料金:",
+   "custom_fees": "カスタム料金",
+   "add_fee": "料金を追加",
+   "no_custom_fees": "カスタム料金が追加されていません",
+   "fee_number": "料金 #{number}",
+   "fee_name": "料金名",
+   "fee_name_placeholder": "ブランド名を入力",
+   "type": "タイプ",
+   "value": "値",
+   "value_placeholder": "値を入力",
+   "based_on": "基準",
+   "fee_description": "説明（オプション）",
+   "fee_description_placeholder": "ここに入力...",
+   "include_in_media_plan": "メディアプランに含める",
+   "campaign_approval_required": "変更を保存した後、プランの承認が必要です",
+   "cancel": "キャンセル",
+   "save_changes": "変更を保存",
+   "validation_fee_name_required": "料金名は必須です",
+   "validation_value_required": "値は必須です",
+   "validation_fill_required": "すべてのカスタム料金の料金名と値を入力してください。",
+   "fee_types": {
+    "percentage": "パーセンテージ",
+    "fixed": "固定"
+   },
+   "based_on_options": {
+    "base_cost": "基本コスト",
+    "media_cost": "メディアコスト",
+    "net_total": "正味合計"
+   },
+   "pending_price_changes": "件の価格変更が保留中です",
+   "campaign_approval_note": "プラン承認が必要になります — 価格は提案（メディアプラン）に反映されます",
+   "discard_changes_title": "未保存の価格変更を破棄しますか？",
+   "discard_changes_body": "件の未保存の価格変更が最後に保存された値に戻されます。",
+   "discard_changes_confirm": "変更を破棄"
+  },
+  "add_custom_fee": {
+   "title": "カスタム料金を追加",
+   "description": "カスタム料金の詳細を設定してください。",
+   "add_fee": "料金を追加",
+   "custom_fees": "カスタム料金",
+   "no_custom_fees": "カスタム料金が追加されていません",
+   "fee_number": "料金",
+   "fee_name": "料金名",
+   "edit_title": "カスタム料金を編集",
+   "update_fee": "料金を更新",
+   "fee_name_placeholder": "料金名を入力",
+   "type": "タイプ",
+   "value": "値",
+   "value_placeholder": "値を入力",
+   "based_on": "基準",
+   "fee_description": "説明",
+   "fee_description_placeholder": "説明を入力（オプション）",
+   "include_in_media_plan": "メディアプランに含める",
+   "campaign_approval_required": "これらの変更にはプランの承認が必要であることを確認します",
+   "fee_types": {
+    "percentage": "パーセンテージ",
+    "fixed": "固定"
+   },
+   "based_on_options": {
+    "base_cost": "基本コスト",
+    "media_cost": "メディアコスト",
+    "net_total": "正味合計"
+   }
+  },
+  "add_proposal_price": {
+   "title": "新しい提案価格を追加",
+   "description": "新しい提案価格を入力します。",
+   "current_proposed_price": "現在の提案価格",
+   "new_price": "新しい価格",
+   "new_price_placeholder": "価格を入力..",
+   "error_required": "続行するには新しい価格を入力してください。",
+   "error_invalid": "価格は正の数である必要があります",
+   "error_max_price": "元の価格を超えられません",
+   "proposed_price_history": "提案価格履歴",
+   "no_history": "価格履歴がありません",
+   "legends": "凡例:",
+   "cancel": "キャンセル",
+   "update_price": "価格を更新",
+   "page_items": "ページアイテム:",
+   "history_columns": {
+    "sr_no": "連番",
+    "date": "日付",
+    "user": "ユーザー",
+    "action": "アクション",
+    "old_value": "旧値",
+    "new_value": "新値"
+   },
+   "actions": {
+    "rate_card": "レートカード",
+    "proposed": "提案",
+    "counter": "カウンター",
+    "accepted": "承認済み"
+   },
+   "internal_system": "内部システム"
+  },
+  "price_history": {
+   "title": "価格履歴"
+  }
+ },
+ "common": {
+  "id": "ID:",
+  "na": "N/A",
+  "traditional": "従来型",
+  "internal_system": "内部システム",
+  "single": "単一",
+  "multiple": "複数"
+ },
+ "success": {
+  "all_prices_accepted": "すべての価格が正常に承認されました",
+  "discount_applied": "割引が正常に適用されました",
+  "bonus_applied": "ボーナスが正常に適用されました",
+  "price_updated": "価格が正常に更新されました",
+  "custom_fee_deleted": "カスタム料金が正常に削除されました",
+  "custom_fees_saved": "カスタム料金が正常に保存されました",
+  "price_changes_saved": "価格変更が正常に保存されました",
+  "changes_saved": "変更が正常に保存されました"
+ },
+ "errors": {
+  "failed_to_load_summary": "価格サマリーの読み込みに失敗しました",
+  "failed_to_accept_all_prices": "すべての価格の承認に失敗しました",
+  "no_schedules_selected": "スケジュールが選択されていません",
+  "failed_to_apply_discount": "割引の適用に失敗しました",
+  "failed_to_apply_bonus": "ボーナスの適用に失敗しました",
+  "failed_to_update_price": "価格の更新に失敗しました",
+  "failed_to_delete_custom_fee": "カスタム料金の削除に失敗しました",
+  "campaign_id_required": "プランIDは必須です",
+  "fee_name_required": "料金名は必須フィールドです",
+  "value_required": "値は必須フィールドです",
+  "invalid_value": "値は有効な正の数である必要があります",
+  "failed_to_save_custom_fees": "カスタム料金の保存に失敗しました",
+  "failed_to_fetch_availability": "インベントリの空き情報の取得に失敗しました",
+  "failed_to_fetch_availability_retry": "インベントリの空き情報の取得に失敗しました。もう一度お試しください。",
+  "no_changes_to_save": "保存する変更がありません",
+  "no_editable_fees": "保存可能な料金がありません",
+  "failed_to_save_changes": "変更の保存に失敗しました"
+ },
+ "calendar": {
+  "legend": {
+   "available": "利用可能",
+   "reserved": "確保済み",
+   "booked": "予約済み",
+   "fully_booked": "完売",
+   "blocked": "ブロック"
+  },
+  "available": {
+   "label": "利用可能",
+   "textColor": "text-mw-neutral-600",
+   "bgColor": "bg-white",
+   "borderColor": "border-mw-neutral-200"
+  },
+  "booked": {
+   "label": "予約済み",
+   "textColor": "text-mw-error-600",
+   "bgColor": "bg-white",
+   "borderColor": "border-mw-neutral-200"
+  },
+  "reserved": {
+   "label": "確保済み",
+   "textColor": "text-mw-error-500",
+   "bgColor": "bg-blue-50",
+   "borderColor": "border-blue-200"
+  },
+  "fully_booked": {
+   "label": "満杯",
+   "textColor": "text-mw-error-600",
+   "bgColor": "bg-mw-error-50",
+   "borderColor": "border-mw-error-200"
+  },
+  "tooltip": {
+   "campaign": "プラン",
+   "brand": "ブランド",
+   "agency": "代理店",
+   "start_date": "開始日",
+   "end_date": "終了日",
+   "sov": "SOV",
+   "total_spots": "総スポット数",
+   "available_spots": "利用可能スポット数",
+   "booked_spots": "予約済みスポット数",
+   "reserved_spots": "保留スポット数",
+   "to": "から",
+   "na": "N/A"
+  },
+  "blocked": {
+   "label": "ブロック",
+   "textColor": "text-mw-neutral-500",
+   "bgColor": "bg-mw-neutral-100",
+   "borderColor": "border-mw-neutral-200"
+  }
+ },
+ "availability": {
+  "loadError": "可用性の読み込みに失敗しました。もう一度お試しください。",
+  "selectedInventories": "選択されたインベントリ",
+  "viewMonthly": "月次",
+  "viewWeekly": "週次",
+  "viewDaily": "日次",
+  "ariaRegion": "選択されたインベントリの可用性",
+  "ariaCalendarView": "カレンダービュー",
+  "ariaPreviousPeriod": "前の期間",
+  "ariaNextPeriod": "次の期間",
+  "ariaCollapseSpots": "{{label}}のスポットを折りたたむ",
+  "ariaExpandSpots": "{{label}}のスポットを展開する",
+  "days": {
+   "sun": "日",
+   "mon": "月",
+   "tue": "火",
+   "wed": "水",
+   "thu": "木",
+   "fri": "金",
+   "sat": "土"
+  },
+  "availabilityTimeline": "可用性タイムライン",
+  "spotsAvailable": "スポット利用可能",
+  "loading": "読み込み中...",
+  "tryAgain": "再試行",
+  "lastSynced": "IMSからの最終同期: {{time}}",
+  "notSyncedYet": "IMSからまだ同期されていません",
+  "syncNow": "今すぐ同期",
+  "syncing": "同期中…",
+  "syncFailed": "IMS在庫状況の同期に失敗しました: {{error}}",
+  "syncFailedGeneric": "IMS在庫状況の同期に失敗しました。表示データが古い可能性があります。",
+  "syncWarningFailed": "前回の同期に失敗しました",
+  "syncWarningStale": "在庫状況データが古い可能性があります"
+ },
+ "costBreakdown": {
+  "deleteFee": "料金を削除",
+  "yesDelete": "はい、削除",
+  "dontDelete": "削除しない",
+  "deleteFeeConfirm": "この料金を削除してもよろしいですか -",
+  "thisFee": "この料金",
+  "ariaEditFee": "料金を編集",
+  "ariaDeleteFee": "料金を削除",
+  "noCustomFeesAdded": "カスタム料金が追加されていません",
+  "totalCostSummary": "総コストサマリー",
+  "mediaCost": "メディアコスト",
+  "platformFee": "プラットフォーム料金",
+  "customFees": "カスタム料金",
+  "totalCost": "総コスト",
+  "campaignForecast": "プラン予測",
+  "netCost": "正味コスト",
+  "addFee": "料金を追加",
+  "feeNotFound": "料金が見つかりません",
+  "baseCost": "基本コスト",
+  "percentOf": "% の",
+  "fixed": "固定"
+ }
+}

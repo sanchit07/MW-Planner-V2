@@ -1,0 +1,31 @@
+flowchart TD
+    subgraph entry [Entry]
+        Start([applyBudgetAwareAutoSelect])
+        CheckPre{Has budget or goal?}
+        CheckDates{Dates present?}
+        NoSelect([No auto-selection])
+    end
+
+    subgraph budgetMode [Budget-aware mode]
+        BuildAlloc[Build category allocation]
+        GroupInv[Group inventories by allocation key]
+        Round1[Round 1: parallel per category, score bands, select within cap]
+        GoalCheck{Goal ceiling met?}
+        Round2[Round 2: greedy redistribution to capped categories, re-process]
+        Round3[Round 3: remaining budget to highest finalScore candidates, buildBestScheduleForBudgetCap]
+        Finalize[Merge R1+R2+R3, persist schedules, set selectionMode=AUTO]
+    end
+
+    Start --> CheckPre
+    CheckPre -->|No| NoSelect
+    CheckPre -->|Yes| CheckDates
+    CheckDates -->|No| NoSelect
+    CheckDates -->|Yes + budget| BuildAlloc
+    BuildAlloc --> GroupInv
+    GroupInv --> Round1
+    Round1 --> GoalCheck
+    GoalCheck -->|No| Round2
+    GoalCheck -->|Yes| Round3
+    Round2 --> Round3
+    Round3 --> Finalize
+    Finalize --> EndNode([Done])

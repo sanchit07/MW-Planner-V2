@@ -1,0 +1,92 @@
+{
+  "title": "設定",
+  "description": "アプリケーションの設定と環境設定を管理します。",
+  "actions": {
+    "save": "保存",
+    "saving": "保存中..."
+  },
+  "tabs": {
+    "general": "一般",
+    "terminology": "用語",
+    "targeting": "ターゲティング",
+    "numberFormats": "数値形式",
+    "dashboard": "ダッシュボード",
+    "campaign": "キャンペーン",
+    "inventory": "インベントリ",
+    "poi": "POI",
+    "schedule": "スケジュール",
+    "reports": "レポート",
+    "filters": "フィルター",
+    "approvals": "承認",
+    "bonusWorkflow": "ボーナスワークフロー",
+    "branding": "ブランディング"
+  },
+  "general": {
+    "dateFormat": "日付形式",
+    "timeFormat": "時刻形式",
+    "currencyDisplay": "通貨表示",
+    "currencyCode": "通貨コード (USD)",
+    "currencySymbol": "記号 ($)",
+    "fiscalYearStartMonth": "会計年度の開始月",
+    "helpBubbles": "ヘルプバブル",
+    "tour": "ガイドツアー"
+  },
+  "terminology": {
+    "description": "内部の識別子を変更せずに、標準用語の表示ラベルのみを変更します。",
+    "campaign": "「キャンペーン」の表示名"
+  },
+  "targeting": {
+    "ageGroupRanges": "年齢層の範囲（カンマ区切り）",
+    "incomeBrackets": "所得層（カンマ区切り）",
+    "radiusUnit": "半径の単位",
+    "defaultRadius": "デフォルトの半径"
+  },
+  "numberFormats": {
+    "thousandsSeparator": "桁区切り記号",
+    "decimalSeparator": "小数点記号",
+    "compactNotation": "簡略表記（1,200,000 の代わりに 1.2M）"
+  },
+  "dashboard": {
+    "visibleWidgets": "表示するウィジェットキー（カンマ区切り）"
+  },
+  "campaign": {
+    "setupFeatures": "セットアップ機能",
+    "targetingFeatures": "ターゲティング機能",
+    "advancedFeatures": "高度な機能"
+  },
+  "inventory": {
+    "visibleColumns": "表示する列（カンマ区切り）",
+    "visibleFilters": "表示するフィルター（カンマ区切り）"
+  },
+  "poi": {
+    "maxPerCampaign": "キャンペーンあたりの最大POI数",
+    "visibilityScope": "表示範囲",
+    "company": "会社全体",
+    "user": "ユーザーごと"
+  },
+  "schedule": {
+    "frequencyCap": "頻度キャップ",
+    "sovDefault": "デフォルトのシェア・オブ・ボイス（%）",
+    "spotDuration": "スポット時間（秒）"
+  },
+  "reports": {
+    "defaultExportFormat": "デフォルトのエクスポート形式"
+  },
+  "filters": {
+    "pinned": "固定するフィルターキー（カンマ区切り）"
+  },
+  "approvals": {
+    "autoApproveHours": "メディアオーナーの自動承認までの時間",
+    "reminderBeforeHours": "期限前のリマインダー（時間）"
+  },
+  "bonusWorkflow": {
+    "description": "メディアオーナーのボーナス在庫タイプ（SAB/GB）。メディアオーナーと管理者のみがこのセクションを編集できます。",
+    "enabled": "ボーナスワークフローを有効化",
+    "allowedTypes": "許可するボーナスタイプ（カンマ区切り）"
+  },
+  "branding": {
+    "description": "このテナント向けにプラットフォームをホワイトラベル化します。管理者のみ。",
+    "whiteLabel": "ホワイトレーベルを有効化",
+    "logoUrl": "ロゴURL"
+  }
+}

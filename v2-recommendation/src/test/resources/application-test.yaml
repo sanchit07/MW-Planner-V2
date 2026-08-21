@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: mw-recommendation-engine-test
+  
+  # Test data sources (Redis + MongoDB)
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 2000ms
+    mongodb:
+      uri: mongodb://localhost:27017/test-recommendation-engine
+      auto-index-creation: true
+  
+  # Enable caching for tests
+  cache:
+    type: redis
+    redis:
+      time-to-live: 600000  # 10 minutes for test
+  
+  # Test security
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://auth-mw.replit.app/.well-known/jwks.json
+
+# Test Measure API configuration
+mw-recommendation-engine:
+  measure:
+    api-url: https://test-measure-api.example.com
+  iam:
+    service-url: https://auth-api-stg.movingwalls.com
+    product-id: cc24af2e-9e69-44ea-9440-838790cd8c0a
+  management:
+    credentials:
+      username: test-admin
+      password: test-password

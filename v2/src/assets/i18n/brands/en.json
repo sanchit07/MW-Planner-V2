@@ -1,0 +1,48 @@
+{
+  "brand_creation": {
+    "title": "Create New Brand",
+    "title_link": "Link Existing Brand",
+    "form": {
+      "brand_name": "Brand Name",
+      "brand_name_placeholder": "Enter brand name",
+      "brand_name_required": "Brand name is required",
+      "category": "IAB Category",
+      "category_placeholder": "Select category",
+      "category_required": "Category is required",
+      "category_tier1": "IAB Category (Tier 1)",
+      "category_search_placeholder": "Search category",
+      "subcategory_tier2": "IAB Subcategory (Tier 2)",
+      "subcategory_placeholder": "Select subcategory (optional)",
+      "subcategory_search_placeholder": "Search subcategory",
+      "website": "Website",
+      "website_placeholder": "https://www.example.com",
+      "description": "Description",
+      "description_placeholder": "Enter brand description",
+      "external_id": "External ID",
+      "external_id_placeholder": "Enter external ID",
+      "logo": "Brand Logo",
+      "logo_placeholder": "Tap here or Drag & Drop your logo here",
+      "createdSuccessBrand": "Brand created successfully.",
+      "similar_brands_header": "Similar brands found — select one to link it to your company instead of creating a new one.",
+      "exact_brand_match_header": "This brand already exists - link it to your company instead of creating a new one.",
+      "own_brand_exists": "You already have a brand with this name.",
+      "link_brand_success": "Brand linked successfully.",
+      "searching": "Searching...",
+      "no_similar_brands": "No similar brands found",
+      "selected_brand": "Selected:",
+      "clear_selection": "Clear selection",
+      "active": "Active",
+      "inactive": "Inactive",
+      "industry": "Industry",
+      "companies_linked": "Companies Linked",
+      "no_description": "No description available",
+      "link_notice": "Linking this brand will associate it with your company. Your team will be able to use it in plans without creating a duplicate brand entry."
+    },
+    "actions": {
+      "create": "Create Brand",
+      "creating": "Creating...",
+      "link": "Link Brand",
+      "linking": "Linking..."
+    }
+  }
+}

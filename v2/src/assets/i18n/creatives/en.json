@@ -1,0 +1,44 @@
+{
+  "title": "Creatives",
+  "description": "Manage your creative assets.",
+  "upload": {
+    "title": "Upload a creative",
+    "name": "Name",
+    "format": "Format",
+    "formatStatic": "Static",
+    "formatVideo": "Video",
+    "formatAudio": "Audio",
+    "duration": "Duration (seconds)",
+    "file": "File",
+    "submit": "Upload",
+    "uploading": "Uploading..."
+  },
+  "library": {
+    "title": "Creative library",
+    "loading": "Loading creatives...",
+    "empty": "No creatives yet. Upload one above to get started.",
+    "remove": "Remove",
+    "filterAll": "All statuses",
+    "tier1Status": {
+      "PROCESSING": "Processing",
+      "ACCEPTED": "Accepted",
+      "INADEQUATE": "Inadequate",
+      "ARCHIVE": "Archived"
+    },
+    "notAssignableHint": "Only Accepted creatives can be assigned to a campaign.",
+    "accept": "Accept",
+    "inadequateReasonPlaceholder": "Reason (required to mark inadequate)",
+    "markInadequate": "Mark inadequate"
+  },
+  "assignment": {
+    "title": "Assign to a campaign",
+    "description": "Enter a campaign to see its line items, then drag a creative from the library onto a line item to bind it. Dropping onto the dashed zone lets you bind by line item ID directly.",
+    "campaignId": "Campaign ID",
+    "campaignIdPlaceholder": "Paste a campaign ID",
+    "noneYet": "No creative assignments on this campaign yet.",
+    "dropPromptLineItemId": "Enter the line item ID to bind this creative to",
+    "binding": "Binding...",
+    "dropZone": "Drag a creative here to bind it to a line item",
+    "bindFailed": "Could not bind this creative — check the aspect ratio, duration and campaign status."
+  }
+}

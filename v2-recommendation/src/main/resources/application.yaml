@@ -1,0 +1,147 @@
+logging:
+  level:
+    org.springframework.cache: DEBUG
+    org.springframework.data.redis.core: DEBUG
+
+server:
+  port: 10002
+
+spring:
+  application:
+    name: ${rootProject.name}
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
+    cache-duration: 1s
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1124MB
+  threads:
+    virtual:
+      enabled: true
+  task:
+    execution:
+      thread-name-prefix: reco-eng-vt-
+    scheduling:
+      thread-name-prefix: reco-eng-sched-
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      lettuce:
+         pool:
+           max-active: 300
+           max-idle: 150
+           min-idle: 100
+           max-wait: 1000ms
+           time-between-eviction-runs: 30000ms
+    mongodb:
+      # uri: mongodb://localhost:27017/mw-recommendation-engine
+      uri: mongodb+srv://test-api:0jPMl4bsK2sVVk0W@staging-titan-cluster.ysuki.mongodb.net/mw-recommendation-engine?&maxPoolSize=25&minPoolSize=5&maxIdleTimeMS=60000&connectTimeoutMS=10000&socketTimeoutMS=45000&waitQueueTimeoutMS=10000
+      # uri: mongodb+srv://test-api:0jPMl4bsK2sVVk0W@staging-titan-cluster.ysuki.mongodb.net/mw-recommendation-engine?maxIdleTimeMS=60000&connectTimeoutMS=10000&socketTimeoutMS=45000&waitQueueTimeoutMS=10000
+      auto-index-creation: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin123
+    virtual-host: /
+    connection-timeout: 15000
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 1
+        retry:
+          enabled: true
+          max-attempts: 3
+          initial-interval: 1000
+          max-interval: 10000
+          multiplier: 2
+
+management:
+  server:
+    port: 8200
+  info:
+    env:
+      enabled: true
+  metrics:
+    tags:
+      application: ${rootProject.name}
+      namespace: NA
+  endpoint:
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - env
+          - metrics
+          - prometheus
+          - threaddump
+          - heapdump
+
+aws:
+  s3:
+    brand:
+      endpoint: http://localhost:9000
+      access-key: admin
+      secret-key: admin123
+      region: us-east-1
+      bucket-name: brand-logo-bucket
+      parent-directory: /local/logos
+
+brand-lib:
+  file:
+    allowed-extensions: .jpg,.jpeg,.png
+
+# CSV inventory import feature caps (per-feature bound; multipart limit stays permissive)
+recommendation:
+  csv:
+    max-rows: 5000
+    max-file-bytes: 5242880
+    max-page-size: 100
+
+# Security / IAM (OAuth2 Resource Server)
+mw-recommendation-engine:
+  measure:
+    api-url: https://mw-data-frequency-pre-prod.movingwalls.com/v2/reach-and-frequency
+    debug:
+      enabled: false
+      log-directory: ./logs/measure-api
+      include-response: true
+      max-file-size-mb: 10
+      retention-days: 7
+  management:
+    credentials:
+      username: admin
+      password: ac412243-acc5-4d05-93df-bf768577e69d
+  iam:
+    service-url: https://auth-api-stg.movingwalls.com
+    product-id: cc24af2e-9e69-44ea-9440-838790cd8c0a
+
+# RabbitMQ Configuration
+rabbitmq:
+  inventory:
+    exchange:
+      name: inventory-detail.change.event
+    queue:
+      name: inventory-detail.change.event.recommendation
+  audience:
+    exchange:
+      name: audience.exchange
+    queue:
+      name: recommendation.engine.audience.queue
+  brand:
+    exchange:
+      name: brand.exchange
+    queue:
+      name: recommendation.engine.brand.queue
+  booking:
+    exchange:
+      name: booking.exchange
+    queue:
+      name: recommendation.engine.booking.queue

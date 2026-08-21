@@ -1,0 +1,69 @@
+
+spring:
+  testcontainers:
+    dynamic-property-registry-injection: allow
+  application:
+    name: mw-recommendation-engine-integration-test
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
+    cache-duration: 1s
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+  threads:
+    virtual:
+      enabled: true
+
+# RabbitMQ Configuration
+rabbitmq:
+  inventory:
+    exchange:
+      name: inventory.exchange.test
+    queue:
+      name: recommendation.engine.inventory.queue.test
+  audience:
+    exchange:
+      name: audience.exchange.test
+    queue:
+      name: recommendation.engine.audience.queue.test
+  brand:
+    exchange:
+      name: brand.exchange.test
+    queue:
+      name: recommendation.engine.brand.queue.test
+  booking:
+    exchange:
+      name: booking.exchange.test
+    queue:
+      name: recommendation.engine.booking.queue.test
+
+# Security / IAM for Integration Tests (JWKS endpoint must be reachable or use test profile)
+mw-recommendation-engine:
+  measure:
+    api-url: https://mw-data-frequency-pre-prod.movingwalls.com/v2/reach-and-frequency
+  management:
+    credentials:
+      username: test-admin
+      password: test-password
+  iam:
+    service-url: https://auth-mw.replit.app
+    product-id: 20fde1d3-9bdb-446a-9e88-d3527a4f5803
+    client-id: fab0e3f1-146c-4801-9625-adf922a6ea22
+    client-secret: MwTVcHXXBGv0CYV4yS8RJiwffUgJmA6xSYy0XtR4M9g=
+
+# Brand Library Configuration for Integration Tests
+brand-lib:
+  file:
+    allowed-extensions: .jpg,.jpeg,.png
+
+# AWS S3 Configuration for Integration Tests
+aws:
+  s3:
+    brand:
+      access-key: minioadmin
+      secret-key: minioadmin
+      region: us-east-1
+      bucket-name: brand-logo-bucket
+      parent-directory: /local/logos

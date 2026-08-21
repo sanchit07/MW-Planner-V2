@@ -1,0 +1,44 @@
+{
+  "title": "クリエイティブ",
+  "description": "クリエイティブアセットを管理します。",
+  "upload": {
+    "title": "クリエイティブをアップロード",
+    "name": "名前",
+    "format": "フォーマット",
+    "formatStatic": "静止画",
+    "formatVideo": "動画",
+    "formatAudio": "音声",
+    "duration": "再生時間（秒）",
+    "file": "ファイル",
+    "submit": "アップロード",
+    "uploading": "アップロード中..."
+  },
+  "library": {
+    "title": "クリエイティブライブラリ",
+    "loading": "クリエイティブを読み込み中...",
+    "empty": "まだクリエイティブがありません。上のフォームからアップロードしてください。",
+    "remove": "削除",
+    "filterAll": "すべてのステータス",
+    "tier1Status": {
+      "PROCESSING": "処理中",
+      "ACCEPTED": "承認済み",
+      "INADEQUATE": "不十分",
+      "ARCHIVE": "アーカイブ済み"
+    },
+    "notAssignableHint": "「承認済み」のクリエイティブのみキャンペーンに割り当てられます。",
+    "accept": "承認",
+    "inadequateReasonPlaceholder": "理由（不十分とする場合は必須）",
+    "markInadequate": "不十分としてマーク"
+  },
+  "assignment": {
+    "title": "キャンペーンに割り当て",
+    "description": "キャンペーンIDを入力するとそのラインアイテムが表示されます。ライブラリからクリエイティブをドラッグしてラインアイテムにドロップすると割り当てられます。破線のゾーンにドロップすると、ラインアイテムIDを直接指定して割り当てできます。",
+    "campaignId": "キャンペーンID",
+    "campaignIdPlaceholder": "キャンペーンIDを貼り付け",
+    "noneYet": "このキャンペーンにはまだクリエイティブの割り当てがありません。",
+    "dropPromptLineItemId": "このクリエイティブを割り当てるラインアイテムIDを入力してください",
+    "binding": "割り当て中...",
+    "dropZone": "クリエイティブをここにドラッグしてラインアイテムに割り当てます",
+    "bindFailed": "このクリエイティブを割り当てられませんでした。アスペクト比、再生時間、キャンペーンのステータスを確認してください。"
+  }
+}

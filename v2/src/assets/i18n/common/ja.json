@@ -1,0 +1,448 @@
+{
+  "header": {
+    "account": "アカウント",
+    "signout": "サインアウト",
+    "profile": "プロフィール",
+    "company": "会社",
+    "companyTooltip": "ドロップダウンから会社を選択してください",
+    "role": "役割",
+    "settings": "設定",
+    "logout": "ログアウト",
+    "planner": "プランナー",
+    "admin": "管理者",
+    "guest": "ゲスト",
+    "impersonating": "なりすまし中：{company}",
+    "childCompany": "子会社",
+    "loadingCompanies": "他の会社を読み込み中...",
+    "logoutSuccess": "ログアウトしました"
+  },
+  "inactivity": {
+    "title": "まだご利用中ですか？",
+    "message": "しばらく操作が確認できませんでした。サインインを継続しますか？",
+    "message_impersonating": "しばらく操作が確認できませんでした。{company}へのなりすましを継続しますか？",
+    "countdown": "{time}後にサインアウトします",
+    "stay_signed_in": "サインインを継続",
+    "keep_impersonating": "なりすましを継続",
+    "sign_out": "サインアウト"
+  },
+  "sidebar": {
+    "dashboard": "ダッシュボード",
+    "campaigns": "プラン",
+    "approvals": "プラン承認",
+    "creatives": "クリエイティブ",
+    "reservations": "予約",
+    "statements": "ステートメント",
+    "measure": "測定",
+    "measures": "対策",
+    "inventory": "在庫",
+    "configuration": "構成",
+    "configurations": "設定",
+    "profile": "プロフィール",
+    "inventories": "インベントリ",
+    "proposalTheme": "提案テーマ",
+    "proposalThemes": "提案テーマ",
+    "settings": "設定",
+    "signals": "信号",
+    "pois": "ポア",
+    "tags": "タグ"
+  },
+  "profile": {
+    "title": "プロフィール",
+    "settingsTitle": "プロフィール設定",
+    "description": "アカウント情報と設定を管理します",
+    "tabs": {
+      "profile": "プロフィール",
+      "account": "アカウント",
+      "notifications": "通知",
+      "privacy": "プライバシー",
+      "accountSettings": "アカウント設定",
+      "accountSettingsDesc": "アカウントのセキュリティとログイン設定を管理します",
+      "accountSecurity": "アカウントセキュリティ",
+      "accountSecurityDesc": "アカウントのセキュリティとログイン設定を管理します",
+      "accountStatus": "アカウント状態",
+      "active": "アクティブ",
+      "inactive": "非アクティブ",
+      "accountCreatedOn": "アカウント作成日",
+      "password": "パスワード",
+      "passwordLastChanged": "最終変更",
+      "changePassword": "パスワードを変更",
+      "newPassword": "新しいパスワード",
+      "confirmPassword": "新しいパスワードを確認",
+      "updatePassword": "パスワードを更新",
+      "passwordUpdated": "パスワードが正常に更新されました"
+    },
+    "personalInfo": {
+      "title": "個人情報",
+      "subtitle": "個人情報と連絡先情報を更新してください",
+      "changePhoto": "写真を変更",
+      "photoHint": "JPG、PNGまたはGIF。最大サイズ2MB。",
+      "fullName": "氏名",
+      "emailAddress": "メールアドレス",
+      "phoneNumber": "電話番号",
+      "role": "役割",
+      "company": "会社",
+      "department": "部署",
+      "location": "所在地",
+      "bio": "自己紹介",
+      "saveChanges": "変更を保存"
+    },
+    "changePassword": {
+      "description": "アカウントの新しいパスワードを設定してください。",
+      "newPasswordPlaceholder": "新しいパスワードを入力",
+      "confirmPasswordPlaceholder": "新しいパスワードを再入力",
+      "requirements": "パスワード要件",
+      "req": {
+        "length": "8文字以上",
+        "uppercase": "大文字を含む",
+        "lowercase": "小文字を含む",
+        "number": "数字を含む",
+        "match": "パスワードが一致する"
+      },
+      "strength": {
+        "weak": "弱い",
+        "fair": "普通",
+        "good": "良い",
+        "strong": "強い"
+      }
+    }
+  },
+  "search": "検索",
+  "selectAll": "すべて選択",
+  "noOptionFound": "オプションが見つかりません",
+  "nSelected": "{count}件選択済み",
+  "noneSelected": "未選択",
+  "pagination": {
+    "previous": "前へ",
+    "next": "次へ",
+    "pageItems": "表示件数：",
+    "itemRange": "{start}〜{end}件 / {total}件中",
+    "pageInfo": "{current} / {total} ページ"
+  },
+  "map": {
+    "searchPlaceholder": "場所、住所、POIを検索...",
+    "searchDefaultPlaceholder": "場所を検索...",
+    "poiPlaceholder": "POIタイプを選択",
+    "targetRadius": "対象半径",
+    "included": "含まれる",
+    "excluded": "除外",
+    "controls": {
+      "select": "選択",
+      "drawPolygon": "ポリゴンを描く",
+      "drawCircle": "円を描く",
+      "drawLine": "線を描く",
+      "deleteSelected": "選択を削除",
+      "toggleMountainView": "山岳ビューを切り替え（地形）",
+      "toggle3DBuildings": "3D建物を切り替え"
+    },
+    "styles": {
+      "streets": "ストリート",
+      "satellite": "衛星",
+      "outdoors": "アウトドア",
+      "light": "ライト",
+      "dark": "ダーク"
+    },
+    "noSearchResults": "検索結果が見つかりません",
+    "checkSpellingOrTryAgain": "スペルを確認してもう一度お試しください",
+    "noPOIOption": "POIが見つかりません - POIをインスタンスとして追加してみてください",
+    "selectionOptionPlaceholder": "最大5つのPOIを選択または追加",
+    "renderPOIButton": "POIを表示",
+    "ExtractingCategoriesFailed": "Google APIからカテゴリの抽出に失敗しました",
+    "placeType": "場所",
+    "localNameType": {
+      "locality": "市区町村",
+      "sublocality": "小地域",
+      "sublocality_level_1": "小地域",
+      "sublocality_level_2": "小地域",
+      "neighborhood": "地区",
+      "administrative_area_level_1": "都道府県",
+      "administrative_area_level_2": "区・郡",
+      "administrative_area_level_3": "区・郡",
+      "country": "国"
+    },
+    "duplicateLocation": "この場所はすでに追加されています！",
+    "duplicateShape": "この場所にはすでにシェイプが追加されています！",
+    "duplicateCircle": "この場所にはすでに円が追加されています！"
+  },
+  "iabCategories": {
+    "IAB1": "芸術とエンターテイメント",
+    "IAB2": "自動車",
+    "IAB3": "仕事",
+    "IAB4": "キャリア",
+    "IAB5": "教育",
+    "IAB6": "家族と子育て",
+    "IAB7": "健康とフィットネス",
+    "IAB8": "食べ物と飲み物",
+    "IAB9": "趣味と興味",
+    "IAB10": "ホーム&ガーデン",
+    "IAB11": "法律 政府と政治",
+    "IAB12": "ニュース",
+    "IAB13": "パーソナルファイナンス",
+    "IAB14": "社会",
+    "IAB15": "科学",
+    "IAB16": "ペット",
+    "IAB17": "スポーツ",
+    "IAB18": "スタイルとファッション",
+    "IAB19": "テクノロジーとコンピューティング",
+    "IAB20": "旅行",
+    "IAB21": "不動産",
+    "IAB23": "宗教と精神性",
+    "IAB24": "未分類",
+    "IAB25": "非標準コンテンツ",
+    "IAB26": "違法なコンテンツ"
+  },
+  "buttons": {
+    "cancel": "キャンセル",
+    "save": "保存",
+    "apply": "適用",
+    "clear": "クリア",
+    "close": "閉じる",
+    "confirm": "確認",
+    "delete": "削除",
+    "edit": "編集",
+    "add": "追加",
+    "remove": "削除",
+    "upload": "アップロード",
+    "download": "ダウンロード"
+  },
+  "auth": {
+    "redirectingToLogin": "ログインにリダイレクト中...",
+    "movingWalls": "Moving Walls",
+    "authenticationSuccessful": "認証に成功しました！",
+    "authenticating": "認証中...",
+    "authenticationFailed": "認証に失敗しました。リダイレクト中..."
+  },
+  "complete": "完了",
+  "quickTips": {
+    "title": "クイックヒント",
+    "brandRecommendations": "ブランドを選択すると、より良い推奨事項が得られます",
+    "budgetNextStep": "予算と目標は次のステップで設定されます",
+    "changeDetailsLater": "これらの詳細はいつでも後で変更できます"
+  },
+  "labels": {
+    "note": "注記：",
+    "na": "N/A",
+    "errorLoading": "読み込みエラー",
+    "yes": "はい",
+    "no": "いいえ"
+  },
+  "aria": {
+    "clearSelection": "選択をクリア",
+    "clearSearch": "検索をクリア",
+    "removeFile": "ファイルを削除",
+    "calendarView": "カレンダービュー",
+    "previousPeriod": "前の期間",
+    "nextPeriod": "次の期間",
+    "calendar": "カレンダー",
+    "previousItem": "前のアイテム",
+    "nextItem": "次のアイテム",
+    "remove": "削除",
+    "previousSlide": "前のスライド",
+    "nextSlide": "次のスライド",
+    "goToSlide": "スライド {n} に移動",
+    "pauseAutoplay": "自動再生を一時停止",
+    "startAutoplay": "自動再生を開始"
+  },
+  "fileUpload": {
+    "supported_format": "サポート形式: {formats}（最大{maxSize}）"
+  },
+  "messages": {
+    "loading": "読み込み中...",
+    "no_data": "データがありません",
+    "error": "エラーが発生しました",
+    "success": "操作が正常に完了しました",
+    "confirm_delete": "このアイテムを削除してもよろしいですか？",
+    "unsaved_changes": "保存されていない変更があります",
+    "title": "ファイルのアップロードに失敗しました",
+    "invalid_image_type": "受け付けられるファイルはPNG、JPG、JPEGのいずれかのみです。別のファイルをアップロードしてください。",
+    "file_too_large": "{filename} が大きすぎます。圧縮するか、小さいバージョンをアップロードしてください",
+    "connection_lost": "アップロード中に接続が失われました。"
+  },
+  "optional": "オプション",
+  "footer": {
+    "copyright": "© {year} Moving Walls. 無断複写・転載を禁じます"
+  },
+  "calendar": {
+    "dayNamesShort": {
+      "0": "日",
+      "1": "月",
+      "2": "火",
+      "3": "水",
+      "4": "木",
+      "5": "金",
+      "6": "土"
+    },
+    "viewModes": {
+      "monthly": "月次",
+      "weekly": "週次",
+      "daily": "日次"
+    },
+    "monthNames": {
+      "0": "1月",
+      "1": "2月",
+      "2": "3月",
+      "3": "4月",
+      "4": "5月",
+      "5": "6月",
+      "6": "7月",
+      "7": "8月",
+      "8": "9月",
+      "9": "10月",
+      "10": "11月",
+      "11": "12月"
+    },
+    "weekDaysShort": {
+      "0": "月",
+      "1": "火",
+      "2": "水",
+      "3": "木",
+      "4": "金",
+      "5": "土",
+      "6": "日"
+    },
+    "dateHours": "日付/時間",
+    "presets": {
+      "nextNDays": "次の {n} 日間"
+    },
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "selectStartDate": "開始日を選択",
+    "selectEndDate": "終了日を選択",
+    "ariaLabel": "カレンダー",
+    "previousPeriod": "前の期間",
+    "nextPeriod": "次の期間",
+    "viewToggleAriaLabel": "カレンダービュー",
+    "monthNamesShort": {
+      "0": "1月",
+      "1": "2月",
+      "2": "3月",
+      "3": "4月",
+      "4": "5月",
+      "5": "6月",
+      "6": "7月",
+      "7": "8月",
+      "8": "9月",
+      "9": "10月",
+      "10": "11月",
+      "11": "12月"
+    },
+    "weekDaysLong": {
+      "0": "日曜日",
+      "1": "月曜日",
+      "2": "火曜日",
+      "3": "水曜日",
+      "4": "木曜日",
+      "5": "金曜日",
+      "6": "土曜日"
+    },
+    "weekTitle": "第{n}週",
+    "fullDateTitle": "{year}年{month}{day}日（{weekday}）",
+    "formattedShortDate": "{year}年{month}{day}日",
+    "am": "午前",
+    "pm": "午後",
+    "formattedDateTime": "{date} {time}",
+    "chartDayLabel": "{month}{day}日",
+    "chartRangeWithYear": "{year}年{range}",
+    "chartQuarterRanges": {
+      "1": "1月〜3月",
+      "2": "4月〜6月",
+      "3": "7月〜9月",
+      "4": "10月〜12月"
+    },
+    "chartHalfYearRanges": {
+      "1": "1月〜6月",
+      "2": "7月〜12月"
+    }
+  },
+  "productSwitcher": {
+    "influence": {
+      "name": "インフルエンス",
+      "description": "アクティブな取引を簡単に管理"
+    },
+    "measure": {
+      "name": "メジャー",
+      "description": "プランパフォーマンスを測定・分析"
+    },
+    "inventory": {
+      "name": "インベントリ",
+      "description": "インベントリを管理"
+    },
+    "account": {
+      "name": "アカウント",
+      "description": "アカウントを追跡・管理"
+    }
+  },
+  "multiSelect": {
+    "placeholder": "オプションを選択...",
+    "searchPlaceholder": "検索..."
+  },
+  "agGrid": {
+    "pageSizeSelectorLabel": "ページサイズ：",
+    "page": "ページ",
+    "to": "〜",
+    "of": "/",
+    "noRowsToShow": "表示するデータがありません",
+    "loadingOoo": "読み込み中..."
+  },
+  "inventorySize": {
+    "xl": {
+      "label": "特大",
+      "description": "通常 > 300平方フィート（例：14 x 48 フィートの掲示板、大型壁面広告、ジャンボトロン）"
+    },
+    "l": {
+      "label": "大",
+      "description": "約100〜300平方フィート（例：10 x 22 フィートのポスター、大型デジタルビルボード）"
+    },
+    "m": {
+      "label": "中",
+      "description": "約30〜100平方フィート（例：バスシェルターパネル、標準デジタルパネル）"
+    },
+    "s": {
+      "label": "小",
+      "description": "約5〜30平方フィート（例：ベンチ広告、車内スクリーン、小型モール画面）"
+    },
+    "xs": {
+      "label": "極小",
+      "description": "5平方フィート未満（例：棚端ディスプレイ、小型エレベータースクリーン）"
+    }
+  },
+  "inventoryType": {
+    "transit": "交通",
+    "street_furniture": "ストリートファニチャー",
+    "place_based": "場所ベース",
+    "digital_network": "デジタルネットワーク",
+    "retail": "小売",
+    "ooh": "OOH",
+    "airport": "空港",
+    "bus": "バス",
+    "rail_metro": "鉄道・地下鉄",
+    "taxi_rideshare": "タクシー・ライドシェア",
+    "commercial_fleet": "商用車",
+    "cinema": "映画館"
+  },
+  "inventoryClassification": {
+    "classic": "クラシック",
+    "digital": "デジタル",
+    "transit": "トランジット",
+    "street_furniture": "ストリートファニチャー",
+    "place_based": "プレイスベース",
+    "digital_network": "デジタルネットワーク",
+    "retail": "リテール"
+  },
+  "inventoryEnvironment": {
+    "outdoor": "屋外",
+    "indoor": "屋内",
+    "semi_outdoor": "半屋外",
+    "in_transit": "移動中"
+  },
+  "inventoryMode": {
+    "spot": "スポット",
+    "loop": "ループ"
+  },
+  "programmaticDealType": {
+    "guaranteed": "保証型",
+    "preferred_deal": "優先取引",
+    "private_auction": "プライベートオークション",
+    "open_auction": "オープンオークション",
+    "evergreen_pmp": "エバーグリーンPMP"
+  }
+}
