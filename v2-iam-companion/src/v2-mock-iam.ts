@@ -1,6 +1,5 @@
 /**
- * Standalone mock IAM/OAuth2 authorization server for the V2 stack, backed
- * live by the Admin Console.
+ * Standalone mock IAM/OAuth2 authorization server for the V2 stack.
  *
  * This used to be mounted inside the legacy V1 Express server at `/v2iam`.
  * It has been extracted into its own service (`v2-iam-companion/`) so V2
@@ -8,16 +7,20 @@
  * Behavior is unchanged from the original: the V2 Spring Boot backend
  * validates Bearer JWTs against `<iam.service-url>/.well-known/jwks.json`
  * and requires `iss` to equal `iam.service-url` exactly. This router keeps
- * issuing local RS256 tokens (the Admin Console has no OAuth yet), but all
- * identity DATA — users, memberships, companies, roles, permissions — comes
- * live from the Admin Console (account-sphere.replit.app) via
- * ./admin-console-client.
+ * issuing local RS256 tokens (the Admin Console has no OAuth yet).
  *
- * Flow: /api/v1/oauth/authorize renders a user picker of real Admin Console
- * users; the chosen user id travels in the auth code; issued tokens carry
- * that user's primary company and per-company permission authorities
- * derived from their Admin Console role in each org. Tenant switching and
- * permission enforcement in the backend/frontend then work off real data.
+ * Identity DATA — users, memberships, companies, roles, permissions —
+ * TEMPORARILY comes from ./local-users (Planner's own offline seed data)
+ * instead of the live Admin Console (account-sphere.replit.app), so this
+ * works with no ADMIN_CONSOLE_TOKEN and no network access. To go back to
+ * real Admin Console-backed identity, swap this import back to
+ * "./admin-console-client.js".
+ *
+ * Flow: /api/v1/oauth/authorize renders a user picker of the seeded users;
+ * the chosen user id travels in the auth code; issued tokens carry that
+ * user's primary company and per-company permission authorities. Tenant
+ * switching and permission enforcement in the backend/frontend work off
+ * this same data.
  */
 import { Router, type Request, type Response } from "express";
 import crypto from "crypto";
@@ -25,10 +28,8 @@ import {
   getIdentitySnapshot,
   getUserById,
   getOrgById,
-  type AcUser,
-  type AcMembership,
-  type AcOrg,
-} from "./admin-console-client.js";
+} from "./local-users.js";
+import type { AcUser, AcMembership, AcOrg } from "./admin-console-client.js";
 
 // Must exactly match `mw-planner.iam.service-url` in the v2-backend config
 // profile that's active wherever this service runs (SecurityConfiguration's
