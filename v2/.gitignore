@@ -8,7 +8,6 @@ pnpm-debug.log*
 lerna-debug.log*
 .env
 .env.proxy
-.env.production
 node_modules
 
 # Yarn-only repo — block npm/pnpm lockfiles
