@@ -90,7 +90,8 @@ public class CampaignService {
       UserService userService,
       @Lazy CampaignProposalStatusAndCommentService campaignProposalStatusAndCommentService,
       ScheduleRepository scheduleRepository,
-      VenuesService venuesService) {
+      VenuesService venuesService,
+      ReservationService reservationService) {
     this.campaignRepository = campaignRepository;
     this.sequencerService = sequencerService;
     this.messageService = messageService;
@@ -114,6 +115,7 @@ public class CampaignService {
     this.userService = userService;
     this.campaignProposalStatusAndCommentService = campaignProposalStatusAndCommentService;
     this.venuesService = venuesService;
+    this.reservationService = reservationService;
   }
 
   /** Create a new campaign */
